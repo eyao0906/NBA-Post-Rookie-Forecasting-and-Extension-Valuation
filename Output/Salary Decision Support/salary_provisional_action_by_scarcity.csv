@@ -1,0 +1,14 @@
+scarcity_tier,provisional_action_bucket,player_count
+highly_replaceable,avoid_overcommitting,209
+highly_replaceable,offer_now_disciplined_band,7
+highly_replaceable,wait_and_save_flexibility,54
+replaceable,avoid_overcommitting,22
+replaceable,offer_now_disciplined_band,62
+replaceable,wait_and_save_flexibility,111
+replaceable_middle,avoid_overcommitting,7
+replaceable_middle,offer_now_disciplined_band,168
+replaceable_middle,wait_and_save_flexibility,117
+scarce,offer_now_disciplined_band,100
+scarce,wait_and_save_flexibility,18
+selective_premium,offer_now_disciplined_band,137
+selective_premium,wait_and_save_flexibility,46

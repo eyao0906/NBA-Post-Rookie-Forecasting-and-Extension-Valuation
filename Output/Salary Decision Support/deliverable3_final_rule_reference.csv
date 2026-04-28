@@ -1,0 +1,6 @@
+rule_name,rule_text
+block2_only_provisional,No official Block 1 support merged; keep Block 2 action logic only.
+block1_classification_overlay_only,"Official class probabilities merged, but no supported performance forecast row; use only as descriptive overlay."
+forecast_adjusted_supported_subset,Official Block 1 performance forecast row available; allow staged action changes within the existing market band.
+upside_push_within_band,Only move one action step more aggressive; never expand beyond walk-away max.
+downside_caution_within_band,Only move one action step more cautious; do not impose a new discount model.

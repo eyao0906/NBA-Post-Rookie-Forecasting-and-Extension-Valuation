@@ -1,0 +1,22 @@
+{
+  "features_input": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\data\\player_feature_table_1999_2019.csv",
+  "pca_input": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\data\\pca_player_features\\player_feature_table_pca_scores.csv",
+  "n_players": 1058,
+  "n_pca_components_used": 24,
+  "n_clusters": 5,
+  "silhouette_score": 0.10697406062755954,
+  "cluster_sizes": {
+    "0": 118,
+    "1": 195,
+    "2": 292,
+    "3": 270,
+    "4": 183
+  },
+  "cluster_name_map": {
+    "3": "Fringe / Low-Opportunity Players",
+    "0": "High-Usage Primary Creators",
+    "1": "Low-Usage Interior Bigs",
+    "4": "Scoring Bigs / Two-Way Forwards",
+    "2": "Perimeter Wings & Connectors"
+  }
+}

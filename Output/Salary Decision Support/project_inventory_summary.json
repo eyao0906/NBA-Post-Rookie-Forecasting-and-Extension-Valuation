@@ -1,0 +1,18 @@
+{
+  "script": "00_project_inventory.py",
+  "project_root": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3",
+  "output_dir": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Salary Decision Support",
+  "visual_dir": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\visual\\Salary Decision Support",
+  "demo_players_reserved_for_case_study": [
+    "Trae Young",
+    "Nikola Vucevic",
+    "Nikola Vučević",
+    "Andrew Bynum"
+  ],
+  "required_total": 10,
+  "required_found": 10,
+  "optional_total": 5,
+  "optional_found": 5,
+  "corrected_paths": 0,
+  "missing_required_roles": []
+}

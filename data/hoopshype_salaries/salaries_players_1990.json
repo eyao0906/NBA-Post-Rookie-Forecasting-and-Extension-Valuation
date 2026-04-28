@@ -1,0 +1,7768 @@
+[
+  {
+    "__typename": "Contracts",
+    "playerID": "106",
+    "playerName": "Patrick Ewing",
+    "updateDate": "2026-03-18T23:02:22.350073Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 4250000,
+        "season": 1990,
+        "teamID": "18",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Hot Rod Williams",
+    "updateDate": "2026-03-18T23:02:22.448576Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 3785000,
+        "season": 1990,
+        "teamID": "5",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "250",
+    "playerName": "Hakeem Olajuwon",
+    "updateDate": "2026-03-18T23:02:22.272795Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 3175000,
+        "season": 1990,
+        "teamID": "10",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Charles Barkley",
+    "updateDate": "2026-03-18T23:02:22.449406Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2900000,
+        "season": 1990,
+        "teamID": "20",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "238",
+    "playerName": "Chris Mullin",
+    "updateDate": "2026-03-18T23:02:22.434556Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2850000,
+        "season": 1990,
+        "teamID": "9",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Isiah Thomas",
+    "updateDate": "2026-03-18T23:02:22.471154Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2720000,
+        "season": 1990,
+        "teamID": "8",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "110",
+    "playerName": "Danny Ferry",
+    "updateDate": "2026-03-18T23:02:22.257278Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2640000,
+        "season": 1990,
+        "teamID": "5",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Robert Parish",
+    "updateDate": "2026-03-18T23:02:22.458583Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2500000,
+        "season": 1990,
+        "teamID": "2",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "175",
+    "playerName": "Michael Jordan",
+    "updateDate": "2026-03-18T23:02:22.344524Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2500000,
+        "season": 1990,
+        "teamID": "4",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Moses Malone",
+    "updateDate": "2026-03-18T23:02:22.468719Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2406000,
+        "season": 1990,
+        "teamID": "1",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Magic Johnson",
+    "updateDate": "2026-03-18T23:02:22.385362Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2400000,
+        "season": 1990,
+        "teamID": "13",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Wayman Tisdale",
+    "updateDate": "2026-03-18T23:02:22.385308Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2330000,
+        "season": 1990,
+        "teamID": "23",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "103",
+    "playerName": "Pervis Ellison",
+    "updateDate": "2026-03-18T23:02:22.436538Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2300000,
+        "season": 1990,
+        "teamID": "27",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "288",
+    "playerName": "David Robinson",
+    "updateDate": "2026-03-18T23:02:22.259039Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2265000,
+        "season": 1990,
+        "teamID": "24",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "213",
+    "playerName": "Karl Malone",
+    "updateDate": "2026-03-18T23:02:22.286883Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2260000,
+        "season": 1990,
+        "teamID": "26",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Ralph Sampson",
+    "updateDate": "2026-03-18T23:02:22.400306Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2250000,
+        "season": 1990,
+        "teamID": "23",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "215",
+    "playerName": "Danny Manning",
+    "updateDate": "2026-03-18T23:02:22.257764Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2200000,
+        "season": 1990,
+        "teamID": "12",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Blair Rasmussen",
+    "updateDate": "2026-03-18T23:02:22.465716Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2185000,
+        "season": 1990,
+        "teamID": "7",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Chuck Person",
+    "updateDate": "2026-03-18T23:02:22.435196Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2150000,
+        "season": 1990,
+        "teamID": "11",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "63",
+    "playerName": "Derrick Coleman",
+    "updateDate": "2026-03-18T23:02:22.26094Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2100000,
+        "season": 1990,
+        "teamID": "17",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Dominique Wilkins",
+    "updateDate": "2026-03-18T23:02:22.452171Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2065000,
+        "season": 1990,
+        "teamID": "1",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Tom Chambers",
+    "updateDate": "2026-03-18T23:02:22.459853Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2060000,
+        "season": 1990,
+        "teamID": "21",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "LaSalle Thompson",
+    "updateDate": "2026-03-18T23:02:22.449774Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2000000,
+        "season": 1990,
+        "teamID": "11",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Willie Burton",
+    "updateDate": "2026-03-18T23:02:22.460708Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2000000,
+        "season": 1990,
+        "teamID": "14",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Sam Bowie",
+    "updateDate": "2026-03-18T23:02:22.46694Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2000000,
+        "season": 1990,
+        "teamID": "17",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Mark Eaton",
+    "updateDate": "2026-03-18T23:02:22.47382Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2000000,
+        "season": 1990,
+        "teamID": "26",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "326",
+    "playerName": "John Stockton",
+    "updateDate": "2026-03-18T23:02:22.283512Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2000000,
+        "season": 1990,
+        "teamID": "26",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "271",
+    "playerName": "Terry Porter",
+    "updateDate": "2026-03-18T23:02:22.366758Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 2000000,
+        "season": 1990,
+        "teamID": "22",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "261",
+    "playerName": "Sam Perkins",
+    "updateDate": "2026-03-18T23:02:22.434668Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1970000,
+        "season": 1990,
+        "teamID": "13",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Terry Cummings",
+    "updateDate": "2026-03-18T23:02:22.434435Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1860000,
+        "season": 1990,
+        "teamID": "24",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "101",
+    "playerName": "Sean Elliott",
+    "updateDate": "2026-03-18T23:02:22.392405Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1800000,
+        "season": 1990,
+        "teamID": "24",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "163",
+    "playerName": "Mark Jackson",
+    "updateDate": "2026-03-18T23:02:22.33107Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1785000,
+        "season": 1990,
+        "teamID": "18",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "339",
+    "playerName": "Otis Thorpe",
+    "updateDate": "2026-03-18T23:02:22.43335Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1760000,
+        "season": 1990,
+        "teamID": "10",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "134",
+    "playerName": "A.C. Green",
+    "updateDate": "2026-03-18T23:02:22.435693Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1750000,
+        "season": 1990,
+        "teamID": "13",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Benoit Benjamin",
+    "updateDate": "2026-03-18T23:02:22.448485Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1750000,
+        "season": 1990,
+        "teamID": "25",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Kevin Johnson",
+    "updateDate": "2026-03-18T23:02:22.459717Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1750000,
+        "season": 1990,
+        "teamID": "21",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Kevin Duckworth",
+    "updateDate": "2026-03-18T23:02:22.461678Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1710000,
+        "season": 1990,
+        "teamID": "22",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Alton Lister",
+    "updateDate": "2026-03-18T23:02:22.459967Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1700000,
+        "season": 1990,
+        "teamID": "9",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "259",
+    "playerName": "Gary Payton",
+    "updateDate": "2026-03-18T23:02:22.269398Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1685000,
+        "season": 1990,
+        "teamID": "25",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "162",
+    "playerName": "Mahmoud Abdul-Rauf",
+    "updateDate": "2026-03-18T23:02:22.442583Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1660000,
+        "season": 1990,
+        "teamID": "7",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Mike Gminski",
+    "updateDate": "2026-03-18T23:02:22.469873Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1650000,
+        "season": 1990,
+        "teamID": "5312",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Rolando Blackman",
+    "updateDate": "2026-03-18T23:02:22.470139Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1650000,
+        "season": 1990,
+        "teamID": "6",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "James Worthy",
+    "updateDate": "2026-03-18T23:02:22.466879Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1600000,
+        "season": 1990,
+        "teamID": "13",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Alec Kessler",
+    "updateDate": "2026-03-18T23:02:22.467144Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1600000,
+        "season": 1990,
+        "teamID": "14",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Jack Sikma",
+    "updateDate": "2026-03-18T23:02:22.473408Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1600000,
+        "season": 1990,
+        "teamID": "15",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Bernard King",
+    "updateDate": "2026-03-18T23:02:22.474096Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1600000,
+        "season": 1990,
+        "teamID": "27",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Dennis Scott",
+    "updateDate": "2026-03-18T23:02:22.442788Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1560000,
+        "season": 1990,
+        "teamID": "19",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Buck Williams",
+    "updateDate": "2026-03-18T23:02:22.457228Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1550000,
+        "season": 1990,
+        "teamID": "22",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Jon Koncak",
+    "updateDate": "2026-03-18T23:02:22.461509Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1550000,
+        "season": 1990,
+        "teamID": "1",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "281",
+    "playerName": "Glen Rice",
+    "updateDate": "2026-03-18T23:02:22.270741Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1550000,
+        "season": 1990,
+        "teamID": "14",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Derek Harper",
+    "updateDate": "2026-03-18T23:02:22.448924Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1519000,
+        "season": 1990,
+        "teamID": "6",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Fat Lever",
+    "updateDate": "2026-03-18T23:02:22.471028Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1519000,
+        "season": 1990,
+        "teamID": "6",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Bill Laimbeer",
+    "updateDate": "2026-03-18T23:02:22.384574Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1510000,
+        "season": 1990,
+        "teamID": "8",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Danny Schayes",
+    "updateDate": "2026-03-18T23:02:22.451105Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1500000,
+        "season": 1990,
+        "teamID": "15",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Johnny Dawkins",
+    "updateDate": "2026-03-18T23:02:22.468292Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1500000,
+        "season": 1990,
+        "teamID": "20",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Larry Bird",
+    "updateDate": "2026-03-18T23:02:22.471606Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1500000,
+        "season": 1990,
+        "teamID": "2",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Alex English",
+    "updateDate": "2026-03-18T23:02:22.472607Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1500000,
+        "season": 1990,
+        "teamID": "6",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "122",
+    "playerName": "Kendall Gill",
+    "updateDate": "2026-03-18T23:02:22.287684Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1500000,
+        "season": 1990,
+        "teamID": "5312",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Xavier McDaniel",
+    "updateDate": "2026-03-18T23:02:22.389364Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1400000,
+        "season": 1990,
+        "teamID": "21",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Mark Price",
+    "updateDate": "2026-03-18T23:02:22.457504Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1400000,
+        "season": 1990,
+        "teamID": "5",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Sleepy Floyd",
+    "updateDate": "2026-03-18T23:02:22.470086Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1400000,
+        "season": 1990,
+        "teamID": "10",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Kevin McHale",
+    "updateDate": "2026-03-18T23:02:22.471575Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1400000,
+        "season": 1990,
+        "teamID": "2",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Vinnie Johnson",
+    "updateDate": "2026-03-18T23:02:22.472719Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1400000,
+        "season": 1990,
+        "teamID": "8",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "145",
+    "playerName": "Ron Harper",
+    "updateDate": "2026-03-18T23:02:22.401546Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1365000,
+        "season": 1990,
+        "teamID": "12",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Greg Anderson",
+    "updateDate": "2026-03-18T23:02:22.458412Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1365000,
+        "season": 1990,
+        "teamID": "7",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Rik Smits",
+    "updateDate": "2026-03-18T23:02:22.449699Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1350000,
+        "season": 1990,
+        "teamID": "11",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Rick Mahorn",
+    "updateDate": "2026-03-18T23:02:22.452283Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1330000,
+        "season": 1990,
+        "teamID": "20",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Brad Daugherty",
+    "updateDate": "2026-03-18T23:02:22.398009Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1320000,
+        "season": 1990,
+        "teamID": "5",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Manute Bol",
+    "updateDate": "2026-03-18T23:02:22.469607Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1300000,
+        "season": 1990,
+        "teamID": "20",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Brad Lohaus",
+    "updateDate": "2026-03-18T23:02:22.460869Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1275000,
+        "season": 1990,
+        "teamID": "15",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Sarunas Marciulionis",
+    "updateDate": "2026-03-18T23:02:22.46125Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1270000,
+        "season": 1990,
+        "teamID": "9",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Larry Nance",
+    "updateDate": "2026-03-18T23:02:22.47096Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1260000,
+        "season": 1990,
+        "teamID": "5",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "278",
+    "playerName": "J.R. Reid",
+    "updateDate": "2026-03-18T23:02:22.430573Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1250000,
+        "season": 1990,
+        "teamID": "5312",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Dale Ellis",
+    "updateDate": "2026-03-18T23:02:22.435583Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1250000,
+        "season": 1990,
+        "teamID": "15",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Roy Hinson",
+    "updateDate": "2026-03-18T23:02:22.469824Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1250000,
+        "season": 1990,
+        "teamID": "17",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Jim Petersen",
+    "updateDate": "2026-03-18T23:02:22.471275Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1235000,
+        "season": 1990,
+        "teamID": "9",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "307",
+    "playerName": "Brian Shaw",
+    "updateDate": "2026-03-18T23:02:22.248318Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1212000,
+        "season": 1990,
+        "teamID": "2",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Armen Gilliam",
+    "updateDate": "2026-03-18T23:02:22.45181Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1200000,
+        "season": 1990,
+        "teamID": "20",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Tony Campbell",
+    "updateDate": "2026-03-18T23:02:22.469307Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1200000,
+        "season": 1990,
+        "teamID": "16",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Drazen Petrovic",
+    "updateDate": "2026-03-18T23:02:22.473932Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1200000,
+        "season": 1990,
+        "teamID": "17",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "246",
+    "playerName": "Johnny Newman",
+    "updateDate": "2026-03-18T23:02:22.283784Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1200000,
+        "season": 1990,
+        "teamID": "5312",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Clyde Drexler",
+    "updateDate": "2026-03-18T23:02:22.459108Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1180000,
+        "season": 1990,
+        "teamID": "22",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "301",
+    "playerName": "Detlef Schrempf",
+    "updateDate": "2026-03-18T23:02:22.436257Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1160000,
+        "season": 1990,
+        "teamID": "11",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Randy Breuer",
+    "updateDate": "2026-03-18T23:02:22.473457Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1150000,
+        "season": 1990,
+        "teamID": "16",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Mark Aguirre",
+    "updateDate": "2026-03-18T23:02:22.469518Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1115000,
+        "season": 1990,
+        "teamID": "8",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Jeff Hornacek",
+    "updateDate": "2026-03-18T23:02:22.393578Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1100000,
+        "season": 1990,
+        "teamID": "21",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Byron Scott",
+    "updateDate": "2026-03-18T23:02:22.450182Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1100000,
+        "season": 1990,
+        "teamID": "13",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Ricky Pierce",
+    "updateDate": "2026-03-18T23:02:22.450924Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1100000,
+        "season": 1990,
+        "teamID": "25",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Bill Cartwright",
+    "updateDate": "2026-03-18T23:02:22.470622Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1100000,
+        "season": 1990,
+        "teamID": "4",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Wayne Cooper",
+    "updateDate": "2026-03-18T23:02:22.474322Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1100000,
+        "season": 1990,
+        "teamID": "22",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Terry Catledge",
+    "updateDate": "2026-03-18T23:02:22.467841Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1085000,
+        "season": 1990,
+        "teamID": "19",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "323",
+    "playerName": "Felton Spencer",
+    "updateDate": "2026-03-18T23:02:22.268699Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1070000,
+        "season": 1990,
+        "teamID": "16",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "248",
+    "playerName": "Charles Oakley",
+    "updateDate": "2026-03-18T23:02:22.250653Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1050000,
+        "season": 1990,
+        "teamID": "18",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Ken Norman",
+    "updateDate": "2026-03-18T23:02:22.453365Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1050000,
+        "season": 1990,
+        "teamID": "12",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Joe Dumars",
+    "updateDate": "2026-03-18T23:02:22.449025Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1035000,
+        "season": 1990,
+        "teamID": "8",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Kiki Vandeweghe",
+    "updateDate": "2026-03-18T23:02:22.471482Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1025000,
+        "season": 1990,
+        "teamID": "18",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "154",
+    "playerName": "Tyrone Hill",
+    "updateDate": "2026-03-18T23:02:22.371316Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1000000,
+        "season": 1990,
+        "teamID": "9",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "3176",
+    "playerName": "Charles Smith",
+    "updateDate": "2026-03-18T23:02:22.250806Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1000000,
+        "season": 1990,
+        "teamID": "12",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "John Williams",
+    "updateDate": "2026-03-18T23:02:22.433143Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1000000,
+        "season": 1990,
+        "teamID": "27",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "148",
+    "playerName": "Hersey Hawkins",
+    "updateDate": "2026-03-18T23:02:22.433477Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1000000,
+        "season": 1990,
+        "teamID": "20",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Eddie Johnson",
+    "updateDate": "2026-03-18T23:02:22.449505Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1000000,
+        "season": 1990,
+        "teamID": "25",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Thurl Bailey",
+    "updateDate": "2026-03-18T23:02:22.453035Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1000000,
+        "season": 1990,
+        "teamID": "26",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Herb Williams",
+    "updateDate": "2026-03-18T23:02:22.457404Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1000000,
+        "season": 1990,
+        "teamID": "6",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Stacey King",
+    "updateDate": "2026-03-18T23:02:22.460259Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1000000,
+        "season": 1990,
+        "teamID": "4",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Maurice Cheeks",
+    "updateDate": "2026-03-18T23:02:22.471544Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1000000,
+        "season": 1990,
+        "teamID": "18",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Kelly Tripucka",
+    "updateDate": "2026-03-18T23:02:22.473167Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1000000,
+        "season": 1990,
+        "teamID": "5312",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "131",
+    "playerName": "Horace Grant",
+    "updateDate": "2026-03-18T23:02:22.273458Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 1000000,
+        "season": 1990,
+        "teamID": "4",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Joe Wolf",
+    "updateDate": "2026-03-18T23:02:22.453945Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 990000,
+        "season": 1990,
+        "teamID": "7",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Rodney McCray",
+    "updateDate": "2026-03-18T23:02:22.47176Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 985000,
+        "season": 1990,
+        "teamID": "6",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Sam Vincent",
+    "updateDate": "2026-03-18T23:02:22.47388Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 980000,
+        "season": 1990,
+        "teamID": "19",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "227",
+    "playerName": "Derrick McKey",
+    "updateDate": "2026-03-18T23:02:22.261301Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 962000,
+        "season": 1990,
+        "teamID": "25",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "91",
+    "playerName": "Chris Dudley",
+    "updateDate": "2026-03-18T23:02:22.252089Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 950000,
+        "season": 1990,
+        "teamID": "17",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Bo Kimble",
+    "updateDate": "2026-03-18T23:02:22.4676Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 950000,
+        "season": 1990,
+        "teamID": "12",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "222",
+    "playerName": "George McCloud",
+    "updateDate": "2026-03-18T23:02:22.269866Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 940000,
+        "season": 1990,
+        "teamID": "11",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "James Edwards",
+    "updateDate": "2026-03-18T23:02:22.46617Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 935000,
+        "season": 1990,
+        "teamID": "8",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Lionel Simmons",
+    "updateDate": "2026-03-18T23:02:22.457745Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 930000,
+        "season": 1990,
+        "teamID": "23",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Craig Ehlo",
+    "updateDate": "2026-03-18T23:02:22.457885Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 925000,
+        "season": 1990,
+        "teamID": "5",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Jeff Malone",
+    "updateDate": "2026-03-18T23:02:22.468223Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 915000,
+        "season": 1990,
+        "teamID": "26",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Dennis Hopson",
+    "updateDate": "2026-03-18T23:02:22.473198Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 915000,
+        "season": 1990,
+        "teamID": "4",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Michael Cage",
+    "updateDate": "2026-03-18T23:02:22.451547Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 910000,
+        "season": 1990,
+        "teamID": "25",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Frank Brickowski",
+    "updateDate": "2026-03-18T23:02:22.460777Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 905000,
+        "season": 1990,
+        "teamID": "15",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "74",
+    "playerName": "Dell Curry",
+    "updateDate": "2026-03-18T23:02:22.25986Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 900000,
+        "season": 1990,
+        "teamID": "5312",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Kurt Rambis",
+    "updateDate": "2026-03-18T23:02:22.46708Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 900000,
+        "season": 1990,
+        "teamID": "21",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Walter Davis",
+    "updateDate": "2026-03-18T23:02:22.47268Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 900000,
+        "season": 1990,
+        "teamID": "22",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Lester Conner",
+    "updateDate": "2026-03-18T23:02:22.473113Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 900000,
+        "season": 1990,
+        "teamID": "15",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Paul Pressey",
+    "updateDate": "2026-03-18T23:02:22.474364Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 900000,
+        "season": 1990,
+        "teamID": "24",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Doc Rivers",
+    "updateDate": "2026-03-18T23:02:22.467729Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 895000,
+        "season": 1990,
+        "teamID": "1",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Dennis Rodman",
+    "updateDate": "2026-03-18T23:02:22.454607Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 880000,
+        "season": 1990,
+        "teamID": "8",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "James Donaldson",
+    "updateDate": "2026-03-18T23:02:22.468844Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 880000,
+        "season": 1990,
+        "teamID": "6",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Mark West",
+    "updateDate": "2026-03-18T23:02:22.45255Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 875000,
+        "season": 1990,
+        "teamID": "21",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Kenny Walker",
+    "updateDate": "2026-03-18T23:02:22.470755Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 875000,
+        "season": 1990,
+        "teamID": "18",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Alvin Robertson",
+    "updateDate": "2026-03-18T23:02:22.466545Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 870000,
+        "season": 1990,
+        "teamID": "15",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Joe Kleine",
+    "updateDate": "2026-03-18T23:02:22.43478Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 850000,
+        "season": 1990,
+        "teamID": "2",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "William Bedford",
+    "updateDate": "2026-03-18T23:02:22.472749Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 850000,
+        "season": 1990,
+        "teamID": "8",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Darrell Griffith",
+    "updateDate": "2026-03-18T23:02:22.474461Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 850000,
+        "season": 1990,
+        "teamID": "26",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "283",
+    "playerName": "Mitch Richmond",
+    "updateDate": "2026-03-18T23:02:22.34648Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 850000,
+        "season": 1990,
+        "teamID": "9",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Sidney Green",
+    "updateDate": "2026-03-18T23:02:22.471729Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 837000,
+        "season": 1990,
+        "teamID": "24",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Trent Tucker",
+    "updateDate": "2026-03-18T23:02:22.47185Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 835000,
+        "season": 1990,
+        "teamID": "18",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "69",
+    "playerName": "Tyrone Corbin",
+    "updateDate": "2026-03-18T23:02:22.436649Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 830000,
+        "season": 1990,
+        "teamID": "16",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "351",
+    "playerName": "Loy Vaught",
+    "updateDate": "2026-03-18T23:02:22.431296Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 825000,
+        "season": 1990,
+        "teamID": "12",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Michael Adams",
+    "updateDate": "2026-03-18T23:02:22.465987Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 825000,
+        "season": 1990,
+        "teamID": "7",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "31",
+    "playerName": "Muggsy Bogues",
+    "updateDate": "2026-03-18T23:02:22.405504Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 805000,
+        "season": 1990,
+        "teamID": "5312",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Orlando Woolridge",
+    "updateDate": "2026-03-18T23:02:22.469773Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 805000,
+        "season": 1990,
+        "teamID": "7",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "141",
+    "playerName": "Tom Hammonds",
+    "updateDate": "2026-03-18T23:02:22.432366Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 800000,
+        "season": 1990,
+        "teamID": "27",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Rumeal Robinson",
+    "updateDate": "2026-03-18T23:02:22.459008Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 800000,
+        "season": 1990,
+        "teamID": "1",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Tree Rollins",
+    "updateDate": "2026-03-18T23:02:22.4596Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 800000,
+        "season": 1990,
+        "teamID": "8",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Travis Mays",
+    "updateDate": "2026-03-18T23:02:22.471514Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 800000,
+        "season": 1990,
+        "teamID": "23",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Larry Smith",
+    "updateDate": "2026-03-18T23:02:22.472849Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 800000,
+        "season": 1990,
+        "teamID": "10",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Tim McCormick",
+    "updateDate": "2026-03-18T23:02:22.47019Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 775000,
+        "season": 1990,
+        "teamID": "1",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "84",
+    "playerName": "Vlade Divac",
+    "updateDate": "2026-03-18T23:02:22.373283Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 770000,
+        "season": 1990,
+        "teamID": "13",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Roy Tarpley",
+    "updateDate": "2026-03-18T23:02:22.466472Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 765000,
+        "season": 1990,
+        "teamID": "6",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Reggie Theus",
+    "updateDate": "2026-03-18T23:02:22.474515Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 765000,
+        "season": 1990,
+        "teamID": "17",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "268",
+    "playerName": "Scottie Pippen",
+    "updateDate": "2026-03-18T23:02:22.360441Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 765000,
+        "season": 1990,
+        "teamID": "4",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Mike Sanders",
+    "updateDate": "2026-03-18T23:02:22.471914Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 760000,
+        "season": 1990,
+        "teamID": "11",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Rony Seikaly",
+    "updateDate": "2026-03-18T23:02:22.454737Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 755000,
+        "season": 1990,
+        "teamID": "14",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "379",
+    "playerName": "David Wingate",
+    "updateDate": "2026-03-18T23:02:22.436427Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 750000,
+        "season": 1990,
+        "teamID": "24",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Ed Pinckney",
+    "updateDate": "2026-03-18T23:02:22.450593Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 750000,
+        "season": 1990,
+        "teamID": "2",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Chris Morris",
+    "updateDate": "2026-03-18T23:02:22.457598Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 750000,
+        "season": 1990,
+        "teamID": "17",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Cliff Levingston",
+    "updateDate": "2026-03-18T23:02:22.469394Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 750000,
+        "season": 1990,
+        "teamID": "4",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Randy White",
+    "updateDate": "2026-03-18T23:02:22.471071Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 730000,
+        "season": 1990,
+        "teamID": "6",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Gerald Wilkins",
+    "updateDate": "2026-03-18T23:02:22.390578Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 725000,
+        "season": 1990,
+        "teamID": "18",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Willie Anderson",
+    "updateDate": "2026-03-18T23:02:22.450665Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 725000,
+        "season": 1990,
+        "teamID": "24",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Danny Ainge",
+    "updateDate": "2026-03-18T23:02:22.470415Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 725000,
+        "season": 1990,
+        "teamID": "22",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "9",
+    "playerName": "Nick Anderson",
+    "updateDate": "2026-03-18T23:02:22.34807Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 725000,
+        "season": 1990,
+        "teamID": "19",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Bill Wennington",
+    "updateDate": "2026-03-18T23:02:22.392686Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 700000,
+        "season": 1990,
+        "teamID": "23",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Kenny Smith",
+    "updateDate": "2026-03-18T23:02:22.461979Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 700000,
+        "season": 1990,
+        "teamID": "10",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Fred Roberts",
+    "updateDate": "2026-03-18T23:02:22.461108Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 690000,
+        "season": 1990,
+        "teamID": "15",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "376",
+    "playerName": "Kevin Willis",
+    "updateDate": "2026-03-18T23:02:22.307126Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 685000,
+        "season": 1990,
+        "teamID": "1",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Rex Chapman",
+    "updateDate": "2026-03-18T23:02:22.383758Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 675000,
+        "season": 1990,
+        "teamID": "5312",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Charles Jones",
+    "updateDate": "2026-03-18T23:02:22.450096Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 675000,
+        "season": 1990,
+        "teamID": "27",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Tim Perry",
+    "updateDate": "2026-03-18T23:02:22.467422Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 675000,
+        "season": 1990,
+        "teamID": "21",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Buck Johnson",
+    "updateDate": "2026-03-18T23:02:22.47289Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 675000,
+        "season": 1990,
+        "teamID": "10",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Vern Fleming",
+    "updateDate": "2026-03-18T23:02:22.467481Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 667000,
+        "season": 1990,
+        "teamID": "11",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Nate McMillan",
+    "updateDate": "2026-03-18T23:02:22.460362Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 658000,
+        "season": 1990,
+        "teamID": "25",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "231",
+    "playerName": "Reggie Miller",
+    "updateDate": "2026-03-18T23:02:22.354837Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 654000,
+        "season": 1990,
+        "teamID": "11",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "56",
+    "playerName": "Duane Causwell",
+    "updateDate": "2026-03-18T23:02:22.435363Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 650000,
+        "season": 1990,
+        "teamID": "23",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Mike Brown",
+    "updateDate": "2026-03-18T23:02:22.452651Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 650000,
+        "season": 1990,
+        "teamID": "26",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Sedale Threatt",
+    "updateDate": "2026-03-18T23:02:22.467Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 650000,
+        "season": 1990,
+        "teamID": "25",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Dave Jamerson",
+    "updateDate": "2026-03-18T23:02:22.469667Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 650000,
+        "season": 1990,
+        "teamID": "10",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Jay Humphries",
+    "updateDate": "2026-03-18T23:02:22.470675Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 650000,
+        "season": 1990,
+        "teamID": "15",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Alexander Volkov",
+    "updateDate": "2026-03-18T23:02:22.472411Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 650000,
+        "season": 1990,
+        "teamID": "1",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Dave Greenwood",
+    "updateDate": "2026-03-18T23:02:22.474402Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 650000,
+        "season": 1990,
+        "teamID": "24",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Chucky Brown",
+    "updateDate": "2026-03-18T23:02:22.253725Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 630000,
+        "season": 1990,
+        "teamID": "5",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Pooh Richardson",
+    "updateDate": "2026-03-18T23:02:22.401024Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 615000,
+        "season": 1990,
+        "teamID": "16",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Mychal Thompson",
+    "updateDate": "2026-03-18T23:02:22.472986Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 615000,
+        "season": 1990,
+        "teamID": "13",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Antoine Carr",
+    "updateDate": "2026-03-18T23:02:22.389951Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 610000,
+        "season": 1990,
+        "teamID": "23",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Darrell Walker",
+    "updateDate": "2026-03-18T23:02:22.47211Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 610000,
+        "season": 1990,
+        "teamID": "27",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Larry Krystkowiak",
+    "updateDate": "2026-03-18T23:02:22.466089Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 605000,
+        "season": 1990,
+        "teamID": "15",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Jeff Grayer",
+    "updateDate": "2026-03-18T23:02:22.468399Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 605000,
+        "season": 1990,
+        "teamID": "15",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Ledell Eackles",
+    "updateDate": "2026-03-18T23:02:22.468944Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 605000,
+        "season": 1990,
+        "teamID": "27",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "232",
+    "playerName": "Terry Mills",
+    "updateDate": "2026-03-18T23:02:22.433817Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 600000,
+        "season": 1990,
+        "teamID": "17",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Andrew Lang",
+    "updateDate": "2026-03-18T23:02:22.451659Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 600000,
+        "season": 1990,
+        "teamID": "21",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Craig Hodges",
+    "updateDate": "2026-03-18T23:02:22.47182Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 600000,
+        "season": 1990,
+        "teamID": "4",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Brad Davis",
+    "updateDate": "2026-03-18T23:02:22.472588Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 600000,
+        "season": 1990,
+        "teamID": "6",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "269",
+    "playerName": "Olden Polynice",
+    "updateDate": "2026-03-18T23:02:22.348987Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 600000,
+        "season": 1990,
+        "teamID": "12",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "John Battle",
+    "updateDate": "2026-03-18T23:02:22.466271Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 590000,
+        "season": 1990,
+        "teamID": "1",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Tod Murphy",
+    "updateDate": "2026-03-18T23:02:22.471234Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 590000,
+        "season": 1990,
+        "teamID": "16",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "John Salley",
+    "updateDate": "2026-03-18T23:02:22.386629Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 575000,
+        "season": 1990,
+        "teamID": "8",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Gerald Glass",
+    "updateDate": "2026-03-18T23:02:22.467525Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 575000,
+        "season": 1990,
+        "teamID": "16",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "51",
+    "playerName": "Elden Campbell",
+    "updateDate": "2026-03-18T23:02:22.2659Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 575000,
+        "season": 1990,
+        "teamID": "13",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Jerrod Mustaf",
+    "updateDate": "2026-03-18T23:02:22.468481Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 565000,
+        "season": 1990,
+        "teamID": "18",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Todd Lichti",
+    "updateDate": "2026-03-18T23:02:22.470264Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 565000,
+        "season": 1990,
+        "teamID": "7",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "178",
+    "playerName": "Jerome Kersey",
+    "updateDate": "2026-03-18T23:02:22.401682Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 550000,
+        "season": 1990,
+        "teamID": "22",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "John Bagley",
+    "updateDate": "2026-03-18T23:02:22.470826Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 550000,
+        "season": 1990,
+        "teamID": "2",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Bob Hansen",
+    "updateDate": "2026-03-18T23:02:22.47179Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 550000,
+        "season": 1990,
+        "teamID": "23",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Terry Teagle",
+    "updateDate": "2026-03-18T23:02:22.473007Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 550000,
+        "season": 1990,
+        "teamID": "13",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Larry Drew",
+    "updateDate": "2026-03-18T23:02:22.473027Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 550000,
+        "season": 1990,
+        "teamID": "13",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Ed Nealy",
+    "updateDate": "2026-03-18T23:02:22.474033Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 550000,
+        "season": 1990,
+        "teamID": "21",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "177",
+    "playerName": "Steve Kerr",
+    "updateDate": "2026-03-18T23:02:22.365187Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 548000,
+        "season": 1990,
+        "teamID": "5",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "172535",
+    "playerName": "Dee Brown",
+    "updateDate": "2026-03-18T23:02:22.259683Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 547000,
+        "season": 1990,
+        "teamID": "2",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "128",
+    "playerName": "Gary Grant",
+    "updateDate": "2026-03-18T23:02:22.433689Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 530000,
+        "season": 1990,
+        "teamID": "12",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "2649",
+    "playerName": "Michael Smith",
+    "updateDate": "2026-03-18T23:02:22.432931Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 525000,
+        "season": 1990,
+        "teamID": "2",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Winston Bennett",
+    "updateDate": "2026-03-18T23:02:22.472548Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 525000,
+        "season": 1990,
+        "teamID": "5",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Derrick Chievous",
+    "updateDate": "2026-03-18T23:02:22.473207Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 525000,
+        "season": 1990,
+        "teamID": "5",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "30",
+    "playerName": "Mookie Blaylock",
+    "updateDate": "2026-03-18T23:02:22.347016Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 525000,
+        "season": 1990,
+        "teamID": "17",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Dwayne Schintzius",
+    "updateDate": "2026-03-18T23:02:22.448734Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 520000,
+        "season": 1990,
+        "teamID": "24",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Spud Webb",
+    "updateDate": "2026-03-18T23:02:22.46578Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 510000,
+        "season": 1990,
+        "teamID": "1",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Bill Hanzlik",
+    "updateDate": "2026-03-18T23:02:22.472648Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 510000,
+        "season": 1990,
+        "teamID": "7",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Sidney Moncrief",
+    "updateDate": "2026-03-18T23:02:22.473133Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 510000,
+        "season": 1990,
+        "teamID": "1",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Les Jepsen",
+    "updateDate": "2026-03-18T23:02:22.473297Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 505000,
+        "season": 1990,
+        "teamID": "9",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Rod Higgins",
+    "updateDate": "2026-03-18T23:02:22.393237Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 500000,
+        "season": 1990,
+        "teamID": "9",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "21",
+    "playerName": "Dana Barros",
+    "updateDate": "2026-03-18T23:02:22.25686Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 500000,
+        "season": 1990,
+        "teamID": "25",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Jayson Williams",
+    "updateDate": "2026-03-18T23:02:22.432483Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 500000,
+        "season": 1990,
+        "teamID": "20",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Jerome Lane",
+    "updateDate": "2026-03-18T23:02:22.471944Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 500000,
+        "season": 1990,
+        "teamID": "7",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Randy Wittman",
+    "updateDate": "2026-03-18T23:02:22.472254Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 500000,
+        "season": 1990,
+        "teamID": "11",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Mark Alarie",
+    "updateDate": "2026-03-18T23:02:22.474505Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 500000,
+        "season": 1990,
+        "teamID": "27",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "233",
+    "playerName": "Sam Mitchell",
+    "updateDate": "2026-03-18T23:02:22.359468Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 500000,
+        "season": 1990,
+        "teamID": "16",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "143",
+    "playerName": "Tim Hardaway",
+    "updateDate": "2026-03-18T23:02:22.367663Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 500000,
+        "season": 1990,
+        "teamID": "9",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Eric Leckner",
+    "updateDate": "2026-03-18T23:02:22.461911Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 485000,
+        "season": 1990,
+        "teamID": "5312",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Greg Kite",
+    "updateDate": "2026-03-18T23:02:22.467952Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 480000,
+        "season": 1990,
+        "teamID": "19",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Harvey Grant",
+    "updateDate": "2026-03-18T23:02:22.451974Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 475000,
+        "season": 1990,
+        "teamID": "27",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Negele Knight",
+    "updateDate": "2026-03-18T23:02:22.458086Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 468000,
+        "season": 1990,
+        "teamID": "21",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Brian Oliver",
+    "updateDate": "2026-03-18T23:02:22.470724Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 455000,
+        "season": 1990,
+        "teamID": "20",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "260",
+    "playerName": "Will Perdue",
+    "updateDate": "2026-03-18T23:02:22.43213Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 450000,
+        "season": 1990,
+        "teamID": "4",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Jerry Reynolds",
+    "updateDate": "2026-03-18T23:02:22.467266Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 450000,
+        "season": 1990,
+        "teamID": "19",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Danny Young",
+    "updateDate": "2026-03-18T23:02:22.469904Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 450000,
+        "season": 1990,
+        "teamID": "22",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Winston Garland",
+    "updateDate": "2026-03-18T23:02:22.470015Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 450000,
+        "season": 1990,
+        "teamID": "12",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Scott Hastings",
+    "updateDate": "2026-03-18T23:02:22.472071Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 450000,
+        "season": 1990,
+        "teamID": "8",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Otis Smith",
+    "updateDate": "2026-03-18T23:02:22.47421Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 450000,
+        "season": 1990,
+        "teamID": "19",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Mark Acres",
+    "updateDate": "2026-03-18T23:02:22.472151Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 437000,
+        "season": 1990,
+        "teamID": "19",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "211",
+    "playerName": "Dan Majerle",
+    "updateDate": "2026-03-18T23:02:22.256689Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 430000,
+        "season": 1990,
+        "teamID": "21",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Ron Anderson",
+    "updateDate": "2026-03-18T23:02:22.381463Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 425000,
+        "season": 1990,
+        "teamID": "20",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "BJ Armstrong",
+    "updateDate": "2026-03-18T23:02:22.39069Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 425000,
+        "season": 1990,
+        "teamID": "4",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "97",
+    "playerName": "Kevin Edwards",
+    "updateDate": "2026-03-18T23:02:22.437072Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 425000,
+        "season": 1990,
+        "teamID": "14",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Quintin Dailey",
+    "updateDate": "2026-03-18T23:02:22.474422Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 425000,
+        "season": 1990,
+        "teamID": "25",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Jeff Turner",
+    "updateDate": "2026-03-18T23:02:22.46789Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 410000,
+        "season": 1990,
+        "teamID": "19",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Tate George",
+    "updateDate": "2026-03-18T23:02:22.47036Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 410000,
+        "season": 1990,
+        "teamID": "17",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Scott Skiles",
+    "updateDate": "2026-03-18T23:02:22.468122Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 408000,
+        "season": 1990,
+        "teamID": "19",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Tom Tolbert",
+    "updateDate": "2026-03-18T23:02:22.469139Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 405000,
+        "season": 1990,
+        "teamID": "9",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "42",
+    "playerName": "Mark Bryant",
+    "updateDate": "2026-03-18T23:02:22.330925Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 405000,
+        "season": 1990,
+        "teamID": "22",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Reggie Lewis",
+    "updateDate": "2026-03-18T23:02:22.389846Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 400000,
+        "season": 1990,
+        "teamID": "2",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Ken Bannister",
+    "updateDate": "2026-03-18T23:02:22.472934Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 400000,
+        "season": 1990,
+        "teamID": "12",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Billy Thompson",
+    "updateDate": "2026-03-18T23:02:22.473398Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 400000,
+        "season": 1990,
+        "teamID": "14",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Adrian Dantley",
+    "updateDate": "2026-03-18T23:02:22.473418Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 400000,
+        "season": 1990,
+        "teamID": "15",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Eddie Lee Wilkins",
+    "updateDate": "2026-03-18T23:02:22.47371Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 400000,
+        "season": 1990,
+        "teamID": "18",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Kenny Payne",
+    "updateDate": "2026-03-18T23:02:22.473982Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 400000,
+        "season": 1990,
+        "teamID": "20",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Dave Hoppen",
+    "updateDate": "2026-03-18T23:02:22.47423Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 400000,
+        "season": 1990,
+        "teamID": "20",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "327",
+    "playerName": "Rod Strickland",
+    "updateDate": "2026-03-18T23:02:22.356702Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 400000,
+        "season": 1990,
+        "teamID": "24",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Alaa Abdelnaby",
+    "updateDate": "2026-03-18T23:02:22.470481Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 395000,
+        "season": 1990,
+        "teamID": "22",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "John Paxson",
+    "updateDate": "2026-03-18T23:02:22.469222Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 385000,
+        "season": 1990,
+        "teamID": "4",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Kevin Gamble",
+    "updateDate": "2026-03-18T23:02:22.452773Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 375000,
+        "season": 1990,
+        "teamID": "2",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Byron Irvin",
+    "updateDate": "2026-03-18T23:02:22.474586Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 375000,
+        "season": 1990,
+        "teamID": "27",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Anthony Cook",
+    "updateDate": "2026-03-18T23:02:22.468572Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 370000,
+        "season": 1990,
+        "teamID": "7",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Lance Blanks",
+    "updateDate": "2026-03-18T23:02:22.472797Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 365000,
+        "season": 1990,
+        "teamID": "8",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Blue Edwards",
+    "updateDate": "2026-03-18T23:02:22.450512Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 360000,
+        "season": 1990,
+        "teamID": "26",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Jack Haley",
+    "updateDate": "2026-03-18T23:02:22.451446Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 360000,
+        "season": 1990,
+        "teamID": "17",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Brian Quinnett",
+    "updateDate": "2026-03-18T23:02:22.474178Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 360000,
+        "season": 1990,
+        "teamID": "18",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Kenny Gattison",
+    "updateDate": "2026-03-18T23:02:22.462191Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 355000,
+        "season": 1990,
+        "teamID": "5312",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "John Morton",
+    "updateDate": "2026-03-18T23:02:22.449245Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 350000,
+        "season": 1990,
+        "teamID": "5",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Kenny Battle",
+    "updateDate": "2026-03-18T23:02:22.471679Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 350000,
+        "season": 1990,
+        "teamID": "7",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Joe Barry Carroll",
+    "updateDate": "2026-03-18T23:02:22.474279Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 350000,
+        "season": 1990,
+        "teamID": "21",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "176",
+    "playerName": "Shawn Kemp",
+    "updateDate": "2026-03-18T23:02:22.362546Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 350000,
+        "season": 1990,
+        "teamID": "25",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Morlon Wiley",
+    "updateDate": "2026-03-18T23:02:22.469358Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 347000,
+        "season": 1990,
+        "teamID": "19",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Tom Garrick",
+    "updateDate": "2026-03-18T23:02:22.473347Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 340000,
+        "season": 1990,
+        "teamID": "12",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Jon Sundvold",
+    "updateDate": "2026-03-18T23:02:22.473048Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 335000,
+        "season": 1990,
+        "teamID": "14",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Bob Thornton",
+    "updateDate": "2026-03-18T23:02:22.473477Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 335000,
+        "season": 1990,
+        "teamID": "16",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "86",
+    "playerName": "Sherman Douglas",
+    "updateDate": "2026-03-18T23:02:22.435903Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 325000,
+        "season": 1990,
+        "teamID": "14",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Micheal Williams",
+    "updateDate": "2026-03-18T23:02:22.458027Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 325000,
+        "season": 1990,
+        "teamID": "11",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Mike Smrek",
+    "updateDate": "2026-03-18T23:02:22.473358Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 325000,
+        "season": 1990,
+        "teamID": "12",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Randolph Keys",
+    "updateDate": "2026-03-18T23:02:22.467285Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 322000,
+        "season": 1990,
+        "teamID": "5312",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Derek Smith",
+    "updateDate": "2026-03-18T23:02:22.473145Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 315000,
+        "season": 1990,
+        "teamID": "2",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Greg Dreiling",
+    "updateDate": "2026-03-18T23:02:22.461177Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 300000,
+        "season": 1990,
+        "teamID": "11",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "David Wood",
+    "updateDate": "2026-03-18T23:02:22.461769Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 300000,
+        "season": 1990,
+        "teamID": "10",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Steve Colter",
+    "updateDate": "2026-03-18T23:02:22.466335Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 300000,
+        "season": 1990,
+        "teamID": "23",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Greg Grant",
+    "updateDate": "2026-03-18T23:02:22.466584Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 300000,
+        "season": 1990,
+        "teamID": "18",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Rory Sparrow",
+    "updateDate": "2026-03-18T23:02:22.47239Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 300000,
+        "season": 1990,
+        "teamID": "23",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Dave Corzine",
+    "updateDate": "2026-03-18T23:02:22.474442Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 300000,
+        "season": 1990,
+        "teamID": "25",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Scott Meents",
+    "updateDate": "2026-03-18T23:02:22.474566Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 300000,
+        "season": 1990,
+        "teamID": "25",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "208",
+    "playerName": "Grant Long",
+    "updateDate": "2026-03-18T23:02:22.271562Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 300000,
+        "season": 1990,
+        "teamID": "14",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Scott Brooks",
+    "updateDate": "2026-03-18T23:02:22.458494Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 295000,
+        "season": 1990,
+        "teamID": "16",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "64",
+    "playerName": "Bimbo Coles",
+    "updateDate": "2026-03-18T23:02:22.245178Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 290000,
+        "season": 1990,
+        "teamID": "14",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Adrian Caldwell",
+    "updateDate": "2026-03-18T23:02:22.449886Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 275000,
+        "season": 1990,
+        "teamID": "10",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "A.J. English",
+    "updateDate": "2026-03-18T23:02:22.470919Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 275000,
+        "season": 1990,
+        "teamID": "27",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Dave Feitl",
+    "updateDate": "2026-03-18T23:02:22.473328Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 275000,
+        "season": 1990,
+        "teamID": "10",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "113",
+    "playerName": "Greg Foster",
+    "updateDate": "2026-03-18T23:02:22.272017Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 275000,
+        "season": 1990,
+        "teamID": "27",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "220",
+    "playerName": "Vernon Maxwell",
+    "updateDate": "2026-03-18T23:02:22.432617Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 250000,
+        "season": 1990,
+        "teamID": "10",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "79",
+    "playerName": "Terry Davis",
+    "updateDate": "2026-03-18T23:02:22.43403Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 250000,
+        "season": 1990,
+        "teamID": "14",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Cliff Robinson",
+    "updateDate": "2026-03-18T23:02:22.472333Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 250000,
+        "season": 1990,
+        "teamID": "22",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Steve Alford",
+    "updateDate": "2026-03-18T23:02:22.473248Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 250000,
+        "season": 1990,
+        "teamID": "6",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "359",
+    "playerName": "Doug West",
+    "updateDate": "2026-03-18T23:02:22.43689Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 230000,
+        "season": 1990,
+        "teamID": "16",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Walter Palmer",
+    "updateDate": "2026-03-18T23:02:22.472037Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 225000,
+        "season": 1990,
+        "teamID": "26",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Frank Kornet",
+    "updateDate": "2026-03-18T23:02:22.473428Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 225000,
+        "season": 1990,
+        "teamID": "15",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "43",
+    "playerName": "Jud Buechler",
+    "updateDate": "2026-03-18T23:02:22.286179Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 225000,
+        "season": 1990,
+        "teamID": "17",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Stojko Vrankovic",
+    "updateDate": "2026-03-18T23:02:22.454515Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 222000,
+        "season": 1990,
+        "teamID": "2",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Delaney Rudd",
+    "updateDate": "2026-03-18T23:02:22.474482Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 215000,
+        "season": 1990,
+        "teamID": "26",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Marcus Liberty",
+    "updateDate": "2026-03-18T23:02:22.471195Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 210000,
+        "season": 1990,
+        "teamID": "7",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Jeff Martin",
+    "updateDate": "2026-03-18T23:02:22.47337Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 210000,
+        "season": 1990,
+        "teamID": "12",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Steve Scheffler",
+    "updateDate": "2026-03-18T23:02:22.458946Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 200000,
+        "season": 1990,
+        "teamID": "5312",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Gary Leonard",
+    "updateDate": "2026-03-18T23:02:22.47244Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 200000,
+        "season": 1990,
+        "teamID": "1",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Milos Babic",
+    "updateDate": "2026-03-18T23:02:22.473217Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 200000,
+        "season": 1990,
+        "teamID": "5",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Michael Ansley",
+    "updateDate": "2026-03-18T23:02:22.474546Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 200000,
+        "season": 1990,
+        "teamID": "19",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Kevin Pritchard",
+    "updateDate": "2026-03-18T23:02:22.468039Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 185000,
+        "season": 1990,
+        "teamID": "9",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "57",
+    "playerName": "Cedric Ceballos",
+    "updateDate": "2026-03-18T23:02:22.435475Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 175000,
+        "season": 1990,
+        "teamID": "21",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Kenny Williams",
+    "updateDate": "2026-03-18T23:02:22.47144Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 175000,
+        "season": 1990,
+        "teamID": "11",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Derrick Gervin",
+    "updateDate": "2026-03-18T23:02:22.474525Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 155000,
+        "season": 1990,
+        "teamID": "17",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "219",
+    "playerName": "Tony Massenburg",
+    "updateDate": "2026-03-18T23:02:22.369214Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 150000,
+        "season": 1990,
+        "teamID": "24",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Keith Askins",
+    "updateDate": "2026-03-18T23:02:22.450325Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 150000,
+        "season": 1990,
+        "teamID": "14",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Sean Higgins",
+    "updateDate": "2026-03-18T23:02:22.460044Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 150000,
+        "season": 1990,
+        "teamID": "24",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "John Long",
+    "updateDate": "2026-03-18T23:02:22.460514Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 150000,
+        "season": 1990,
+        "teamID": "8",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "John Shasky",
+    "updateDate": "2026-03-18T23:02:22.471995Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 150000,
+        "season": 1990,
+        "teamID": "6",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Richard Coffey",
+    "updateDate": "2026-03-18T23:02:22.473488Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 150000,
+        "season": 1990,
+        "teamID": "16",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "375",
+    "playerName": "Scott Williams",
+    "updateDate": "2026-03-18T23:02:22.360286Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 150000,
+        "season": 1990,
+        "teamID": "4",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Alan Ogg",
+    "updateDate": "2026-03-18T23:02:22.473069Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 130000,
+        "season": 1990,
+        "teamID": "14",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Ian Lockhart",
+    "updateDate": "2026-03-18T23:02:22.474302Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 130000,
+        "season": 1990,
+        "teamID": "21",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Duane Ferrell",
+    "updateDate": "2026-03-18T23:02:22.443056Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 125000,
+        "season": 1990,
+        "teamID": "1",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Rick Calloway",
+    "updateDate": "2026-03-18T23:02:22.474556Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 125000,
+        "season": 1990,
+        "teamID": "23",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "329887",
+    "playerName": "Gerald Henderson",
+    "updateDate": "2026-03-18T23:02:22.270074Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 125000,
+        "season": 1990,
+        "teamID": "8",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Haywoode Workman",
+    "updateDate": "2026-03-18T23:02:22.450806Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 120000,
+        "season": 1990,
+        "teamID": "27",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Steve Henson",
+    "updateDate": "2026-03-18T23:02:22.459422Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 120000,
+        "season": 1990,
+        "teamID": "15",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Tony Smith",
+    "updateDate": "2026-03-18T23:02:22.460999Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 120000,
+        "season": 1990,
+        "teamID": "13",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Andy Toolson",
+    "updateDate": "2026-03-18T23:02:22.468812Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 120000,
+        "season": 1990,
+        "teamID": "26",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Kennard Winchester",
+    "updateDate": "2026-03-18T23:02:22.472185Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 120000,
+        "season": 1990,
+        "teamID": "10",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Rickey Green",
+    "updateDate": "2026-03-18T23:02:22.472475Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 120000,
+        "season": 1990,
+        "teamID": "20",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Gerald Paddio",
+    "updateDate": "2026-03-18T23:02:22.473237Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 120000,
+        "season": 1990,
+        "teamID": "5",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Irving Thomas",
+    "updateDate": "2026-03-18T23:02:22.473382Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 120000,
+        "season": 1990,
+        "teamID": "13",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Kurk Lee",
+    "updateDate": "2026-03-18T23:02:22.474536Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 120000,
+        "season": 1990,
+        "teamID": "17",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "324",
+    "playerName": "John Starks",
+    "updateDate": "2026-03-18T23:02:22.283383Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 120000,
+        "season": 1990,
+        "teamID": "18",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "44",
+    "playerName": "Matt Bullard",
+    "updateDate": "2026-03-18T23:02:22.342688Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 120000,
+        "season": 1990,
+        "teamID": "10",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Jim Grandholm",
+    "updateDate": "2026-03-18T23:02:22.473257Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 115000,
+        "season": 1990,
+        "teamID": "6",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Andre Turner",
+    "updateDate": "2026-03-18T23:02:22.474125Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 110000,
+        "season": 1990,
+        "teamID": "20",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Darnell Valentine",
+    "updateDate": "2026-03-18T23:02:22.472568Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 100000,
+        "season": 1990,
+        "teamID": "5",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Paul Mokeski",
+    "updateDate": "2026-03-18T23:02:22.473307Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 100000,
+        "season": 1990,
+        "teamID": "9",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Dave Popson",
+    "updateDate": "2026-03-18T23:02:22.473156Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 80000,
+        "season": 1990,
+        "teamID": "2",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Henry James",
+    "updateDate": "2026-03-18T23:02:22.458731Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 75000,
+        "season": 1990,
+        "teamID": "5",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Scott Haffner",
+    "updateDate": "2026-03-18T23:02:22.473179Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 75000,
+        "season": 1990,
+        "teamID": "5312",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "100",
+    "playerName": "Mario Elie",
+    "updateDate": "2026-03-18T23:02:22.436117Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 50000,
+        "season": 1990,
+        "teamID": "9",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Tony Brown",
+    "updateDate": "2026-03-18T23:02:22.472966Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 50000,
+        "season": 1990,
+        "teamID": "26",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Alan Bannister",
+    "updateDate": "2026-03-18T23:02:22.474576Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 50000,
+        "season": 1990,
+        "teamID": "26",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "168",
+    "playerName": "Avery Johnson",
+    "updateDate": "2026-03-18T23:02:22.244265Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 50000,
+        "season": 1990,
+        "teamID": "24",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Jim Les",
+    "updateDate": "2026-03-18T23:02:22.469032Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 30000,
+        "season": 1990,
+        "teamID": "23",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "A.J. Wynder",
+    "updateDate": "2026-03-18T23:02:22.471635Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 30000,
+        "season": 1990,
+        "teamID": "2",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Anthony Frederick",
+    "updateDate": "2026-03-18T23:02:22.472519Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 30000,
+        "season": 1990,
+        "teamID": "23",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  },
+  {
+    "__typename": "Contracts",
+    "playerID": "",
+    "playerName": "Kelvin Upshaw",
+    "updateDate": "2026-03-18T23:02:22.472627Z",
+    "player": null,
+    "seasons": [
+      {
+        "__typename": "ContractsSeasons",
+        "teamOption": false,
+        "playerOption": false,
+        "qualifyingOffer": false,
+        "twoWayContract": false,
+        "salary": 30000,
+        "season": 1990,
+        "teamID": "6",
+        "capAllocation": 0,
+        "notes": "",
+        "terminated": false
+      }
+    ]
+  }
+]

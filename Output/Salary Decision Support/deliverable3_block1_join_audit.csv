@@ -1,0 +1,14 @@
+check_name,value
+classification_rows,1121
+identity_rows,506
+block1_rows,1121
+classification_with_player_id,509
+classification_without_player_id,612
+performance_predictions_available,146
+actual_component_targets_available,509
+actual_boxscore_targets_available,509
+confidence_high_count,778
+confidence_medium_count,238
+confidence_low_count,105
+missing_identity_name_keys,624
+test_predictions_name_keys,145

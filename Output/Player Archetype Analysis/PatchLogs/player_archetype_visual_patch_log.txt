@@ -1,0 +1,37 @@
+Player Archetype Visual Patch Log
+
+Files changed
+- src\Player Archetypes Analysis\09_make_player_archetype_visuals.py
+
+New helper(s)
+- Added reusable in-script NBA half-court drawing helper: draw_court(ax, color, lw, outer_lines)
+- Added raw-shot loader for court-based visual generation from restored shot-chart CSVs
+
+Visuals replaced
+- sample_player_dossier_visual.png
+  - old: subtype-confidence bar chart
+  - new: court-based dossier panels with player shot chart plus macro role, subtype, drift class, and top comp text
+- comp_comparison_visual.png
+  - old: trivial surfaced-comp count chart
+  - new: distribution of best realistic-comp similarity scores
+
+Visuals added
+- subtype_shot_charts_on_court.png
+- representative_player_shot_scatter.png
+- shot_style_drift_case_studies.png
+
+Visuals retained as technical diagnostics
+- embedding_neighborhood_plot.png
+- shot_autoencoder_training_curve.png
+- shot_embedding_reconstruction_examples.png
+- average_shot_maps_by_subtype.png
+- drift_movement_plot.png
+
+Why tensor-channel visuals were demoted
+- Tensor channels are analytically useful for model diagnostics, but they are not basketball-readable for stakeholder communication.
+- Court-based plots using actual shot locations make subtype structure, player style, and drift much easier to interpret in basketball terms.
+
+Remaining limitations
+- Subtype aggregate court plots use all matched season-level shot rows inside each subtype, so they communicate shot-location tendencies but not explicit make-rate surfaces.
+- Drift case studies are selected automatically from available players and may not be the single best storytelling examples without manual curation.
+- Dossier panels are compact by design and therefore summarize only the most important text fields.

@@ -1,0 +1,10 @@
+metric_group,metric,value,notes
+workflow_status,training_rows,662,Observed-target rows used in baseline fitting.
+workflow_status,draft_year_groups,21,Unique draft-year groups in outer GroupKFold validation.
+workflow_status,numeric_features,78,Recommended numeric predictors from Phase 5.
+workflow_status,categorical_features,7,Recommended categorical predictors from Phase 5.
+workflow_status,selected_model,ridge_alpha_10,"Best grouped OOF model by RMSE, then MAE."
+selected_model_oof,rmse,0.03979325183336745,Grouped OOF RMSE for the selected baseline model.
+selected_model_oof,mae,0.03044710576578182,Grouped OOF MAE for the selected baseline model.
+selected_model_oof,medae,0.02406887143572414,Grouped OOF median AE for the selected baseline model.
+selected_model_oof,r2,0.7270586901589638,Grouped OOF R^2 for the selected baseline model.

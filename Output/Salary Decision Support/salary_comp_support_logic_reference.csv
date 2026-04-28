@@ -1,0 +1,14 @@
+rule_group,rule_name,rule_description
+comp_support_logic,strong,"Supported market anchor, good match count/rate, credible effective comp depth, reasonable same-macro share, and non-excessive anchor width."
+comp_support_logic,moderate,"Usable comp evidence exists, but one or more support signals are only middle-strength."
+comp_support_logic,weak,"Market anchor exists, but support is thin, noisy, or too wide to justify an aggressive stance."
+comp_support_logic,insufficient,Comp salary evidence is missing or too thin to support a meaningful current market band.
+threshold_reference,ambiguity_q25,0.674856
+threshold_reference,ambiguity_q75,0.895190
+threshold_reference,width_q25,0.420122
+threshold_reference,width_q50,0.781483
+threshold_reference,width_q75,1.255969
+threshold_reference,effective_comp_n_q25,4.990749
+threshold_reference,effective_comp_n_q50,6.154671
+threshold_reference,same_macro_share_q25,0.250000
+threshold_reference,same_macro_share_q50,0.600000

@@ -1,0 +1,25 @@
+# place the python you need to run here
+
+# Deliverable 1 - Performance Forecast
+src/Player Performance Analysis/player_performance_graphs.py
+src/Player Performance Analysis/player_radar_chart.py
+src/Player_Performance_Clustering/Clustering_Result.py
+
+# Deliverable 2 - Archetype Analysis
+src/Player Archetypes Analysis/02_build_macro_archetype_table.py
+src/Player Archetypes Analysis/05_cluster_shot_embeddings.py
+src/Player Archetypes Analysis/06_build_identity_drift.py
+src/Player Archetypes Analysis/07_build_comps.py
+src/Player Archetypes Analysis/08_assemble_player_archetype_profiles.py
+src/Player Archetypes Analysis/11_build_practical_player_dossiers.py
+
+# Deliverable 3 - Salary Decision Support
+src/Salary Decision Support/build_deliverable3_block1_workflow_patched.py
+src/Salary Decision Support/02_build_market_anchor_band.py
+src/Salary Decision Support/03_build_provisional_decision_inputs.py
+src/Salary Decision Support/04_assemble_provisional_decision_cards.py
+src/Salary Decision Support/07_build_salary_reconciliation_layer.py
+src/Salary Decision Support/08_build_interim_extension_guidance_patched.py
+src/Salary Decision Support/09_build_staged_extension_framework_patched.py
+src/Salary Decision Support/10_write_framework_completion_note_patched.py
+src/5th_Year_Salary_Analysis/Salary_Forecast.py

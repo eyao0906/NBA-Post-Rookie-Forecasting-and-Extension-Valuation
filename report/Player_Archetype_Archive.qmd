@@ -1,0 +1,314 @@
+---
+title: "Player Archetype & Comparable Profile Archive"
+format: pdf
+---
+
+```{r}
+#| label: setup
+library(readr)
+library(dplyr)
+library(knitr)
+library(stringr)
+library(tibble)
+
+output_dir <- normalizePath("../Output/Player Archetype Analysis", winslash = "/", mustWork = TRUE)
+output_salary_dir <- normalizePath("../Output/Salary Decision Support", winslash = "/", mustWork = TRUE)
+visual_dir <- normalizePath("../visual/Player Archetype", winslash = "/", mustWork = TRUE)
+dossier_output_dir <- normalizePath(file.path(output_dir, "player_dossier_demo"), winslash = "/", mustWork = TRUE)
+dossier_visual_dir <- normalizePath(file.path(visual_dir, "player_dossier_demo"), winslash = "/", mustWork = TRUE)
+
+macro_summary <- read_csv(file.path(output_dir, "archetype_macro_summary_table.csv"), show_col_types = FALSE)
+shot_summary <- read_csv(file.path(output_dir, "shot_style_cluster_summary.csv"), show_col_types = FALSE)
+drift_table <- read_csv(file.path(output_dir, "player_identity_drift_table.csv"), show_col_types = FALSE)
+comp_dossier <- read_csv(file.path(output_dir, "player_comp_dossier_table.csv"), show_col_types = FALSE)
+final_profiles <- read_csv(file.path(output_dir, "final_player_archetype_profile_table.csv"), show_col_types = FALSE)
+cohort_audit <- read_csv(file.path(output_dir, "cohort_join_audit.csv"), show_col_types = FALSE)
+dossier_selection <- read_csv(file.path(dossier_output_dir, "report_ready_player_dossier_selection.csv"), show_col_types = FALSE)
+
+n_candidates <- nrow(cohort_audit)
+n_fully_covered <- sum(cohort_audit$fully_covered_for_hybrid_pipeline, na.rm = TRUE)
+coverage_pct <- round(100 * n_fully_covered / n_candidates, 1)
+
+drift_counts <- drift_table %>%
+  count(identity_drift_class, name = "players") %>%
+  mutate(share = round(100 * players / sum(players), 1))
+
+macro_table_exec <- macro_summary %>%
+  transmute(
+    `Macro role family` = macro_archetype,
+    `Representative players` = representative_players,
+    `Minutes` = round(mean_min_mean, 1),
+    `PTS/36` = round(pts_per36_4yr_mean, 1),
+    `REB/36` = round(reb_per36_4yr_mean, 1),
+    `AST/36` = round(ast_per36_4yr_mean, 1)
+  )
+
+shot_table_exec <- shot_summary %>%
+  transmute(
+    `Shot-style subtype` = shot_style_subtype,
+    `Players` = subtype_size,
+    `Avg. membership prob.` = round(avg_membership_probability, 3),
+    `Avg. entropy` = round(avg_entropy, 3),
+    `Style note` = descriptive_style_notes
+  )
+
+drift_table_exec <- drift_counts %>%
+  transmute(
+    `Drift class` = identity_drift_class,
+    `Players` = players,
+    `Share (%)` = share
+  )
+
+case_table_exec <- final_profiles %>%
+  filter(PLAYER_NAME %in% c("Trae Young", "Kemba Walker", "Roy Hibbert", "Nikola Vučević", "Kyle O'Quinn")) %>%
+  transmute(
+    Player = PLAYER_NAME,
+    `Hybrid archetype` = hybrid_archetype_label,
+    `Drift class` = identity_drift_class,
+    `Realistic comps` = realistic_comp_list,
+    `Ceiling analog` = ceiling_comp_PLAYER_NAME,
+    `Comp group median points` = round(median_comp_group_points, 1),
+    `Comp group median minutes` = round(median_comp_group_minutes, 1)
+  )
+```
+
+# Player Archetype & Comparable Profile
+## Decision problem and design choice
+
+Performance forecast tells the front office which rookies have outperformed enough to merit serious extension consideration. Player archetype analysis begins where that screen ends. Once the candidate pool is narrowed, the key question is no longer simply who produced, but what type of player the team would actually be extending and whether that player fits the current roster construction. In other words, among the over-performing rookies identified by the forecast layer, which ones fit the team better, and what kind of player profile is the team actually trying to add or retain?
+
+This module is built to answer that next basketball decision directly: who is this player now, how stable is that identity, who has looked like this before, and what kind of upside is genuinely consistent with team fit? To do that, this module defines archetype as three things together:
+
+1. **Macro role backbone**: The player’s broad role family,
+
+2. **Shot-style subtype**: The player’s learned spatial scoring identity,
+
+3. **Early-career drift**: Whether that profile held, evolved gradually, or changed materially from Seasons 1--4.
+
+That composite identity is then connected to realistic comparables, optional Hall-of-Fame ceiling analogs, and a stakeholder-facing player dossier. Eventually, this module aims to produce a more faithful decision summary than a boxscore-only cluster system does.
+
+## Methodology and design choices
+### Macro role backbone - PCA + K-means
+
+We begin with a PCA + K-means (K = 5) layer to define the player’s broad macro role. PCA reduces the many early-career boxscore dimensions into the main axes of variation, and K-means groups players who share similar overall role profiles in that lower-dimensional space. Setting K = 5 gives a role structure that is detailed enough to separate distinct basketball functions, but still compact enough to remain interpretable for decision-makers. 
+
+This produces five broad archetypes: 
+
+* **High-usage primary creators** who drive offense with volume scoring and creation.
+* **Low-usage interior bigs** who occupy more traditional low-touch frontcourt roles.
+* **Perimeter wings and connectors** who link possessions without dominating them.
+* **Fringe or low-opportunity players** whose profiles are shaped by limited minutes, usage, or role clarity.
+* **Scoring bigs / two-way forwards** who provide frontcourt scoring while also contributing across multiple dimensions.
+
+```{=latex}
+\begin{table}[htbp]
+\centering
+\Huge
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrr}
+\toprule
+Macro role family & Representative players & Minutes & PTS/36 & REB/36 & AST/36 \\
+\midrule
+High-Usage Primary Creators & Brandon Knight, Rodney Stuckey, Kemba Walker, Isaiah Thomas, Bradley Beal & 30.4 & 17.7 & 4.4 & 5.3 \\
+Low-Usage Interior Bigs & Ed Davis, Jake Tsakalidis, Todd MacCulloch, Jason Smith, Trevor Booker & 15.5 & 11.9 & 9.1 & 1.5 \\
+Perimeter Wings \& Connectors & Svi Mykhailiuk, Damyean Dotson, Wayne Ellington, E'Twaun Moore, Timothe Luwawu-Cabarrot & 18.3 & 12.7 & 4.6 & 3.2 \\
+Fringe / Low-Opportunity Players & Nick Johnson, Damir Markota, Damien Inglis, Antonis Fotsis, Kim English & 7.8 & 10.9 & 6.2 & 2.2 \\
+Scoring Bigs / Two-Way Forwards & Markieff Morris, Willie Cauley-Stein, Aaron Gordon, Myles Turner, Marvin Williams & 26.9 & 16.1 & 8.1 & 2.1 \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Macro role backbone. These five role families come from the saved PCA + K-means artifacts and are retained as the interpretable boxscore foundation for the broader player-intelligence workflow.}
+\label{tab:macro-summary}
+\end{table}
+```
+
+Table \ref{tab:macro-summary} shows that high-usage creators lead in playmaking and offensive burden, interior bigs dominate the rebounding and rim profile, and perimeter connectors sit in the lower-usage spacing-and-linkage middle.
+
+```{r}
+#| label: fig-macro-chart
+#| fig-cap: "Distribution of the cohort across the five macro role families."
+#| #| out.width: "75%"
+#| fig-align: "center"
+knitr::include_graphics(file.path(visual_dir, "macro_archetype_summary_chart.png"))
+```
+
+@fig-macro-chart shows that the macro layer gives a workable first pass through the cohort. It is intelligible enough to be useful, and broad enough to be incomplete. That incompleteness is exactly why the shot-style layer is needed.
+
+### Shot-style representation learning - CNN autoencoder + Gaussian mixture model
+
+The real upgrade comes from the shot-style layer. Raw `ShotChartDetail` events are first placed onto a fixed half-court grid so that player-season shot maps can be compared on common terrain.
+
+Those court tensors are then compressed into a lower-dimensional embedding space with a convolutional autoencoder. Here the autoencoder is not the endpoint model but a representation-learning device. Its job is to preserve the meaningful spatial structure of shot behavior while filtering noise and reducing dimensionality to something reusable.
+
+The embedding space is then clustered with a Gaussian mixture model. That introduces an important practical feature: probabilistic subtype membership. Players can fit a subtype strongly, weakly, or ambiguously. In this setting, that is an advantage rather than a flaw. The boundaries between basketball styles are not perfectly crisp, and the model should not pretend otherwise.
+
+@tbl-shot-summary and @fig-shot-summary show five learned shot-style subtypes with distinct spatial identities:
+
+```{r}
+#| label: tbl-shot-summary
+#| tbl-cap: "Learned shot-style subtype summary. Membership is probabilistic because the subtype model allows overlapping spatial identities; ambiguity is therefore treated as information rather than failure."
+kable(shot_table_exec, booktabs = TRUE, longtable = FALSE, align = c("l", "r", "r", "r", "l"))
+```
+
+```{r}
+#| label: fig-shot-summary
+#| fig-cap: "Distribution of learned shot-style subtypes. The subtype layer adds a distinct spatial taxonomy rather than simply renaming the macro boxscore clusters."
+#| out.width: "75%"
+#| fig-align: "center"
+knitr::include_graphics(file.path(visual_dir, "shot_style_subtype_summary_chart.png"))
+```
+
+```{r}
+#| label: fig-subtype-dictionary
+#| fig-cap: "Subtype shot-chart dictionary shown on the court. These subtype-level maps illustrate how players sharing a broad macro role can still differ materially in spatial shot identity."
+#| out.width: "85%"
+#| fig-align: "center"
+knitr::include_graphics(file.path(visual_dir, "subtype_shot_charts_on_court.png"))
+```
+
+@fig-subtype-dictionary demonstrates why a broad macro label is not enough. Two players can both register as scoring-oriented wings or creators while deriving offense from materially different spatial patterns. One attacks downhill. Another lives around the arc. A third works through intermediate creation. Those are not cosmetic differences. They affect fit, development bets, and the credibility of historical comparisons.
+
+The subtype labels are descriptive post-hoc names, not externally validated ontology classes. That limitation is acceptable so long as the labels are treated as disciplined summaries of learned structure rather than as revealed basketball truth.
+
+### Identity drift
+
+Static labels miss a basic fact of player development: the route matters. A Year-4 endpoint can conceal whether a player reinforced an early identity, evolved in a steady direction, or shifted materially enough to change how the front office should think about role and projection.
+
+The identity-drift layer tracks movement from Season 1 to Season 4 in both standardized season-level boxscore feature space and shot-style embedding space. The purpose is to answer a practical question: is the player becoming more clearly himself, or is the identity still moving underneath the numbers?
+
+The resulting drift classes are intentionally plain:
+
+- **stable**,
+- **evolving_gradually**,
+- **role_shifting_materially**,
+
+@fig-drift-cases make the point that Year-4 identity is better understood as a path than as a still photograph.
+
+![Shot-style drift case studies](../visual/Player\ Archetype/shot_style_drift_case_studies.png){#fig-drift-cases fig-pos='H' width=85%}
+
+In decision terms, the difference among **stable**, **evolving_gradually**, and **role_shifting_materially** is a difference in interpretive risk. A stable player reinforces the current reading. A gradually evolving player may still support a coherent developmental projection. A materially shifting player requires more caution because the apparent identity may still be under construction.
+
+### Comparable-player infrastructure
+
+A realistic comp set shouldanswer the question, “who has actually looked like this before in a way that is relevant to decision-making?” The realistic comparable engine therefore blends macro-role compatibility, shot-style information, prototype fit, and drift-relevant structure so that the resulting comp list is not just “same cluster, nearest distance.”
+
+The workflow also includes Hall-of-Fame ceiling analogs. They are optional upside markers that help separate aspirational ceiling from realistic expectation.
+
+```{r}
+#| label: tbl-case-profiles
+#| tbl-cap: "Compact case-study extraction from the integrated profile output. The table illustrates how current hybrid archetype, drift, realistic comparables, and optional ceiling analogs are returned together at the player level."
+library(kableExtra)
+
+kable(case_table_exec, booktabs = TRUE, longtable = FALSE, align = c("l", "l", "l", "l", "l", "r", "r"))
+```
+
+The realistic comps are the main evidence. That is the historical anchor a front office should trust first. The real question is not whether the list contains a famous name, but whether the group makes sense when role, style, and developmental shape are considered together. When it does, the comp-group median later-career statistics become useful contextual anchors rather than pseudo-forecasts.
+
+Ceiling analogs belong in a different bucket. Their job is to describe plausible upside families, not expected outcomes. A Hall-of-Fame comparison may be informative as aspiration, but it becomes misleading the moment it is allowed to masquerade as a realistic nearest-neighbor forecast.
+
+### Stakeholder-facing dossier output
+
+The final output assembles the results into a stakeholder-facing player dossier: current hybrid archetype, fit ambiguity, subtype confidence, drift status, realistic comps, optional ceiling analog, and comp-group later-career context.
+
+```{r}
+#| label: fig-sample-dossier
+#| fig-cap: "Sample integrated player dossier visual. This panel shows how the hybrid archetype output becomes a front-office-facing summary card rather than a collection of disconnected analytical artifacts."
+#| out.width: "85%"
+#| fig-align: "center"
+
+knitr::include_graphics(file.path(visual_dir, "sample_player_dossier_visual.png"))
+```
+
+We use historical Year-4 players Trae Young and Nikola Vučević as retrospective case studies. Their dossier cards are meant to be read from the standpoint of a front office making the extension decision immediately after the rookie contract, using only the first four seasons to define the player’s profile. Everything that happens afterward is used only to check whether that reading was directionally right.
+
+![Player-specific dossier demonstration for Trae Young. This example shows how the system moves from cohort taxonomy to a concrete player-facing decision summary with current archetype, drift, realistic peers, and ceiling framing.](../visual/Player\ Archetype/player_dossier_demo/trae_young_dossier_demo.png){#fig-trae-dossier fig-pos='H'}
+
+![Player-specific dossier demonstration for Nikola Vučević. This example highlights how macro role, learned shot-style subtype, and comp context combine into a more nuanced profile than a broad big-man cluster alone would provide.](../visual/Player\ Archetype/player_dossier_demo/nikola_vu_evi_dossier_demo.png){#fig-vucevic-dossier fig-pos='H'}
+
+Read this contrast clearly. **Trae Young’s** dossier points to an offensive engine: a lead creator carrying expanding initiation and scoring responsibility, belonging to a scarce, high-value role family. **Vučević’s** dossier points to a very different kind of asset: a skilled scoring big whose offensive game developed meaningfully, but whose archetype is more replaceable than that of a primary creator. Both players can look strong by the end of Year 4, but they do not represent the same contract bet. One profiles like a franchise-driving offensive hub; the other profiles like a valuable frontcourt scorer whose market should be judged more carefully against role scarcity and replaceability.
+
+That is exactly why the archetype dossier matters. Raw forecast numbers can suggest that two players project well, but they cannot by themselves explain what kind of value is being bought, how rare that role is, how the player got there, or which historical paths are truly comparable. Player archetype analysis exists to supply that missing decision context through role identity, developmental drift, realistic comparables, and the later-career outcomes of the comp group, rather than reducing the player to a single cluster label.
+
+That matters because extension decisions are comparative judgments under uncertainty. This module does not remove uncertainty, but it organizes it better.
+
+## Limitations and credibility
+
+First, the **shot-style subtype labels are descriptive post-hoc names**, not externally validated basketball ontology classes. They are useful summaries, not natural laws.
+
+Second, **Hall-of-Fame ceiling analogs are auxiliary and aspirational**, not realistic comps. They should be handled as upside framing only.
+
+Third, **identity drift in boxscore role space is approximated in standardized season-feature space**. That preserves useful structure, but it is still an approximation.
+
+And most importantly, this is an analytic module designed to improve decision support, not to replace judgment. The conclusion is to impose better discipline on the questions a front office was already going to ask.
+
+
+## Appendix
+### A2.6 Mathematical note on CNN autoencoder training for shot-style embeddings
+
+The shot-style layer is the main computational upgrade beyond the boxscore backbone. The project design treats ShotChartDetail as a core feature family rather than a decorative add-on, but raw shot rows are not used directly. Instead, they are first aggregated into stable player-season spatial tensors, then compressed into a learned embedding with a CNN autoencoder. This section explains what that means mathematically and how the model was trained in the implemented workflow.  
+
+Each player-season shot map is converted into a three-channel half-court tensor. Conceptually, the tensor contains shot frequency, make frequency, and a smoothed make-rate layer defined on a fixed spatial grid. Let $T_i \in \mathbb{R}^{3 \times H \times W}$ denote the tensor for player-season i. The encoder $f_\theta(\cdot)$ maps $T_i$ to a latent vector $z_i \in \mathbb{R}^{d}$, and the decoder $g_\phi(\cdot)$ reconstructs the original tensor:
+$$
+z_i = f_\theta(T_i), \qquad \hat{T}_i = g_\phi(z_i).
+$$
+
+The model is trained to minimize reconstruction error,
+$$
+\min_{\theta,\phi} \sum_{i=1}^{N} \|T_i - \hat{T}_i\|_F^2,
+$$
+
+so the latent vector keeps the spatial information needed to recreate the shot map without forcing the downstream workflow to operate on the full high-dimensional tensor directly. This is why the main narrative describes the autoencoder as a representation-learning device rather than as the endpoint model.  
+
+The implemented network uses three convolutional encoder blocks and a latent dimension of 24. The training configuration uses batch size 128, a maximum of 18 epochs, learning rate $10^{-3}$, and patience 5 for validation-based early stopping. Normalization is performed channel-wise using training-sample means and standard deviations, and the validation split is player-aware rather than random at the season level: the code uses a deterministic PLAYER_ID-based rule so that a player’s seasons are not split across training and validation in a way that would leak structure. The decoder output is linear because the reconstruction targets are z-scored rather than bounded in $[0,1]$.   
+
+After the season-level embeddings are learned, the workflow aggregates them to the player level using shot-volume weights with mild recency emphasis toward later rookie-contract seasons. That design choice matters because the system is trying to describe the player the front office sees by the end of Year 4, not a purely equal-weighted average of all earlier years. The implementation also exports training history, nearest-neighbor diagnostics, reconstruction visuals, model weights, and embedding artifacts, which makes the layer much easier to defend in the appendix than if it were presented only as a black-box latent representation. 
+
+```{r}
+#| label: fig-ae-training-curve-app
+#| fig-cap: "CNN autoencoder training history. The curve is useful for checking whether the shot-style embedding model converged stably rather than fitting noise."
+#| out.width: "72%"
+#| fig-align: "center"
+knitr::include_graphics(file.path(visual_dir, "shot_autoencoder_training_curve.png"))
+```
+
+```{r}
+#| label: fig-ae-reconstruction-app
+#| fig-cap: "Reconstruction examples from the CNN autoencoder. These panels show whether the learned embedding preserves the broad spatial structure of player-season shot maps."
+#| out.width: "90%"
+#| fig-align: "center"
+knitr::include_graphics(file.path(visual_dir, "shot_embedding_reconstruction_examples.png"))
+```
+
+Figures @fig-ae-training-curve-app and @fig-ae-reconstruction-app are useful because they answer two different credibility questions. The training curve checks whether optimization is stable and whether validation error behaves sensibly. The reconstruction examples check whether the latent space still preserves the main shape of the original shot maps. Together with the nearest-neighbor diagnostics exported by the workflow, these plots support the claim that the autoencoder is learning a reusable shot-style representation rather than merely compressing noise. 
+
+### A2.7 Mathematical note on Gaussian mixture shot-style subtypes
+
+Once player-level shot embeddings are available, the project does not cluster raw shot maps again. Instead, it applies a Gaussian mixture model in the embedding space. This is an important design choice because shot styles overlap. Unlike the macro-role backbone, which is intended to impose a broad hard partition for readability, the shot-style layer benefits from soft assignment: players can fit one subtype strongly, another weakly, or sit between neighboring styles. The main narrative already states this idea in basketball language; this appendix states it more explicitly in probabilistic terms.  
+
+Let $z_i \in \mathbb{R}^{d}$ denote the player-level shot embedding from the autoencoder. A Gaussian mixture model with (K=5) components assumes
+$$
+p(z_i) = \sum_{k=1}^{K} \pi_k , \mathcal{N}(z_i \mid \mu_k, \Sigma_k),
+$$
+where $\pi_k$ is the mixture weight of subtype k, $\mu_k$ is its mean embedding, and $\Sigma_k$ is its covariance matrix. The implemented workflow uses (K=5), full covariance, and a fixed random seed. For each player, the fitted model returns posterior membership probabilities
+$$
+\gamma_{ik} = P(\text{subtype } k \mid z_i),
+$$
+and the system retains both the dominant subtype and the full vector of soft probabilities. It also computes a simple entropy measure,
+$$
+H_i = - \sum_{k=1}^{K} \gamma_{ik}\log(\gamma_{ik}),
+$$
+so that subtype ambiguity is explicit rather than hidden. Low entropy means the player fits one subtype cleanly; higher entropy means the player sits between neighboring styles. 
+
+That soft-membership logic is exactly why this layer is better suited to GMM than another K-means pass. A wing scorer can be mostly arc-heavy while still carrying some three-level balance. A creator can be primarily rim-pressure oriented without being purely downhill-only. The workflow formalizes that overlap rather than pretending subtype boundaries are perfectly crisp. In the implementation, the subtype labels are then mapped into a basketball-readable dictionary: Rim Pressure Drivers, Balanced Three-Level Scorers, Arc-Heavy Spacers, Interior Finishers, and Midrange Shot Creators. The report’s Table @tbl-shot-summary shows the resulting subtype sizes, average membership probabilities, entropy, and style notes, while Figures @fig-shot-summary and @fig-subtype-dictionary show how the subtype layer differs from the macro boxscore layer.  
+
+```{r}
+#| label: fig-gmm-neighborhood-app
+#| fig-cap: "Embedding-neighborhood view of the learned shot-style space. This diagnostic is helpful for checking whether the Gaussian mixture subtypes form interpretable local neighborhoods rather than arbitrary labels."
+#| out.width: "76%"
+#| fig-align: "center"
+knitr::include_graphics(file.path(visual_dir, "embedding_neighborhood_plot.png"))
+```
+
+Figure @fig-gmm-neighborhood-app is useful because it gives a low-dimensional neighborhood view of the embedding space after subtype assignment. It is not a proof that the Gaussian components are perfectly separated. Instead, it shows whether the subtype layer produces locally coherent neighborhoods that are compatible with the subtype dictionary and the representative-player evidence. The workflow log also makes two important interpretive cautions explicit: first, the GMM labels are descriptive post-hoc names rather than externally validated ontology classes; second, they should be reviewed for basketball face validity and presentation language before final submission. 
+
+The practical consequence is that the Gaussian mixture layer turns the autoencoder embedding into something the rest of Deliverable 2 can use. It feeds directly into hybrid archetype labels, drift classification, comparable-player search, and the dossier card. That is why the shot-style layer is not just an appendix curiosity. It is one of the central reasons Deliverable 2 improves on a boxscore-only cluster system.  

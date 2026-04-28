@@ -1,0 +1,312 @@
+Deliverable 3 Minutes — Salary Decision Support Story
+
+Project framing
+Deliverable 3 should be written as a staged salary-decision-support module, not as a single salary regression or a table of market comps. The core story is that the project does not stop at “what is a reasonable Year-5 cap percentage?” Instead, it combines three connected layers: (1) a salary target backbone built from Year-5 salary-cap normalization, (2) a comp-market anchor layer built from Deliverable 2 realistic comps merged to observed Year-5 salary-cap outcomes, and (3) a staged extension-guidance layer that translates market range, risk, and later forecast signals into an action stance. The practical question behind the deliverable is: what is this player’s reasonable Year-5 market band, how strong is the support for that band, and how aggressively should the front office act?
+
+Motive and rationale
+The motive for Deliverable 3 is to make salary guidance more decision-useful and more computationally defensible than “predict salary from a model and report one number.” A single point estimate is too brittle for extension work. The project already has a strong Deliverable 2 identity-and-comp backbone, so Deliverable 3 should leverage that structure rather than ignore it. The clean design is therefore:
+- salary target built as Year5_Salary_Cap_Pct,
+- comp-market anchor built from realistic comparables,
+- protected / fair / walk-away market band rather than a single price,
+- provisional action logic from Block 2 risk proxies now,
+- final extension guidance only after Deliverable 1 forecast, sleeper/bust, and uncertainty outputs are merged.
+
+What inputs anchor the deliverable
+The direct handoff backbone is:
+- final_player_archetype_profile_table.csv
+- realistic_comps.csv
+- year5_salary_target_table.csv
+- year5_salary_merge_summary.csv
+- year5_salary_unmatched_diagnostic.csv
+- comp_salary_detail_table.csv
+- deliverable3_block2_archetype_comp_market_context.csv
+
+Optional upstream audit files:
+- salary_player_season_agg.csv
+- salary_cap_cleaned.csv
+- archetype_macro_player_table.csv
+- player_identity_drift_table.csv
+- shot_style_cluster_summary.csv
+
+The working assumption throughout Deliverable 3 is that:
+- Deliverable 2 outputs are authoritative and reused rather than rebuilt;
+- year5_salary_target_table.csv is the canonical Year-5 salary target;
+- deliverable3_block2_archetype_comp_market_context.csv is the current salary-ready handoff table;
+- comp_salary_detail_table.csv is the row-level audit table for suspicious anchors;
+- final recommendation logic remains provisional until Deliverable 1 forecast outputs are integrated.
+
+How the final implementation should be structured
+The code should be organized as a reproducible 00–10 workflow under:
+- src/Salary Decision Support
+
+with shared paths, validation helpers, and save utilities centralized in:
+- salary_decision_workflow_utils.py
+
+Recommended stable folder structure:
+- src/Salary Decision Support
+- Output/Salary Decision Support
+- visual/Salary Decision Support
+- salary_decision_support_workflow_log.txt
+
+Implementation story by phase
+
+Phase 0 — path audit and project map
+00_project_inventory.py should resolve the expected Deliverable 3 files, search recursively if needed, and export an inventory table with expected_path, resolved_path, existence_flag, and path_correction_flag. This matters because Deliverable 3 now depends on outputs from both Deliverable 2 and the salary bridge, so reproducibility starts with the file map rather than with modeling.
+
+Expected inputs checked here:
+- final_player_archetype_profile_table.csv
+- realistic_comps.csv
+- year5_salary_target_table.csv
+- year5_salary_merge_summary.csv
+- year5_salary_unmatched_diagnostic.csv
+- comp_salary_detail_table.csv
+- deliverable3_block2_archetype_comp_market_context.csv
+- optional salary_player_season_agg.csv
+- optional salary_cap_cleaned.csv
+
+Main outputs:
+- deliverable3_project_inventory.csv
+- deliverable3_project_inventory_summary.txt
+
+Phase 1 — salary target audit and sample shrinkage
+01_salary_target_audit.py should lock the Year-5 salary target backbone and quantify missingness honestly. This script should treat year5_salary_target_table.csv as canonical, summarize matched versus unmatched players, audit raw_salary_rows and raw_team_count, profile match_type coverage, and join year5_salary_unmatched_diagnostic.csv to inspect whether missing cases look structural or alias-related. If salary_player_season_agg.csv and salary_cap_cleaned.csv are present, this phase should also verify that the Year-5 target came from properly aggregated player-season salaries and repaired cap values.
+
+Main conceptual point:
+Deliverable 3 should not hide sample shrinkage. The salary target is real and useful, but smaller and noisier than the full drafted-player universe.
+
+Main outputs:
+- salary_target_audit_summary.csv
+- salary_target_matchtype_breakdown.csv
+- salary_unmatched_reason_diagnostic.csv
+- salary_target_audit_note.txt
+
+Phase 2 — lock the salary-ready Deliverable 2 backbone
+02_lock_block2_market_context.py should reuse deliverable3_block2_archetype_comp_market_context.csv as the current salary-ready player table rather than trying to rebuild it from scratch. The script should validate key columns, standardize types, and optionally merge selected reference fields from final_player_archetype_profile_table.csv for sanity checks. This is the correct point where Deliverable 3 begins from current project state.
+
+Columns to validate:
+- macro_archetype
+- shot_style_subtype
+- prototype_fit_ambiguity
+- identity_drift_class
+- realistic_comp_list
+- comp_salary_match_count
+- comp_salary_match_rate
+- comp_salary_anchor_weighted_mean
+- comp_salary_anchor_p25 / p50 / p75
+- comp_salary_anchor_support
+- historical_year5_salary_cap_pct_observed
+
+Main outputs:
+- deliverable3_block2_locked.csv
+- deliverable3_block2_validation_report.txt
+
+Phase 3 — rebuild or audit the comp-salary bridge
+03_build_or_audit_comp_salary_bridge.py should work from realistic_comps.csv and year5_salary_target_table.csv to either rebuild or verify comp_salary_detail_table.csv. The merge key should be normalized player name plus Year-5 salary target availability as already established in the project. Similarity weights should be checked for completeness, comp salary match flags should be audited, and suspicious focal players should be traceable all the way down to row-level comp evidence.
+
+Main conceptual point:
+If a comp-market anchor looks wrong, the answer is never “trust the summary table.” The answer is “go back to the row-level comp salary bridge.”
+
+Main outputs:
+- comp_salary_detail_table_rebuilt.csv or comp_salary_detail_table_audit.csv
+- comp_salary_bridge_audit_summary.csv
+- comp_salary_bridge_exceptions.csv
+
+Phase 4 — build the market anchor band
+04_build_market_anchor_band.py is the first true pricing phase. It should transform the comp salary evidence into a disciplined market band:
+- protected_price_cap_pct
+- fair_price_cap_pct
+- walk_away_max_cap_pct
+
+Recommended default construction:
+- protected_price_cap_pct = comp_salary_anchor_p25
+- fair_price_cap_pct = weighted mean comp salary anchor, with p50 fallback
+- walk_away_max_cap_pct = comp_salary_anchor_p75
+
+This phase should also compute:
+- anchor_band_width
+- anchor_band_relative_width
+- comp_support_bucket
+- anchor_quality_flag
+
+Main conceptual point:
+Deliverable 3 should price players as bands, not as single false-precision numbers.
+
+Main outputs:
+- deliverable3_market_anchor_band.csv
+- market_anchor_band_summary.csv
+- market_anchor_band_audit_note.txt
+
+Phase 5 — engineer provisional risk proxies from Block 2 only
+05_build_provisional_risk_proxies.py should create the pre-forecast risk layer using only already-unlocked information. This phase should not pretend to know later-career forecast risk. It should only formalize what Block 2 already tells us:
+- prototype-fit ambiguity band
+- identity drift caution band
+- comp support band
+- comp salary match sufficiency
+- archetype scarcity / replaceability wording
+
+Recommended rule families:
+- ambiguity_bucket from prototype_fit_ambiguity
+- drift_risk_bucket from identity_drift_class
+- comp_support_bucket from comp_salary_match_count, comp_salary_match_rate, and comp_salary_anchor_support
+- scarcity_tier from macro_archetype
+- provisional_risk_proxy_note from the combination of those signals
+
+Main conceptual point:
+This is not final risk. It is disciplined pre-forecast caution.
+
+Main outputs:
+- deliverable3_provisional_risk_proxies.csv
+- scarcity_mapping_table.csv
+- provisional_risk_proxy_summary.csv
+
+Phase 6 — assemble the provisional decision card
+06_assemble_provisional_decision_cards.py should merge the market anchor band with the Block 2 risk proxies into one player-level decision-support table. This is the correct place to create fields like:
+- market_anchor_band_text
+- scarcity_wording
+- comp_support_bucket
+- provisional_action_bucket
+- provisional_action_reason
+
+Recommended provisional action buckets at this phase:
+- offer_now
+- offer_now_disciplined_band
+- wait_and_save_flexibility
+- avoid_overcommitting
+
+Important constraint:
+These are provisional buckets based only on comps + current risk proxies. They are not the final extension recommendation quadrant.
+
+Main outputs:
+- deliverable3_provisional_decision_cards.csv
+- deliverable3_provisional_case_study_table.csv
+
+Phase 7 — prepare the baseline salary-model table
+07_prepare_salary_model_table.py should start the modeling side that is already unlocked. This script should merge the canonical target year5_salary_target_table.csv with flattened Seasons 1–4 predictors and reusable Deliverable 2 predictors. At minimum, the merge-ready model table should support:
+- baseline Year-5 salary-cap regression
+- missingness documentation
+- draft-year-aware split design later
+
+Expected predictor families:
+- flattened player-level Seasons 1–4 features
+- cluster one-hot and centroid-distance predictors
+- own-cluster distance / prototype ambiguity
+- shot-style subtype confidence if desired
+- drift features if stable enough
+- comp-support diagnostics only if treated as contextual, not leakage
+
+Main conceptual point:
+The model table is for the salary-estimation module, not for replacing the market band logic.
+
+Main outputs:
+- year5_salary_modeling_table.csv
+- year5_salary_modeling_dictionary.csv
+- year5_salary_modeling_missingness.csv
+
+Phase 8 — integrate Deliverable 1 forecast outputs
+08_integrate_forecast_adjustments.py should remain on hold until Deliverable 1 is ready. Once available, this phase should merge the final player-level forecast table into the provisional decision cards and compute disciplined price adjustments rather than replacing the market anchor entirely.
+
+Expected Deliverable 1 fields:
+- predicted Years 5–7 performance indicators
+- sleeper_probability
+- neutral_probability
+- bust_probability
+- uncertainty band low / base / high or equivalent
+- durability band or later integrated durability score
+- confidence or model-support flag if used
+
+Recommended adjusted pricing logic:
+- adjusted_fair_value = market_fair_price + upside premium - downside discount - uncertainty penalty - durability penalty
+
+Main conceptual point:
+Deliverable 1 adjusts the band. It should not destroy the comp-market anchor logic.
+
+Main outputs:
+- deliverable3_forecast_adjusted_bands.csv
+- forecast_adjustment_audit.csv
+
+Phase 9 — finalize the extension guidance layer
+09_finalize_extension_guidance.py should be the first script allowed to produce the true final recommendation layer. This script should combine:
+- forecast-adjusted fair value
+- protected and walk-away bounds
+- sleeper / bust balance
+- uncertainty
+- durability
+- comp support
+- scarcity / replaceability
+- block2 market context
+
+Recommended final stance buckets:
+- Extend Aggressively
+- Extend at Disciplined Price
+- Wait and Reassess
+- Avoid Overcommitting
+
+This script should also generate concise rationale text that explains why the player landed in the bucket.
+
+Main outputs:
+- deliverable3_final_extension_guidance.csv
+- deliverable3_final_case_study_table.csv
+- extension_guidance_bucket_summary.csv
+
+Phase 10 — build stakeholder visuals and workflow log
+10_make_salary_decision_visuals.py should create presentation-ready visuals such as:
+- Year-5 salary-cap target coverage plot
+- comp support distribution
+- market anchor band examples
+- scarcity by archetype summary
+- provisional vs final stance distribution once Deliverable 1 is integrated
+
+11_write_workflow_log.py should append the structured summary of script roles, assumptions, hold-points, and next-review notes to:
+- salary_decision_support_workflow_log.txt
+
+What the final Deliverable 3 should say conceptually
+The strongest narrative is:
+1. We begin with a normalized Year-5 salary-cap target rather than raw salary dollars.
+2. We anchor price in realistic historical comparables rather than in an isolated model prediction.
+3. We convert that anchor into a protected / fair / walk-away market band.
+4. We use current Block 2 evidence to create disciplined provisional action stances now.
+5. We only finalize extension guidance after Deliverable 1 contributes forecast, sleeper/bust, durability, and uncertainty signals.
+
+That framing directly supports the business question:
+what should the front office pay, how strong is the support for that price, and how aggressively should the organization act right now?
+
+Main outcomes currently supported by the implementation
+The workflow can already support:
+- salary target auditing,
+- unmatched-case diagnosis,
+- row-level comp salary bridge auditing,
+- market anchor band construction,
+- comp support logic,
+- scarcity / replaceability wording,
+- provisional action buckets,
+- and baseline salary-model preparation.
+
+What remains explicitly on hold
+Until Deliverable 1 is integrated, the workflow should not finalize:
+- forecast-adjusted salary premium / discount logic,
+- final extension recommendation quadrant,
+- definitive player-level case-study recommendations.
+
+Substantive takeaways to emphasize in the story
+First, Deliverable 3 is not a pure salary model. It is a salary-decision-support module.
+Second, the comp-market anchor matters because it prices players against realistic precedent rather than against an isolated fitted equation.
+Third, the protected / fair / walk-away structure is more honest and more usable than a single estimate.
+Fourth, scarcity and replaceability matter because not all player types deserve the same willingness to act early.
+Fifth, the workflow should stay disciplined: provisional guidance now, final recommendation only after Deliverable 1 adds forecast and uncertainty.
+
+How to draft the report section from these minutes
+When writing Deliverable 3, use the following sequence:
+- Start with the business question: what should the team pay, and how aggressive should it be?
+- State the design choice: define salary guidance as target + comp-market anchor + action logic.
+- Explain the Year-5 salary-cap target briefly and say it is the normalized pricing backbone.
+- Explain the comp-salary bridge as the row-level evidence behind the market anchor.
+- Explain the market band as protected / fair / walk-away.
+- Explain provisional action buckets as Block 2 only and explicitly provisional.
+- Explain that final stance requires Deliverable 1 forecast, sleeper/bust, durability, and uncertainty outputs.
+- End with the deliverable outputs: anchor band table, provisional decision card, forecast-adjusted decision card later, and final extension guidance table.
+
+Recommended writing tone
+Do not oversell this as a perfect contract model. Present it as a structured and decision-serious pricing workflow that improves contract discipline by combining normalized salary targets, realistic market precedent, and staged action logic. The main claim is not that the workflow can know the exact dollar. The main claim is that it can organize market evidence, risk, and forecast information into a more credible extension posture than ad hoc judgment alone.
+
+Clean one-paragraph summary for a new chat window
+Deliverable 3 should be implemented as a staged salary-decision-support workflow rather than as a single salary prediction step. The canonical Year-5 salary-cap target table provides the normalized pricing backbone, realistic comparables are merged to observed Year-5 salary-cap outcomes to create a row-level comp salary bridge, and those comp outcomes are summarized into a protected / fair / walk-away market band for each player. Current Deliverable 2 signals such as archetype family, prototype-fit ambiguity, identity drift, and comp support are then used to form provisional action buckets now, while the final extension recommendation remains on hold until Deliverable 1 contributes player-level forecast, sleeper/bust probabilities, durability, and uncertainty. The result is a reproducible workflow that turns salary evidence into disciplined extension guidance rather than a single unsupported price estimate.

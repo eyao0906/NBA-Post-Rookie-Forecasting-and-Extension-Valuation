@@ -1,0 +1,25 @@
+{
+  "script": "03_build_provisional_decision_inputs.py",
+  "project_root": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3",
+  "inputs": {
+    "deliverable3_block2_context": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/SalaryBlock/deliverable3_block2_archetype_comp_market_context.csv",
+    "market_anchor_table": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_market_anchor_band_table.csv",
+    "holdout_manifest": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_demo_player_holdout_manifest.csv"
+  },
+  "thresholds": {
+    "ambiguity_q25": 0.6748556368889073,
+    "ambiguity_q75": 0.895190190631019,
+    "width_q25": 0.4201216774142196,
+    "width_q50": 0.7814829775833994,
+    "width_q75": 1.255969250634124,
+    "eff_n_q25": 4.990749225430586,
+    "eff_n_q50": 6.154671338734643,
+    "same_macro_q25": 0.25,
+    "same_macro_q50": 0.6
+  },
+  "notes": [
+    "This phase is intentionally provisional and Block-2-only.",
+    "No Deliverable 1 forecast premiums, sleeper/bust probabilities, durability penalties, or uncertainty penalties are applied here.",
+    "The output is designed to prepare a later final-guidance layer rather than claim that the current provisional stance is final."
+  ]
+}

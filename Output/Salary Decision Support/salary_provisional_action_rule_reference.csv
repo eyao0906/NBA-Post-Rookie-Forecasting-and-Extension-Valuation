@@ -1,0 +1,5 @@
+rule_group,rule_name,rule_description
+action_template,offer_now,"Reserved for rare Block-2-only cases: scarce archetype, strong comp support, clear fit, and a controlled anchor band."
+action_template,offer_now_disciplined_band,"Comp evidence is credible enough to act now, but the offer should stay inside the anchored band."
+action_template,wait_and_save_flexibility,"The player may still merit a deal later, but Block 2 evidence alone is not strong enough to force action now."
+action_template,avoid_overcommitting,Use when support is weak or absent and the archetype is too replaceable to justify aggressive early commitment.

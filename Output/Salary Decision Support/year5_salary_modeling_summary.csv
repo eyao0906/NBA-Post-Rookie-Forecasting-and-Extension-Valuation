@@ -1,0 +1,10 @@
+metric_group,metric,value,notes
+workflow_status,players_total,1058.0,Total player rows carried into the modeling-prep table.
+workflow_status,columns_total,117.0,Total columns in the modeling-prep table.
+target_status,target_observed_rows,665.0,Rows with observed Year-5 salary-cap target available.
+target_status,target_missing_rows,393.0,Rows without an observed Year-5 salary-cap target.
+training_status,holdout_rows,3.0,Reserved demo rows excluded from model fitting.
+training_status,training_eligible_rows,662.0,Rows eligible for baseline salary-model training after excluding demo holdouts.
+feature_inventory,recommended_numeric_predictors,78.0,Numeric predictors available before Year 5.
+feature_inventory,recommended_categorical_predictors,7.0,Categorical predictors available before Year 5 that will need encoding later.
+feature_inventory,max_missing_pct_recommended_predictors,0.45746691871455575,Maximum missingness across recommended predictor columns.

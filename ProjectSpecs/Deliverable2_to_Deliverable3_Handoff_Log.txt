@@ -1,0 +1,651 @@
+DELIVERABLE 2 -> DELIVERABLE 3 HANDOFF LOG
+STAT-946 Case Study 3
+
+Purpose
+This log is a project handoff note for the current state of the NBA post-rookie extension workflow.
+It is written so that, in a new project conversation, an AI assistant can read this file together with the listed CSV outputs and immediately know:
+
+1. which Deliverable 2 outputs already exist and are relevant for Deliverable 3,
+2. what each file means,
+3. how each file should be interpreted and used,
+4. what Deliverable 3 work can start now,
+5. what work must remain on hold because Deliverable 1 has not yet been fully integrated.
+
+This log assumes the current project framing:
+- Deliverable 1 = Performance Forecast
+- Deliverable 2 = Player Archetype & Comparable Profile
+- Deliverable 3 = Salary Decision Support
+
+Current project logic
+Deliverable 2 is already implemented as a hybrid archetype system:
+- macro role from saved PCA + K-means artifacts,
+- shot-style subtype from the ShotChartDetail spatial embedding pipeline,
+- identity drift across Seasons 1-4,
+- realistic comps from the drafted-player pool,
+- optional Hall of Fame ceiling comps,
+- and stakeholder-facing dossier tables/visuals.
+
+Deliverable 3 is intended to combine:
+- Year-5 contract value as salary-cap percentage,
+- durability/risk adjustment,
+- final extension recommendation.
+
+At the current project stage, Deliverable 3 can already start in its salary-target and comp-market-context components.
+However, the final recommendation layer is still incomplete because Deliverable 1 results are not yet fully integrated.
+
+================================================================================
+SECTION A — FILES ALREADY AVAILABLE AND WHAT THEY MEAN
+================================================================================
+
+The files below are the main handoff outputs from Deliverable 2 and the salary bridge into Deliverable 3.
+They are grouped into:
+- core Deliverable 2 outputs,
+- salary-target bridge outputs,
+- final Block 2 outputs for Deliverable 3.
+
+--------------------------------------------------------------------------------
+A1. CORE DELIVERABLE 2 OUTPUTS
+--------------------------------------------------------------------------------
+
+1. archetype_macro_player_table.csv
+Role:
+- canonical macro-role table from the saved PCA + K-means clustering backbone.
+
+Use for Deliverable 3:
+- optional upstream reference if the assistant needs direct macro-role predictors,
+- role-family interpretation,
+- archetype scarcity / replaceability language,
+- validating prototype-fit distance fields.
+
+Interpretation:
+- one row per player,
+- contains macro cluster, macro archetype, own-cluster distance, cluster-distance predictors, and prototype ambiguity measures.
+- this is the broad role taxonomy, not the final player identity by itself.
+
+Why it matters:
+- if Deliverable 3 needs role-family information directly rather than using only the final profile table, this is the backbone file.
+
+
+2. shot_style_cluster_summary.csv
+Role:
+- dictionary-style summary of the five shot-style subtypes learned from the autoencoder embeddings and Gaussian mixture model.
+
+Use for Deliverable 3:
+- interpretation only,
+- helps explain what a subtype label actually means in basketball language,
+- useful if the assistant needs to convert subtype IDs or subtype names into front-office wording.
+
+Interpretation:
+- subtype-level, not player-level,
+- includes subtype sizes, average membership probabilities, entropy, and descriptive style notes.
+
+Why it matters:
+- Deliverable 3 should not treat subtype labels as empty category names. This file provides the descriptive meaning.
+
+
+3. shot_style_player_table.csv
+Role:
+- player-level shot-style subtype table.
+
+Use for Deliverable 3:
+- deeper diagnostic layer if the assistant needs subtype probability, entropy, total shot coverage, or embedding counts beyond the final profile table.
+
+Interpretation:
+- one row per player,
+- contains dominant shot-style subtype, soft membership probability, entropy, total shot attempts covered, seasons with embeddings, and the player-level shot embeddings.
+
+Why it matters:
+- if Deliverable 3 wants to weight or discount a comp-market anchor based on subtype clarity, this is the file that contains the raw subtype-confidence information.
+
+
+4. shot_style_player_season_table.csv
+Role:
+- season-level shot-style subtype assignments.
+
+Use for Deliverable 3:
+- only if the assistant needs to inspect or audit shot-style drift season by season.
+
+Interpretation:
+- one row per player-season,
+- not meant to be the main salary input table,
+- primarily a drift and trajectory audit file.
+
+Why it matters:
+- useful when a player’s identity-drift class seems suspicious and the assistant wants season-level evidence.
+
+
+5. player_hybrid_archetype_table.csv
+Role:
+- fused macro role + shot-style subtype player table.
+
+Use for Deliverable 3:
+- optional intermediate table,
+- useful if the assistant wants to rebuild or audit the final profile table.
+
+Interpretation:
+- one row per player,
+- hybrid label = macro archetype + shot-style subtype.
+
+Why it matters:
+- this is the first fused identity table before drift and comps are layered in.
+
+
+6. player_role_drift_summary.csv
+Role:
+- boxscore-role drift summary.
+
+Use for Deliverable 3:
+- diagnostic only,
+- if the assistant wants to separate boxscore drift from shot-style drift.
+
+Interpretation:
+- endpoint displacement and total path length in standardized season-level boxscore role space.
+
+Why it matters:
+- not the main handoff file, but useful if a player’s drift class needs to be justified more explicitly.
+
+
+7. player_shotstyle_drift_summary.csv
+Role:
+- shot-style drift summary.
+
+Use for Deliverable 3:
+- diagnostic only,
+- use when the assistant needs to see how much a player’s shot behavior changed across Seasons 1-4.
+
+Interpretation:
+- endpoint displacement and total path length in shot-style embedding space.
+
+Why it matters:
+- useful for auditing whether a role change was really spatial/style-based rather than just boxscore-based.
+
+
+8. player_identity_drift_table.csv
+Role:
+- fused player-level identity-drift table.
+
+Use for Deliverable 3:
+- direct input if the assistant wants drift metrics before the final profile table,
+- useful when the final profile table is not available or needs to be rebuilt.
+
+Interpretation:
+- one row per player,
+- contains macro role, subtype context, drift metrics, subtype changes, and final identity_drift_class.
+
+Why it matters:
+- this is the player-level drift output that feeds the final Deliverable 2 profile table.
+
+
+9. realistic_comps.csv
+Role:
+- row-level realistic comparable-player table.
+
+Use for Deliverable 3:
+- critical input for comp-market anchor construction,
+- needed to trace each focal player to specific realistic comps,
+- needed if the assistant wants to rebuild or audit comp salary anchors.
+
+Interpretation:
+- multiple rows per focal player,
+- each row is one realistic comp candidate,
+- includes comp rank, similarity score, shot embedding distance, PCA distance, prototype-fit gap, drift difference, and macro-match indicator.
+
+Why it matters:
+- this is the row-level comp engine output, not just a summary.
+- if a Block 2 salary anchor looks wrong, this file is the first place to inspect.
+
+
+10. ceiling_comps_hof.csv
+Role:
+- optional Hall of Fame ceiling-comp table.
+
+Use for Deliverable 3:
+- interpretation only,
+- upside analog only,
+- should NOT be used as the primary pricing anchor.
+
+Interpretation:
+- one optional ceiling comp per player,
+- only useful as aspirational context.
+
+Why it matters:
+- Deliverable 3 should clearly distinguish ceiling comps from realistic market comps.
+
+
+11. player_comp_dossier_table.csv
+Role:
+- summarized comp-group dossier table.
+
+Use for Deliverable 3:
+- intermediate summary table if the assistant wants comp-group medians and plain-language comp interpretation before using the final profile table.
+
+Interpretation:
+- one row per player,
+- contains realistic comp list,
+- mean similarity score,
+- median later-career comp-group points/minutes/rebounds/assists,
+- optional ceiling comp,
+- plain-language comp interpretation.
+
+Why it matters:
+- this is the summary version of realistic_comps.csv.
+- it is easier to read, but it is not sufficient for salary-anchor auditing by itself.
+
+
+12. final_player_archetype_profile_table.csv
+Role:
+- main Deliverable 2 stakeholder-facing analytical table.
+
+Use for Deliverable 3:
+- primary Deliverable 2 input file,
+- first file the assistant should read when building Deliverable 3 Block 2,
+- best single-table summary of the player’s current identity and comp neighborhood.
+
+Interpretation:
+- one row per player,
+- includes:
+  - macro archetype,
+  - shot-style subtype,
+  - hybrid label,
+  - prototype-fit ambiguity,
+  - own-cluster distance,
+  - identity drift class,
+  - realistic comp list,
+  - realistic comp similarity mean,
+  - optional ceiling comp,
+  - comp-group later-career medians,
+  - supporting shot-style explanation,
+  - comp-based interpretation.
+
+Why it matters:
+- this is the cleanest handoff table from Deliverable 2 into Deliverable 3.
+- if only one Deliverable 2 file is uploaded to a new conversation, this should be one of them.
+
+
+13. final_player_archetype_case_study_table.csv
+Role:
+- stakeholder-ready case-study subset.
+
+Use for Deliverable 3:
+- optional only,
+- useful if the assistant wants ready-made case-study candidates for the report.
+
+Interpretation:
+- subset of the final profile table,
+- not the full modeling universe.
+
+Why it matters:
+- do not use this as the full player sample for modeling or full-table salary work.
+
+
+14. report_ready_player_dossier_table.csv / report_ready_player_dossiers.md / player_dossier_demo outputs
+Role:
+- communication layer for Deliverable 2.
+
+Use for Deliverable 3:
+- case-study communication only,
+- not for modeling.
+
+Interpretation:
+- front-office style player cards.
+
+Why it matters:
+- useful for the paper or presentation, but not the core salary anchor build.
+
+--------------------------------------------------------------------------------
+A2. SALARY-TARGET BRIDGE OUTPUTS
+--------------------------------------------------------------------------------
+
+These are the outputs produced after Deliverable 2 in order to start Deliverable 3.
+They are not pure Deliverable 2 files, but they are already part of the current handoff state.
+
+15. salary_player_season_agg.csv
+Role:
+- cleaned player-season salary aggregation file.
+
+Use for Deliverable 3:
+- audit only,
+- use when checking how salary rows were collapsed to one row per player-season.
+
+Interpretation:
+- the raw salary file can contain multiple rows per player-season because of team changes.
+- this file aggregates those rows to a player-season total salary.
+
+Why it matters:
+- it proves that the Year-5 salary target was not built from raw duplicated rows.
+
+
+16. salary_cap_cleaned.csv
+Role:
+- cleaned salary-cap table.
+
+Use for Deliverable 3:
+- audit only,
+- verifies repaired season strings and final cap values used in the merge.
+
+Interpretation:
+- cleaned historical cap table keyed by season start year.
+
+Why it matters:
+- useful when the assistant wants to verify how Year5_Salary_Cap_Pct was built.
+
+
+17. year5_salary_target_table.csv
+Role:
+- canonical Year-5 salary-cap target table.
+
+Use for Deliverable 3:
+- critical input,
+- this is the main salary target table for the Year-5 contract-value problem,
+- also the file used to translate realistic comps into a comp-market salary anchor.
+
+Interpretation:
+- one row per drafted player,
+- contains:
+  - Year-5 season mapping,
+  - matched salary,
+  - matched salary cap,
+  - year5_salary_cap_pct,
+  - match flags,
+  - match type,
+  - raw salary-row counts,
+  - team-count information.
+
+Why it matters:
+- this is the salary target foundation for Deliverable 3.
+- if this file is missing, the assistant cannot build or audit the contract-value layer correctly.
+
+
+18. year5_salary_merge_summary.csv
+Role:
+- high-level summary of salary merge coverage.
+
+Use for Deliverable 3:
+- sample-audit file,
+- use to explain usable sample size and structural target missingness.
+
+Interpretation:
+- summarizes total players, matched players, unmatched players, match rate, and multirow/multiteam season counts.
+
+Why it matters:
+- the assistant should use this file to stay honest about salary-sample shrinkage.
+
+
+19. year5_salary_unmatched_diagnostic.csv
+Role:
+- unmatched salary diagnostic file.
+
+Use for Deliverable 3:
+- troubleshooting and audit only,
+- use when inspecting why a large fraction of players do not have Year-5 salary support.
+
+Interpretation:
+- one row per unmatched player,
+- used to separate true no-Year-5 NBA salary support from alias or name-cleaning problems.
+
+Why it matters:
+- necessary if the assistant wants to patch the alias table or discuss structural attrition in the report.
+
+--------------------------------------------------------------------------------
+A3. FINAL DELIVERABLE 3 BLOCK 2 OUTPUTS ALREADY AVAILABLE
+--------------------------------------------------------------------------------
+
+20. comp_salary_detail_table.csv
+Role:
+- row-level comp-market audit table.
+
+Use for Deliverable 3:
+- critical audit file,
+- use this when checking exactly how each realistic comp mapped to a Year-5 salary-cap percentage.
+
+Interpretation:
+- multiple rows per focal player,
+- each row corresponds to one realistic comp after merging the comp table to the Year-5 salary target table,
+- includes:
+  - comp rank,
+  - similarity score,
+  - matched Year-5 cap percentage,
+  - name alignment flag,
+  - salary match flags,
+  - similarity weights.
+
+Why it matters:
+- this is the row-level file behind the final comp salary anchor.
+- if a player’s Block 2 price anchor looks wrong, inspect this file first.
+
+
+21. deliverable3_block2_archetype_comp_market_context.csv
+Role:
+- final Block 2 handoff table for Deliverable 3.
+
+Use for Deliverable 3:
+- this is the most important current-state file for Deliverable 3 work that can start now,
+- the assistant should treat this as the salary-ready version of Deliverable 2.
+
+Interpretation:
+- one row per player,
+- includes:
+  - macro archetype,
+  - shot-style subtype,
+  - hybrid label,
+  - identity drift class,
+  - realistic comp list,
+  - realistic comp similarity mean,
+  - matched comp salary list,
+  - comp salary match count,
+  - comp salary match rate,
+  - weighted mean comp salary anchor,
+  - comp salary p25 / p50 / p75 anchors,
+  - comp support band,
+  - comp-group later-career medians,
+  - optional ceiling comp note,
+  - plain-language market-context interpretation,
+  - observed historical Year-5 salary-cap % when available.
+
+Why it matters:
+- this is the direct bridge into Deliverable 3.
+- if the assistant is asked to start Deliverable 3 now, this is the first file it should use.
+
+================================================================================
+SECTION B — WHICH FILES SHOULD BE UPLOADED IN A NEW PROJECT CONVERSATION
+================================================================================
+
+If starting a new project conversation, the minimum recommended upload bundle is:
+
+1. final_player_archetype_profile_table.csv
+2. realistic_comps.csv
+3. player_comp_dossier_table.csv
+4. year5_salary_target_table.csv
+5. year5_salary_merge_summary.csv
+6. year5_salary_unmatched_diagnostic.csv
+7. comp_salary_detail_table.csv
+8. deliverable3_block2_archetype_comp_market_context.csv
+9. this handoff log txt file
+
+Optional but helpful uploads:
+10. shot_style_cluster_summary.csv
+11. player_identity_drift_table.csv
+12. archetype_macro_player_table.csv
+13. report_ready_player_dossier_table.csv (case-study communication only)
+
+If only a very small bundle can be uploaded, the highest-priority files are:
+- final_player_archetype_profile_table.csv
+- year5_salary_target_table.csv
+- comp_salary_detail_table.csv
+- deliverable3_block2_archetype_comp_market_context.csv
+- this log file
+
+================================================================================
+SECTION C — WHAT THE NEXT AI ASSISTANT CAN START NOW
+================================================================================
+
+The following Deliverable 3 work can start immediately from the current outputs:
+
+1. Salary target audit
+- inspect and document salary sample coverage,
+- explain structural Year-5 salary missingness,
+- patch obvious alias issues if needed,
+- quantify remaining unmatched cases honestly.
+
+2. Block 2 interpretation and write-up
+- explain archetype + comp-market context,
+- describe realistic comp neighborhood,
+- interpret comp support band,
+- explain why ceiling comps are upside-only,
+- write business-facing report paragraphs for Deliverable 3 Block 2.
+
+3. Comp-market anchor construction and refinement
+- use comp_salary_detail_table.csv and deliverable3_block2_archetype_comp_market_context.csv,
+- refine weighting rules if justified,
+- stress-test p25 / p50 / p75 salary anchors,
+- create visualizations or summary tables of comp salary anchors.
+
+4. Salary model preparation
+- use year5_salary_target_table.csv as the canonical target,
+- merge with flattened Seasons 1-4 predictors,
+- start baseline regression design for Year-5 salary-cap percentage,
+- document usable sample and missingness constraints.
+
+5. Deliverable 3 report structure
+- write the parts of Deliverable 3 that do not require Deliverable 1 integration yet,
+- define the salary-decision-support logic in staged form,
+- prepare placeholders for final recommendation once Deliverable 1 arrives.
+
+================================================================================
+SECTION D — WHAT MUST BE HELD BECAUSE DELIVERABLE 1 IS NOT YET FULLY INTEGRATED
+================================================================================
+
+The following results are still pending from Deliverable 1 and should be treated as not yet integrated:
+
+1. Final Years 5-7 performance target table for modeling
+Needed because:
+- Deliverable 3 final recommendation is supposed to combine projected post-rookie performance with salary context.
+
+2. Final sleeper / neutral / bust label construction
+Needed because:
+- Deliverable 3 is supposed to use the categorical upside/downside classification, not only salary and comps.
+
+3. Deliverable 1 player-level forecast outputs
+Specifically pending:
+- player-level Years 5-7 performance predictions,
+- projected floor/base/ceiling if uncertainty is modeled that way,
+- or equivalent final forecast card outputs.
+
+4. Sleeper / neutral / bust probabilities
+Needed because:
+- Deliverable 3 final recommendation is supposed to synthesize upside/downside risk, not just median value.
+
+5. Uncertainty / confidence band outputs
+Needed because:
+- Deliverable 3 final recommendation is supposed to include uncertainty and avoid false precision.
+
+6. Any validated baseline-vs-sequence model comparison results from Deliverable 1
+Needed because:
+- the final case-study logic should know whether the assistant is using baseline-only forecasts or a stronger hybrid forecast.
+
+7. Final Deliverable 1 player-level table ready for merge
+Ideal expected file structure from Deliverable 1 would include fields such as:
+- PLAYER_ID
+- PLAYER_NAME
+- predicted_years5_7_points (or equivalent supported outcomes)
+- predicted_years5_7_minutes
+- predicted_years5_7_rebounds
+- predicted_years5_7_assists
+- sleeper_probability
+- neutral_probability
+- bust_probability
+- uncertainty_band_low / base / high OR another explicit uncertainty structure
+- model_support_or_confidence flag if used
+
+Without those Deliverable 1 outputs, the assistant should NOT claim Deliverable 3 is fully complete.
+
+================================================================================
+SECTION E — WHAT THE NEXT AI ASSISTANT SHOULD PUT ON HOLD
+================================================================================
+
+Until Deliverable 1 is integrated, the assistant should put these items on hold:
+
+1. Final extension recommendation quadrant
+Do not finalize:
+- Extend Aggressively
+- Extend at Disciplined Price
+- Wait and Reassess
+- Avoid Overcommitting
+
+Reason:
+- those calls are supposed to combine forecast, uncertainty, classification, risk, and comp context.
+
+2. Forecast-adjusted salary premium / discount logic
+Do not fully calibrate:
+- upside premium,
+- downside discount,
+- uncertainty penalty,
+- risk-adjusted contract aggressiveness.
+
+Reason:
+- those depend on Deliverable 1 forecast and uncertainty outputs.
+
+3. Final case-study recommendation language
+Do not write definitive player-level contract recommendations yet unless they are clearly labeled as provisional.
+
+================================================================================
+SECTION F — WHAT THE NEXT AI ASSISTANT SHOULD DO FIRST
+================================================================================
+
+If this project is resumed in a new conversation, the assistant should follow this order:
+
+Step 1
+Read:
+- this handoff log,
+- final_player_archetype_profile_table.csv,
+- year5_salary_target_table.csv,
+- deliverable3_block2_archetype_comp_market_context.csv.
+
+Goal:
+- understand current identity, comp, and salary-anchor state.
+
+Step 2
+Read:
+- year5_salary_merge_summary.csv,
+- year5_salary_unmatched_diagnostic.csv.
+
+Goal:
+- understand salary-sample shrinkage and whether any name-alias cleanup is still worth doing.
+
+Step 3
+Read:
+- comp_salary_detail_table.csv,
+- realistic_comps.csv.
+
+Goal:
+- verify exactly how the comp-market anchors were built.
+
+Step 4
+Proceed with Deliverable 3 work that is already unlocked:
+- salary target audit,
+- Block 2 write-up,
+- salary-anchor interpretation,
+- baseline salary-model setup,
+- report drafting for the current known components.
+
+Step 5
+Do not finalize the recommendation layer until Deliverable 1 outputs are uploaded or constructed.
+
+================================================================================
+SECTION G — BOTTOM LINE STATUS
+================================================================================
+
+Current status summary:
+- Deliverable 2 is implemented and usable.
+- The salary-target bridge is implemented and usable.
+- Deliverable 3 Block 2 (Archetype and Comp-Market Context) is already built and can be used now.
+- The full final Deliverable 3 recommendation is NOT finished because Deliverable 1 forecast outputs are not yet integrated.
+
+Practical summary for the next assistant:
+- Do start Deliverable 3 salary and comp-market work now.
+- Do use deliverable3_block2_archetype_comp_market_context.csv as the main handoff table.
+- Do use year5_salary_target_table.csv as the canonical salary target.
+- Do use comp_salary_detail_table.csv when any salary anchor looks suspicious.
+- Do NOT finalize extension recommendations until Deliverable 1 contributes forecast, sleeper/bust, and uncertainty outputs.
+
+END OF HANDOFF LOG

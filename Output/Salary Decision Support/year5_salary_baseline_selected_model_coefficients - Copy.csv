@@ -1,0 +1,123 @@
+feature_name,coefficient,abs_coefficient,selected_model
+num__pca_1_k5,0.028246925812739566,0.028246925812739566,ridge_alpha_10
+num__dist_to_cluster_3_k5,0.020843370415493848,0.020843370415493848,ridge_alpha_10
+num__pca_2_k5,0.01657493692926211,0.01657493692926211,ridge_alpha_10
+num__pca_3_k5,0.011992236360457324,0.011992236360457324,ridge_alpha_10
+num__own_cluster_distance,-0.010633218943471134,0.010633218943471134,ridge_alpha_10
+num__prototype_fit_rank_distance,-0.010633218943470621,0.010633218943470621,ridge_alpha_10
+cat__hybrid_archetype_label_High-Usage Primary Creators | Interior Finishers,0.009635131047969434,0.009635131047969434,ridge_alpha_10
+cat__hybrid_archetype_label_Low-Usage Interior Bigs | Rim Pressure Drivers,0.009357984638712541,0.009357984638712541,ridge_alpha_10
+num__shot_emb_6,-0.009137422705532994,0.009137422705532994,ridge_alpha_10
+num__dist_to_cluster_2_k5,0.008997154902627005,0.008997154902627005,ridge_alpha_10
+num__shot_emb_15,0.008627569434764613,0.008627569434764613,ridge_alpha_10
+num__pca_19,0.007951383395283566,0.007951383395283566,ridge_alpha_10
+num__shot_emb_5,-0.0074257824426979206,0.0074257824426979206,ridge_alpha_10
+num__shot_emb_12,-0.007221226048189771,0.007221226048189771,ridge_alpha_10
+cat__hybrid_archetype_label_Scoring Bigs / Two-Way Forwards | Rim Pressure Drivers,0.007209347991221871,0.007209347991221871,ridge_alpha_10
+num__pca_9,-0.006783498631171274,0.006783498631171274,ridge_alpha_10
+num__total_shot_attempts_covered,0.006726075366503555,0.006726075366503555,ridge_alpha_10
+num__pca_8,0.006519904354063591,0.006519904354063591,ridge_alpha_10
+num__shot_emb_18,0.006274365382508058,0.006274365382508058,ridge_alpha_10
+num__pca_4_k5,0.006110037776782409,0.006110037776782409,ridge_alpha_10
+num__dist_to_cluster_0_k5,0.006024453784446767,0.006024453784446767,ridge_alpha_10
+num__pca_5_k5,0.0060142642362691085,0.0060142642362691085,ridge_alpha_10
+num__pca_11,-0.00593966368794548,0.00593966368794548,ridge_alpha_10
+num__pca_6,0.005826323074689276,0.005826323074689276,ridge_alpha_10
+num__prototype_ambiguity_ratio,0.005804756799974665,0.005804756799974665,ridge_alpha_10
+num__shot_emb_17,-0.00563783062492914,0.00563783062492914,ridge_alpha_10
+num__dist_to_cluster_1_k5,0.005544493010408102,0.005544493010408102,ridge_alpha_10
+num__shot_emb_14,-0.005478594885206429,0.005478594885206429,ridge_alpha_10
+cat__identity_drift_class_insufficient_data,-0.005419051489433065,0.005419051489433065,ridge_alpha_10
+cat__hybrid_archetype_label_Fringe / Low-Opportunity Players | No Shot Subtype,-0.005327235696349402,0.005327235696349402,ridge_alpha_10
+num__pca_22,0.00525663713975404,0.00525663713975404,ridge_alpha_10
+num__shot_emb_3,0.005173762501176535,0.005173762501176535,ridge_alpha_10
+cat__hybrid_archetype_label_High-Usage Primary Creators | Rim Pressure Drivers,-0.00500488283633737,0.00500488283633737,ridge_alpha_10
+num__pca_13,0.004853843711482627,0.004853843711482627,ridge_alpha_10
+num__shot_style_prob_2,0.004699425587337318,0.004699425587337318,ridge_alpha_10
+cat__hybrid_archetype_label_Scoring Bigs / Two-Way Forwards | No Shot Subtype,-0.004598980487466702,0.004598980487466702,ridge_alpha_10
+num__shot_emb_10,-0.0045214948024821676,0.0045214948024821676,ridge_alpha_10
+num__shot_emb_11,-0.004494040999172826,0.004494040999172826,ridge_alpha_10
+num__shot_emb_13,0.004465847865335713,0.004465847865335713,ridge_alpha_10
+cat__hybrid_archetype_label_Low-Usage Interior Bigs | Interior Finishers,-0.004325483004336732,0.004325483004336732,ridge_alpha_10
+cat__identity_drift_class_role_shifting_materially,0.004306416231351484,0.004306416231351484,ridge_alpha_10
+num__pca_7,-0.004232526393837164,0.004232526393837164,ridge_alpha_10
+cat__hybrid_archetype_label_High-Usage Primary Creators | Balanced Three-Level Scorers,-0.003957508516828853,0.003957508516828853,ridge_alpha_10
+cat__hybrid_archetype_label_Perimeter Wings & Connectors | No Shot Subtype,0.003879501898100539,0.003879501898100539,ridge_alpha_10
+num__shot_emb_22,0.0038789144948654006,0.0038789144948654006,ridge_alpha_10
+num__observed_boxscore_seasons,-0.0037261034524796966,0.0037261034524796966,ridge_alpha_10
+cat__hybrid_archetype_label_Fringe / Low-Opportunity Players | Balanced Three-Level Scorers,0.0036044800200778397,0.0036044800200778397,ridge_alpha_10
+cat__hybrid_archetype_label_Low-Usage Interior Bigs | Midrange Shot Creators,-0.0035474946346270627,0.0035474946346270627,ridge_alpha_10
+num__shot_emb_2,-0.0034178898318790664,0.0034178898318790664,ridge_alpha_10
+num__shot_style_prob_0,-0.0033772572495677547,0.0033772572495677547,ridge_alpha_10
+num__shot_style_entropy,-0.00337429374845629,0.00337429374845629,ridge_alpha_10
+cat__hybrid_archetype_label_Fringe / Low-Opportunity Players | Interior Finishers,-0.003365989454305431,0.003365989454305431,ridge_alpha_10
+num__box_role_y1_to_y4_displacement,0.0032533226265744034,0.0032533226265744034,ridge_alpha_10
+num__pca_15,0.0030231671516962972,0.0030231671516962972,ridge_alpha_10
+num__pca_17,0.0029602751465420602,0.0029602751465420602,ridge_alpha_10
+num__pca_14,0.0028626351230327425,0.0028626351230327425,ridge_alpha_10
+num__shot_style_subtype_probability,-0.002814493466026219,0.002814493466026219,ridge_alpha_10
+num__shot_emb_4,-0.0027801910943468103,0.0027801910943468103,ridge_alpha_10
+cat__hybrid_archetype_label_Fringe / Low-Opportunity Players | Midrange Shot Creators,0.0027731205832323873,0.0027731205832323873,ridge_alpha_10
+num__pca_16,-0.002679932719733904,0.002679932719733904,ridge_alpha_10
+num__cluster_2_onehot_k5,0.002673512960235115,0.002673512960235115,ridge_alpha_10
+num__dist_to_cluster_4_k5,0.002667692025787886,0.002667692025787886,ridge_alpha_10
+num__pca_12,0.002601891126385434,0.002601891126385434,ridge_alpha_10
+num__shot_emb_19,-0.00243573313690546,0.00243573313690546,ridge_alpha_10
+num__cluster_0_onehot_k5,0.0023032003883275984,0.0023032003883275984,ridge_alpha_10
+cat__shot_style_subtype_Rim Pressure Drivers,0.0022958614816596004,0.0022958614816596004,ridge_alpha_10
+num__cluster_1_onehot_k5,-0.002236607452536163,0.002236607452536163,ridge_alpha_10
+num__cluster_3_onehot_k5,-0.002230754563647906,0.002230754563647906,ridge_alpha_10
+cat__hybrid_archetype_label_Perimeter Wings & Connectors | Balanced Three-Level Scorers,-0.0021740404229235832,0.0021740404229235832,ridge_alpha_10
+cat__hybrid_archetype_label_Low-Usage Interior Bigs | No Shot Subtype,-0.0021315986121925017,0.0021315986121925017,ridge_alpha_10
+cat__hybrid_archetype_label_Scoring Bigs / Two-Way Forwards | Arc-Heavy Spacers,-0.0020066025413137335,0.0020066025413137335,ridge_alpha_10
+num__pca_21,-0.001954051729844631,0.001954051729844631,ridge_alpha_10
+num__shot_style_subtype_changes,0.001928976484620017,0.001928976484620017,ridge_alpha_10
+cat__hybrid_archetype_label_Scoring Bigs / Two-Way Forwards | Interior Finishers,-0.0018067038075184534,0.0018067038075184534,ridge_alpha_10
+num__shot_style_prob_3,-0.0017792977439837323,0.0017792977439837323,ridge_alpha_10
+num__shot_style_prob_4,0.0017455964095370586,0.0017455964095370586,ridge_alpha_10
+num__pca_10,-0.001696456209089771,0.001696456209089771,ridge_alpha_10
+num__cluster_4_onehot_k5,-0.0016853328979900338,0.0016853328979900338,ridge_alpha_10
+num__shotstyle_y1_to_y4_displacement,0.001444406001132839,0.001444406001132839,ridge_alpha_10
+cat__hybrid_archetype_label_Scoring Bigs / Two-Way Forwards | Balanced Three-Level Scorers,0.001362492853902214,0.001362492853902214,ridge_alpha_10
+num__shot_emb_7,0.001328054834698527,0.001328054834698527,ridge_alpha_10
+num__shot_emb_21,-0.001327008451197053,0.001327008451197053,ridge_alpha_10
+num__pca_23,0.0012927420364719552,0.0012927420364719552,ridge_alpha_10
+num__box_role_total_path_length,-0.001287407254668503,0.001287407254668503,ridge_alpha_10
+cat__hybrid_archetype_label_High-Usage Primary Creators | Midrange Shot Creators,0.001249985877068796,0.001249985877068796,ridge_alpha_10
+cat__cluster_archetype_k5_Perimeter Wings & Connectors,0.0012322411284907328,0.0012322411284907328,ridge_alpha_10
+cat__macro_cluster_id_2,0.00123224112849051,0.00123224112849051,ridge_alpha_10
+num__shot_emb_16,0.001211968977785111,0.001211968977785111,ridge_alpha_10
+num__shot_emb_8,-0.0012025853471116044,0.0012025853471116044,ridge_alpha_10
+num__shotstyle_total_path_length,0.0011902768580136199,0.0011902768580136199,ridge_alpha_10
+cat__shot_style_subtype_id_1.0,-0.0011645760657723555,0.0011645760657723555,ridge_alpha_10
+cat__shot_style_subtype_Balanced Three-Level Scorers,-0.0011645760657723505,0.0011645760657723505,ridge_alpha_10
+cat__shot_style_subtype_Midrange Shot Creators,-0.0011235908701363608,0.0011235908701363608,ridge_alpha_10
+cat__shot_style_subtype_id_4.0,-0.0011235908701363536,0.0011235908701363536,ridge_alpha_10
+num__shot_emb_1,0.0010619061503404348,0.0010619061503404348,ridge_alpha_10
+cat__hybrid_archetype_label_High-Usage Primary Creators | No Shot Subtype,-0.001053651497412578,0.001053651497412578,ridge_alpha_10
+cat__cluster_archetype_k5_Low-Usage Interior Bigs,-0.000926825424358472,0.000926825424358472,ridge_alpha_10
+cat__macro_cluster_id_1,-0.0009268254243584267,0.0009268254243584267,ridge_alpha_10
+num__prototype_margin_second_minus_first,-0.0009204956300749048,0.0009204956300749048,ridge_alpha_10
+num__shot_emb_20,-0.0009031068074430105,0.0009031068074430105,ridge_alpha_10
+cat__hybrid_archetype_label_Scoring Bigs / Two-Way Forwards | Midrange Shot Creators,-0.0009010370519720121,0.0009010370519720121,ridge_alpha_10
+cat__cluster_archetype_k5_High-Usage Primary Creators,0.0008690740744595228,0.0008690740744595228,ridge_alpha_10
+num__shot_emb_9,-0.0007973936950968915,0.0007973936950968915,ridge_alpha_10
+num__pca_18,-0.000794734692604401,0.000794734692604401,ridge_alpha_10
+cat__cluster_archetype_k5_Scoring Bigs / Two-Way Forwards,-0.0007414830431465585,0.0007414830431465585,ridge_alpha_10
+cat__macro_cluster_id_4,-0.0007414830431464195,0.0007414830431464195,ridge_alpha_10
+cat__hybrid_archetype_label_Perimeter Wings & Connectors | Midrange Shot Creators,-0.0006981656438383464,0.0006981656438383464,ridge_alpha_10
+cat__shot_style_subtype_id_2.0,-0.0006795560735610768,0.0006795560735610768,ridge_alpha_10
+cat__shot_style_subtype_Interior Finishers,0.0006718615278102822,0.0006718615278102822,ridge_alpha_10
+cat__shot_style_subtype_id_3.0,0.0006718615278102143,0.0006718615278102143,ridge_alpha_10
+num__observed_shot_seasons,-0.0006087081285550665,0.0006087081285550665,ridge_alpha_10
+num__seasons_with_embeddings,-0.000608708128554953,0.000608708128554953,ridge_alpha_10
+cat__hybrid_archetype_label_Perimeter Wings & Connectors | Interior Finishers,0.00053490674600134,0.00053490674600134,ridge_alpha_10
+num__shot_emb_24,-0.0004638378262815403,0.0004638378262815403,ridge_alpha_10
+num__pca_24,0.00045251333333281733,0.00045251333333281733,ridge_alpha_10
+cat__macro_cluster_id_3,-0.0004330067354442317,0.0004330067354442317,ridge_alpha_10
+num__shot_style_prob_1,-0.0003916093422008167,0.0003916093422008167,ridge_alpha_10
+num__shot_emb_23,0.00035087381076343114,0.00035087381076343114,ridge_alpha_10
+cat__hybrid_archetype_label_Low-Usage Interior Bigs | Arc-Heavy Spacers,-0.000280233811915426,0.000280233811915426,ridge_alpha_10
+cat__hybrid_archetype_label_Perimeter Wings & Connectors | Arc-Heavy Spacers,-0.0002753375322324905,0.0002753375322324905,ridge_alpha_10
+num__pca_20,0.00020761030812606776,0.00020761030812606776,ridge_alpha_10
+cat__hybrid_archetype_label_Perimeter Wings & Connectors | Rim Pressure Drivers,-3.4623916616716885e-05,3.4623916616716885e-05,ridge_alpha_10

@@ -1,0 +1,4 @@
+pca_label,expected_score,realized_score,delta_score,PTS_5to7_avg,MIN_5to7_avg,REB_5to7_avg,AST_5to7_avg
+Bust,377.74,315.6,-62.14,407.882,1153.214,204.113,80.926
+Neutral,552.536,693.018,140.482,892.883,2040.035,356.51,194.891
+Sleeper,939.115,1236.966,297.851,1576.602,2721.471,514.988,347.05

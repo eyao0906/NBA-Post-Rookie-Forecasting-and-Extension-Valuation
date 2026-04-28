@@ -1,0 +1,1340 @@
+
+================================================================================
+[2026-04-15 23:06:15]
+Phase 0 — path audit and project map
+Script: 00_project_inventory.py
+Project root: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3
+Output directory: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support
+Visual directory: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\visual\Salary Decision Support
+
+Purpose:
+- resolve the canonical Deliverable 3 file map from project-root relative paths,
+- search recursively when files are not found at the expected location,
+- write an auditable inventory before downstream salary modeling or decision logic starts,
+- keep Trae Young and Nikola Vučević reserved as case-study demo players for later phases.
+
+Outputs written:
+- project_inventory.csv
+- project_inventory.md
+- project_inventory_summary.json
+
+Summary:
+- required files found: 10 / 10
+- optional files found: 5 / 5
+- path-corrected resolutions: 0
+- missing required roles: none
+
+================================================================================
+[2026-04-15 23:12:34]
+Phase 1 — salary target audit
+Script: 01_salary_target_audit.py
+Project root: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3
+Inventory reference: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\project_inventory.csv
+
+Purpose:
+- treat year5_salary_target_table.csv as the canonical Deliverable 3 target table,
+- verify merge coverage and recompute the core match-rate summary from the target rows,
+- profile match coverage by draft year, macro archetype, and identity drift class,
+- summarize contract-option flags and cap-percentage distribution for matched rows,
+- carry Trae Young and Nikola Vučević forward as reserved demo players for later salary-suggestion case studies.
+
+Resolved inputs:
+- year5_salary_target: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\SalaryBlock\year5_salary_target_table.csv
+- year5_salary_merge_summary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\SalaryBlock\year5_salary_merge_summary.csv
+- year5_salary_unmatched_diagnostic: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\SalaryBlock\year5_salary_unmatched_diagnostic.csv
+- final_player_profile: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\final_player_archetype_profile_table.csv
+
+Key recomputed counts:
+- matched players: 665
+- unmatched players: 393
+- match rate: 0.628544
+- demo holdout players found: 2
+
+Outputs written:
+- salary_target_audit_summary.csv
+- salary_target_audit_summary.md
+- salary_target_match_by_draft_year.csv
+- salary_target_match_type_breakdown.csv
+- salary_target_contract_flag_summary.csv
+- salary_target_cap_pct_distribution_summary.csv
+- salary_target_match_by_macro_archetype.csv
+- salary_target_match_by_identity_drift.csv
+- salary_target_unmatched_with_profile.csv
+- salary_demo_player_holdout_manifest.csv
+- salary_target_audit_metadata.json
+
+================================================================================
+[2026-04-15 23:22:52]
+Phase 2 — build market anchor band
+Script: 02_build_market_anchor_band.py
+Project root: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3
+Inventory reference: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\project_inventory.csv
+Holdout manifest: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\salary_demo_player_holdout_manifest.csv
+
+Purpose:
+- convert the Block 2 comp-market context into a reusable price board with protected price, fair price, and walk-away max,
+- audit the anchor band against the row-level comp salary detail table rather than trusting only one preassembled table,
+- preserve Trae Young and Nikola Vučević as reserved case-study players for later salary suggestions,
+- produce a clean one-row-per-player anchor table for downstream rule logic and decision-card assembly.
+
+Resolved inputs:
+- deliverable3_block2_context: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\SalaryBlock\deliverable3_block2_archetype_comp_market_context.csv
+- comp_salary_detail: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\SalaryBlock\comp_salary_detail_table.csv
+- salary_demo_player_holdout_manifest: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\salary_demo_player_holdout_manifest.csv
+
+Key outputs:
+- players in Block 2 context: 1058
+- players with supported market anchor band: 941
+- supported market anchor share: 0.889414
+
+Design choices:
+- protected price = comp p25 with recomputed-detail fallback,
+- fair price = weighted mean with p50 fallback,
+- walk-away max = comp p75 with recomputed-detail fallback,
+- ceiling comps remain excluded from the pricing anchor by design,
+- no forecast premium/discount is applied in this phase.
+
+Outputs written:
+- salary_market_anchor_band_table.csv
+- salary_market_anchor_band_summary.csv
+- salary_market_anchor_band_summary.md
+- salary_market_anchor_support_breakdown.csv
+- salary_market_anchor_fair_price_distribution.csv
+- salary_market_anchor_band_metadata.json
+
+================================================================================
+[2026-04-15 23:36:48]
+
+Phase 3 complete — provisional Deliverable 3 decision inputs assembled.
+
+Inputs used:
+- deliverable3_block2_context: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\SalaryBlock\deliverable3_block2_archetype_comp_market_context.csv
+- market_anchor_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\salary_market_anchor_band_table.csv
+- holdout_manifest: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\salary_demo_player_holdout_manifest.csv
+
+Main outputs:
+- salary_provisional_decision_inputs_table.csv
+- salary_provisional_decision_inputs_summary.csv
+- salary_provisional_comp_support_breakdown.csv
+- salary_provisional_action_by_scarcity.csv
+- salary_comp_support_logic_reference.csv
+- salary_scarcity_wording_reference.csv
+- salary_provisional_action_rule_reference.csv
+
+Workflow logic:
+- mapped macro archetypes to scarcity / replaceability wording,
+- classified prototype ambiguity and anchor-width bands using empirical quartiles from supported anchors,
+- built conservative comp-support tiers from match count, match rate, effective comp depth, same-macro share, and anchor width,
+- assigned provisional action buckets using Block 2 comp evidence and risk proxies only,
+- preserved Trae Young and Nikola Vučević as case-study holdouts when the holdout manifest was available.
+
+Important boundary:
+- the resulting stance remains provisional_block2_only and must not be treated as the final extension recommendation.
+
+================================================================================
+[2026-04-15 23:47:14]
+
+Phase 4 complete — provisional Deliverable 3 decision cards assembled.
+
+Inputs used:
+- decision_inputs_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\salary_provisional_decision_inputs_table.csv
+
+Main outputs:
+- deliverable3_provisional_decision_cards.csv
+- deliverable3_provisional_case_study_table.csv
+- deliverable3_provisional_decision_card_manifest.csv
+- deliverable3_provisional_decision_cards_summary.csv
+- deliverable3_provisional_decision_cards_summary.md
+
+Workflow logic:
+- converted Phase 3 decision inputs into stakeholder-facing provisional decision-card text fields,
+- preserved protected / fair / walk-away band language in readable card form,
+- assembled identity, risk, context, and status text blocks for later reporting and visuals,
+- extracted case-study rows with holdout priority for Trae Young and Nikola Vučević when available.
+
+Important boundary:
+- the cards remain provisional_block2_only and must not be presented as final extension guidance.
+
+================================================================================
+[2026-04-16 00:15:43]
+
+Phase 5 complete — Year-5 salary modeling table prepared.
+
+Inputs used:
+- year5_salary_target: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\SalaryBlock\year5_salary_target_table.csv
+- identity_drift_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\player_identity_drift_table.csv
+- macro_archetype_backbone: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\archetype_macro_player_table.csv
+- final_player_profile: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\final_player_archetype_profile_table.csv
+- holdout_manifest: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\salary_demo_player_holdout_manifest.csv
+
+Main outputs:
+- year5_salary_modeling_table.csv
+- year5_salary_modeling_dictionary.csv
+- year5_salary_modeling_missingness.csv
+- year5_salary_training_manifest.csv
+- year5_salary_modeling_summary.csv
+- year5_salary_modeling_summary.md
+
+Workflow logic:
+- treated year5_salary_target_table.csv as the canonical target backbone,
+- reused player_identity_drift_table.csv as the richest currently available pre-Year5 predictor backbone,
+- kept salary-merge audit fields for traceability but marked them as excluded from baseline predictive modeling,
+- kept Trae Young and Nikola Vučević excluded from training via the holdout manifest,
+- documented the feature dictionary and missingness so a later baseline regression can be built without silent leakage.
+
+Important boundary:
+- this phase prepares the baseline salary-model table only;
+- it does not fit the model yet and does not replace the protected / fair / walk-away market band logic.
+
+================================================================================
+[2026-04-16 01:01:02]
+Phase 6 complete — baseline Year-5 salary models fitted.
+
+Inputs used:
+- modeling_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\year5_salary_modeling_table.csv
+- training_manifest: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\year5_salary_training_manifest.csv
+- modeling_dictionary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\year5_salary_modeling_dictionary.csv
+
+Main outputs:
+- year5_salary_baseline_oof_predictions.csv
+- year5_salary_baseline_cv_fold_metrics.csv
+- year5_salary_baseline_model_comparison.csv
+- year5_salary_baseline_selected_model_coefficients.csv
+- year5_salary_baseline_selected_model_predictions.csv
+- year5_salary_baseline_demo_holdout_predictions.csv
+- year5_salary_baseline_summary.csv
+- year5_salary_baseline_summary.md
+- year5_salary_baseline_selected_model.joblib
+
+Workflow logic:
+- used the Phase 5 modeling-prep table as the baseline salary-model backbone,
+- restricted fitting to training-eligible observed-target rows only,
+- evaluated disciplined benchmark models with draft-year-aware GroupKFold outer validation,
+- selected the best baseline model by grouped out-of-fold RMSE,
+- refit the selected model on the full eligible training sample and generated player-level baseline predictions,
+- preserved case-study holdout players outside training while still returning their predicted salary-cap percentages.
+
+Important boundary:
+- this phase fits baseline salary models only and must not be treated as final Deliverable 3 guidance.
+
+================================================================================
+[2026-04-16 18:10:25]
+Phase 7 complete — salary model, market anchor, and macro forecast overlay reconciled.
+
+Inputs used:
+- baseline_predictions: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\year5_salary_baseline_selected_model_predictions.csv
+- market_anchor_band: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\salary_market_anchor_band_table.csv
+- decision_inputs: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\salary_provisional_decision_inputs_table.csv
+- forecast_macro: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\data\final_lstm_predictions_all_players_with_class_and_performance.csv
+
+Main outputs:
+- deliverable3_salary_reconciliation_table.csv
+- deliverable3_salary_reconciliation_summary.csv
+- deliverable3_forecast_overlay_merge_audit.csv
+- deliverable3_salary_reconciliation_case_study_table.csv
+
+Workflow logic:
+- reconciled the baseline Year-5 salary model against the protected / fair / walk-away comp-market band,
+- classified alignment buckets such as below_protected, within_band, and above_walkaway,
+- created pricing-anchor preference flags for market-only, model-only, and review cases,
+- used the current Deliverable 1 macro forecast table only as an interim overlay when a merge-safe match was available,
+- preserved Trae Young and Nikola Vučević as case-study rows when available.
+
+Important boundary:
+- the resulting table remains interim and should not be presented as final extension guidance because uncertainty, durability, and stronger player-keyed Deliverable 1 integration are still pending.
+
+================================================================================
+[2026-04-16 23:13:24]
+Phase 8 complete — interim forecast-adjusted extension guidance assembled.
+
+Inputs used:
+- reconciliation_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_salary_reconciliation_table.csv
+
+Main outputs:
+- deliverable3_interim_extension_guidance_table.csv
+- deliverable3_interim_extension_guidance_cards.csv
+- deliverable3_interim_extension_case_study_table.csv
+- deliverable3_interim_extension_summary.csv
+- deliverable3_interim_extension_rule_reference.csv
+
+Workflow logic:
+- treated the Phase 7 reconciliation table as the merge-ready bridge between salary anchors, the baseline salary model, and the current Deliverable 1 macro forecast overlay,
+- converted the current Deliverable 1 overlay into conservative forecast-support tiers rather than pretending full uncertainty and durability outputs already exist,
+- upgraded provisional Block-2-only stances into interim extension buckets with negotiation posture fields,
+- kept Trae Young and Nikola Vučević reserved in the case-study export when present.
+
+Important boundary:
+- the resulting guidance remains interim_with_current_D1_macro_forecast and must not be presented as the final extension recommendation.
+
+================================================================================
+[2026-04-17 23:31:43]
+
+Phase 9 complete — staged final Deliverable 3 extension framework assembled.
+
+Inputs used:
+- reconciliation_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_salary_reconciliation_table.csv
+- block1_forecast_handoff: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_block1_forecast_handoff.csv
+- block1_case_study_examples: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_block1_case_study_examples.csv
+
+Workflow logic:
+- replaced earlier ad hoc forecast overlay fields with the official Deliverable 3 Block 1 handoff,
+- created explicit flags separating salary-model training sample, forecast-adjustment evaluation subset, and unsupported rows,
+- activated forecast-adjusted stance changes only on the supported subset with official test performance predictions,
+- kept the broader cohort in staged Block 2-only or classification-overlay-only status when stronger Block 1 support was not available,
+- assembled final stakeholder-facing case-study outputs for Trae Young and Nikola Vučević.
+
+Main outputs:
+- deliverable3_staged_final_framework_table.csv
+- deliverable3_staged_final_guidance_cards.csv
+- deliverable3_final_case_study_table.csv
+- deliverable3_framework_status_matrix.csv
+- deliverable3_forecast_adjustment_supported_subset.csv
+- deliverable3_forecast_adjustment_supported_subset_summary.csv
+- deliverable3_forecast_adjustment_supported_subset_crosstab.csv
+- deliverable3_staged_final_summary.csv
+- deliverable3_staged_final_summary.md
+
+Important boundary:
+- this phase completes Deliverable 3 as a staged final system, not as a fully validated final recommendation layer for the whole cohort.
+- durability / availability risk is still pending as a separate module.
+
+================================================================================
+[2026-04-17 23:31:47]
+
+Phase 10 complete — Deliverable 3 framework completion note written.
+
+Inputs used:
+- staged_summary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_staged_final_summary.csv
+- supported_subset_summary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_forecast_adjustment_supported_subset_summary.csv
+- final_case_study_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_final_case_study_table.csv
+
+Main outputs:
+- deliverable3_framework_completion_note.md
+- deliverable3_framework_completion_note_metadata.json
+
+Purpose:
+- document what Deliverable 3 is honestly complete now,
+- state what remains conditional,
+- and keep the staged system reviewable for report writing and future continuation.
+
+================================================================================
+[2026-04-18 16:46:56]
+
+Phase 9 complete — staged final Deliverable 3 extension framework assembled.
+
+Inputs used:
+- reconciliation_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_salary_reconciliation_table.csv
+- block1_forecast_handoff: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_block1_forecast_handoff.csv
+- block1_case_study_examples: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_block1_case_study_examples.csv
+
+Workflow logic:
+- replaced earlier ad hoc forecast overlay fields with the official Deliverable 3 Block 1 handoff,
+- created explicit flags separating salary-model training sample, forecast-adjustment evaluation subset, and unsupported rows,
+- activated forecast-adjusted stance changes only on the supported subset with official test performance predictions,
+- kept the broader cohort in staged Block 2-only or classification-overlay-only status when stronger Block 1 support was not available,
+- assembled final stakeholder-facing case-study outputs for Trae Young and Nikola Vučević.
+
+Main outputs:
+- deliverable3_staged_final_framework_table.csv
+- deliverable3_staged_final_guidance_cards.csv
+- deliverable3_final_case_study_table.csv
+- deliverable3_framework_status_matrix.csv
+- deliverable3_forecast_adjustment_supported_subset.csv
+- deliverable3_forecast_adjustment_supported_subset_summary.csv
+- deliverable3_forecast_adjustment_supported_subset_crosstab.csv
+- deliverable3_staged_final_summary.csv
+- deliverable3_staged_final_summary.md
+
+Important boundary:
+- this phase completes Deliverable 3 as a staged final system, not as a fully validated final recommendation layer for the whole cohort.
+- durability / availability risk is still pending as a separate module.
+
+================================================================================
+[2026-04-18 16:47:02]
+
+Phase 10 complete — Deliverable 3 framework completion note written.
+
+Inputs used:
+- staged_summary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_staged_final_summary.csv
+- supported_subset_summary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_forecast_adjustment_supported_subset_summary.csv
+- final_case_study_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_final_case_study_table.csv
+
+Main outputs:
+- deliverable3_framework_completion_note.md
+- deliverable3_framework_completion_note_metadata.json
+
+Purpose:
+- document what Deliverable 3 is honestly complete now,
+- state what remains conditional,
+- and keep the staged system reviewable for report writing and future continuation.
+
+================================================================================
+[2026-04-18 18:39:20]
+
+Phase 10 complete — Deliverable 3 framework completion note written.
+
+Inputs used:
+- staged_summary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_staged_final_summary.csv
+- supported_subset_summary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_forecast_adjustment_supported_subset_summary.csv
+- final_case_study_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_final_case_study_table.csv
+
+Main outputs:
+- deliverable3_framework_completion_note.md
+- deliverable3_framework_completion_note_metadata.json
+
+Purpose:
+- document what Deliverable 3 is honestly complete now,
+- state what remains conditional,
+- and keep the staged system reviewable for report writing and future continuation.
+
+================================================================================
+[2026-04-18 18:39:34]
+
+Phase 9 complete — staged final Deliverable 3 extension framework assembled.
+
+Inputs used:
+- reconciliation_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_salary_reconciliation_table.csv
+- block1_forecast_handoff: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_block1_forecast_handoff.csv
+- block1_case_study_examples: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_block1_case_study_examples.csv
+
+Workflow logic:
+- replaced earlier ad hoc forecast overlay fields with the official Deliverable 3 Block 1 handoff,
+- created explicit flags separating salary-model training sample, forecast-adjustment evaluation subset, and unsupported rows,
+- activated forecast-adjusted stance changes only on the supported subset with official test performance predictions,
+- kept the broader cohort in staged Block 2-only or classification-overlay-only status when stronger Block 1 support was not available,
+- assembled final stakeholder-facing case-study outputs for Trae Young and Nikola Vučević.
+
+Main outputs:
+- deliverable3_staged_final_framework_table.csv
+- deliverable3_staged_final_guidance_cards.csv
+- deliverable3_final_case_study_table.csv
+- deliverable3_framework_status_matrix.csv
+- deliverable3_forecast_adjustment_supported_subset.csv
+- deliverable3_forecast_adjustment_supported_subset_summary.csv
+- deliverable3_forecast_adjustment_supported_subset_crosstab.csv
+- deliverable3_staged_final_summary.csv
+- deliverable3_staged_final_summary.md
+
+Important boundary:
+- this phase completes Deliverable 3 as a staged final system, not as a fully validated final recommendation layer for the whole cohort.
+- durability / availability risk is still pending as a separate module.
+
+================================================================================
+[2026-04-18 18:39:40]
+
+Phase 10 complete — Deliverable 3 framework completion note written.
+
+Inputs used:
+- staged_summary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_staged_final_summary.csv
+- supported_subset_summary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_forecast_adjustment_supported_subset_summary.csv
+- final_case_study_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_final_case_study_table.csv
+
+Main outputs:
+- deliverable3_framework_completion_note.md
+- deliverable3_framework_completion_note_metadata.json
+
+Purpose:
+- document what Deliverable 3 is honestly complete now,
+- state what remains conditional,
+- and keep the staged system reviewable for report writing and future continuation.
+
+================================================================================
+[2026-04-18 18:39:44]
+Phase 8 complete — interim forecast-adjusted extension guidance assembled.
+
+Inputs used:
+- reconciliation_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_salary_reconciliation_table.csv
+
+Main outputs:
+- deliverable3_interim_extension_guidance_table.csv
+- deliverable3_interim_extension_guidance_cards.csv
+- deliverable3_interim_extension_case_study_table.csv
+- deliverable3_interim_extension_summary.csv
+- deliverable3_interim_extension_rule_reference.csv
+
+Workflow logic:
+- treated the Phase 7 reconciliation table as the merge-ready bridge between salary anchors, the baseline salary model, and the current Deliverable 1 macro forecast overlay,
+- converted the current Deliverable 1 overlay into conservative forecast-support tiers rather than pretending full uncertainty and durability outputs already exist,
+- upgraded provisional Block-2-only stances into interim extension buckets with negotiation posture fields,
+- kept Trae Young and Nikola Vučević reserved in the case-study export when present.
+
+Important boundary:
+- the resulting guidance remains interim_with_current_D1_macro_forecast and must not be presented as the final extension recommendation.
+
+================================================================================
+[2026-04-18 18:39:47]
+
+Phase 9 complete — staged final Deliverable 3 extension framework assembled.
+
+Inputs used:
+- reconciliation_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_salary_reconciliation_table.csv
+- block1_forecast_handoff: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_block1_forecast_handoff.csv
+- block1_case_study_examples: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_block1_case_study_examples.csv
+
+Workflow logic:
+- replaced earlier ad hoc forecast overlay fields with the official Deliverable 3 Block 1 handoff,
+- created explicit flags separating salary-model training sample, forecast-adjustment evaluation subset, and unsupported rows,
+- activated forecast-adjusted stance changes only on the supported subset with official test performance predictions,
+- kept the broader cohort in staged Block 2-only or classification-overlay-only status when stronger Block 1 support was not available,
+- assembled final stakeholder-facing case-study outputs for Trae Young and Nikola Vučević.
+
+Main outputs:
+- deliverable3_staged_final_framework_table.csv
+- deliverable3_staged_final_guidance_cards.csv
+- deliverable3_final_case_study_table.csv
+- deliverable3_framework_status_matrix.csv
+- deliverable3_forecast_adjustment_supported_subset.csv
+- deliverable3_forecast_adjustment_supported_subset_summary.csv
+- deliverable3_forecast_adjustment_supported_subset_crosstab.csv
+- deliverable3_staged_final_summary.csv
+- deliverable3_staged_final_summary.md
+
+Important boundary:
+- this phase completes Deliverable 3 as a staged final system, not as a fully validated final recommendation layer for the whole cohort.
+- durability / availability risk is still pending as a separate module.
+
+================================================================================
+[2026-04-18 18:39:50]
+
+Phase 10 complete — Deliverable 3 framework completion note written.
+
+Inputs used:
+- staged_summary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_staged_final_summary.csv
+- supported_subset_summary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_forecast_adjustment_supported_subset_summary.csv
+- final_case_study_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_final_case_study_table.csv
+
+Main outputs:
+- deliverable3_framework_completion_note.md
+- deliverable3_framework_completion_note_metadata.json
+
+Purpose:
+- document what Deliverable 3 is honestly complete now,
+- state what remains conditional,
+- and keep the staged system reviewable for report writing and future continuation.
+
+================================================================================
+[2026-04-18 18:52:09]
+
+Phase 9 complete — staged final Deliverable 3 extension framework assembled.
+
+Inputs used:
+- reconciliation_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_salary_reconciliation_table.csv
+- block1_forecast_handoff: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_block1_forecast_handoff.csv
+- block1_case_study_examples: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_block1_case_study_examples.csv
+
+Workflow logic:
+- replaced earlier ad hoc forecast overlay fields with the official Deliverable 3 Block 1 handoff,
+- created explicit flags separating salary-model training sample, forecast-adjustment evaluation subset, and unsupported rows,
+- activated forecast-adjusted stance changes only on the supported subset with official test performance predictions,
+- kept the broader cohort in staged Block 2-only or classification-overlay-only status when stronger Block 1 support was not available,
+- assembled final stakeholder-facing case-study outputs for Trae Young and Nikola Vučević.
+
+Main outputs:
+- deliverable3_staged_final_framework_table.csv
+- deliverable3_staged_final_guidance_cards.csv
+- deliverable3_final_case_study_table.csv
+- deliverable3_framework_status_matrix.csv
+- deliverable3_forecast_adjustment_supported_subset.csv
+- deliverable3_forecast_adjustment_supported_subset_summary.csv
+- deliverable3_forecast_adjustment_supported_subset_crosstab.csv
+- deliverable3_staged_final_summary.csv
+- deliverable3_staged_final_summary.md
+
+Important boundary:
+- this phase completes Deliverable 3 as a staged final system, not as a fully validated final recommendation layer for the whole cohort.
+- durability / availability risk is still pending as a separate module.
+
+================================================================================
+[2026-04-18 18:52:13]
+
+Phase 10 complete — Deliverable 3 framework completion note written.
+
+Inputs used:
+- staged_summary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_staged_final_summary.csv
+- supported_subset_summary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_forecast_adjustment_supported_subset_summary.csv
+- final_case_study_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_final_case_study_table.csv
+
+Main outputs:
+- deliverable3_framework_completion_note.md
+- deliverable3_framework_completion_note_metadata.json
+
+Purpose:
+- document what Deliverable 3 is honestly complete now,
+- state what remains conditional,
+- and keep the staged system reviewable for report writing and future continuation.
+
+================================================================================
+[2026-04-18 19:46:17]
+Phase 8 complete — interim forecast-adjusted extension guidance assembled.
+
+Inputs used:
+- reconciliation_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_salary_reconciliation_table.csv
+
+Main outputs:
+- deliverable3_interim_extension_guidance_table.csv
+- deliverable3_interim_extension_guidance_cards.csv
+- deliverable3_interim_extension_case_study_table.csv
+- deliverable3_interim_extension_summary.csv
+- deliverable3_interim_extension_rule_reference.csv
+
+Workflow logic:
+- treated the Phase 7 reconciliation table as the merge-ready bridge between salary anchors, the baseline salary model, and the current Deliverable 1 macro forecast overlay,
+- converted the current Deliverable 1 overlay into conservative forecast-support tiers rather than pretending full uncertainty and durability outputs already exist,
+- upgraded provisional Block-2-only stances into interim extension buckets with negotiation posture fields,
+- kept Trae Young, Nikola Vučević, and Andrew Bynum reserved in the case-study export when present.
+
+Important boundary:
+- the resulting guidance remains interim_with_current_D1_macro_forecast and must not be presented as the final extension recommendation.
+
+================================================================================
+[2026-04-18 19:46:28]
+Phase 0 — path audit and project map
+Script: 00_project_inventory.py
+Project root: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3
+Output directory: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support
+Visual directory: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\visual\Salary Decision Support
+
+Purpose:
+- resolve the canonical Deliverable 3 file map from project-root relative paths,
+- search recursively when files are not found at the expected location,
+- write an auditable inventory before downstream salary modeling or decision logic starts,
+- keep Trae Young and Nikola Vučević reserved as case-study demo players for later phases.
+
+Outputs written:
+- project_inventory.csv
+- project_inventory.md
+- project_inventory_summary.json
+
+Summary:
+- required files found: 10 / 10
+- optional files found: 5 / 5
+- path-corrected resolutions: 0
+- missing required roles: none
+
+================================================================================
+[2026-04-18 19:46:34]
+Phase 1 — salary target audit
+Script: 01_salary_target_audit.py
+Project root: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3
+Inventory reference: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\project_inventory.csv
+
+Purpose:
+- treat year5_salary_target_table.csv as the canonical Deliverable 3 target table,
+- verify merge coverage and recompute the core match-rate summary from the target rows,
+- profile match coverage by draft year, macro archetype, and identity drift class,
+- summarize contract-option flags and cap-percentage distribution for matched rows,
+- carry Trae Young and Nikola Vučević forward as reserved demo players for later salary-suggestion case studies.
+
+Resolved inputs:
+- year5_salary_target: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\SalaryBlock\year5_salary_target_table.csv
+- year5_salary_merge_summary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\SalaryBlock\year5_salary_merge_summary.csv
+- year5_salary_unmatched_diagnostic: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\SalaryBlock\year5_salary_unmatched_diagnostic.csv
+- final_player_profile: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\final_player_archetype_profile_table.csv
+
+Key recomputed counts:
+- matched players: 665
+- unmatched players: 393
+- match rate: 0.628544
+- demo holdout players found: 3
+
+Outputs written:
+- salary_target_audit_summary.csv
+- salary_target_audit_summary.md
+- salary_target_match_by_draft_year.csv
+- salary_target_match_type_breakdown.csv
+- salary_target_contract_flag_summary.csv
+- salary_target_cap_pct_distribution_summary.csv
+- salary_target_match_by_macro_archetype.csv
+- salary_target_match_by_identity_drift.csv
+- salary_target_unmatched_with_profile.csv
+- salary_demo_player_holdout_manifest.csv
+- salary_target_audit_metadata.json
+
+================================================================================
+[2026-04-18 19:46:44]
+Phase 2 — build market anchor band
+Script: 02_build_market_anchor_band.py
+Project root: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3
+Inventory reference: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\project_inventory.csv
+Holdout manifest: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\salary_demo_player_holdout_manifest.csv
+
+Purpose:
+- convert the Block 2 comp-market context into a reusable price board with protected price, fair price, and walk-away max,
+- audit the anchor band against the row-level comp salary detail table rather than trusting only one preassembled table,
+- preserve Trae Young and Nikola Vučević as reserved case-study players for later salary suggestions,
+- produce a clean one-row-per-player anchor table for downstream rule logic and decision-card assembly.
+
+Resolved inputs:
+- deliverable3_block2_context: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\SalaryBlock\deliverable3_block2_archetype_comp_market_context.csv
+- comp_salary_detail: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\SalaryBlock\comp_salary_detail_table.csv
+- salary_demo_player_holdout_manifest: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\salary_demo_player_holdout_manifest.csv
+
+Key outputs:
+- players in Block 2 context: 1058
+- players with supported market anchor band: 941
+- supported market anchor share: 0.889414
+
+Design choices:
+- protected price = comp p25 with recomputed-detail fallback,
+- fair price = weighted mean with p50 fallback,
+- walk-away max = comp p75 with recomputed-detail fallback,
+- ceiling comps remain excluded from the pricing anchor by design,
+- no forecast premium/discount is applied in this phase.
+
+Outputs written:
+- salary_market_anchor_band_table.csv
+- salary_market_anchor_band_summary.csv
+- salary_market_anchor_band_summary.md
+- salary_market_anchor_support_breakdown.csv
+- salary_market_anchor_fair_price_distribution.csv
+- salary_market_anchor_band_metadata.json
+
+================================================================================
+[2026-04-18 19:46:52]
+
+Phase 3 complete — provisional Deliverable 3 decision inputs assembled.
+
+Inputs used:
+- deliverable3_block2_context: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\SalaryBlock\deliverable3_block2_archetype_comp_market_context.csv
+- market_anchor_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\salary_market_anchor_band_table.csv
+- holdout_manifest: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\salary_demo_player_holdout_manifest.csv
+
+Main outputs:
+- salary_provisional_decision_inputs_table.csv
+- salary_provisional_decision_inputs_summary.csv
+- salary_provisional_comp_support_breakdown.csv
+- salary_provisional_action_by_scarcity.csv
+- salary_comp_support_logic_reference.csv
+- salary_scarcity_wording_reference.csv
+- salary_provisional_action_rule_reference.csv
+
+Workflow logic:
+- mapped macro archetypes to scarcity / replaceability wording,
+- classified prototype ambiguity and anchor-width bands using empirical quartiles from supported anchors,
+- built conservative comp-support tiers from match count, match rate, effective comp depth, same-macro share, and anchor width,
+- assigned provisional action buckets using Block 2 comp evidence and risk proxies only,
+- preserved Trae Young and Nikola Vučević as case-study holdouts when the holdout manifest was available.
+
+Important boundary:
+- the resulting stance remains provisional_block2_only and must not be treated as the final extension recommendation.
+
+================================================================================
+[2026-04-18 19:47:00]
+
+Phase 4 complete — provisional Deliverable 3 decision cards assembled.
+
+Inputs used:
+- decision_inputs_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\salary_provisional_decision_inputs_table.csv
+
+Main outputs:
+- deliverable3_provisional_decision_cards.csv
+- deliverable3_provisional_case_study_table.csv
+- deliverable3_provisional_decision_card_manifest.csv
+- deliverable3_provisional_decision_cards_summary.csv
+- deliverable3_provisional_decision_cards_summary.md
+
+Workflow logic:
+- converted Phase 3 decision inputs into stakeholder-facing provisional decision-card text fields,
+- preserved protected / fair / walk-away band language in readable card form,
+- assembled identity, risk, context, and status text blocks for later reporting and visuals,
+- extracted case-study rows with holdout priority for Trae Young and Nikola Vučević when available.
+
+Important boundary:
+- the cards remain provisional_block2_only and must not be presented as final extension guidance.
+
+================================================================================
+[2026-04-18 19:47:07]
+
+Phase 5 complete — Year-5 salary modeling table prepared.
+
+Inputs used:
+- year5_salary_target: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\SalaryBlock\year5_salary_target_table.csv
+- identity_drift_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\player_identity_drift_table.csv
+- macro_archetype_backbone: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\archetype_macro_player_table.csv
+- final_player_profile: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\final_player_archetype_profile_table.csv
+- holdout_manifest: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\salary_demo_player_holdout_manifest.csv
+
+Main outputs:
+- year5_salary_modeling_table.csv
+- year5_salary_modeling_dictionary.csv
+- year5_salary_modeling_missingness.csv
+- year5_salary_training_manifest.csv
+- year5_salary_modeling_summary.csv
+- year5_salary_modeling_summary.md
+
+Workflow logic:
+- treated year5_salary_target_table.csv as the canonical target backbone,
+- reused player_identity_drift_table.csv as the richest currently available pre-Year5 predictor backbone,
+- kept salary-merge audit fields for traceability but marked them as excluded from baseline predictive modeling,
+- kept Trae Young and Nikola Vučević excluded from training via the holdout manifest,
+- documented the feature dictionary and missingness so a later baseline regression can be built without silent leakage.
+
+Important boundary:
+- this phase prepares the baseline salary-model table only;
+- it does not fit the model yet and does not replace the protected / fair / walk-away market band logic.
+
+================================================================================
+[2026-04-18 19:47:14]
+Phase 6 complete — baseline Year-5 salary models fitted.
+
+Inputs used:
+- modeling_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\year5_salary_modeling_table.csv
+- training_manifest: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\year5_salary_training_manifest.csv
+- modeling_dictionary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\year5_salary_modeling_dictionary.csv
+
+Main outputs:
+- year5_salary_baseline_oof_predictions.csv
+- year5_salary_baseline_cv_fold_metrics.csv
+- year5_salary_baseline_model_comparison.csv
+- year5_salary_baseline_selected_model_coefficients.csv
+- year5_salary_baseline_selected_model_predictions.csv
+- year5_salary_baseline_demo_holdout_predictions.csv
+- year5_salary_baseline_summary.csv
+- year5_salary_baseline_summary.md
+- year5_salary_baseline_selected_model.joblib
+
+Workflow logic:
+- used the Phase 5 modeling-prep table as the baseline salary-model backbone,
+- restricted fitting to training-eligible observed-target rows only,
+- evaluated disciplined benchmark models with draft-year-aware GroupKFold outer validation,
+- selected the best baseline model by grouped out-of-fold RMSE,
+- refit the selected model on the full eligible training sample and generated player-level baseline predictions,
+- preserved case-study holdout players outside training while still returning their predicted salary-cap percentages.
+
+Important boundary:
+- this phase fits baseline salary models only and must not be treated as final Deliverable 3 guidance.
+
+================================================================================
+[2026-04-18 19:47:21]
+Phase 7 complete — salary model, market anchor, and macro forecast overlay reconciled.
+
+Inputs used:
+- baseline_predictions: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\year5_salary_baseline_selected_model_predictions.csv
+- market_anchor_band: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\salary_market_anchor_band_table.csv
+- decision_inputs: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\salary_provisional_decision_inputs_table.csv
+- forecast_macro: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\data\final_lstm_predictions_all_players_with_class_and_performance.csv
+
+Main outputs:
+- deliverable3_salary_reconciliation_table.csv
+- deliverable3_salary_reconciliation_summary.csv
+- deliverable3_forecast_overlay_merge_audit.csv
+- deliverable3_salary_reconciliation_case_study_table.csv
+
+Workflow logic:
+- reconciled the baseline Year-5 salary model against the protected / fair / walk-away comp-market band,
+- classified alignment buckets such as below_protected, within_band, and above_walkaway,
+- created pricing-anchor preference flags for market-only, model-only, and review cases,
+- used the current Deliverable 1 macro forecast table only as an interim overlay when a merge-safe match was available,
+- preserved Trae Young and Nikola Vučević as case-study rows when available.
+
+Important boundary:
+- the resulting table remains interim and should not be presented as final extension guidance because uncertainty, durability, and stronger player-keyed Deliverable 1 integration are still pending.
+
+================================================================================
+[2026-04-18 19:47:27]
+Phase 8 complete — interim forecast-adjusted extension guidance assembled.
+
+Inputs used:
+- reconciliation_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_salary_reconciliation_table.csv
+
+Main outputs:
+- deliverable3_interim_extension_guidance_table.csv
+- deliverable3_interim_extension_guidance_cards.csv
+- deliverable3_interim_extension_case_study_table.csv
+- deliverable3_interim_extension_summary.csv
+- deliverable3_interim_extension_rule_reference.csv
+
+Workflow logic:
+- treated the Phase 7 reconciliation table as the merge-ready bridge between salary anchors, the baseline salary model, and the current Deliverable 1 macro forecast overlay,
+- converted the current Deliverable 1 overlay into conservative forecast-support tiers rather than pretending full uncertainty and durability outputs already exist,
+- upgraded provisional Block-2-only stances into interim extension buckets with negotiation posture fields,
+- kept Trae Young, Nikola Vučević, and Andrew Bynum reserved in the case-study export when present.
+
+Important boundary:
+- the resulting guidance remains interim_with_current_D1_macro_forecast and must not be presented as the final extension recommendation.
+
+================================================================================
+[2026-04-18 19:47:36]
+
+Phase 9 complete — staged final Deliverable 3 extension framework assembled.
+
+Inputs used:
+- reconciliation_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_salary_reconciliation_table.csv
+- block1_forecast_handoff: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_block1_forecast_handoff.csv
+- block1_case_study_examples: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_block1_case_study_examples.csv
+
+Workflow logic:
+- replaced earlier ad hoc forecast overlay fields with the official Deliverable 3 Block 1 handoff,
+- created explicit flags separating salary-model training sample, forecast-adjustment evaluation subset, and unsupported rows,
+- activated forecast-adjusted stance changes only on the supported subset with official test performance predictions,
+- kept the broader cohort in staged Block 2-only or classification-overlay-only status when stronger Block 1 support was not available,
+- assembled final stakeholder-facing case-study outputs for Trae Young, Nikola Vučević, and Andrew Bynum.
+
+Main outputs:
+- deliverable3_staged_final_framework_table.csv
+- deliverable3_staged_final_guidance_cards.csv
+- deliverable3_final_case_study_table.csv
+- deliverable3_framework_status_matrix.csv
+- deliverable3_forecast_adjustment_supported_subset.csv
+- deliverable3_forecast_adjustment_supported_subset_summary.csv
+- deliverable3_forecast_adjustment_supported_subset_crosstab.csv
+- deliverable3_staged_final_summary.csv
+- deliverable3_staged_final_summary.md
+
+Important boundary:
+- this phase completes Deliverable 3 as a staged final system, not as a fully validated final recommendation layer for the whole cohort.
+- durability / availability risk is still pending as a separate module.
+
+================================================================================
+[2026-04-18 19:47:39]
+
+Phase 10 complete — Deliverable 3 framework completion note written.
+
+Inputs used:
+- staged_summary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_staged_final_summary.csv
+- supported_subset_summary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_forecast_adjustment_supported_subset_summary.csv
+- final_case_study_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_final_case_study_table.csv
+
+Main outputs:
+- deliverable3_framework_completion_note.md
+- deliverable3_framework_completion_note_metadata.json
+
+Purpose:
+- document what Deliverable 3 is honestly complete now,
+- state what remains conditional,
+- and keep the staged system reviewable for report writing and future continuation.
+
+================================================================================
+[2026-04-18 19:47:50]
+
+Phase 9 complete — staged final Deliverable 3 extension framework assembled.
+
+Inputs used:
+- reconciliation_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_salary_reconciliation_table.csv
+- block1_forecast_handoff: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_block1_forecast_handoff.csv
+- block1_case_study_examples: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_block1_case_study_examples.csv
+
+Workflow logic:
+- replaced earlier ad hoc forecast overlay fields with the official Deliverable 3 Block 1 handoff,
+- created explicit flags separating salary-model training sample, forecast-adjustment evaluation subset, and unsupported rows,
+- activated forecast-adjusted stance changes only on the supported subset with official test performance predictions,
+- kept the broader cohort in staged Block 2-only or classification-overlay-only status when stronger Block 1 support was not available,
+- assembled final stakeholder-facing case-study outputs for Trae Young, Nikola Vučević, and Andrew Bynum.
+
+Main outputs:
+- deliverable3_staged_final_framework_table.csv
+- deliverable3_staged_final_guidance_cards.csv
+- deliverable3_final_case_study_table.csv
+- deliverable3_framework_status_matrix.csv
+- deliverable3_forecast_adjustment_supported_subset.csv
+- deliverable3_forecast_adjustment_supported_subset_summary.csv
+- deliverable3_forecast_adjustment_supported_subset_crosstab.csv
+- deliverable3_staged_final_summary.csv
+- deliverable3_staged_final_summary.md
+
+Important boundary:
+- this phase completes Deliverable 3 as a staged final system, not as a fully validated final recommendation layer for the whole cohort.
+- durability / availability risk is still pending as a separate module.
+
+================================================================================
+[2026-04-18 19:47:54]
+
+Phase 10 complete — Deliverable 3 framework completion note written.
+
+Inputs used:
+- staged_summary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_staged_final_summary.csv
+- supported_subset_summary: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_forecast_adjustment_supported_subset_summary.csv
+- final_case_study_table: C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Salary Decision Support\deliverable3_final_case_study_table.csv
+
+Main outputs:
+- deliverable3_framework_completion_note.md
+- deliverable3_framework_completion_note_metadata.json
+
+Purpose:
+- document what Deliverable 3 is honestly complete now,
+- state what remains conditional,
+- and keep the staged system reviewable for report writing and future continuation.
+
+================================================================================
+[2026-04-19 22:28:00]
+Phase 2 — build market anchor band
+Script: 02_build_market_anchor_band.py
+Project root: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3
+Inventory reference: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/project_inventory.csv
+Holdout manifest: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_demo_player_holdout_manifest.csv
+
+Purpose:
+- convert the Block 2 comp-market context into a reusable price board with protected price, fair price, and walk-away max,
+- audit the anchor band against the row-level comp salary detail table rather than trusting only one preassembled table,
+- preserve Trae Young and Nikola Vučević as reserved case-study players for later salary suggestions,
+- produce a clean one-row-per-player anchor table for downstream rule logic and decision-card assembly.
+
+Resolved inputs:
+- deliverable3_block2_context: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/SalaryBlock/deliverable3_block2_archetype_comp_market_context.csv
+- comp_salary_detail: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/SalaryBlock/comp_salary_detail_table.csv
+- salary_demo_player_holdout_manifest: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_demo_player_holdout_manifest.csv
+
+Key outputs:
+- players in Block 2 context: 1058
+- players with supported market anchor band: 941
+- supported market anchor share: 0.889414
+
+Design choices:
+- protected price = comp p25 with recomputed-detail fallback,
+- fair price = weighted mean with p50 fallback,
+- walk-away max = comp p75 with recomputed-detail fallback,
+- ceiling comps remain excluded from the pricing anchor by design,
+- no forecast premium/discount is applied in this phase.
+
+Outputs written:
+- salary_market_anchor_band_table.csv
+- salary_market_anchor_band_summary.csv
+- salary_market_anchor_band_summary.md
+- salary_market_anchor_support_breakdown.csv
+- salary_market_anchor_fair_price_distribution.csv
+- salary_market_anchor_band_metadata.json
+
+================================================================================
+[2026-04-19 22:28:01]
+
+Phase 3 complete — provisional Deliverable 3 decision inputs assembled.
+
+Inputs used:
+- deliverable3_block2_context: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/SalaryBlock/deliverable3_block2_archetype_comp_market_context.csv
+- market_anchor_table: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_market_anchor_band_table.csv
+- holdout_manifest: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_demo_player_holdout_manifest.csv
+
+Main outputs:
+- salary_provisional_decision_inputs_table.csv
+- salary_provisional_decision_inputs_summary.csv
+- salary_provisional_comp_support_breakdown.csv
+- salary_provisional_action_by_scarcity.csv
+- salary_comp_support_logic_reference.csv
+- salary_scarcity_wording_reference.csv
+- salary_provisional_action_rule_reference.csv
+
+Workflow logic:
+- mapped macro archetypes to scarcity / replaceability wording,
+- classified prototype ambiguity and anchor-width bands using empirical quartiles from supported anchors,
+- built conservative comp-support tiers from match count, match rate, effective comp depth, same-macro share, and anchor width,
+- assigned provisional action buckets using Block 2 comp evidence and risk proxies only,
+- preserved Trae Young and Nikola Vučević as case-study holdouts when the holdout manifest was available.
+
+Important boundary:
+- the resulting stance remains provisional_block2_only and must not be treated as the final extension recommendation.
+
+================================================================================
+[2026-04-19 22:28:01]
+
+Phase 4 complete — provisional Deliverable 3 decision cards assembled.
+
+Inputs used:
+- decision_inputs_table: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_provisional_decision_inputs_table.csv
+
+Main outputs:
+- deliverable3_provisional_decision_cards.csv
+- deliverable3_provisional_case_study_table.csv
+- deliverable3_provisional_decision_card_manifest.csv
+- deliverable3_provisional_decision_cards_summary.csv
+- deliverable3_provisional_decision_cards_summary.md
+
+Workflow logic:
+- converted Phase 3 decision inputs into stakeholder-facing provisional decision-card text fields,
+- preserved protected / fair / walk-away band language in readable card form,
+- assembled identity, risk, context, and status text blocks for later reporting and visuals,
+- extracted case-study rows with holdout priority for Trae Young and Nikola Vučević when available.
+
+Important boundary:
+- the cards remain provisional_block2_only and must not be presented as final extension guidance.
+
+================================================================================
+[2026-04-19 22:28:02]
+Phase 7 complete — salary model, market anchor, and macro forecast overlay reconciled.
+
+Inputs used:
+- baseline_predictions: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/year5_salary_baseline_selected_model_predictions.csv
+- market_anchor_band: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_market_anchor_band_table.csv
+- decision_inputs: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_provisional_decision_inputs_table.csv
+- forecast_macro: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/data/final_lstm_predictions_all_players_with_class_and_performance.csv
+
+Main outputs:
+- deliverable3_salary_reconciliation_table.csv
+- deliverable3_salary_reconciliation_summary.csv
+- deliverable3_forecast_overlay_merge_audit.csv
+- deliverable3_salary_reconciliation_case_study_table.csv
+
+Workflow logic:
+- reconciled the baseline Year-5 salary model against the protected / fair / walk-away comp-market band,
+- classified alignment buckets such as below_protected, within_band, and above_walkaway,
+- created pricing-anchor preference flags for market-only, model-only, and review cases,
+- used the current Deliverable 1 macro forecast table only as an interim overlay when a merge-safe match was available,
+- preserved Trae Young and Nikola Vučević as case-study rows when available.
+
+Important boundary:
+- the resulting table remains interim and should not be presented as final extension guidance because uncertainty, durability, and stronger player-keyed Deliverable 1 integration are still pending.
+
+================================================================================
+[2026-04-19 22:28:02]
+Phase 8 complete — interim forecast-adjusted extension guidance assembled.
+
+Inputs used:
+- reconciliation_table: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_salary_reconciliation_table.csv
+
+Main outputs:
+- deliverable3_interim_extension_guidance_table.csv
+- deliverable3_interim_extension_guidance_cards.csv
+- deliverable3_interim_extension_case_study_table.csv
+- deliverable3_interim_extension_summary.csv
+- deliverable3_interim_extension_rule_reference.csv
+
+Workflow logic:
+- treated the Phase 7 reconciliation table as the merge-ready bridge between salary anchors, the baseline salary model, and the current Deliverable 1 macro forecast overlay,
+- converted the current Deliverable 1 overlay into conservative forecast-support tiers rather than pretending full uncertainty and durability outputs already exist,
+- upgraded provisional Block-2-only stances into interim extension buckets with negotiation posture fields,
+- kept Trae Young, Nikola Vučević, and Andrew Bynum reserved in the case-study export when present.
+
+Important boundary:
+- the resulting guidance remains interim_with_current_D1_macro_forecast and must not be presented as the final extension recommendation.
+
+================================================================================
+[2026-04-19 22:28:03]
+
+Phase 9 complete — staged final Deliverable 3 extension framework assembled.
+
+Inputs used:
+- reconciliation_table: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_salary_reconciliation_table.csv
+- block1_forecast_handoff: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_block1_forecast_handoff.csv
+- block1_case_study_examples: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_block1_case_study_examples.csv
+
+Workflow logic:
+- replaced earlier ad hoc forecast overlay fields with the official Deliverable 3 Block 1 handoff,
+- created explicit flags separating salary-model training sample, forecast-adjustment evaluation subset, and unsupported rows,
+- activated forecast-adjusted stance changes only on the supported subset with official test performance predictions,
+- kept the broader cohort in staged Block 2-only or classification-overlay-only status when stronger Block 1 support was not available,
+- assembled final stakeholder-facing case-study outputs for Trae Young, Nikola Vučević, and Andrew Bynum.
+
+Main outputs:
+- deliverable3_staged_final_framework_table.csv
+- deliverable3_staged_final_guidance_cards.csv
+- deliverable3_final_case_study_table.csv
+- deliverable3_framework_status_matrix.csv
+- deliverable3_forecast_adjustment_supported_subset.csv
+- deliverable3_forecast_adjustment_supported_subset_summary.csv
+- deliverable3_forecast_adjustment_supported_subset_crosstab.csv
+- deliverable3_staged_final_summary.csv
+- deliverable3_staged_final_summary.md
+
+Important boundary:
+- this phase completes Deliverable 3 as a staged final system, not as a fully validated final recommendation layer for the whole cohort.
+- durability / availability risk is still pending as a separate module.
+
+================================================================================
+[2026-04-19 22:28:03]
+
+Phase 10 complete — Deliverable 3 framework completion note written.
+
+Inputs used:
+- staged_summary: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_staged_final_summary.csv
+- supported_subset_summary: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_forecast_adjustment_supported_subset_summary.csv
+- final_case_study_table: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_final_case_study_table.csv
+
+Main outputs:
+- deliverable3_framework_completion_note.md
+- deliverable3_framework_completion_note_metadata.json
+
+Purpose:
+- document what Deliverable 3 is honestly complete now,
+- state what remains conditional,
+- and keep the staged system reviewable for report writing and future continuation.
+
+================================================================================
+[2026-04-20 00:25:31]
+Phase 2 — build market anchor band
+Script: 02_build_market_anchor_band.py
+Project root: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3
+Inventory reference: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/project_inventory.csv
+Holdout manifest: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_demo_player_holdout_manifest.csv
+
+Purpose:
+- convert the Block 2 comp-market context into a reusable price board with protected price, fair price, and walk-away max,
+- audit the anchor band against the row-level comp salary detail table rather than trusting only one preassembled table,
+- preserve Trae Young and Nikola Vučević as reserved case-study players for later salary suggestions,
+- produce a clean one-row-per-player anchor table for downstream rule logic and decision-card assembly.
+
+Resolved inputs:
+- deliverable3_block2_context: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/SalaryBlock/deliverable3_block2_archetype_comp_market_context.csv
+- comp_salary_detail: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/SalaryBlock/comp_salary_detail_table.csv
+- salary_demo_player_holdout_manifest: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_demo_player_holdout_manifest.csv
+
+Key outputs:
+- players in Block 2 context: 1058
+- players with supported market anchor band: 941
+- supported market anchor share: 0.889414
+
+Design choices:
+- protected price = comp p25 with recomputed-detail fallback,
+- fair price = weighted mean with p50 fallback,
+- walk-away max = comp p75 with recomputed-detail fallback,
+- ceiling comps remain excluded from the pricing anchor by design,
+- no forecast premium/discount is applied in this phase.
+
+Outputs written:
+- salary_market_anchor_band_table.csv
+- salary_market_anchor_band_summary.csv
+- salary_market_anchor_band_summary.md
+- salary_market_anchor_support_breakdown.csv
+- salary_market_anchor_fair_price_distribution.csv
+- salary_market_anchor_band_metadata.json
+
+================================================================================
+[2026-04-20 00:25:32]
+
+Phase 3 complete — provisional Deliverable 3 decision inputs assembled.
+
+Inputs used:
+- deliverable3_block2_context: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/SalaryBlock/deliverable3_block2_archetype_comp_market_context.csv
+- market_anchor_table: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_market_anchor_band_table.csv
+- holdout_manifest: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_demo_player_holdout_manifest.csv
+
+Main outputs:
+- salary_provisional_decision_inputs_table.csv
+- salary_provisional_decision_inputs_summary.csv
+- salary_provisional_comp_support_breakdown.csv
+- salary_provisional_action_by_scarcity.csv
+- salary_comp_support_logic_reference.csv
+- salary_scarcity_wording_reference.csv
+- salary_provisional_action_rule_reference.csv
+
+Workflow logic:
+- mapped macro archetypes to scarcity / replaceability wording,
+- classified prototype ambiguity and anchor-width bands using empirical quartiles from supported anchors,
+- built conservative comp-support tiers from match count, match rate, effective comp depth, same-macro share, and anchor width,
+- assigned provisional action buckets using Block 2 comp evidence and risk proxies only,
+- preserved Trae Young and Nikola Vučević as case-study holdouts when the holdout manifest was available.
+
+Important boundary:
+- the resulting stance remains provisional_block2_only and must not be treated as the final extension recommendation.
+
+================================================================================
+[2026-04-20 00:25:32]
+
+Phase 4 complete — provisional Deliverable 3 decision cards assembled.
+
+Inputs used:
+- decision_inputs_table: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_provisional_decision_inputs_table.csv
+
+Main outputs:
+- deliverable3_provisional_decision_cards.csv
+- deliverable3_provisional_case_study_table.csv
+- deliverable3_provisional_decision_card_manifest.csv
+- deliverable3_provisional_decision_cards_summary.csv
+- deliverable3_provisional_decision_cards_summary.md
+
+Workflow logic:
+- converted Phase 3 decision inputs into stakeholder-facing provisional decision-card text fields,
+- preserved protected / fair / walk-away band language in readable card form,
+- assembled identity, risk, context, and status text blocks for later reporting and visuals,
+- extracted case-study rows with holdout priority for Trae Young and Nikola Vučević when available.
+
+Important boundary:
+- the cards remain provisional_block2_only and must not be presented as final extension guidance.
+
+================================================================================
+[2026-04-20 00:25:33]
+Phase 7 complete — salary model, market anchor, and macro forecast overlay reconciled.
+
+Inputs used:
+- baseline_predictions: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/year5_salary_baseline_selected_model_predictions.csv
+- market_anchor_band: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_market_anchor_band_table.csv
+- decision_inputs: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_provisional_decision_inputs_table.csv
+- forecast_macro: None
+
+Main outputs:
+- deliverable3_salary_reconciliation_table.csv
+- deliverable3_salary_reconciliation_summary.csv
+- deliverable3_forecast_overlay_merge_audit.csv
+- deliverable3_salary_reconciliation_case_study_table.csv
+
+Workflow logic:
+- reconciled the baseline Year-5 salary model against the protected / fair / walk-away comp-market band,
+- classified alignment buckets such as below_protected, within_band, and above_walkaway,
+- created pricing-anchor preference flags for market-only, model-only, and review cases,
+- used the current Deliverable 1 macro forecast table only as an interim overlay when a merge-safe match was available,
+- preserved Trae Young and Nikola Vučević as case-study rows when available.
+
+Important boundary:
+- the resulting table remains interim and should not be presented as final extension guidance because uncertainty, durability, and stronger player-keyed Deliverable 1 integration are still pending.
+
+================================================================================
+[2026-04-20 00:25:34]
+Phase 8 complete — interim forecast-adjusted extension guidance assembled.
+
+Inputs used:
+- reconciliation_table: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_salary_reconciliation_table.csv
+
+Main outputs:
+- deliverable3_interim_extension_guidance_table.csv
+- deliverable3_interim_extension_guidance_cards.csv
+- deliverable3_interim_extension_case_study_table.csv
+- deliverable3_interim_extension_summary.csv
+- deliverable3_interim_extension_rule_reference.csv
+
+Workflow logic:
+- treated the Phase 7 reconciliation table as the merge-ready bridge between salary anchors, the baseline salary model, and the current Deliverable 1 macro forecast overlay,
+- converted the current Deliverable 1 overlay into conservative forecast-support tiers rather than pretending full uncertainty and durability outputs already exist,
+- upgraded provisional Block-2-only stances into interim extension buckets with negotiation posture fields,
+- kept Trae Young, Nikola Vučević, and Andrew Bynum reserved in the case-study export when present.
+
+Important boundary:
+- the resulting guidance remains interim_with_current_D1_macro_forecast and must not be presented as the final extension recommendation.
+
+================================================================================
+[2026-04-20 00:25:34]
+
+Phase 9 complete — staged final Deliverable 3 extension framework assembled.
+
+Inputs used:
+- reconciliation_table: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_salary_reconciliation_table.csv
+- block1_forecast_handoff: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_block1_forecast_handoff.csv
+- block1_case_study_examples: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_block1_case_study_examples.csv
+
+Workflow logic:
+- replaced earlier ad hoc forecast overlay fields with the official Deliverable 3 Block 1 handoff,
+- created explicit flags separating salary-model training sample, forecast-adjustment evaluation subset, and unsupported rows,
+- activated forecast-adjusted stance changes only on the supported subset with official test performance predictions,
+- kept the broader cohort in staged Block 2-only or classification-overlay-only status when stronger Block 1 support was not available,
+- assembled final stakeholder-facing case-study outputs for Trae Young, Nikola Vučević, and Andrew Bynum.
+
+Main outputs:
+- deliverable3_staged_final_framework_table.csv
+- deliverable3_staged_final_guidance_cards.csv
+- deliverable3_final_case_study_table.csv
+- deliverable3_framework_status_matrix.csv
+- deliverable3_forecast_adjustment_supported_subset.csv
+- deliverable3_forecast_adjustment_supported_subset_summary.csv
+- deliverable3_forecast_adjustment_supported_subset_crosstab.csv
+- deliverable3_staged_final_summary.csv
+- deliverable3_staged_final_summary.md
+
+Important boundary:
+- this phase completes Deliverable 3 as a staged final system, not as a fully validated final recommendation layer for the whole cohort.
+- durability / availability risk is still pending as a separate module.
+
+================================================================================
+[2026-04-20 00:25:35]
+
+Phase 10 complete — Deliverable 3 framework completion note written.
+
+Inputs used:
+- staged_summary: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_staged_final_summary.csv
+- supported_subset_summary: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_forecast_adjustment_supported_subset_summary.csv
+- final_case_study_table: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_final_case_study_table.csv
+
+Main outputs:
+- deliverable3_framework_completion_note.md
+- deliverable3_framework_completion_note_metadata.json
+
+Purpose:
+- document what Deliverable 3 is honestly complete now,
+- state what remains conditional,
+- and keep the staged system reviewable for report writing and future continuation.

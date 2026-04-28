@@ -1,0 +1,32 @@
+{
+  "script": "09_build_staged_extension_framework.py",
+  "project_root": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3",
+  "inputs": {
+    "reconciliation_table": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_salary_reconciliation_table.csv",
+    "block1_forecast_handoff": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_block1_forecast_handoff.csv",
+    "block1_case_study_examples": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_block1_case_study_examples.csv"
+  },
+  "outputs": [
+    "deliverable3_staged_final_framework_table.csv",
+    "deliverable3_staged_final_guidance_cards.csv",
+    "deliverable3_final_case_study_table.csv",
+    "deliverable3_framework_status_matrix.csv",
+    "deliverable3_forecast_adjustment_supported_subset.csv",
+    "deliverable3_forecast_adjustment_supported_subset_summary.csv",
+    "deliverable3_forecast_adjustment_supported_subset_crosstab.csv",
+    "deliverable3_staged_final_summary.csv",
+    "deliverable3_staged_final_summary.md",
+    "deliverable3_final_rule_reference.csv"
+  ],
+  "counts": {
+    "framework_rows": 1058,
+    "forecast_probabilities_available_rows": 657,
+    "supported_forecast_adjustment_rows": 139,
+    "salary_model_training_sample_rows": 662
+  },
+  "notes": [
+    "This phase consumes the official Deliverable 3 Block 1 handoff rather than raw Deliverable 1 files.",
+    "Forecast-adjusted posture is only activated on the supported subset with test prediction support.",
+    "Rows without supported forecast adjustment remain staged as Block 2-only or classification-overlay-only outputs."
+  ]
+}

@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>readme</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="README_files/libs/clipboard/clipboard.min.js"></script>
+<script src="README_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="README_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="README_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="README_files/libs/quarto-html/popper.min.js"></script>
+<script src="README_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="README_files/libs/quarto-html/anchor.min.js"></script>
+<link href="README_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="README_files/libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="README_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="README_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="README_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="casestudy3-nba-post-rookie-forecasting-and-extension-valuation" class="level1">
+<h1>CaseStudy3 — NBA Post-Rookie Forecasting and Extension Valuation</h1>
+<p>This project provides decisional support on an NBA rookie player’s extension contract valuation using first-contract (Years 1–4) game-by-game sequences.</p>
+<section id="targets" class="level2">
+<h2 class="anchored" data-anchor-id="targets">Targets</h2>
+<ol type="1">
+<li><p><strong>Performance Forecast</strong>: A forward-looking module for Years 5–7 production and broad outcome classification.</p></li>
+<li><p><strong>Player Archetype &amp; Comparable Profile</strong>: A player-intelligence module that identifies what kind of player this is, how stable that identity appears to be, and which historical players provide the best realistic precedent.</p></li>
+<li><p><strong>Salary Decision Support</strong>: A decision layer translating projected player value and risk into extension-oriented pay guidance.</p></li>
+</ol>
+</section>
+<section id="required-structure" class="level2">
+<h2 class="anchored" data-anchor-id="required-structure">Required Structure</h2>
+<ul>
+<li><code>Data Scraping/</code>: Data scraping scripts</li>
+<li><code>src/</code>: Python/R implementation scripts
+<ul>
+<li><code>src\Feature Engineering</code>: Preliminary feature engineering and preparation</li>
+<li><code>src\Player Archetypes Analysis</code>: Player archetype workflow</li>
+</ul></li>
+<li><code>data/</code>: raw/intermediate/processed data snapshots
+<ul>
+<li><code>data\hoopshype_salaries</code>: Raw historical salary data per player</li>
+<li><code>data\SalaryData</code>: Raw historical salary cap data per year</li>
+<li><code>data\pca_player_features</code>: PCA player feature table</li>
+<li><code>data\Shot Chart Details Raw</code>: Raw ShotChartDetails data, per shot per player per game</li>
+<li><code>data\Shot Feature</code>: Shot data feature tables</li>
+</ul></li>
+<li><code>report/</code>: final write-up artifacts</li>
+<li><code>visual/</code>: generated charts
+<ul>
+<li><code>visual\Player Archetype</code>: Player archetype visuals
+<ul>
+<li><code>visual\Player Archetype\player_dossier_demo</code>: Player dossier card outputs</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="pipeline-stages" class="level2">
+<h2 class="anchored" data-anchor-id="pipeline-stages">Pipeline Stages</h2>
+<ol type="1">
+<li>Build cohort (draft years 1999–2019)</li>
+<li>Data scraping (game-by-game boxscores, ShotChartDetails, players’ historical salary data, historical salary cap)</li>
+<li>Feature Engineering</li>
+<li>Deliverable 1 Performance Forecast</li>
+<li>Deliverable 2 Player Archetype</li>
+<li>Deliverable 3 Salary Decision Support</li>
+</ol>
+</section>
+</section>
+<section id="data-scraping" class="level1">
+<h1>Data Scraping</h1>
+<p>Run <code>Data Scraping/Data_Fetching.py</code> for game-by-game players’ boxscores data.</p>
+<p>Run <code>Data Scraping/Fetch_Shots.py</code> for Raw ShortChardDetails, per shot per player (all players, including Hall of Fame players) per game data</p>
+<p>Run <code>Data Scraping/Data_Fetching.py</code> for game-by-game player boxscores data.</p>
+<p>Run <code>Data Scraping/HOF_Fetching.py</code> for game-by-game Hall of Fame players’ boxscores data</p>
+<p>Run <code>Data Scraping/scrape_hoopshype_salaries_1990_2025.py</code> for historical salary data per player per year</p>
+<p>Historical NBA salary cap data manually downloaded from <code>https://www.basketball-reference.com/contracts/salary-cap-history.html</code></p>
+</section>
+<section id="feature-engineering" class="level1">
+<h1>Feature Engineering</h1>
+<p>Run <code>src\Feature Enigineering\build_player_feature_table.py</code> to build player-level feature table from Seasons 1-4 NBA game logs.</p>
+<p><code>DATA_DIR = PROJECT_ROOT / "data"</code></p>
+<p>Inputs:</p>
+<ul>
+<li><code>raw_game_logs_S1_to_S4.csv</code></li>
+<li><code>cohort_1999_2019.csv</code></li>
+</ul>
+<p>Outputs:</p>
+<ul>
+<li><code>player_feature_table_1999_2019.csv</code></li>
+<li><code>player_season_feature_table_1999_2019.csv</code></li>
+</ul>
+<p>Run <code>src\Feature Enigineering\build_shot_feature_table.py</code> Run <code>src\Feature Enigineering\build_hof_shot_feature_table.py</code> Run <code>src\Feature Enigineering\build_shotchart_tensors.py</code> Run <code>src\Feature Enigineering\pca_prepare_player_features.py</code> Run <code>src\Feature Enigineering\kmeans_from_pca_player_features.py</code></p>
+</section>
+<section id="deliverable-1-player-performance" class="level1">
+<h1>Deliverable 1: Player Performance</h1>
+</section>
+<section id="deliverable-2-player-archetype-comparable-profile-workflow" class="level1">
+<h1>Deliverable 2: Player Archetype &amp; Comparable Profile Workflow</h1>
+<p>This section documents the <strong>active reproducible workflow</strong> for <strong>Deliverable 2</strong> in <code>STAT-946-Case-Study-3</code>, together with the <strong>salary-ready bridge scripts</strong> that translate Deliverable 2 outputs into <strong>Block 2: Archetype and Comp-Market Context</strong> for Deliverable 3.</p>
+<p>The Deliverable 2 implementation is a dedicated pipeline under:</p>
+<ul>
+<li><code>STAT-946-Case-Study-3\src\Player Archetypes Analysis</code></li>
+</ul>
+<p>The project framing for Deliverable 2 is a <strong>hybrid archetype system</strong>:</p>
+<ul>
+<li><strong>macro role</strong> from saved PCA + K-means outputs,</li>
+<li><strong>shot-style subtype</strong> from a spatial ShotChartDetail embedding pipeline,</li>
+<li><strong>identity drift</strong> across Seasons 1–4,</li>
+<li><strong>realistic comps</strong> from the drafted-player pool,</li>
+<li><strong>ceiling comps</strong> from the Hall of Fame auxiliary library,</li>
+<li><strong>stakeholder-facing dossier outputs</strong> for front-office decision support,</li>
+<li>and now a <strong>salary-ready comp-market bridge</strong> that prepares Deliverable 2 outputs for Deliverable 3.</li>
+</ul>
+<section id="deliverable-2-objective" class="level2">
+<h2 class="anchored" data-anchor-id="deliverable-2-objective">1. Deliverable 2 objective</h2>
+<p>Deliverable 2 answers the business question:</p>
+<blockquote class="blockquote">
+<p><strong>Who is this player now, how did that identity develop across the rookie-contract window, who has looked like this before, and what is the realistic upside?</strong></p>
+</blockquote>
+<p>The final Deliverable 2 package is expected to produce:</p>
+<ol type="1">
+<li>current archetype,</li>
+<li>identity drift / role evolution,</li>
+<li>realistic comparable players,</li>
+<li>optional Hall of Fame ceiling comps,</li>
+<li>archetype-match / prototype-fit information,</li>
+<li>median later-career outcome of the comp group,</li>
+<li>shot-style explanation,</li>
+<li>visuals and dossier-style outputs for decision support.</li>
+</ol>
+<p>In addition, the Deliverable 2 workflow now feeds Deliverable 3 through a salary-ready bridge:</p>
+<ol start="9" type="1">
+<li>cleaned Year-5 salary-cap targets,</li>
+<li>similarity-weighted comp-market salary anchors,</li>
+<li>a stakeholder-facing <strong>Block 2: Archetype and Comp-Market Context</strong> table for salary decision support.</li>
+</ol>
+<hr>
+</section>
+<section id="workflow-structure" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-structure">2. Workflow Structure</h2>
+<section id="active-code-path" class="level3">
+<h3 class="anchored" data-anchor-id="active-code-path">2.1 Active code path</h3>
+<p>The current Deliverable 2 and salary-bridge run chain is the dedicated analysis sequence below:</p>
+<ol type="1">
+<li><code>00_project_inventory.py</code></li>
+<li><code>01_cohort_coverage_audit.py</code></li>
+<li><code>02_build_macro_archetype_table.py</code></li>
+<li><code>03_build_shotstyle_tensors.py</code></li>
+<li><code>04_train_shot_autoencoder.py</code></li>
+<li><code>05_cluster_shot_embeddings.py</code></li>
+<li><code>06_build_identity_drift.py</code></li>
+<li><code>07_build_comps.py</code></li>
+<li><code>08_assemble_player_archetype_profiles.py</code></li>
+<li><code>09_make_player_archetype_visuals.py</code></li>
+<li><code>11_build_practical_player_dossiers_fixed.py</code></li>
+<li><code>12_build_year5_salary_targets.py</code></li>
+<li><code>13_build_block2_comp_market_context.py</code></li>
+<li><code>10_write_workflow_log.py</code></li>
+</ol>
+<p>These scripts together implement the current Deliverable 2 architecture and the explicit bridge from Deliverable 2 into Deliverable 3.</p>
+</section>
+<section id="utility-module-actively-used-by-the-whole-chain" class="level3">
+<h3 class="anchored" data-anchor-id="utility-module-actively-used-by-the-whole-chain">2.2 Utility module actively used by the whole chain</h3>
+<ul>
+<li><code>archetype_workflow_utils.py</code></li>
+</ul>
+<p>This module defines the canonical project paths and shared utilities, including:</p>
+<ul>
+<li><code>DATA_DIR = project_root / "data"</code></li>
+<li><code>KMEANS_DIR = project_root / "kmeans_k5_outputs_split"</code></li>
+<li><code>SHOT_OUTPUT_DIR = project_root / "Output" / "ShotChartDetail"</code></li>
+<li><code>ARCHETYPE_OUTPUT_DIR = project_root / "Output" / "Player Archetype Analysis"</code></li>
+<li><code>ARCHETYPE_VISUAL_DIR = project_root / "visual" / "Player Archetype"</code></li>
+</ul>
+<p>Deliverable 2 workflow writes its reproducible tables to <strong><code>Output\Player Archetype Analysis</code></strong> and its stakeholder-facing figures to <strong><code>visual\Player Archetype</code></strong>.</p>
+</section>
+<section id="older-feature-engineering-scripts-are-not-the-active-run-order-here" class="level3">
+<h3 class="anchored" data-anchor-id="older-feature-engineering-scripts-are-not-the-active-run-order-here">2.3 Older Feature Engineering scripts are not the active run order here</h3>
+<p>The project still contains older or upstream scripts in <code>src\Feature Engineering</code>, such as the original PCA / K-means or ShotChartDetail builders. However, the current Deliverable 2 workflow <strong>does not document them as the active execution order</strong>.</p>
+<p>Instead:</p>
+<ul>
+<li><strong>saved PCA + K-means outputs are reused</strong> as upstream artifacts,</li>
+<li><strong>raw shot-chart files are reused</strong> as inputs,</li>
+<li>the current Deliverable 2 pipeline <strong>rebuilds shot tensors and retrains the shot autoencoder inside <code>03_*.py</code> and <code>04_*.py</code> under <code>src\Player Archetypes Analysis</code></strong>,</li>
+<li>and the new salary bridge is built explicitly inside <code>12_*.py</code> and <code>13_*.py</code>.</li>
+</ul>
+<p>So for reproducibility of Deliverable 2 and its salary-ready extension, the scripts to run are the <code>00_*.py</code> to <code>13_*.py</code> analysis scripts above, not the older Feature Engineering scripts.</p>
+</section>
+<section id="deliverable-3-bridge-principle" class="level3">
+<h3 class="anchored" data-anchor-id="deliverable-3-bridge-principle">2.4 Deliverable 3 bridge principle</h3>
+<p>Scripts <code>12_build_year5_salary_targets.py</code> and <code>13_build_block2_comp_market_context.py</code> do <strong>not</strong> replace Deliverable 2. They extend it.</p>
+<p>Their job is to translate:</p>
+<ul>
+<li>realistic comps,</li>
+<li>archetype labels,</li>
+<li>subtype labels,</li>
+<li>drift,</li>
+<li>and comp quality</li>
+</ul>
+<p>into a <strong>salary-ready comp-market layer</strong> that can be consumed by Deliverable 3.</p>
+<p>This keeps the project logic clean:</p>
+<ul>
+<li>Deliverable 1 explains <strong>what may happen next</strong>,</li>
+<li>Deliverable 2 explains <strong>who the player is</strong>,</li>
+<li>Deliverable 3 decides <strong>what the player is worth and how aggressively to extend</strong>.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="input-data-and-reusable-upstream-artifacts" class="level2">
+<h2 class="anchored" data-anchor-id="input-data-and-reusable-upstream-artifacts">3. Input data and reusable upstream artifacts</h2>
+<section id="core-drafted-player-inputs" class="level3">
+<h3 class="anchored" data-anchor-id="core-drafted-player-inputs">3.1 Core drafted-player inputs</h3>
+<ul>
+<li><code>data\cohort_1999_2019.csv</code></li>
+<li><code>data\player_feature_table_1999_2019.csv</code></li>
+<li><code>data\player_season_feature_table_1999_2019.csv</code></li>
+<li><code>data\career_totals_targets.csv</code></li>
+<li><code>data\Shot Chart Details Raw\raw_shotchart_S1_to_S4_main.csv</code></li>
+<li><code>data\salaries_players_1990_2025_combined.csv</code></li>
+<li><code>data\Cleaned_Salary_Cap.csv</code></li>
+</ul>
+</section>
+<section id="hall-of-fame-auxiliary-inputs" class="level3">
+<h3 class="anchored" data-anchor-id="hall-of-fame-auxiliary-inputs">3.2 Hall of Fame auxiliary inputs</h3>
+<ul>
+<li><code>data\cohort_HOF.csv</code></li>
+<li><code>data\HOF_career_total_targets.csv</code></li>
+<li><code>data\Shot Chart Details Raw\raw_shotchart_S1_to_S4_hof_shotstyle.csv</code></li>
+</ul>
+</section>
+<section id="reused-saved-macro-archetype-artifacts" class="level3">
+<h3 class="anchored" data-anchor-id="reused-saved-macro-archetype-artifacts">3.3 Reused saved macro-archetype artifacts</h3>
+<p>These are <strong>consumed</strong>, not refit, by the active Deliverable 2 workflow:</p>
+<ul>
+<li><code>kmeans_k5_outputs_split\player_feature_table_1999_2019_clustered_k5.csv</code></li>
+<li><code>kmeans_k5_outputs_split\cluster_modeling_predictors_k5.csv</code></li>
+<li><code>kmeans_k5_outputs_split\cluster_summary_k5.csv</code></li>
+<li><code>kmeans_k5_outputs_split\cluster_summary_zscores_k5.csv</code></li>
+<li><code>kmeans_k5_outputs_split\cluster_representative_players_k5.csv</code></li>
+</ul>
+</section>
+<section id="important-workflow-principle" class="level3">
+<h3 class="anchored" data-anchor-id="important-workflow-principle">3.4 Important workflow principle</h3>
+<p>The macro backbone is reused from saved artifacts. The shot-style layer is rebuilt inside the current Deliverable 2 pipeline. The salary bridge is then built on top of those finalized Deliverable 2 outputs.</p>
+<p>That split is central to reproducibility:</p>
+<ul>
+<li>macro role = reused saved artifacts,</li>
+<li>shot-style embedding = reproducibly rebuilt inside active Deliverable 2 scripts,</li>
+<li>salary-ready Block 2 context = reproducibly built after Deliverable 2 is finalized.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="step-wise-workflow-structure" class="level2">
+<h2 class="anchored" data-anchor-id="step-wise-workflow-structure">4. Step-wise workflow structure</h2>
+<section id="phase-0-project-map-and-path-audit" class="level3">
+<h3 class="anchored" data-anchor-id="phase-0-project-map-and-path-audit">Phase 0 — Project map and path audit</h3>
+<section id="script" class="level4">
+<h4 class="anchored" data-anchor-id="script">Script</h4>
+<ul>
+<li><code>00_project_inventory.py</code></li>
+</ul>
+</section>
+<section id="purpose" class="level4">
+<h4 class="anchored" data-anchor-id="purpose">Purpose</h4>
+<p>Confirms the project structure, checks whether required drafted-player, HOF, feature, clustering, shot-chart, and reusable code artifacts exist, and initializes the workflow log.</p>
+</section>
+<section id="inputs" class="level4">
+<h4 class="anchored" data-anchor-id="inputs">Inputs</h4>
+<ul>
+<li>project root</li>
+<li>all expected data / output / code paths listed in the script inventory</li>
+</ul>
+</section>
+<section id="outputs" class="level4">
+<h4 class="anchored" data-anchor-id="outputs">Outputs</h4>
+<ul>
+<li><code>Output\Player Archetype Analysis\project_file_inventory.csv</code></li>
+<li><code>Output\Player Archetype Analysis\player_archetype_analysis_workflow_log.txt</code></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="phase-1-cohort-and-coverage-audit" class="level3">
+<h3 class="anchored" data-anchor-id="phase-1-cohort-and-coverage-audit">Phase 1 — Cohort and coverage audit</h3>
+<section id="script-1" class="level4">
+<h4 class="anchored" data-anchor-id="script-1">Script</h4>
+<ul>
+<li><code>01_cohort_coverage_audit.py</code></li>
+</ul>
+</section>
+<section id="purpose-1" class="level4">
+<h4 class="anchored" data-anchor-id="purpose-1">Purpose</h4>
+<p>Audits drafted-player and Hall of Fame coverage across cohort membership, logs, features, clustering support, shot-chart support, and later-career targets.</p>
+</section>
+<section id="inputs-1" class="level4">
+<h4 class="anchored" data-anchor-id="inputs-1">Inputs</h4>
+<ul>
+<li>drafted-player cohort and main project tables</li>
+<li>HOF cohort and auxiliary tables</li>
+</ul>
+</section>
+<section id="outputs-1" class="level4">
+<h4 class="anchored" data-anchor-id="outputs-1">Outputs</h4>
+<ul>
+<li><code>Output\Player Archetype Analysis\drafted_player_coverage_audit.csv</code></li>
+<li><code>Output\Player Archetype Analysis\hof_player_coverage_audit.csv</code></li>
+<li><code>Output\Player Archetype Analysis\cohort_join_audit.csv</code></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="phase-2-lock-the-macro-archetype-backbone" class="level3">
+<h3 class="anchored" data-anchor-id="phase-2-lock-the-macro-archetype-backbone">Phase 2 — Lock the macro archetype backbone</h3>
+<section id="script-2" class="level4">
+<h4 class="anchored" data-anchor-id="script-2">Script</h4>
+<ul>
+<li><code>02_build_macro_archetype_table.py</code></li>
+</ul>
+</section>
+<section id="purpose-2" class="level4">
+<h4 class="anchored" data-anchor-id="purpose-2">Purpose</h4>
+<p>Builds the <strong>macro role</strong> layer by reusing the saved PCA + K-means artifacts rather than refitting clustering.</p>
+</section>
+<section id="inputs-2" class="level4">
+<h4 class="anchored" data-anchor-id="inputs-2">Inputs</h4>
+<ul>
+<li><code>player_feature_table_1999_2019_clustered_k5.csv</code></li>
+<li><code>cluster_modeling_predictors_k5.csv</code></li>
+<li><code>cluster_summary_k5.csv</code></li>
+<li><code>cluster_summary_zscores_k5.csv</code></li>
+<li><code>cluster_representative_players_k5.csv</code></li>
+</ul>
+</section>
+<section id="outputs-2" class="level4">
+<h4 class="anchored" data-anchor-id="outputs-2">Outputs</h4>
+<ul>
+<li><code>Output\Player Archetype Analysis\archetype_macro_player_table.csv</code></li>
+<li><code>Output\Player Archetype Analysis\archetype_macro_summary_table.csv</code></li>
+</ul>
+</section>
+<section id="logic" class="level4">
+<h4 class="anchored" data-anchor-id="logic">Logic</h4>
+<p>This script canonicalizes:</p>
+<ul>
+<li><code>PLAYER_ID</code></li>
+<li><code>PLAYER_NAME</code></li>
+<li><code>draft_year</code></li>
+<li><code>macro_cluster_id</code></li>
+<li><code>macro_archetype</code></li>
+<li><code>own_cluster_distance</code></li>
+<li>cluster one-hot / distance features</li>
+<li>prototype ambiguity measures</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="phase-3-build-shot-style-spatial-tensors" class="level3">
+<h3 class="anchored" data-anchor-id="phase-3-build-shot-style-spatial-tensors">Phase 3 — Build shot-style spatial tensors</h3>
+<section id="script-3" class="level4">
+<h4 class="anchored" data-anchor-id="script-3">Script</h4>
+<ul>
+<li><code>03_build_shotstyle_tensors.py</code></li>
+</ul>
+</section>
+<section id="purpose-3" class="level4">
+<h4 class="anchored" data-anchor-id="purpose-3">Purpose</h4>
+<p>Converts raw ShotChartDetail rows into stable <strong>player-season spatial tensors</strong> on a common half-court grid.</p>
+</section>
+<section id="inputs-3" class="level4">
+<h4 class="anchored" data-anchor-id="inputs-3">Inputs</h4>
+<ul>
+<li><code>data\Shot Chart Details Raw\raw_shotchart_S1_to_S4_main.csv</code></li>
+<li><code>data\Shot Chart Details Raw\raw_shotchart_S1_to_S4_hof_shotstyle.csv</code></li>
+<li><code>data\cohort_1999_2019.csv</code></li>
+<li><code>data\cohort_HOF.csv</code></li>
+</ul>
+</section>
+<section id="core-tensor-design" class="level4">
+<h4 class="anchored" data-anchor-id="core-tensor-design">Core tensor design</h4>
+<p>The script builds a <strong>3-channel tensor</strong> per player-season:</p>
+<ol type="1">
+<li>shot attempt density,</li>
+<li>made-shot density,</li>
+<li>smoothed make-rate map.</li>
+</ol>
+<p>It uses:</p>
+<ul>
+<li>fixed half-court coordinates,</li>
+<li>a <code>25 x 25</code> grid,</li>
+<li>Gaussian smoothing,</li>
+<li>and a minimum-shot filter for embedding eligibility.</li>
+</ul>
+</section>
+<section id="outputs-3" class="level4">
+<h4 class="anchored" data-anchor-id="outputs-3">Outputs</h4>
+<ul>
+<li><code>Output\Player Archetype Analysis\draft_player_season_shot_tensors.npz</code></li>
+<li><code>Output\Player Archetype Analysis\hof_player_season_shot_tensors.npz</code></li>
+<li><code>Output\Player Archetype Analysis\draft_player_tensors.npz</code></li>
+<li><code>Output\Player Archetype Analysis\hof_player_tensors.npz</code></li>
+<li><code>Output\Player Archetype Analysis\shot_tensor_player_season.parquet</code></li>
+<li><code>Output\Player Archetype Analysis\shot_tensor_player.parquet</code></li>
+<li><code>Output\Player Archetype Analysis\shot_coverage_audit.csv</code></li>
+<li><code>Output\Player Archetype Analysis\hof_shot_coverage_audit.csv</code></li>
+<li><code>Output\Player Archetype Analysis\shot_tensor_metadata.json</code></li>
+<li>player tensor index CSV files for drafted and HOF pools</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="phase-4-train-the-shot-style-embedding-model" class="level3">
+<h3 class="anchored" data-anchor-id="phase-4-train-the-shot-style-embedding-model">Phase 4 — Train the shot-style embedding model</h3>
+<section id="script-4" class="level4">
+<h4 class="anchored" data-anchor-id="script-4">Script</h4>
+<ul>
+<li><code>04_train_shot_autoencoder.py</code></li>
+</ul>
+</section>
+<section id="purpose-4" class="level4">
+<h4 class="anchored" data-anchor-id="purpose-4">Purpose</h4>
+<p>Trains a CNN autoencoder on drafted-player player-season tensors and encodes both drafted-player and HOF tensors into a common latent shot-style space.</p>
+</section>
+<section id="inputs-4" class="level4">
+<h4 class="anchored" data-anchor-id="inputs-4">Inputs</h4>
+<ul>
+<li>drafted-player and HOF player-season tensors</li>
+<li>drafted-player and HOF tensor index tables</li>
+</ul>
+</section>
+<section id="outputs-4" class="level4">
+<h4 class="anchored" data-anchor-id="outputs-4">Outputs</h4>
+<ul>
+<li><code>Output\Player Archetype Analysis\shot_embedding_player_season.csv</code></li>
+<li><code>Output\Player Archetype Analysis\shot_embedding_player.csv</code></li>
+<li><code>Output\Player Archetype Analysis\hof_shot_embedding_player_season.csv</code></li>
+<li><code>Output\Player Archetype Analysis\hof_shot_embedding_player.csv</code></li>
+<li><code>Output\Player Archetype Analysis\shot_autoencoder_training_history.csv</code></li>
+<li><code>Output\Player Archetype Analysis\shot_autoencoder_model.pt</code></li>
+<li><code>Output\Player Archetype Analysis\shot_autoencoder_artifacts.json</code></li>
+<li><code>Output\Player Archetype Analysis\shot_embedding_nearest_neighbors.csv</code></li>
+<li><code>visual\Player Archetype\shot_embedding_reconstruction_examples.png</code></li>
+<li><code>visual\Player Archetype\shot_autoencoder_training_curve.png</code></li>
+</ul>
+</section>
+<section id="important-implementation-detail" class="level4">
+<h4 class="anchored" data-anchor-id="important-implementation-detail">Important implementation detail</h4>
+<p>Player-level embeddings are not naive averages. They are aggregated using:</p>
+<ul>
+<li>shot-volume weighting,</li>
+<li>and mild recency weighting toward later rookie-contract seasons.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="phase-5-create-shot-style-subtypes" class="level3">
+<h3 class="anchored" data-anchor-id="phase-5-create-shot-style-subtypes">Phase 5 — Create shot-style subtypes</h3>
+<section id="script-5" class="level4">
+<h4 class="anchored" data-anchor-id="script-5">Script</h4>
+<ul>
+<li><code>05_cluster_shot_embeddings.py</code></li>
+</ul>
+</section>
+<section id="purpose-5" class="level4">
+<h4 class="anchored" data-anchor-id="purpose-5">Purpose</h4>
+<p>Creates the second archetype layer by clustering <strong>player-level shot embeddings</strong> with a <strong>Gaussian Mixture Model</strong>.</p>
+</section>
+<section id="inputs-5" class="level4">
+<h4 class="anchored" data-anchor-id="inputs-5">Inputs</h4>
+<ul>
+<li><code>shot_embedding_player.csv</code></li>
+<li><code>shot_embedding_player_season.csv</code></li>
+<li><code>archetype_macro_player_table.csv</code></li>
+</ul>
+</section>
+<section id="outputs-5" class="level4">
+<h4 class="anchored" data-anchor-id="outputs-5">Outputs</h4>
+<ul>
+<li><code>Output\Player Archetype Analysis\shot_style_cluster_summary.csv</code></li>
+<li><code>Output\Player Archetype Analysis\shot_style_representative_players.csv</code></li>
+<li><code>Output\Player Archetype Analysis\shot_style_player_table.csv</code></li>
+<li><code>Output\Player Archetype Analysis\shot_style_player_season_table.csv</code></li>
+<li><code>Output\Player Archetype Analysis\player_hybrid_archetype_table.csv</code></li>
+<li><code>visual\Player Archetype\shot_style_embedding_scatter.png</code></li>
+</ul>
+</section>
+<section id="logic-1" class="level4">
+<h4 class="anchored" data-anchor-id="logic-1">Logic</h4>
+<p>This phase assigns:</p>
+<ul>
+<li>player-level subtype ID,</li>
+<li>subtype label,</li>
+<li>subtype membership probability,</li>
+<li>entropy / ambiguity,</li>
+<li>season-level subtype assignments,</li>
+<li>hybrid label = <code>macro_archetype | shot_style_subtype</code>.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="phase-6-build-identity-drift-role-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="phase-6-build-identity-drift-role-evolution">Phase 6 — Build identity drift / role evolution</h3>
+<section id="script-6" class="level4">
+<h4 class="anchored" data-anchor-id="script-6">Script</h4>
+<ul>
+<li><code>06_build_identity_drift.py</code></li>
+</ul>
+</section>
+<section id="purpose-6" class="level4">
+<h4 class="anchored" data-anchor-id="purpose-6">Purpose</h4>
+<p>Measures how player identity changes from Year 1 to Year 4 in both:</p>
+<ul>
+<li>boxscore role space,</li>
+<li>shot-style embedding space.</li>
+</ul>
+</section>
+<section id="inputs-6" class="level4">
+<h4 class="anchored" data-anchor-id="inputs-6">Inputs</h4>
+<ul>
+<li><code>data\player_season_feature_table_1999_2019.csv</code></li>
+<li><code>Output\Player Archetype Analysis\shot_embedding_player_season.csv</code></li>
+<li><code>Output\Player Archetype Analysis\shot_style_player_season_table.csv</code></li>
+<li><code>Output\Player Archetype Analysis\player_hybrid_archetype_table.csv</code></li>
+</ul>
+</section>
+<section id="outputs-6" class="level4">
+<h4 class="anchored" data-anchor-id="outputs-6">Outputs</h4>
+<ul>
+<li><code>Output\Player Archetype Analysis\player_role_drift_summary.csv</code></li>
+<li><code>Output\Player Archetype Analysis\player_shotstyle_drift_summary.csv</code></li>
+<li><code>Output\Player Archetype Analysis\player_identity_drift_table.csv</code></li>
+</ul>
+</section>
+<section id="logic-2" class="level4">
+<h4 class="anchored" data-anchor-id="logic-2">Logic</h4>
+<p>The script computes:</p>
+<ul>
+<li>Year 1 to Year 4 displacement,</li>
+<li>total path length,</li>
+<li>subtype changes,</li>
+<li>final drift class such as <code>stable</code>, <code>evolving_gradually</code>, or <code>role_shifting_materially</code>.</li>
+</ul>
+</section>
+<section id="important-limitation" class="level4">
+<h4 class="anchored" data-anchor-id="important-limitation">Important limitation</h4>
+<p>Because saved season-level PCA scores were not available as a reusable artifact, boxscore drift is approximated with standardized season-level features instead of original season-level PCA coordinates.</p>
+<hr>
+</section>
+</section>
+<section id="phase-7-build-comparable-player-infrastructure" class="level3">
+<h3 class="anchored" data-anchor-id="phase-7-build-comparable-player-infrastructure">Phase 7 — Build comparable-player infrastructure</h3>
+<section id="script-7" class="level4">
+<h4 class="anchored" data-anchor-id="script-7">Script</h4>
+<ul>
+<li><code>07_build_comps.py</code></li>
+</ul>
+</section>
+<section id="purpose-7" class="level4">
+<h4 class="anchored" data-anchor-id="purpose-7">Purpose</h4>
+<p>Builds the comp engine for Deliverable 2.</p>
+</section>
+<section id="inputs-7" class="level4">
+<h4 class="anchored" data-anchor-id="inputs-7">Inputs</h4>
+<ul>
+<li><code>Output\Player Archetype Analysis\player_identity_drift_table.csv</code></li>
+<li><code>Output\Player Archetype Analysis\hof_shot_embedding_player.csv</code></li>
+<li><code>data\career_totals_targets.csv</code></li>
+<li>HOF auxiliary target / cohort files</li>
+</ul>
+</section>
+<section id="outputs-7" class="level4">
+<h4 class="anchored" data-anchor-id="outputs-7">Outputs</h4>
+<ul>
+<li><code>Output\Player Archetype Analysis\realistic_comps.csv</code></li>
+<li><code>Output\Player Archetype Analysis\ceiling_comps_hof.csv</code></li>
+<li><code>Output\Player Archetype Analysis\player_comp_dossier_table.csv</code></li>
+</ul>
+</section>
+<section id="logic-3" class="level4">
+<h4 class="anchored" data-anchor-id="logic-3">Logic</h4>
+<section id="realistic-comps" class="level5">
+<h5 class="anchored" data-anchor-id="realistic-comps">Realistic comps</h5>
+<p>Built from the drafted-player pool using a weighted similarity score over:</p>
+<ul>
+<li>macro-role compatibility,</li>
+<li>shot-style embedding distance,</li>
+<li>PCA distance when available,</li>
+<li>prototype-fit distance,</li>
+<li>drift similarity.</li>
+</ul>
+</section>
+<section id="ceiling-comps" class="level5">
+<h5 class="anchored" data-anchor-id="ceiling-comps">Ceiling comps</h5>
+<p>Built from the HOF auxiliary pool and treated only as upside analogs, not the main comp universe.</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="phase-8-assemble-final-deliverable-2-tables" class="level3">
+<h3 class="anchored" data-anchor-id="phase-8-assemble-final-deliverable-2-tables">Phase 8 — Assemble final Deliverable 2 tables</h3>
+<section id="script-8" class="level4">
+<h4 class="anchored" data-anchor-id="script-8">Script</h4>
+<ul>
+<li><code>08_assemble_player_archetype_profiles.py</code></li>
+</ul>
+</section>
+<section id="purpose-8" class="level4">
+<h4 class="anchored" data-anchor-id="purpose-8">Purpose</h4>
+<p>Assembles the main player-level Deliverable 2 table by merging archetype, drift, comp, and explanation layers.</p>
+</section>
+<section id="inputs-8" class="level4">
+<h4 class="anchored" data-anchor-id="inputs-8">Inputs</h4>
+<ul>
+<li><code>player_identity_drift_table.csv</code></li>
+<li><code>player_comp_dossier_table.csv</code></li>
+<li><code>shot_style_cluster_summary.csv</code></li>
+</ul>
+</section>
+<section id="outputs-8" class="level4">
+<h4 class="anchored" data-anchor-id="outputs-8">Outputs</h4>
+<ul>
+<li><code>Output\Player Archetype Analysis\final_player_archetype_profile_table.csv</code></li>
+<li><code>Output\Player Archetype Analysis\final_player_archetype_case_study_table.csv</code></li>
+</ul>
+</section>
+<section id="final-table-contents" class="level4">
+<h4 class="anchored" data-anchor-id="final-table-contents">Final table contents</h4>
+<p>The final profile table is designed to include the core stakeholder-facing columns:</p>
+<ul>
+<li>macro archetype,</li>
+<li>shot-style subtype,</li>
+<li>hybrid label,</li>
+<li>prototype-fit ambiguity,</li>
+<li>own-cluster distance,</li>
+<li>drift class,</li>
+<li>realistic comps,</li>
+<li>optional ceiling comp,</li>
+<li>comp-group outcome summaries,</li>
+<li>supporting shot-style explanation,</li>
+<li>comp-based interpretation.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="phase-9-produce-deliverable-2-visuals" class="level3">
+<h3 class="anchored" data-anchor-id="phase-9-produce-deliverable-2-visuals">Phase 9 — Produce Deliverable 2 visuals</h3>
+<section id="script-9" class="level4">
+<h4 class="anchored" data-anchor-id="script-9">Script</h4>
+<ul>
+<li><code>09_make_player_archetype_visuals.py</code></li>
+</ul>
+</section>
+<section id="purpose-9" class="level4">
+<h4 class="anchored" data-anchor-id="purpose-9">Purpose</h4>
+<p>Generates stakeholder-facing visuals for the archetype layer, subtype layer, drift, comp support, and sample dossier view.</p>
+</section>
+<section id="inputs-9" class="level4">
+<h4 class="anchored" data-anchor-id="inputs-9">Inputs</h4>
+<ul>
+<li><code>final_player_archetype_profile_table.csv</code></li>
+<li>subtype summary / subtype table files</li>
+<li>drift table</li>
+<li>realistic comps</li>
+<li>raw drafted-player shot rows</li>
+<li>drafted-player tensor files</li>
+</ul>
+</section>
+<section id="outputs-9" class="level4">
+<h4 class="anchored" data-anchor-id="outputs-9">Outputs</h4>
+<p>Written to: - <code>visual\Player Archetype</code></p>
+<p>Key outputs include:</p>
+<ul>
+<li><code>macro_archetype_summary_chart.png</code></li>
+<li><code>shot_style_subtype_summary_chart.png</code></li>
+<li><code>embedding_neighborhood_plot.png</code></li>
+<li><code>subtype_shot_charts_on_court.png</code></li>
+<li><code>average_shot_maps_by_subtype.png</code></li>
+<li><code>representative_player_shot_scatter.png</code></li>
+<li><code>shot_style_drift_case_studies.png</code></li>
+<li><code>comp_comparison_visual.png</code></li>
+<li><code>sample_player_dossier_visual.png</code></li>
+<li><code>drift_movement_plot.png</code></li>
+</ul>
+</section>
+<section id="why-it-matters" class="level4">
+<h4 class="anchored" data-anchor-id="why-it-matters">Why it matters</h4>
+<p>This is the paper / report / presentation visualization layer.</p>
+<hr>
+</section>
+</section>
+<section id="phase-11-build-practical-player-dossier-demo-package" class="level3">
+<h3 class="anchored" data-anchor-id="phase-11-build-practical-player-dossier-demo-package">Phase 11 — Build practical player dossier demo package</h3>
+<section id="script-10" class="level4">
+<h4 class="anchored" data-anchor-id="script-10">Script</h4>
+<ul>
+<li><code>11_build_practical_player_dossiers_fixed.py</code></li>
+</ul>
+</section>
+<section id="purpose-10" class="level4">
+<h4 class="anchored" data-anchor-id="purpose-10">Purpose</h4>
+<p>Converts the final Deliverable 2 table into a small set of dossier-ready player cards and player-specific shot-chart figures for front-office communication.</p>
+</section>
+<section id="inputs-10" class="level4">
+<h4 class="anchored" data-anchor-id="inputs-10">Inputs</h4>
+<ul>
+<li><code>Output\Player Archetype Analysis\final_player_archetype_profile_table.csv</code></li>
+<li><code>Output\Player Archetype Analysis\shot_style_player_table.csv</code></li>
+<li><code>data\Shot Chart Details Raw\raw_shotchart_S1_to_S4_main.csv</code></li>
+</ul>
+</section>
+<section id="outputs-10" class="level4">
+<h4 class="anchored" data-anchor-id="outputs-10">Outputs</h4>
+<section id="structured-dossier-package" class="level5">
+<h5 class="anchored" data-anchor-id="structured-dossier-package">Structured dossier package</h5>
+<p>Written to: - <code>Output\Player Archetype Analysis\player_dossier_demo</code></p>
+<p>Includes: - <code>report_ready_player_dossier_table.csv</code> - <code>report_ready_player_dossier_selection.csv</code> - <code>report_ready_player_dossier_manifest.csv</code> - <code>report_ready_player_dossiers.md</code></p>
+</section>
+<section id="dossier-visuals" class="level5">
+<h5 class="anchored" data-anchor-id="dossier-visuals">Dossier visuals</h5>
+<p>Written to: - <code>visual\Player Archetype\player_dossier_demo</code></p>
+<p>Includes one generated player-specific dossier chart per selected showcase player.</p>
+<p>For the paper, Trae Young and Nikola Vučević are used as paper-facing case-study cards through report-side selection or manual override, not as hardcoded behavior of the existing script.</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="phase-12-clean-salary-data-and-build-the-year-5-target" class="level3">
+<h3 class="anchored" data-anchor-id="phase-12-clean-salary-data-and-build-the-year-5-target">Phase 12 — Clean salary data and build the Year-5 target</h3>
+<section id="script-11" class="level4">
+<h4 class="anchored" data-anchor-id="script-11">Script</h4>
+<ul>
+<li><code>12_build_year5_salary_targets.py</code></li>
+</ul>
+</section>
+<section id="purpose-11" class="level4">
+<h4 class="anchored" data-anchor-id="purpose-11">Purpose</h4>
+<p>Builds the clean Year-5 salary target needed for Deliverable 3 by combining historical salary rows with historical salary-cap rows.</p>
+</section>
+<section id="inputs-11" class="level4">
+<h4 class="anchored" data-anchor-id="inputs-11">Inputs</h4>
+<ul>
+<li><code>data\player_feature_table_1999_2019.csv</code></li>
+<li><code>data\SalaryData\salaries_players_1990_2025_combined.csv</code></li>
+<li><code>data\SalaryData\Cleaned_Salary_Cap.csv</code></li>
+</ul>
+</section>
+<section id="outputs-11" class="level4">
+<h4 class="anchored" data-anchor-id="outputs-11">Outputs</h4>
+<ul>
+<li><code>Output\Player Archetype Analysis\SalaryBlock\salary_player_season_agg.csv</code></li>
+<li><code>Output\Player Archetype Analysis\SalaryBlock\salary_cap_cleaned.csv</code></li>
+<li><code>Output\Player Archetype Analysis\SalaryBlock\year5_salary_target_table.csv</code></li>
+<li><code>Output\Player Archetype Analysis\SalaryBlock\year5_salary_unmatched_diagnostic.csv</code></li>
+<li><code>Output\Player Archetype Analysis\SalaryBlock\year5_salary_merge_summary.csv</code></li>
+</ul>
+</section>
+<section id="logic-4" class="level4">
+<h4 class="anchored" data-anchor-id="logic-4">Logic</h4>
+<p>This phase does the following explicitly:</p>
+<ul>
+<li>aggregates salary rows to <strong>one player-season total</strong>, because players can appear multiple times in the same season after team changes,</li>
+<li>repairs malformed salary-cap season strings before merging,</li>
+<li>defines Year 5 as the season starting in <code>draft_year + 4</code>,</li>
+<li>matches salary records by <strong>normalized player name + season</strong>,</li>
+<li>uses a small explicit alias table for obvious name variants,</li>
+<li>builds<br>
+<code>year5_salary_cap_pct = year_salary_total / salary_cap</code>.</li>
+</ul>
+<p>This is the clean, auditable salary target construction step. It is the only supported input path for the salary-ready bridge.</p>
+<hr>
+</section>
+</section>
+<section id="phase-13-build-block-2-archetype-and-comp-market-context" class="level3">
+<h3 class="anchored" data-anchor-id="phase-13-build-block-2-archetype-and-comp-market-context">Phase 13 — Build Block 2: Archetype and Comp-Market Context</h3>
+<section id="script-12" class="level4">
+<h4 class="anchored" data-anchor-id="script-12">Script</h4>
+<ul>
+<li><code>13_build_block2_comp_market_context.py</code></li>
+</ul>
+</section>
+<section id="purpose-12" class="level4">
+<h4 class="anchored" data-anchor-id="purpose-12">Purpose</h4>
+<p>Translates finalized Deliverable 2 outputs into the salary-ready <strong>Block 2</strong> table for Deliverable 3.</p>
+</section>
+<section id="inputs-12" class="level4">
+<h4 class="anchored" data-anchor-id="inputs-12">Inputs</h4>
+<ul>
+<li><code>Output\Player Archetype Analysis\final_player_archetype_profile_table.csv</code></li>
+<li><code>Output\Player Archetype Analysis\realistic_comps.csv</code></li>
+<li><code>Output\Player Archetype Analysis\SalaryBlock\year5_salary_target_table.csv</code></li>
+</ul>
+</section>
+<section id="outputs-12" class="level4">
+<h4 class="anchored" data-anchor-id="outputs-12">Outputs</h4>
+<ul>
+<li><code>Output\Player Archetype Analysis\SalaryBlock\comp_salary_detail_table.csv</code></li>
+<li><code>Output\Player Archetype Analysis\SalaryBlock\deliverable3_block2_archetype_comp_market_context.csv</code></li>
+</ul>
+</section>
+<section id="logic-5" class="level4">
+<h4 class="anchored" data-anchor-id="logic-5">Logic</h4>
+<p>This phase does the following:</p>
+<ul>
+<li>merges realistic comps onto the cleaned Year-5 salary target table,</li>
+<li>computes a similarity-weighted salary anchor using realistic comps only,</li>
+<li>builds:
+<ul>
+<li>comp salary match count,</li>
+<li>comp salary match rate,</li>
+<li>weighted mean Year-5 cap percentage,</li>
+<li>weighted p25 / p50 / p75 anchor values,</li>
+<li>comp support band,</li>
+<li>plain-language market-context interpretation,</li>
+</ul></li>
+<li>keeps ceiling comps as <strong>upside-only context</strong>, not pricing anchors.</li>
+</ul>
+<p>This is the clean bridge from Deliverable 2 into Deliverable 3. It turns archetype and comp information into a comp-market salary neighborhood that can be combined later with Deliverable 1 forecasts and Deliverable 3 risk logic.</p>
+<blockquote class="blockquote">
+<p><strong>Important note:</strong> use the current patched version of <code>13_build_block2_comp_market_context.py</code>. Earlier copies may fail when <code>comp_salary_match_count</code> is missing for players with no matched comp-salary support. In addition, out of 1,058 total players, 665 matched, 393 unmatched, the unmatched share is about 37.1% which matches the natural NBA draft picks survival rate after their first four-year contract expires.</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="phase-10-write-the-workflow-log" class="level3">
+<h3 class="anchored" data-anchor-id="phase-10-write-the-workflow-log">Phase 10 — Write the workflow log</h3>
+<section id="script-13" class="level4">
+<h4 class="anchored" data-anchor-id="script-13">Script</h4>
+<ul>
+<li><code>10_write_workflow_log.py</code></li>
+</ul>
+</section>
+<section id="purpose-13" class="level4">
+<h4 class="anchored" data-anchor-id="purpose-13">Purpose</h4>
+<p>Appends workflow structure, assumptions, warnings, quality checks, and later-review notes to the analysis workflow log.</p>
+</section>
+<section id="inputs-13" class="level4">
+<h4 class="anchored" data-anchor-id="inputs-13">Inputs</h4>
+<ul>
+<li>active Deliverable 2 structure</li>
+</ul>
+</section>
+<section id="outputs-13" class="level4">
+<h4 class="anchored" data-anchor-id="outputs-13">Outputs</h4>
+<ul>
+<li>appended content in <code>Output\Player Archetype Analysis\PatchLogs\player_archetype_analysis_workflow_log.txt</code></li>
+</ul>
+</section>
+<section id="important-note" class="level4">
+<h4 class="anchored" data-anchor-id="important-note">Important note</h4>
+<p>Scripts <code>12_build_year5_salary_targets.py</code> and <code>13_build_block2_comp_market_context.py</code> already append their own phase entries to the workflow log. <code>10_write_workflow_log.py</code> should therefore be treated as the final documentation append step rather than the only logging step.</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="recommended-execution-order" class="level2">
+<h2 class="anchored" data-anchor-id="recommended-execution-order">5. Recommended execution order</h2>
+<p>Run the active Deliverable 2 and salary-bridge scripts in this exact order:</p>
+<pre class="text"><code>00_project_inventory.py
+01_cohort_coverage_audit.py
+02_build_macro_archetype_table.py
+03_build_shotstyle_tensors.py
+04_train_shot_autoencoder.py
+05_cluster_shot_embeddings.py
+06_build_identity_drift.py
+07_build_comps.py
+08_assemble_player_archetype_profiles.py
+09_make_player_archetype_visuals.py
+11_build_practical_player_dossiers_fixed.py
+12_build_year5_salary_targets.py
+13_build_block2_comp_market_context.py
+10_write_workflow_log.py</code></pre>
+<p>This order matters because:</p>
+<ul>
+<li>later scripts depend on canonical outputs from earlier phases,</li>
+<li>visuals and dossiers depend on the final profile table,</li>
+<li>and the final log should reflect the completed pipeline.</li>
+</ul>
+<hr>
+</section>
+<section id="deliverable-2-outputs-that-matter-most-for-the-paper" class="level2">
+<h2 class="anchored" data-anchor-id="deliverable-2-outputs-that-matter-most-for-the-paper">6. Deliverable 2 outputs that matter most for the paper</h2>
+<p>If the report only needs the final Deliverable 2 artifacts, the most important outputs are:</p>
+<section id="core-analytical-tables" class="level3">
+<h3 class="anchored" data-anchor-id="core-analytical-tables">Core analytical tables</h3>
+<ul>
+<li><code>Output\Player Archetype Analysis\archetype_macro_player_table.csv</code></li>
+<li><code>Output\Player Archetype Analysis\player_hybrid_archetype_table.csv</code></li>
+<li><code>Output\Player Archetype Analysis\player_identity_drift_table.csv</code></li>
+<li><code>Output\Player Archetype Analysis\realistic_comps.csv</code></li>
+<li><code>Output\Player Archetype Analysis\ceiling_comps_hof.csv</code></li>
+<li><code>Output\Player Archetype Analysis\final_player_archetype_profile_table.csv</code></li>
+</ul>
+</section>
+<section id="supporting-visuals" class="level3">
+<h3 class="anchored" data-anchor-id="supporting-visuals">Supporting visuals</h3>
+<ul>
+<li><code>visual\Player Archetype\subtype_shot_charts_on_court.png</code></li>
+<li><code>visual\Player Archetype\representative_player_shot_scatter.png</code></li>
+<li><code>visual\Player Archetype\shot_style_drift_case_studies.png</code></li>
+<li><code>visual\Player Archetype\sample_player_dossier_visual.png</code></li>
+</ul>
+</section>
+<section id="dossier-package" class="level3">
+<h3 class="anchored" data-anchor-id="dossier-package">Dossier package</h3>
+<ul>
+<li><code>Output\Player Archetype Analysis\player_dossier_demo\report_ready_player_dossiers.md</code></li>
+<li><code>visual\Player Archetype\player_dossier_demo\*.png</code></li>
+</ul>
+</section>
+<section id="salary-ready-bridge-outputs" class="level3">
+<h3 class="anchored">Salary-ready bridge outputs</h3>
+<ul>
+<li><code>Output\Player Archetype Analysis\SalaryBlock\year5_salary_target_table.csv</code></li>
+<li><code>Output\Player Archetype Analysis\SalaryBlock\year5_salary_merge_summary.csv</code></li>
+<li><code>Output\Player Archetype Analysis\SalaryBlock\year5_salary_unmatched_diagnostic.csv</code></li>
+<li><code>Output\Player Archetype Analysis\SalaryBlock\comp_salary_detail_table.csv</code></li>
+<li><h2 id="outputplayer-archetype-analysissalaryblockdeliverable3_block2_archetype_comp_market_context.csv" class="anchored" data-anchor-id="salary-ready-bridge-outputs"><code>Output\Player Archetype Analysis\SalaryBlock\deliverable3_block2_archetype_comp_market_context.csv</code></h2></li>
+</ul>
+</section>
+</section>
+<section id="reproducibility-rules" class="level2">
+<h2 class="anchored" data-anchor-id="reproducibility-rules">7. Reproducibility rules</h2>
+<section id="rule-1" class="level3">
+<h3 class="anchored" data-anchor-id="rule-1">Rule 1</h3>
+<p>Treat <code>src\Player Archetypes Analysis\00_*.py</code> to <code>11_*.py</code> as the <strong>authoritative Deliverable 2 pipeline</strong>.</p>
+</section>
+<section id="rule-2" class="level3">
+<h3 class="anchored" data-anchor-id="rule-2">Rule 2</h3>
+<p>Treat saved K-means artifacts as <strong>reused upstream infrastructure</strong>, not as something to refit inside Deliverable 2.</p>
+</section>
+<section id="rule-3" class="level3">
+<h3 class="anchored" data-anchor-id="rule-3">Rule 3</h3>
+<p>Treat the shot-style embedding layer as <strong>rebuilt inside Deliverable 2</strong> through <code>03_build_shotstyle_tensors.py</code> and <code>04_train_shot_autoencoder.py</code>.</p>
+</section>
+</section>
+</section>
+<section id="deliverable-3-salary-decision-support" class="level1">
+<h1>Deliverable 3: Salary Decision Support</h1>
+<section id="quick-start" class="level2">
+<h2 class="anchored" data-anchor-id="quick-start">Quick Start</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> CaseStudy3</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> src/run_pipeline.py <span class="at">--data-dir</span> ./data <span class="at">--visual-dir</span> ./visual <span class="at">--report-dir</span> ./report <span class="at">--require-gpu</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

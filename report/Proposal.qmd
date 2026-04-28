@@ -1,0 +1,67 @@
+---
+format: 
+    pdf:
+        geometry:
+            - top=0.8in
+            - bottom=0.8in
+            - left=0.7in
+            - right=0.7in
+linestretch: 1.25
+---
+# Forecasting NBA Post-Rookie Players' Performance, Contract Range, and Sleeper/Bust Outcomes
+
+## Context and motivation
+First-round rookie contracts in the NBA are typically four years long. NBA front offices make some of their most expensive decisions when a player finishes the four-year rookie contract and becomes extension-eligible or enters restricted free agency. These decisions are difficult because early-career averages often hide the actual shape of player development.
+
+This project frames the problem as a forward-looking decision system rather than a backward-looking summary exercise. Instead of relying only on flat season averages, we use the full first-four-season trajectory to estimate what a player is likely to become after the rookie deal, what type of contract range that future performance supports, and whether the player looks more like a sleeper, a neutral outcome, or a bust.
+
+**Target Audience:** 
+
+NBA front offices and basketball operations groups evaluating post-rookie extension decisions who evaluates which players are worth high-value extension contracts based on projected Year-5 health and impact.
+
+**Our Role:** Senior Data Scientists in the Basketball Analytics group of an NBA franchise
+
+## Objective
+Build a player-level forecasting system that uses the first four NBA seasons of drafted players to predict:
+
+1. **Future post-rookie performance** over a defined later-career window.
+2. **Expected first post-rookie contract value** as salary-cap percentage.
+3. **Outcome classification** indicating whether the player is more likely to be a **sleeper**, **neutral**, or **bust** relative to early-career expectations.
+
+The final goal is not only to forecast player quality, but also to translate that forecast into a front-office decision aid for extension valuation.
+
+## Proposed analysis
+**1. Data Ingestion & Feature Engineering**
+
+We will ingest sequential, game-by-game boxscores for all drafted NBA players from 2005 to 2019 (roughly 900) using the Python `nba_api` or R's `hoopR`. To build our financial targets, we will scrape historical player salary data from *hoopshype* and merge it with historical NBA Salary Cap dataset. This allows us to calculate the extension salary in terms of "Salary Cap %", adjusting for historical inflation.
+
+**Classification Target:** *Sleeper -* weak or modest early-career output followed by stronger-than-expected later performance; *Bust -* strong early-career signal or high expectation followed by underwhelming later performance; *Neutral -* players whose later outcomes are broadly consistent with expectations.
+
+**Regression Targets:** Prime statistical averages (Years 5-7) and Year-5 Salary Cap %.
+
+**Feature Engineering:** We will transform the raw game logs into time-aware sequence features that capture workload, fatigue, and momentum. Features will include Rest Days, Back-to-Back flags, Cumulative Minutes, and Rolling Averages (e.g., 5-game rolling True Shooting %).
+
+**2. Baseline Modeling**
+
+To establish a performance benchmark, we will flatten the sequential data into aggregated Seasons 1-4 averages. We will train a **Logistic Regression** model on these flattened features to predict the log-odds of a player being classified as a "Sleeper" or "Bust."
+
+**3. Sequence Modeling with LSTM**
+
+We will train a Long Short-Term Memory (LSTM) neural network using a multi-task learning architecture:
+
+* **Classification Output:** Predicting the probability of the "Sleeper" or "Bust" indicator.
+* **Regression Output:** Forecasting a continuous vector representing the player's prime stats and their forecasted Salary Cap %.
+
+## Timeline
+* **Week 1: Data & Engineering:** Extract chronological boxscore data, scrape salaries, and engineer the features.
+* **Week 2: Baseline & Advanced Modeling:** Train the baseline Logistic Regression model. Reshape the dataset into tensors and train the LSTM network.
+* **Week 3: Evaluation & Dashboarding:** Evaluate model performance against the baseline. Generate visuals for final report.
+
+## Deliverables
+This project contributes a more realistic and decision-relevant workflow for post-rookie player evaluation. 
+
+**Visual player case studies highlighting:**
+
+   * **The Prime Spider Chart:** A dual-overlay radar chart plotting the player's *actual* rookie performance against the LSTM's *forecasted* prime performance across 5 key dimensions.
+   * **The Indicator Forecast:** The model's explicit classification output indicating whether the rookie is a "Sleeper" or a "Bust."
+   * **The Contract Valuation:** The forecasted salary range of the post-rookie season contract, presented as a percentage of the total team salary cap.

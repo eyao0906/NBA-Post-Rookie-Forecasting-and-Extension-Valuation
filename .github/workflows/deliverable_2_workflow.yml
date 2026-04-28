@@ -1,0 +1,51 @@
+name: Deliverable 2 Workflow
+
+on:
+  workflow_dispatch: # Allows you to trigger this manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    # CRITICAL: This permission is required for the bot to push code back to the repo
+    permissions:
+      contents: write 
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Required to ensure git has full history to push back
+          fetch-depth: 0 
+          lfs: true # required for the use of Raw Shot data (300+ MB)
+
+      - name: Setup Pixi
+        uses: prefix-dev/setup-pixi@v0.8.1
+        with:
+          run-install: true
+          locked: true
+          cache: true 
+
+      - name: Run Deliverable 2 Pipeline
+        run: pixi run deliverable_2_pipeline
+
+      - name: Commit and Push Changes
+        run: |
+          # Configure Git as the GitHub Actions bot
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Stage all generated or modified files
+          git add .
+          
+          # Check if there are actually changes to commit
+          if ! git diff --staged --quiet; then
+            # The [skip ci] tag prevents this push from triggering another infinite loop of Action runs
+            git commit -m "auto-generate deliverable 2 images"
+            git push
+            echo "Successfully pushed generated images to the repository."
+          else
+            echo "No new images or changes generated. Skipping commit."
+          fi

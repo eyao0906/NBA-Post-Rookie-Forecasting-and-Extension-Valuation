@@ -1,0 +1,29 @@
+---
+title: "Reference"
+format: pdf
+---
+
+*n.d. for no date*
+Basketball Reference. (n.d.). *Glossary*. Sports Reference LLC. Retrieved April 19, 2026, from [https://www.basketball-reference.com/about/glossary.html](https://www.basketball-reference.com/about/glossary.html)
+
+Basketball Reference. (n.d.). *NBA salary cap history*. Sports Reference LLC. Retrieved April 19, 2026, from [https://www.basketball-reference.com/contracts/salary-cap-history.html](https://www.basketball-reference.com/contracts/salary-cap-history.html)
+
+Coon, L. (2022). *NBA salary cap FAQ*. Retrieved April 19, 2026, from [https://www.cbafaq.com/](https://www.cbafaq.com/)
+
+Gal, Y., & Ghahramani, Z. (2016). Dropout as a Bayesian approximation: Representing model uncertainty in deep learning. *Proceedings of Machine Learning Research, 48*, 1050–1059. [https://proceedings.mlr.press/v48/gal16.html](https://proceedings.mlr.press/v48/gal16.html)
+
+HoopsHype. (n.d.). *NBA player salaries*. Retrieved April 19, 2026, from [https://www.hoopshype.com](https://www.hoopshype.com)
+
+Kannan, A., Kuzma, B., & Nannapaneni, R. (2018). Predicting National Basketball Association success: A machine learning approach. *SMU Data Science Review, 1*(3). [https://scholar.smu.edu/datasciencereview/vol1/iss3/7/](https://scholar.smu.edu/datasciencereview/vol1/iss3/7/)
+
+MacQueen, J. (1967). Some methods for classification and analysis of multivariate observations. In L. M. Le Cam & J. Neyman (Eds.), *Proceedings of the fifth Berkeley symposium on mathematical statistics and probability* (Vol. 1, pp. 281–297). University of California Press. [https://projecteuclid.org/ebooks/berkeley-symposium-on-mathematical-statistics-and-probability/Proceedings-of-the-Fifth-Berkeley-Symposium-on-Mathematical-Statistics-and/chapter/Some-methods-for-classification-and-analysis-of-multivariate-observations/bsmsp/1200512992](https://projecteuclid.org/ebooks/berkeley-symposium-on-mathematical-statistics-and-probability/Proceedings-of-the-Fifth-Berkeley-Symposium-on-Mathematical-Statistics-and/chapter/Some-methods-for-classification-and-analysis-of-multivariate-observations/bsmsp/1200512992)
+
+NBA API. (n.d.). *nba_api: An API client to access the APIs of NBA.com*. GitHub. Retrieved April 19, 2026, from [https://github.com/swar/nba_api](https://github.com/swar/nba_api)
+
+NBA API. (n.d.). *ShotChartDetail endpoint*. GitHub. Retrieved April 19, 2026, from [https://github.com/swar/nba_api/blob/master/docs/nba_api/stats/endpoints/shotchartdetail.md](https://github.com/swar/nba_api/blob/master/docs/nba_api/stats/endpoints/shotchartdetail.md)
+
+Turkington, D. (2023). How to predict the performance of NBA draft prospects. *MIT Sloan Sports Analytics Conference*. [https://www.sloansportsconference.com/research-papers/how-to-predict-the-performance-of-nba-draft-prospects](https://www.sloansportsconference.com/research-papers/how-to-predict-the-performance-of-nba-draft-prospects)
+
+Zuccolotto, P., Sandri, M., & Manisera, M. (2023). Spatial performance analysis in basketball with CART, random forest, and extremely randomized trees. *Annals of Operations Research, 325*(1), 225–252. [https://pmc.ncbi.nlm.nih.gov/articles/PMC9164576/](https://pmc.ncbi.nlm.nih.gov/articles/PMC9164576/)
+
+

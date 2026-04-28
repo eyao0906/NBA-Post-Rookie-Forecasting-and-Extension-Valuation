@@ -1,0 +1,4 @@
+tsne_label,expected_score,realized_score,delta_score,PTS_5to7_avg,MIN_5to7_avg,REB_5to7_avg,AST_5to7_avg
+Bust,370.871,231.571,-139.3,313.748,928.329,139.958,76.517
+Neutral,390.512,455.953,65.442,575.843,1544.771,295.718,97.828
+Sleeper,717.171,908.977,191.805,1166.509,2315.813,414.655,262.346

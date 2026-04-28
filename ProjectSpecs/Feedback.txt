@@ -1,0 +1,153 @@
+# Professor Review:
+
+### Motivation and Value-Added
+
+- Strong and realistic decision context tied to NBA front-office contract decisions.
+
+- Clearly defined multi-dimensional objective (performance, 
+durability, salary value, comps, final recommendation).
+
+- Good articulation of business relevance (rookie-extension window as a high-stakes decision point).
+
+- Good high-level presentation of deliverables.
+
+- While comprehensive, the system may be overly broad; unclear which outputs are most critical for decision-making.
+
+- The final "decision rule" (e.g., extend vs wait) could be better formalized.
+
+### Technical Clarity
+
+- Well-structured multi-module system (performance forecast, archetypes/comps, salary decision support).
+
+- Clear feature engineering pipeline and use of both tabular and sequential data (game logs + LSTM).
+
+- Good explanation of PCA + K-means archetypes and how they feed into downstream models.
+
+- The pipeline is very complex (multiple models: PCA, K-means, LSTM, CNN autoencoder, regression), but the integration between modules is not always clearly defined.
+
+- Some components (e.g., CNN autoencoder for shot embeddings) feel disconnected from the core forecasting objective.
+
+    Overall, the presentation is a bit disjointed, with different team members talking about different parts a bit independently of each other.  Please try to be more cohesive in the Final Deliverables.
+    
+- The clarity of the presentation could be higher.  It seems like you are trying to fit in the maximum amount of content, which is partially why the presentation went way over time.  It is preferable in a talk to sacrifice content in favor of something more breathable, i.e., in which the audience can focus on the highlights and leave with a clearer picture of what's going on.
+
+    It may also help (here and for the Final Deliverables) to sketch out how you will organize the talk/report and then try to fill in the details later.  For example, you talked about the data in three separate occasions (including just calling it "box score" at the beginning).  How could this have been structured differently to avoid going over time? 
+
+- There is an enormous amount of content on slides, which makes it difficult for the audience to digest.  Also, the audience will naturally try to read what's on the slides instead of listening to you.
+
+    It is usually more helpful to just put the minimal/key points / bullets on each slide, which helps the audience focus on what's important.  Granted, you were asked to provide sufficient technical detail here.  So maybe just converting to bullets instead of using full sentences + leaving some of the non-technical remarks you will be making off the slides would be a reasonable compromise.
+
+
+### Demonstration of Feasibility
+
+- Large and appropriate dataset (over 1,000 players and extensive game logs) supports modeling choices.
+
+- Use of baseline models (logistic regression) alongside more complex models (LSTM, CNN autoencoder) is sensible.
+
+- Modular design helps manage data limitations and missing downstream targets.
+
+- Computational cost and implementation complexity are likely high given multiple modules and data pipelines (scraping, sequence models, embeddings).  Moreover, several components are noted as "not yet integrated", which raises concerns that the full system may not be feasible within the project timeline.
+
+
+### Statistical Reasoning
+
+- Explicit inclusion of uncertainty (bootstrap, ensemble-style confidence bands).
+
+- Awareness of data limitations (missing Years 5-7 outcomes, incomplete tracking data).
+
+- Use of evaluation metrics like macro-F1, confusion matrix shows reasonable classification awareness.
+
+- Limited discussion of key assumptions (e.g., stationarity of player development, independence across players).
+
+- Validation strategy is not fully specified (e.g., train/test splits, temporal validation for forecasting).
+
+- Some modeling choices (e.g., PCA + clustering + LSTM + CNN) could be better justified relative to simpler alternatives.
+
+# Peer Review:
+
+1. You use residuals from a Ridge regression to define your "Sleeper," "Neutral," and "Bust" labels. How do you ensure that the initial errors or biases from that Ridge model aren't just baked into your final classification model?
+
+2. Your LSTM uses sequential game-by-game logs from a player's first four seasons. How exactly does the model handle vastly different sequence lengths and real-world time gaps when players miss weeks or months due to injuries?
+
+3. What will be the definition of durability?
+
+4. I think making it more explicit how the labels were defined, even if they are industry standard, would be more good for the final durability?
+
+5. Playing with different number of classes could be informative.
+
+6. Is there a normalization factor for WHEN the player was drafted?
+
+7. What is gained by building a multi-module system rather than a single joint model? Additionally, the confusion matrix suggests the model predicts class 2 substantially more often and struggles with class 1. What does that imply about the class definition or feature separability?
+
+8. Since you there are three outcome classes (sleeper/neutral/bust) what is the class distribution? If the classes are imbalanced, what steps are taken to prevent biased predictions (e.g., weighting or resampling)?
+
+9. Since NBA salaries are affected by market and economic conditions (e.g. inflation, salary cap increases, etc.) can/how does your model account for these unpredictable shifts rather than attributing those effects to player performance?
+
+10. What parts of the multi-module system have been fully implemented so far, and which parts are still in progress?
+How are you defining the Sleeper / Neutral / Bust labels, and how confident are you in that labeling approach?
+Looking at the VPS formula, even though it is considered standard, I think a little bit more insight or justification on that formula will add value to the outcome of the analysis.
+
+### Summary
+This group presents a well-structured, multi-module decision system for NBA rookie extensions. The approach moves beyond traditional box-score regression by integrating archetype learning (PCA + K-means), shot-style embeddings (CNN autoencoder), durability risk modeling, and salary-cap percentage forecasting. The final output includes a comprehensive dossier with performance forecasts, archetype labels, comparable profiles, and a rules-based recommendation quadrant. The cohort spans 1999–2019 drafted players with extensive box-score and contract data, and the group has acknowledged data limits (tracking data availability) while maintaining a pragmatic scope.
+
+### Strengths
+- **Architectural clarity:** The multi-module design is well motivated and aligns with real front-office decision workflows.
+- **Archetype modeling:** PCA + K-means with five interpretable clusters provides a solid foundation for peer-group comparisons and mitigates the "league-average" fallacy.
+- **Shot-style module:** Using CNN autoencoders on spatial shot tensors is a sophisticated addition that captures stylistic evolution beyond counting stats.
+- **Business framing:** The "RFA war room problem" framing keeps the analysis grounded in stakeholder needs.
+
+### Suggestions for Improvement
+- **Archetype validation:** The silhouette score (0.107) is quite low. Consider visualizing cluster separation with t-SNE or UMAP alongside the current PCA map to assess whether the clusters are meaningful or driven by noise.
+- **Outcome definition:** The classification into Sleeper/Neutral/Bust via residual-based majority vote is creative but risks instability. Show how sensitive these labels are to the ridge regression specification or to alternative outcome definitions (e.g., VORP-based thresholds).
+- **Shot-style integration:** It remains unclear how the shot embeddings will feed into downstream forecasting. Clarify whether they will be used as direct predictors, for comps, or both.
+- **Missing pieces:** The timeline indicates injury and NCAA data are optional but not yet integrated. If these are dropped, consider whether durability risk can be adequately captured using only games/minutes from the first four seasons.
+
+11. How will you define these labels so they are stable and not too sensitive to the way you build the outcome score?
+
+12. Since your sample is not that large, how will you decide whether the LSTM actually adds value over the simpler baseline models?
+
+13. How will you handle players with missing or incomplete Years 5–7 outcomes when building and evaluating the models?
+
+This project presents a well-structured and practically relevant multi-module system for forecasting NBA players’ post-rookie outcomes, effectively aligning technical modeling with front-office decision needs . The integration of LSTM sequence models, PCA + K-means archetypes, and salary decision support demonstrates strong methodological breadth. However, the reliance on box-score data may limit predictive power, and the relatively low clustering separation (e.g., silhouette score) raises concerns about archetype robustness. Additionally, combining multiple modules introduces potential inconsistency in objectives and evaluation criteria, which may weaken overall interpretability.
+
+Technical Questions:
+
+How does the relatively low silhouette score in PCA + K-means clustering affect the reliability of archetype-based features in downstream models?
+How do you ensure consistency and avoid conflicting signals across modules (performance, archetype, salary) in the final decision recommendation system?
+
+1. Your Sleeper/Neutral labels are built from PCA, ridge residuals, and majority vote. Could the final predictions be too sensitive to how these labels are defined?
+
+2. Your K-means archetypes have a silhouette score of only 0.107. If the clustering structure is weak, could using cluster features introduce noise into the model?
+
+3. I noticed that you described the system as role-aware, but if a player has a major role change during the first four seasons, how will you handle archetype drift in forecasting?
+
+### Technical Questions
+
+1. **How exactly are the Sleeper / Neutral / Bust labels defined, and how sensitive are your results to the way those classes are constructed?**
+This is a key validity issue because your downstream classification model depends entirely on the label-generation pipeline. The slides indicate that you first build realized outcome scores using PCA, then compare actual versus expected score using ridge regression residuals, and finally assign classes by majority vote. It would strengthen the analysis to clarify the thresholds used for each class, what quantities are being voted over, and whether the final model performance is robust to alternative labeling rules. If the label construction is unstable, then the reported multinomial classification results may partly reflect noise in the target rather than true predictive signal.
+
+2. **How do you prevent leakage between the feature construction period and the target period, especially when using Seasons 1–4 inputs and Years 5–7 outcomes across multiple modules?**
+Since the project combines archetype learning, outcome-score construction, salary forecasting, and comparable-player analysis, it would help to specify the temporal boundary very carefully for each module. For example, if standardization, PCA, clustering, or expected-score modeling uses information from the full dataset before train/test splitting, that could leak future structure into the predictors. A clearer statement of the full train/validation/test workflow would improve rigor substantially.
+
+3. **How will you evaluate whether the LSTM hybrid model meaningfully outperforms simpler player-level baselines, given the relatively limited sample size at the player level?**
+The slides make a strong case that game-by-game trajectories may capture development signals that flat averages miss, which is a compelling idea. However, the cohort size for drafted players with usable long-term outcomes is still modest for sequence modeling, especially after attrition and splitting. It would improve the validity of the proposal if you specified what the baseline models are, what evaluation protocol will be used, and how you will determine whether any gain from the LSTM is statistically meaningful rather than just variance from a more flexible model.
+
+4. **How do you plan to validate the salary-cap percentage forecast separately from the performance forecast, given that salary is influenced by many non-performance factors?**
+This is important because contract value is shaped not only by productivity and durability, but also by cap environment, team situation, bargaining dynamics, positional scarcity, and market timing. Since the project proposes a salary regression plus a rules-based recommendation quadrant, it would be helpful to clarify whether the salary model is framed as a normative estimate of value or a descriptive estimate of what the market actually paid. Without that distinction, the extension recommendation may blur market prediction and decision support in a way that is hard to interpret.
+
+### Constructive Suggestion
+
+One way to make the project much stronger would be to add a **clear module-by-module validation table** that separates:
+
+1. **label construction validity** for Sleeper / Neutral / Bust,
+2. **archetype validity** for clustering and comps,
+3. **forecast validity** for Years 5–7 performance, and
+4. **decision validity** for salary and final extension recommendation.
+
+Right now, the project is ambitious and interesting because it combines several useful front-office perspectives into one system, but that also makes it harder to tell where the evidence is strongest and where the uncertainty is highest. A structured validation framework would make the whole system much easier to trust and interpret.
+
+This presentation has a strong and practical motivation, and the multi-module structure is a thoughtful way to support post-rookie extension decisions, but the analysis would be more convincing if the group clarified more explicitly how the different modules will be integrated into one coherent decision system rather than several parallel outputs. In particular, because the current progress update includes performance forecasting, archetypes, comparables, durability, and salary valuation, the project would gain rigor if they explained how conflicts between modules will be resolved and which outputs will carry the most weight in the final recommendation. I also think the statistical validity would be stronger if they discussed more carefully how outcome labels such as sleeper, neutral, and bust are defined, since those labels drive the multinomial model and could strongly affect interpretation of the reported accuracy and macro-F1. Overall, the project is ambitious and well-motivated, and these clarifications would improve the coherence, validity, and practical usefulness of the final analysis.
+
+1. Could the authors clarify why ridge regression is used to define the expected career outcome? Since the Sleeper/Neutral/Bust labels are derived from residuals relative to that model, the downstream classification target may inherit substantial model-based bias rather than reflect a more direct notion of player outcome.
+
+2. Could the authors clarify how the sample is split for training and testing, and whether the effective sample size is sufficient for the planned models? Although the project includes many game logs, the downstream targets are ultimately player-level outcomes, so it would be helpful to understand whether the amount of independent training data is large enough, especially for more complex models.

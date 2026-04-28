@@ -1,0 +1,6 @@
+metric,value,notes
+framework_rows,1058,Total player rows in the staged Deliverable 3 framework.
+market_anchor_supported_rows,941,Rows with supported protected/fair/walk-away anchor band.
+forecast_probabilities_available_rows,657,Rows with official Block 1 class probabilities merged.
+supported_forecast_adjustment_rows,139,Rows eligible for supported forecast-adjusted logic.
+salary_model_training_sample_rows,662,Rows eligible for salary-model training after case-study holdout exclusion.

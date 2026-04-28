@@ -1,0 +1,58 @@
+{
+  "config": {
+    "tensor_path": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\data\\Shot Feature\\shot_tensors\\player_season_shot_tensors.npz",
+    "index_path": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\data\\Shot Feature\\shot_tensors\\player_shot_tensor_index.csv",
+    "out_dir": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\ShotChartDetail",
+    "latent_dim": 24,
+    "batch_size": 128,
+    "epochs": 30,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "train_fraction": 0.85,
+    "min_shots": 25,
+    "early_stopping_patience": 8,
+    "random_seed": 42,
+    "player_agg_method": "shot_weighted_mean",
+    "loss_weights": [
+      3.0,
+      3.0,
+      1.0
+    ],
+    "device": "cpu",
+    "subset_fraction": 1.0,
+    "num_workers": 4,
+    "amp": false,
+    "grad_clip_norm": 1.0
+  },
+  "normalizer": {
+    "channel_mean": [
+      0.0015999999595806003,
+      0.0007102625095285475,
+      0.2605735659599304
+    ],
+    "channel_std": [
+      0.011144978925585747,
+      0.00693562300875783,
+      0.2594018578529358
+    ]
+  },
+  "split_summary": {
+    "train_player_seasons": 2599,
+    "validation_player_seasons": 475,
+    "train_unique_players": 825,
+    "validation_unique_players": 146
+  },
+  "best_epoch": 30,
+  "best_val_loss": 0.004277471594120326,
+  "final_train_loss": 0.004387103612941416,
+  "final_val_loss": 0.004277471594120326,
+  "n_player_season_embeddings": 3074,
+  "n_player_embeddings": 971,
+  "cuda_available": false,
+  "cuda_device_name": null,
+  "decoder_constraints": {
+    "attempt_density": "spatial_softmax_sum_to_1",
+    "made_density": "attempt_density_times_sigmoid_prob",
+    "smoothed_make_rate": "sigmoid_0_1"
+  }
+}

@@ -1,0 +1,6 @@
+metric,value
+explained_variance_ratio_pc1,0.6543693913850374
+explained_variance_ratio_pc2,0.16844608118055343
+explained_variance_ratio_pc3,0.11799484377280324
+total_explained_variance,0.940810316338394
+silhouette_score,0.31565392750510507

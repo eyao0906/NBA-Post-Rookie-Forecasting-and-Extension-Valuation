@@ -1,0 +1,254 @@
+[
+  {
+    "season": 1990,
+    "source": "api",
+    "contracts_rows": 353,
+    "season_salary_rows": 353,
+    "expected_num_results": 353
+  },
+  {
+    "season": 1991,
+    "source": "api",
+    "contracts_rows": 388,
+    "season_salary_rows": 388,
+    "expected_num_results": 388
+  },
+  {
+    "season": 1992,
+    "source": "api",
+    "contracts_rows": 406,
+    "season_salary_rows": 406,
+    "expected_num_results": 406
+  },
+  {
+    "season": 1993,
+    "source": "api",
+    "contracts_rows": 394,
+    "season_salary_rows": 394,
+    "expected_num_results": 394
+  },
+  {
+    "season": 1994,
+    "source": "api",
+    "contracts_rows": 430,
+    "season_salary_rows": 430,
+    "expected_num_results": 430
+  },
+  {
+    "season": 1995,
+    "source": "api",
+    "contracts_rows": 462,
+    "season_salary_rows": 462,
+    "expected_num_results": 462
+  },
+  {
+    "season": 1996,
+    "source": "api",
+    "contracts_rows": 418,
+    "season_salary_rows": 418,
+    "expected_num_results": 418
+  },
+  {
+    "season": 1997,
+    "source": "api",
+    "contracts_rows": 453,
+    "season_salary_rows": 453,
+    "expected_num_results": 453
+  },
+  {
+    "season": 1998,
+    "source": "api",
+    "contracts_rows": 442,
+    "season_salary_rows": 442,
+    "expected_num_results": 442
+  },
+  {
+    "season": 1999,
+    "source": "api",
+    "contracts_rows": 537,
+    "season_salary_rows": 537,
+    "expected_num_results": 537
+  },
+  {
+    "season": 2000,
+    "source": "api",
+    "contracts_rows": 470,
+    "season_salary_rows": 470,
+    "expected_num_results": 470
+  },
+  {
+    "season": 2001,
+    "source": "api",
+    "contracts_rows": 459,
+    "season_salary_rows": 459,
+    "expected_num_results": 459
+  },
+  {
+    "season": 2002,
+    "source": "api",
+    "contracts_rows": 462,
+    "season_salary_rows": 462,
+    "expected_num_results": 462
+  },
+  {
+    "season": 2003,
+    "source": "api",
+    "contracts_rows": 461,
+    "season_salary_rows": 461,
+    "expected_num_results": 461
+  },
+  {
+    "season": 2004,
+    "source": "api",
+    "contracts_rows": 483,
+    "season_salary_rows": 483,
+    "expected_num_results": 483
+  },
+  {
+    "season": 2005,
+    "source": "api",
+    "contracts_rows": 497,
+    "season_salary_rows": 497,
+    "expected_num_results": 497
+  },
+  {
+    "season": 2006,
+    "source": "api",
+    "contracts_rows": 520,
+    "season_salary_rows": 520,
+    "expected_num_results": 520
+  },
+  {
+    "season": 2007,
+    "source": "api",
+    "contracts_rows": 490,
+    "season_salary_rows": 490,
+    "expected_num_results": 490
+  },
+  {
+    "season": 2008,
+    "source": "api",
+    "contracts_rows": 473,
+    "season_salary_rows": 473,
+    "expected_num_results": 473
+  },
+  {
+    "season": 2009,
+    "source": "api",
+    "contracts_rows": 474,
+    "season_salary_rows": 474,
+    "expected_num_results": 474
+  },
+  {
+    "season": 2010,
+    "source": "api",
+    "contracts_rows": 471,
+    "season_salary_rows": 471,
+    "expected_num_results": 471
+  },
+  {
+    "season": 2011,
+    "source": "api",
+    "contracts_rows": 476,
+    "season_salary_rows": 476,
+    "expected_num_results": 476
+  },
+  {
+    "season": 2012,
+    "source": "api",
+    "contracts_rows": 533,
+    "season_salary_rows": 533,
+    "expected_num_results": 533
+  },
+  {
+    "season": 2013,
+    "source": "api",
+    "contracts_rows": 528,
+    "season_salary_rows": 528,
+    "expected_num_results": 528
+  },
+  {
+    "season": 2014,
+    "source": "api",
+    "contracts_rows": 554,
+    "season_salary_rows": 554,
+    "expected_num_results": 554
+  },
+  {
+    "season": 2015,
+    "source": "api",
+    "contracts_rows": 539,
+    "season_salary_rows": 539,
+    "expected_num_results": 539
+  },
+  {
+    "season": 2016,
+    "source": "api",
+    "contracts_rows": 593,
+    "season_salary_rows": 593,
+    "expected_num_results": 593
+  },
+  {
+    "season": 2017,
+    "source": "api",
+    "contracts_rows": 631,
+    "season_salary_rows": 631,
+    "expected_num_results": 631
+  },
+  {
+    "season": 2018,
+    "source": "api",
+    "contracts_rows": 621,
+    "season_salary_rows": 621,
+    "expected_num_results": 621
+  },
+  {
+    "season": 2019,
+    "source": "api",
+    "contracts_rows": 518,
+    "season_salary_rows": 518,
+    "expected_num_results": 518
+  },
+  {
+    "season": 2020,
+    "source": "api",
+    "contracts_rows": 618,
+    "season_salary_rows": 618,
+    "expected_num_results": 618
+  },
+  {
+    "season": 2021,
+    "source": "api",
+    "contracts_rows": 742,
+    "season_salary_rows": 742,
+    "expected_num_results": 742
+  },
+  {
+    "season": 2022,
+    "source": "api",
+    "contracts_rows": 630,
+    "season_salary_rows": 630,
+    "expected_num_results": 630
+  },
+  {
+    "season": 2023,
+    "source": "api",
+    "contracts_rows": 663,
+    "season_salary_rows": 663,
+    "expected_num_results": 663
+  },
+  {
+    "season": 2024,
+    "source": "api",
+    "contracts_rows": 617,
+    "season_salary_rows": 617,
+    "expected_num_results": 617
+  },
+  {
+    "season": 2025,
+    "source": "api",
+    "contracts_rows": 656,
+    "season_salary_rows": 656,
+    "expected_num_results": 656
+  }
+]

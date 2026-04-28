@@ -1,0 +1,6 @@
+shot_style_subtype_id,shot_style_subtype,subtype_size,avg_membership_probability,avg_entropy,avg_shot_attempts_covered,avg_seasons_with_embeddings,descriptive_style_notes
+0,Rim Pressure Drivers,495,0.9858912588937959,0.03885536927475928,2061.9070707070705,3.735353535353535,Paint-oriented creators with heavy rim pressure and lower perimeter dependence.
+1,Balanced Three-Level Scorers,64,0.9680532237095809,0.09205176534655075,623.625,2.296875,"Profiles with meaningful rim, midrange, and three-point balance."
+2,Arc-Heavy Spacers,161,0.984707726587435,0.04371588386107607,776.944099378882,2.7639751552795033,High-frequency perimeter shot makers and floor-spacing profiles.
+3,Interior Finishers,83,0.9878326872828486,0.04202008841573669,665.6867469879518,2.5180722891566263,Big-oriented finishing maps concentrated near the basket and paint.
+4,Midrange Shot Creators,168,0.9806482477450128,0.05343004815538991,592.2559523809524,2.5238095238095237,Self-created midrange-heavy profiles with intermediate-area usage.

@@ -1,0 +1,10 @@
+metric_group,metric,value,notes
+workflow_status,decision_cards_built,1058,Total player-level provisional decision cards assembled from Phase 3 inputs.
+workflow_status,case_study_rows,3,Rows retained in the provisional case-study extract.
+provisional_action_bucket,avoid_overcommitting,238,Decision-card counts by provisional Block-2-only action bucket.
+provisional_action_bucket,offer_now_disciplined_band,474,Decision-card counts by provisional Block-2-only action bucket.
+provisional_action_bucket,wait_and_save_flexibility,346,Decision-card counts by provisional Block-2-only action bucket.
+comp_support_bucket,insufficient,117,Decision-card counts by comp-support tier inherited from Phase 3.
+comp_support_bucket,moderate,347,Decision-card counts by comp-support tier inherited from Phase 3.
+comp_support_bucket,strong,423,Decision-card counts by comp-support tier inherited from Phase 3.
+comp_support_bucket,weak,171,Decision-card counts by comp-support tier inherited from Phase 3.

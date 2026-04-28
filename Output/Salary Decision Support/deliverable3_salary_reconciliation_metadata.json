@@ -1,0 +1,28 @@
+{
+  "script": "07_build_salary_reconciliation_layer.py",
+  "project_root": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3",
+  "inputs": {
+    "baseline_predictions": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/year5_salary_baseline_selected_model_predictions.csv",
+    "market_anchor_band": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_market_anchor_band_table.csv",
+    "decision_inputs": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_provisional_decision_inputs_table.csv",
+    "forecast_macro": null
+  },
+  "outputs": [
+    "deliverable3_salary_reconciliation_table.csv",
+    "deliverable3_salary_reconciliation_summary.csv",
+    "deliverable3_salary_reconciliation_summary.md",
+    "deliverable3_forecast_overlay_merge_audit.csv",
+    "deliverable3_forecast_overlay_support_breakdown.csv",
+    "deliverable3_salary_reconciliation_case_study_table.csv"
+  ],
+  "forecast_overlay": {
+    "forecast_overlay_used": false,
+    "forecast_rows": 0,
+    "matched_players": 0
+  },
+  "notes": [
+    "This phase reconciles the baseline salary model with the comp-market anchor band.",
+    "The Deliverable 1 macro forecast table is used only as an interim overlay when available.",
+    "The resulting layer is not the final extension recommendation because durability and explicit uncertainty are still missing."
+  ]
+}

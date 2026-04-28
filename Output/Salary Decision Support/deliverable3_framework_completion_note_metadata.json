@@ -1,0 +1,12 @@
+{
+  "script": "10_write_framework_completion_note.py",
+  "project_root": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3",
+  "inputs": {
+    "staged_summary": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_staged_final_summary.csv",
+    "supported_subset_summary": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_forecast_adjustment_supported_subset_summary.csv",
+    "final_case_study_table": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_final_case_study_table.csv"
+  },
+  "outputs": [
+    "deliverable3_framework_completion_note.md"
+  ]
+}

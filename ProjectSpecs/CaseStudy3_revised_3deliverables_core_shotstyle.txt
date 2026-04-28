@@ -1,0 +1,401 @@
+NBA Post-Rookie Forecasting and Extension Valuation
+Revised Minutes with 3 Main Final Deliverables (Core Shot-Style Version)
+
+Project Overview
+Objective: Complete a computationally intensive data science case study using the NBA data already collected in the project to support post-rookie extension decisions. Because the current NBA sample is meaningful but still limited at the player-label level, the project will not justify itself by forcing all sophistication into one unified forecast model. Instead, it will justify sophistication through a broader workflow design: reproducible target construction, player-level feature engineering, PCA + K-means archetype learning, a core ShotChartDetail-based shot-style embedding pipeline, interpretable baseline models, an LSTM hybrid sequence model, uncertainty quantification, and a stakeholder-facing player dossier organized around three main final deliverables.
+
+Primary Tools
+- Python for data preparation, feature engineering, clustering, spatial tensor construction, autoencoder training, baseline modeling, sequence modeling, and visualization.
+- Existing CSV-based project data as the main data backbone.
+- Core NBA API shot-level enrichment through ShotChartDetail for Seasons 1-4.
+- Optional PlayByPlayV3 only if time remains after the core ShotChartDetail workflow is stable.
+
+Core Methodology
+A staged pipeline combining:
+1. cohort and target construction,
+2. player-level and sequence-level feature engineering,
+3. PCA + K-means archetype clustering,
+4. ShotChartDetail-based shot-style embedding learning,
+5. comparable-player infrastructure with realistic comps and post-1990 Hall of Fame ceiling comps,
+6. baseline regression / classification models,
+7. LSTM hybrid sequence modeling,
+8. three stakeholder-facing final deliverables for front-office decision support.
+
+Why this revised concept is the right fit
+This project remains a strong case-study choice because it is computationally meaningful, business-relevant, and feasible within a short project window. The first four NBA seasons align with the rookie-contract decision window, while Years 5-7 give a natural post-rookie evaluation horizon. In response to the professor's concern that a single nonparametric LSTM is hard to justify when each player is still one downstream training case, the project will now be presented as a broader post-rookie player intelligence workflow rather than a single-model showcase. The ShotChartDetail module is now core to that justification: it adds a second learning pipeline built on spatial shot behavior and produces new player-style representations that feed archetype interpretation, comparable-player search, identity drift, and optionally downstream forecasting.
+
+Updated Core Research Question
+To what extent do sequential game-by-game patterns from a player's first four NBA seasons, together with learned early-career archetypes and core shot-style representations from ShotChartDetail, predict later-career performance, first post-rookie contract value as salary-cap percentage, and the likelihood that the player becomes a sleeper, neutral outcome, or bust relative to early expectations? Further, can these signals be translated into three decision-ready final deliverables for extension support under uncertainty?
+
+Objective
+Use the first 4 NBA seasons to forecast Years 5-7 performance and support post-rookie extension decisions.
+Our goal is to build a player-level forecasting system that uses the first four NBA seasons of drafted players to predict:
+1. Future post-rookie performance over a defined later-career window.
+2. Expected first post-rookie contract value as salary-cap percentage.
+3. Outcome classification indicating whether the player is more likely to be a sleeper, neutral outcome, or bust relative to early-career expectations.
+
+The final goal is not only to forecast player quality, but to translate that forecast into a front-office decision aid for extension valuation.
+
+Stakeholders & Audience
+Technical Audience: Academic evaluators assessing data quality, feature engineering, clustering design, spatial representation learning, model rigor, missing-data handling, uncertainty quantification, and the comparison between baseline and sequence models.
+Business Audience: NBA front offices and basketball operations groups deciding whether to extend, pay, delay, or walk away from a player at the end of the rookie contract.
+
+Current Data Reality in the Project
+The project already contains the core data backbone:
+- cohort_1999_2019.csv: drafted-player cohort covering draft years 1999-2019.
+- raw_game_logs_S1_to_S4.csv: rookie-contract game logs.
+- career_totals_targets.csv: later-career player-season rows used to build Years 5-7 targets.
+- salaries_players_1990_2025_combined.csv: historical player salaries scraped from Hoopshype.
+- Cleaned_Salary_Cap.csv: historical NBA salary cap by season.
+- spider_chart.png: visual reference for player skill-radar style communication.
+- player_feature_table_1999_2019.csv and player_season_feature_table_1999_2019.csv: existing engineered feature tables.
+- player_feature_table_pca_scores.csv and the K-means outputs: existing archetype pipeline artifacts.
+
+Important scope constraints from the existing files
+- The raw game logs are traditional boxscore logs, not full advanced-tracking data.
+- Win Shares, BPM, VORP, RAPM, and similar advanced value metrics are not currently present in the existing target files.
+- Contract value must be built through salary-to-cap merging, likely using normalized player-name matching because Hoopshype player IDs do not line up directly with NBA API IDs.
+- Not every drafted player appears in every file. Some draftees never show up in the S1-S4 logs, some never appear in the later-career target file, and many players do not have full Years 5-7 observed outcomes because the target table records realized NBA seasons rather than explicit zero rows for seasons out of the league.
+- For clustering, the current design uses the full available player feature table without the 40-game filter so that archetypes reflect the complete rookie-contract population. Downstream predictive models may still apply stricter target-specific filters if needed.
+- ShotChartDetail is now part of core scope, but raw shot rows are still not the final modeling unit. They must first be aggregated into stable player-level or season-level descriptors through a learned embedding pipeline.
+
+Why 3 Main Final Deliverables
+The earlier six-panel logic still remains useful internally, but the final external framing will be cleaner if those panels are regrouped into three headline deliverables:
+1. Performance Forecast
+2. Player Archetype & Comparable Profile
+3. Salary Decision Support
+
+This keeps the presentation business-facing and compact while preserving the richer internal module logic needed to justify sophistication.
+
+Final Deliverable 1 — Performance Forecast
+Core question:
+What happens next, and how certain are we?
+
+Panels inside this deliverable
+1. Years 5-7 performance prediction
+2. Sleeper / Neutral / Bust classification
+3. Confidence band / uncertainty panel
+
+Data used
+- raw_game_logs_S1_to_S4.csv
+- player_feature_table_1999_2019.csv
+- cluster_modeling_predictors_k5.csv
+- career_totals_targets.csv
+- optional shot-style embedding features from the core ShotChartDetail pipeline, after they are validated
+
+Target construction
+- Build Years 5-7 later-career boxscore-based targets from career_totals_targets.csv.
+- Prefer robust supported targets such as average annual Games, Minutes, Points, Rebounds, Assists, and shooting efficiency proxies.
+- Define sleeper / neutral / bust using an expectation-vs-realization framework:
+  - build an early-career expectation score from Seasons 1-4 aggregate production and opportunity,
+  - build a realized Years 5-7 performance score,
+  - use the residual or rank-gap between realized and expected outcomes,
+  - label high positive residuals as sleepers, high negative residuals as busts, and the middle band as neutral.
+
+Pipeline and methodology
+Stage 1 — Baseline benchmark
+- Build a flattened player-level modeling table from Seasons 1-4 features plus clustering predictors.
+- Train multinomial logistic regression for sleeper / neutral / bust.
+- Train linear, ridge, or elastic-net models for continuous Years 5-7 targets.
+- Use draft-year-aware or otherwise leakage-safe train / validation / test separation.
+
+Stage 2 — LSTM hybrid sequence model
+- Build a sequential dataset from game-by-game Seasons 1-4 logs.
+- Engineer time-aware sequence features such as Rest_Days, Is_B2B, cumulative games, cumulative minutes, rolling scoring / rebounding / assists, and derived True Shooting %.
+- Standardize numeric features using training data only.
+- Train an LSTM encoder on the full Seasons 1-4 sequence.
+- Concatenate the learned sequence representation with cluster one-hot predictors and distance-to-centroid predictors.
+- Use separate heads or separate models for:
+  - Years 5-7 performance regression,
+  - sleeper / neutral / bust classification,
+  - and optionally salary-cap regression if target coverage is stable enough.
+
+Stage 3 — Uncertainty / confidence band
+- Produce prediction intervals using bootstrap baselines, repeated draft-year splits, or simple ensemble-style uncertainty.
+- Optionally use LSTM ensemble spread or dropout-based uncertainty proxy if stable.
+- Report floor / base / ceiling forecasts rather than a single point estimate only.
+
+Deliverable output
+- Years 5-7 performance forecast table or card
+- sleeper / neutral / bust probabilities
+- confidence band or uncertainty rating
+- case-study examples where sequence information improved over the flat baseline
+
+Final Deliverable 2 — Player Archetype & Comparable Profile
+Core question:
+Who is this player, who has looked like this before, and what is the realistic upside?
+
+Panels inside this deliverable
+1. Current archetype
+2. Identity drift / role evolution
+3. Realistic comparable players
+4. Ceiling comps / upside analogs
+5. Archetype match and similarity score
+6. Median later-career outcome of the realistic comp group
+7. Shot-style representation and shot-style drift explanation
+
+Data used
+Core boxscore-based archetype layer
+- player_feature_table_1999_2019.csv
+- player_feature_table_pca_scores.csv
+- player_feature_table_1999_2019_clustered_k5.csv
+- cluster_modeling_predictors_k5.csv
+- cluster_summary_k5.csv
+- cluster_summary_zscores_k5.csv
+- cluster_representative_players_k5.csv
+- career_totals_targets.csv for downstream comp outcomes
+
+Core shot-style layer
+- ShotChartDetail for Seasons 1-4
+- player-level shot embeddings
+- season-level shot embeddings
+
+Methodology for current archetype
+- Reuse the existing PCA + K-means pipeline rather than recompute it unless feature engineering changes.
+- Use the full player feature table without the 40-game filter for clustering so the archetypes reflect the complete rookie-contract population.
+- Keep cluster one-hot indicators, own-cluster distance, and distance-to-centroid variables as downstream features.
+- Defend cluster names using cluster_summary_k5.csv, cluster_summary_zscores_k5.csv, and representative players nearest each centroid.
+
+Methodology for identity drift / role evolution
+- Start with season-level summaries and trend features already derived from player_season_feature_table_1999_2019.csv and player_feature_table_1999_2019.csv.
+- Use season slopes, Year-1 to Year-4 deltas, recent-vs-early opportunity shares, and season-block features to characterize role evolution.
+- Augment this panel with season-level shot embeddings to describe shot-map and offensive-style drift across Seasons 1-4.
+
+Core ShotChartDetail pipeline
+1. Pull ShotChartDetail for Seasons 1-4 for the drafted-player cohort and the Hall of Fame comp library.
+2. Bin shots into player-season spatial tensors on a fixed half-court grid.
+3. Construct stable channels such as shot frequency and smoothed make-rate maps.
+4. Train a CNN autoencoder to learn shot-style embeddings from the spatial tensors.
+5. Export:
+   - player-level embedding table,
+   - player-season embedding table,
+   - coverage and quality flags.
+6. Use player-level embeddings for comparable-player search and archetype augmentation.
+7. Use season-level embeddings for shot-style drift and role-evolution analysis.
+8. After validation, test whether shot-style embeddings add value as extra predictors in baseline or LSTM forecasting models.
+
+Comparable-player panel pipeline
+This panel has two layers: realistic comps and ceiling comps.
+
+Layer A — realistic comps (main comp pool)
+- Main comparison library: historical players from the standard project feature / PCA / cluster pipeline.
+- Similarity built from:
+  1. PCA distance,
+  2. cluster-distance fit,
+  3. shot-style embedding distance.
+- Output:
+  - nearest realistic comps,
+  - similarity scores,
+  - median later-career outcome of the realistic comp group,
+  - best / median / downside contextual framing.
+
+Layer B — ceiling comps (Hall of Fame subset)
+- Pull a tagged Hall of Fame comparison library restricted to post-1990 players to reduce era mismatch and make shot / role style more comparable to the current cohort.
+- Hall of Famers are not the main comparable pool. They are used as upside analogs only when the similarity threshold is strong enough.
+- Engineer the Hall of Fame library using the same Seasons 1-4 feature logic as the training players so they live in the same feature space.
+- Pull ShotChartDetail for Hall of Famers over the same Seasons 1-4 window.
+- Process Hall of Fame shot data through the same spatial tensor and autoencoder pipeline so they live in the same shot-style embedding space.
+- Do not refit PCA or K-means. Instead:
+  - transform HOF boxscore features with the saved PCA artifacts,
+  - assign nearest existing cluster,
+  - compute centroid distances,
+  - then include them as an auxiliary comp library.
+- Output:
+  - optional ceiling comp,
+  - upside interpretation,
+  - explicit note that this is an aspirational analog, not a direct forecast.
+
+Audit note on the core shot-style module
+- ShotChartDetail is now part of the core project architecture, not a deferred side branch.
+- Its role is to strengthen the Player Archetype & Comparable Profile deliverable first.
+- Raw shot rows are not the final modeling unit; they must first be aggregated into stable player-level or season-level descriptors through the autoencoder pipeline.
+- The project story should still remain anchored in the existing boxscore-based workflow, with shot-style representations acting as a second structured feature family rather than a full replacement.
+
+Deliverable output
+- current archetype label and archetype-match score
+- realistic comparable-player list with similarity scores
+- optional Hall of Fame ceiling comp if justified
+- median later-career outcome of the realistic comp group
+- identity-drift or role-evolution summary
+- shot-style explanation derived from the autoencoder embedding space
+
+Final Deliverable 3 — Salary Decision Support
+Core question:
+What should the front office pay, and how aggressive should the extension stance be?
+
+Panels inside this deliverable
+1. Year-5 contract value as salary-cap percentage
+2. Durability / risk adjustment
+3. Final extension recommendation
+
+Data used
+- raw_game_logs_S1_to_S4.csv
+- player_season_feature_table_1999_2019.csv
+- player_feature_table_1999_2019.csv
+- cluster_modeling_predictors_k5.csv
+- salaries_players_1990_2025_combined.csv
+- Cleaned_Salary_Cap.csv
+- career_totals_targets.csv
+- optional forecast outputs from Deliverable 1 and comp outputs from Deliverable 2
+
+Methodology for Year-5 contract value target
+- Merge player salary history with salary-cap history.
+- Construct Year5_Salary_Cap_Pct = Year5_Salary / Salary_Cap.
+- Use normalized player-name plus season matching because Hoopshype IDs do not directly align with NBA API IDs.
+- Be explicit about the smaller usable sample after the salary merge.
+
+Methodology for salary prediction
+Stage 1 — baseline benchmark
+- Train linear / ridge / elastic-net regression on flattened Seasons 1-4 features plus clustering predictors.
+- Include performance expectation features and player-type variables.
+
+Stage 2 — optional LSTM salary head
+- If Year-5 salary target coverage is stable enough, add a salary regression head to the LSTM hybrid model.
+- If the salary sample is too thin or unstable, split salary forecasting into a separate model and state that explicitly.
+
+Methodology for durability / risk adjustment
+- Build a durability risk score from availability and continuity features such as:
+  - games per season,
+  - total minutes,
+  - minutes volatility,
+  - rest-day structure,
+  - long-rest flags,
+  - season-to-season participation stability.
+- Use an interpretable logistic / risk-score classifier first.
+- If later-career durability labels are too thin, downgrade to rule-based risk bands.
+
+Methodology for final recommendation
+- Build a rules-based synthesis layer rather than another opaque model.
+- Combine:
+  - predicted Years 5-7 performance,
+  - predicted Year-5 salary-cap percentage,
+  - sleeper / bust probability,
+  - durability risk,
+  - uncertainty band,
+  - archetype and comparable-player context.
+- Map the player into a recommendation quadrant such as:
+  - Extend Aggressively,
+  - Extend at Disciplined Price,
+  - Wait and Reassess,
+  - Avoid Overcommitting.
+
+Deliverable output
+- Year-5 salary-cap % forecast
+- durability or risk adjustment band
+- final extension recommendation and rationale
+- optional case-study positioning against realistic and ceiling comps
+
+Revised Workflow Architecture
+Phase 1 — Cohort construction and sample audit
+- Start from the existing 1999-2019 drafted-player cohort.
+- Quantify how many draftees appear in the Seasons 1-4 logs, the later-career target file, and the salary file.
+- Build a cohort audit table showing no S1-S4 logs, no later-career target rows, at least one Years 5-7 row, and full Years 5-7 coverage.
+- Quantify attrition at every step instead of silently shrinking the sample.
+Deliverable:
+- A clean cohort summary table and data-quality assessment memo.
+
+Phase 2 — Target construction
+- Build Years 5-7 performance targets from career_totals_targets.csv.
+- Build Year-5 salary-cap percentage by merging historical salary and cap data.
+- Finalize sleeper / neutral / bust labels with a transparent expectation-vs-realization residual framework.
+- Document how missing Years 5-7 rows are handled.
+Deliverable:
+- A finalized target table with performance, salary, and classification outcomes.
+
+Phase 3 — Feature engineering from existing game logs
+Engineer time-aware sequence features directly from the boxscore data already available:
+- Rest days
+- Back-to-back indicator
+- Rolling shooting and workload measures
+- Cumulative minutes and cumulative games played
+- Availability / missed-time proxies
+- Derived efficiency metrics such as true shooting percentage
+- Player-season summaries and player-level four-year summaries
+Deliverable:
+- one sequential dataset for the LSTM hybrid model
+- one flattened player-level dataset for baseline models and panel construction
+
+Phase 4 — Early-career archetype learning with PCA + K-means
+- Reuse the existing PCA and K-means outputs unless feature engineering changes.
+- Use cluster summaries and representative players to defend the five archetype names.
+- Retain cluster one-hot columns and distance-to-centroid columns for downstream models.
+- Treat cluster outputs as core project infrastructure rather than optional side visuals.
+Deliverable:
+- A finalized archetype table and merge-ready clustering predictor table.
+
+Phase 5 — Core ShotChartDetail representation learning
+- Pull ShotChartDetail for the drafted-player cohort and the post-1990 Hall of Fame comp library over Seasons 1-4.
+- Build player-season spatial tensors on a common court grid.
+- Train the CNN autoencoder and export player-level and season-level shot-style embeddings.
+- Audit shot-data coverage and identify minimum-shot thresholds or smoothing rules needed for stable embeddings.
+- Integrate the resulting embeddings into the comparable-player and drift pipeline before they are used anywhere else.
+Deliverable:
+- player-level shot-style embedding table
+- season-level shot-style embedding table
+- shot-coverage audit
+- reusable autoencoder artifacts and preprocessing spec
+
+Phase 6 — Baseline modeling
+- Train interpretable baselines on the flattened player-level dataset.
+- Use multinomial logistic regression for sleeper / neutral / bust.
+- Use linear, ridge, or elastic-net regression for continuous later-performance and contract-value targets.
+- Include cluster one-hot variables and distance-to-centroid variables alongside basketball aggregate predictors.
+- Test whether adding shot-style embeddings improves selected targets, but keep the boxscore-only baseline as the benchmark.
+- Use an honest validation strategy that avoids leakage, preferably by draft-year splits or other time-aware separation.
+Deliverable:
+- A baseline performance report that sets the benchmark the sequence model must beat.
+
+Phase 7 — LSTM hybrid sequence model
+- Reshape each player's Seasons 1-4 logs into a padded sequence tensor.
+- Standardize numeric features correctly using training data only.
+- Build an LSTM encoder over the game sequence.
+- Concatenate the learned sequence representation with clustering predictors.
+- Optionally concatenate player-level shot-style embeddings if coverage and stability are acceptable.
+- Use separate heads or separate models for later-performance regression, Year-5 salary-cap regression, and sleeper / neutral / bust classification depending on coverage stability.
+- Save model weights and preprocessing objects for reproducibility.
+Deliverable:
+- A trained LSTM hybrid model and a clear architecture / training summary.
+
+Phase 8 — Comparable-player assembly and final deliverable construction
+- Build the realistic comp library from the existing project player space plus core shot-style embeddings.
+- Build the tagged post-1990 Hall of Fame ceiling-comp library using the same Seasons 1-4 engineering pipeline and the same shot-style embedding pipeline.
+- Assemble Performance Forecast.
+- Assemble Player Archetype & Comparable Profile.
+- Assemble Salary Decision Support.
+- Compare baseline vs LSTM hybrid on aligned holdout sets.
+- Build case studies that connect forecasts, comps, uncertainty, and final recommendations.
+Deliverable:
+- A finalized comparable-player pipeline with realistic comps and ceiling comps
+- technical comparison table
+- stakeholder-facing player deliverables
+- final front-office recommendation framing
+
+Deliverables & key takeaways
+Technical Deliverable:
+A reproducible modeling workflow showing how first-four-season sequence information, early-career archetype clustering, core shot-style embeddings from ShotChartDetail, comparable-player infrastructure, durability risk adjustment, and uncertainty quantification improve or fail to improve prediction relative to flat baselines, using the expanded 1999-2019 cohort.
+
+Business Deliverable:
+An RFA War Room player intelligence system that translates model outputs into extension-risk language and concrete contract-decision guidance through three headline final deliverables.
+
+Final presentation-facing deliverables
+1. Performance Forecast
+- Years 5-7 performance prediction
+- Sleeper / Neutral / Bust classification
+- confidence band / uncertainty
+
+2. Player Archetype & Comparable Profile
+- current archetype
+- identity drift / role evolution
+- realistic comps
+- ceiling comps
+- archetype match and similarity score
+- median later-career outcome of realistic comp group
+- core shot-style representation and shot-style drift
+
+3. Salary Decision Support
+- Year-5 contract value as salary-cap %
+- durability / risk adjustment
+- final extension recommendation
+
+Bottom line
+The project should now be presented as a broad post-rookie player intelligence workflow with three main final deliverables, not as a narrow attempt to maximize the complexity of one sequence model. The core ShotChartDetail autoencoder pipeline now strengthens that framing rather than sitting outside it.

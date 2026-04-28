@@ -1,0 +1,26 @@
+{
+  "script": "08_build_interim_extension_guidance.py",
+  "project_root": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3",
+  "inputs": {
+    "reconciliation_table": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/deliverable3_salary_reconciliation_table.csv"
+  },
+  "outputs": [
+    "deliverable3_interim_extension_guidance_table.csv",
+    "deliverable3_interim_extension_guidance_cards.csv",
+    "deliverable3_interim_extension_case_study_table.csv",
+    "deliverable3_interim_extension_summary.csv",
+    "deliverable3_interim_extension_summary.md",
+    "deliverable3_interim_extension_rule_reference.csv"
+  ],
+  "notes": [
+    "This phase upgrades the Block-2-only provisional stance into an interim forecast-adjusted guidance layer.",
+    "The current Deliverable 1 macro forecast table is treated as a forecast overlay, not as the final fully locked Deliverable 1 handoff.",
+    "Durability / availability risk and richer uncertainty outputs are still pending, so this phase must not be presented as final extension guidance."
+  ],
+  "counts": {
+    "players": 1058,
+    "forecast_overlay_rows": 0,
+    "offer_now_rows": 0,
+    "demo_case_rows": 3
+  }
+}

@@ -1,0 +1,16 @@
+metric_group,metric,value,notes
+workflow_status,players_total,1058,Total player-level rows in the Phase 7 reconciliation layer.
+workflow_status,market_anchor_supported,941,Players with a supported comp-market anchor band carried forward from Phase 2.
+workflow_status,forecast_overlay_matched_players,0,Players successfully matched to the Deliverable 1 macro forecast table.
+alignment_bucket,below_protected,328,Phase 7 count for alignment bucket.
+alignment_bucket,between_protected_and_fair,248,Phase 7 count for alignment bucket.
+alignment_bucket,above_walkaway,189,Phase 7 count for alignment bucket.
+alignment_bucket,between_fair_and_walkaway,176,Phase 7 count for alignment bucket.
+alignment_bucket,model_only_no_market_anchor,117,Phase 7 count for alignment bucket.
+pricing_anchor_preference,market_band_confirmed_by_model,380,Phase 7 count for pricing anchor preference.
+pricing_anchor_preference,model_discount_vs_market_review,328,Phase 7 count for pricing anchor preference.
+pricing_anchor_preference,model_premium_vs_market_review,189,Phase 7 count for pricing anchor preference.
+pricing_anchor_preference,baseline_model_only,117,Phase 7 count for pricing anchor preference.
+pricing_anchor_preference,mixed_review,44,Phase 7 count for pricing anchor preference.
+forecast_outlook_bucket,forecast_unavailable,1058,Phase 7 count for forecast outlook bucket.
+forecast_overlay_signal,no_forecast_overlay,1058,Phase 7 count for forecast overlay signal.

@@ -1,0 +1,25 @@
+{
+  "script": "05_prepare_salary_model_table.py",
+  "project_root": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3",
+  "inputs": {
+    "year5_salary_target": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\SalaryBlock\\year5_salary_target_table.csv",
+    "identity_drift_table": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\player_identity_drift_table.csv",
+    "macro_archetype_backbone": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\archetype_macro_player_table.csv",
+    "final_player_profile": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\final_player_archetype_profile_table.csv",
+    "holdout_manifest": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Salary Decision Support\\salary_demo_player_holdout_manifest.csv"
+  },
+  "outputs": [
+    "year5_salary_modeling_table.csv",
+    "year5_salary_modeling_dictionary.csv",
+    "year5_salary_modeling_missingness.csv",
+    "year5_salary_training_manifest.csv",
+    "year5_salary_modeling_summary.csv",
+    "year5_salary_modeling_summary.md"
+  ],
+  "notes": [
+    "This phase uses the richest reusable Deliverable 2 predictor backbone currently available in the uploaded project bundle: player_identity_drift_table.csv.",
+    "No comp-salary anchors or provisional action buckets are used as model predictors here, because those would contaminate the baseline salary-estimation module with target-adjacent context.",
+    "Trae Young and Nikola Vučević remain reserved as case-study demos and are explicitly excluded from training via training_eligible_flag = 0.",
+    "The original flattened Seasons 1–4 player-feature table is not part of the current uploaded Deliverable 3 file bundle, so this phase reuses the saved macro-role / shot-style / drift backbone instead."
+  ]
+}

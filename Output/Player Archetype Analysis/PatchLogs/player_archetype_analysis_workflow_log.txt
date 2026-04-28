@@ -1,0 +1,22 @@
+
+================================================================================
+PHASE 13 — BUILD BLOCK 2 ARCHETYPE AND COMP-MARKET CONTEXT
+================================================================================
+1. What was completed
+Translated Deliverable 2 into a salary-ready Block 2 by merging realistic comps to the cleaned Year-5 salary-cap target table, building similarity-weighted comp-market anchors, and exporting a stakeholder-facing archetype-plus-comp-market context table.
+
+2. What was learned
+The archetype dossier becomes directly useful for salary support once realistic comps are expressed as a Year-5 salary-cap neighborhood rather than only as stylistic or later-performance analogs.
+
+3. What assumptions still matter
+Realistic comps remain the primary pricing anchor, while ceiling comps remain upside-only context. Similarity weighting uses 1 / similarity_score and the comp-support band is based on both matched-comp count and overall comp quality.
+
+4. What files were read
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\final_player_archetype_profile_table.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\realistic_comps.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\SalaryBlock\year5_salary_target_table.csv
+
+5. What files were written
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\SalaryBlock\comp_salary_detail_table.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\SalaryBlock\deliverable3_block2_archetype_comp_market_context.csv
+

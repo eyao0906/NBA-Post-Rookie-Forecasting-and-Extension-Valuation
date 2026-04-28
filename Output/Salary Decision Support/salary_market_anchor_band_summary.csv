@@ -1,0 +1,20 @@
+metric_group,metric,value,notes
+anchor_table,players_in_block2_context,1058.0,Row count from deliverable3_block2_archetype_comp_market_context.csv.
+anchor_table,players_with_supported_market_anchor_band,941.0,"Players with non-missing protected, fair, and walk-away prices."
+anchor_table,supported_market_anchor_share,0.889413988657845,Share of Block 2 players with a usable market anchor band.
+anchor_table,holdout_demo_players_flagged,3.0,Reserved demo players carried forward for later salary-suggestion case studies.
+supported_distribution,protected_price_p25,0.0157575757575757,Protected price from the comp-based market anchor.
+supported_distribution,protected_price_median,0.0341919307043537,Protected price from the comp-based market anchor.
+supported_distribution,protected_price_p75,0.0646781279542823,Protected price from the comp-based market anchor.
+supported_distribution,fair_price_p25,0.0461771158934649,Fair price from the comp-based market anchor.
+supported_distribution,fair_price_median,0.0733331960976038,Fair price from the comp-based market anchor.
+supported_distribution,fair_price_p75,0.1106427033959988,Fair price from the comp-based market anchor.
+supported_distribution,walk_away_price_p25,0.062177717135598,Walk-away max from the comp-based market anchor.
+supported_distribution,walk_away_price_median,0.1014825973202251,Walk-away max from the comp-based market anchor.
+supported_distribution,walk_away_price_p75,0.1605136428571428,Walk-away max from the comp-based market anchor.
+supported_distribution,anchor_band_width_p25,0.028407483790029886,Absolute width of the market anchor band.
+supported_distribution,anchor_band_width_median,0.05484446728813991,Absolute width of the market anchor band.
+supported_distribution,anchor_band_width_p75,0.0918541028851273,Absolute width of the market anchor band.
+supported_distribution,anchor_band_relative_width_p25,0.42012167741421963,Band width divided by fair price.
+supported_distribution,anchor_band_relative_width_median,0.7814829775833994,Band width divided by fair price.
+supported_distribution,anchor_band_relative_width_p75,1.255969250634124,Band width divided by fair price.

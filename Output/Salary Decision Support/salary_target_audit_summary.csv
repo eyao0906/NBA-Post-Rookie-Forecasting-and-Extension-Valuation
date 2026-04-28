@@ -1,0 +1,18 @@
+metric_group,metric,value,notes
+merge_summary_input,total_players,1058.0,Reported directly from year5_salary_merge_summary.csv.
+merge_summary_input,players_with_year5_salary_cap_match,665.0,Reported directly from year5_salary_merge_summary.csv.
+merge_summary_input,players_without_year5_salary_cap_match,393.0,Reported directly from year5_salary_merge_summary.csv.
+merge_summary_input,year5_salary_match_rate,0.6285444234404537,Reported directly from year5_salary_merge_summary.csv.
+merge_summary_input,players_matched_via_manual_alias,0.0,Reported directly from year5_salary_merge_summary.csv.
+merge_summary_input,players_with_multirow_salary_season,21.0,Reported directly from year5_salary_merge_summary.csv.
+merge_summary_input,players_with_multiteam_salary_season,21.0,Reported directly from year5_salary_merge_summary.csv.
+recomputed_target_summary,total_players_from_target_table,1058.0,Row count from year5_salary_target_table.csv.
+recomputed_target_summary,players_with_year5_salary_cap_match,665.0,Computed from year5_salary_match_flag == 1.
+recomputed_target_summary,players_without_year5_salary_cap_match,393.0,Computed from year5_salary_match_flag != 1.
+recomputed_target_summary,year5_salary_match_rate,0.6285444234404537,Computed from year5_salary_match_flag == 1.
+salary_cap_pct_distribution,matched_cap_pct_min,9.280890359037972e-05,Minimum matched Year-5 salary as cap percentage.
+salary_cap_pct_distribution,matched_cap_pct_p25,0.0272669950067315,25th percentile of matched Year-5 salary as cap percentage.
+salary_cap_pct_distribution,matched_cap_pct_median,0.0752222475495783,Median matched Year-5 salary as cap percentage.
+salary_cap_pct_distribution,matched_cap_pct_p75,0.1476925327706751,75th percentile of matched Year-5 salary as cap percentage.
+salary_cap_pct_distribution,matched_cap_pct_max,0.3,Maximum matched Year-5 salary as cap percentage.
+salary_cap_pct_distribution,matched_cap_pct_mean,0.09497635206504379,Mean matched Year-5 salary as cap percentage.

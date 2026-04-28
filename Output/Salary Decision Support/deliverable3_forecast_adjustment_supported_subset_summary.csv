@@ -1,0 +1,6 @@
+metric,value
+supported_subset_rows,139.0
+supported_subset_with_salary_target,138.0
+supported_subset_label_accuracy,0.6330935251798561
+supported_subset_perf_rmse,10.646770521071424
+supported_subset_perf_mae,8.290989611654675

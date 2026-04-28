@@ -1,0 +1,4 @@
+PLAYER_ID,PLAYER_NAME,draft_year,macro_archetype,identity_drift_class,year5_salary_match_flag,salary_match_type,year5_salary_cap_pct,holdout_for_case_study,holdout_reason
+101115,Andrew Bynum,2005,Scoring Bigs / Two-Way Forwards,role_shifting_materially,1,exact_normalized_name,0.2171056845753899,1,Reserved salary suggestion demo player; exclude from future salary-model training/calibration.
+202696,Nikola Vučević,2011,Scoring Bigs / Two-Way Forwards,role_shifting_materially,1,exact_normalized_name,0.1607142857142857,1,Reserved salary suggestion demo player; exclude from future salary-model training/calibration.
+1629027,Trae Young,2018,High-Usage Primary Creators,role_shifting_materially,1,exact_normalized_name,0.3,1,Reserved salary suggestion demo player; exclude from future salary-model training/calibration.

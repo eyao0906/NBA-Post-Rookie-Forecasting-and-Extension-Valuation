@@ -1,0 +1,41 @@
+shot_style_subtype_id,shot_style_subtype,representative_rank,PLAYER_ID,PLAYER_NAME,membership_probability
+0,Rim Pressure Drivers,1,200769,Shannon Brown,1.0
+0,Rim Pressure Drivers,2,2210,Richard Jefferson,1.0
+0,Rim Pressure Drivers,3,2201,Eddy Curry,1.0
+0,Rim Pressure Drivers,4,2060,Marko Jaric,1.0
+0,Rim Pressure Drivers,5,201602,Kyle Weaver,1.0
+0,Rim Pressure Drivers,6,101107,Marvin Williams,1.0
+0,Rim Pressure Drivers,7,101129,Luther Head,1.0
+0,Rim Pressure Drivers,8,201147,Corey Brewer,1.0
+1,Balanced Three-Level Scorers,1,200747,Adam Morrison,1.0
+1,Balanced Three-Level Scorers,2,202378,Willie Warren,1.0
+1,Balanced Three-Level Scorers,3,203095,Evan Fournier,1.0
+1,Balanced Three-Level Scorers,4,203495,Ricky Ledo,1.0
+1,Balanced Three-Level Scorers,5,1626154,RJ Hunter,1.0
+1,Balanced Three-Level Scorers,6,1629712,Didi Louzada,1.0
+1,Balanced Three-Level Scorers,7,1629686,Deividas Sirvydis,1.0
+1,Balanced Three-Level Scorers,8,1628985,Devon Hall,1.0
+2,Arc-Heavy Spacers,1,1913,Michael Ruffin,1.0
+2,Arc-Heavy Spacers,2,2066,Soumaila Samake,1.0
+2,Arc-Heavy Spacers,3,2038,Joel Przybilla,1.0
+2,Arc-Heavy Spacers,4,201605,Nathan Jawai,1.0
+2,Arc-Heavy Spacers,5,200788,James Augustine,1.0
+2,Arc-Heavy Spacers,6,2741,Robert Swift,1.0
+2,Arc-Heavy Spacers,7,2775,Ha Ha,1.0
+2,Arc-Heavy Spacers,8,200778,James White,1.0
+3,Interior Finishers,1,101166,Uros Slokar,1.0
+3,Interior Finishers,2,1628444,Jabari Bird,1.0
+3,Interior Finishers,3,1627757,Stephen Zimmerman,0.9999999999999929
+3,Interior Finishers,4,2241,Omar Cook,0.9999999999999645
+3,Interior Finishers,5,1627745,Damian Jones,0.9999999999999645
+3,Interior Finishers,6,203950,Jarnell Stokes,0.9999999999999574
+3,Interior Finishers,7,201595,Joey Dorsey,0.9999999999999432
+3,Interior Finishers,8,1629057,Robert Williams III,0.9999999999995453
+4,Midrange Shot Creators,1,1906,Tim James,1.0
+4,Midrange Shot Creators,2,1911,John Celestand,1.0
+4,Midrange Shot Creators,3,1919,Laron Profit,1.0
+4,Midrange Shot Creators,4,2752,Sergei Monia,1.0
+4,Midrange Shot Creators,5,2244,Jeff Trepagnier,1.0
+4,Midrange Shot Creators,6,2245,Damone Brown,1.0
+4,Midrange Shot Creators,7,2065,Mike Smith,1.0
+4,Midrange Shot Creators,8,2044,Jason Collier,1.0

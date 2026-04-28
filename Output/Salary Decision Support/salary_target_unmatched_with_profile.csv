@@ -1,0 +1,394 @@
+PLAYER_ID,PLAYER_NAME,draft_year,year5_season_start,year5_season_string,name_key_raw,macro_archetype,identity_drift_class,audit_note
+1920,A.J. Bramlett,1999,2003,2003-04,a j bramlett,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1893,Aleksandar Radojevic,1999,2003,2003-04,aleksandar radojevic,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1898,Cal Bowdler,1999,2003,2003-04,cal bowdler,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1914,Chris Herren,1999,2003,2003-04,chris herren,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1911,John Celestand,1999,2003,2003-04,john celestand,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1930,Lari Ketner,1999,2003,2003-04,lari ketner,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1919,Laron Profit,1999,2003,2003-04,laron profit,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1924,Lee Nailon,1999,2003,2003-04,lee nailon,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1910,Leon Smith,1999,2003,2003-04,leon smith,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1926,Ryan Robertson,1999,2003,2003-04,ryan robertson,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1906,Tim James,1999,2003,2003-04,tim james,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1937,Tim Young,1999,2003,2003-04,tim young,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1892,Trajan Langdon,1999,2003,2003-04,trajan langdon,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1907,Vonteego Cummings,1999,2003,2003-04,vonteego cummings,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1895,William Avery,1999,2003,2003-04,william avery,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2062,A.J. Guyton,2000,2004,2004-05,a j guyton,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2084,Chris Porter,2000,2004,2004-05,chris porter,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2053,Dalibor Bagaric,2000,2004,2004-05,dalibor bagaric,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2061,Dan Langhi,2000,2004,2004-05,dan langhi,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2082,Dan McClintock,2000,2004,2004-05,dan mcclintock,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2051,Donnell Harvey,2000,2004,2004-05,donnell harvey,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2057,Erick Barkley,2000,2004,2004-05,erick barkley,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2081,Ernest Brown,2000,2004,2004-05,ernest brown,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2069,Hanno Mottola,2000,2004,2004-05,hanno mottola,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2080,Igor Rakocevic,2000,2004,2004-05,igor rakocevic,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2054,Jake Tsakalidis,2000,2004,2004-05,jake tsakalidis,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2064,Khalid El-Amin,2000,2004,2004-05,khalid el amin,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2068,Lavor Postell,2000,2004,2004-05,lavor postell,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2065,Mike Smith,2000,2004,2004-05,mike smith,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2071,Olumide Oyedeji,2000,2004,2004-05,olumide oyedeji,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2066,Soumaila Samake,2000,2004,2004-05,soumaila samake,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2228,Alton Ford,2001,2005,2005-06,alton ford,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2264,Alvin Jones,2001,2005,2005-06,alvin jones,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2238,Antonis Fotsis,2001,2005,2005-06,antonis fotsis,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2220,Brandon Armstrong,2001,2005,2005-06,brandon armstrong,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2245,Damone Brown,2001,2005,2005-06,damone brown,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2249,Jamison Brewer,2001,2005,2005-06,jamison brewer,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2244,Jeff Trepagnier,2001,2005,2005-06,jeff trepagnier,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2219,Jeryl Sasser,2001,2005,2005-06,jeryl sasser,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2218,Joseph Forte,2001,2005,2005-06,joseph forte,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2208,Kedrick Brown,2001,2005,2005-06,kedrick brown,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2256,Ken Johnson,2001,2005,2005-06,ken johnson,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2261,Kenny Satterfield,2001,2005,2005-06,kenny satterfield,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2213,Kirk Haston,2001,2005,2005-06,kirk haston,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2241,Omar Cook,2001,2005,2005-06,omar cook,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2206,Rodney White,2001,2005,2005-06,rodney white,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2257,Ruben Boumtje-Boumtje,2001,2005,2005-06,ruben boumtje boumtje,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2253,Sean Lampley,2001,2005,2005-06,sean lampley,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2226,Will Solomon,2001,2005,2005-06,will solomon,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2423,Chris Jefferies,2002,2006,2006-07,chris jefferies,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2442,Chris Owens,2002,2006,2006-07,chris owens,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2451,Corsley Edwards,2002,2006,2006-07,corsley edwards,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2414,Curtis Borchardt,2002,2006,2006-07,curtis borchardt,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2436,Flip Murray,2002,2006,2006-07,flip murray,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2421,Frank Williams,2002,2006,2006-07,frank williams,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2398,Jay Williams,2002,2006,2006-07,jay williams,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2412,Jiri Welsch,2002,2006,2006-07,jiri welsch,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2437,Lonny Baxter,2002,2006,2006-07,lonny baxter,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2409,Marcus Haislip,2002,2006,2006-07,marcus haislip,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2401,Nikoloz Tskitishvili,2002,2006,2006-07,nikoloz tskitishvili,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2417,Qyntel Woods,2002,2006,2006-07,qyntel woods,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2450,Randy Holcomb,2002,2006,2006-07,randy holcomb,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2425,Robert Archibald,2002,2006,2006-07,robert archibald,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2415,Ryan Humphrey,2002,2006,2006-07,ryan humphrey,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2447,Tamar Slay,2002,2006,2006-07,tamar slay,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2432,Tito Maddox,2002,2006,2006-07,tito maddox,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2428,Vincent Yarbrough,2002,2006,2006-07,vincent yarbrough,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2601,Andreas Glyniadakis,2003,2007,2007-08,andreas glyniadakis,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2583,Derrick Zimmerman,2003,2007,2007-08,derrick zimmerman,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2591,James Lang,2003,2007,2007-08,james lang,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2602,Jerome Beasley,2003,2007,2007-08,jerome beasley,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2573,Maciej Lampe,2003,2007,2007-08,maciej lampe,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2552,Michael Sweetney,2003,2007,2007-08,michael sweetney,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2590,Mo Williams,2003,2007,2007-08,mo williams,High-Usage Primary Creators,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2569,Ndudi Ebi,2003,2007,2007-08,ndudi ebi,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2558,Reece Gaines,2003,2007,2007-08,reece gaines,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2562,Sasha Pavlovic,2003,2007,2007-08,sasha pavlovic,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2582,Slavko Vranes,2003,2007,2007-08,slavko vranes,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2580,Travis Hansen,2003,2007,2007-08,travis hansen,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2559,Troy Bell,2003,2007,2007-08,troy bell,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2560,Zarko Cabarkapa,2003,2007,2007-08,zarko cabarkapa,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2565,Zoran Planinic,2003,2007,2007-08,zoran planinic,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2765,Andre Emmett,2004,2008,2008-09,andre emmett,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2766,Antonio Burks,2004,2008,2008-09,antonio burks,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2774,Bernard Robinson,2004,2008,2008-09,bernard robinson,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2758,David Harrison,2004,2008,2008-09,david harrison,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2764,Donta Smith,2004,2008,2008-09,donta smith,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2775,Ha Ha,2004,2008,2008-09,ha ha,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2761,Jackson Vroman,2004,2008,2008-09,jackson vroman,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2735,Josh Childress,2004,2008,2008-09,josh childress,Scoring Bigs / Two-Way Forwards,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2745,Kirk Snyder,2004,2008,2008-09,kirk snyder,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2763,Lionel Chalmers,2004,2008,2008-09,lionel chalmers,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2784,Luis Flores,2004,2008,2008-09,luis flores,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2739,Luke Jackson,2004,2008,2008-09,luke jackson,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+2782,Matt Freije,2004,2008,2008-09,matt freije,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2776,Pape Sow,2004,2008,2008-09,pape sow,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2750,Pavel Podkolzin,2004,2008,2008-09,pavel podkolzin,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2762,Peter John Ramos,2004,2008,2008-09,peter john ramos,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2737,Rafael Araujo,2004,2008,2008-09,rafael araujo,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2752,Sergei Monia,2004,2008,2008-09,sergei monia,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2779,Vassilis Spanoulis,2004,2008,2008-09,vassilis spanoulis,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+2751,Viktor Khryapa,2004,2008,2008-09,viktor khryapa,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+101165,Alex Acker,2005,2009,2009-10,alex acker,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+101152,Bracey Wright,2005,2009,2009-10,bracey wright,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+101147,Chris Taft,2005,2009,2009-10,chris taft,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+101137,Daniel Ewing,2005,2009,2009-10,daniel ewing,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+101159,Dijon Thompson,2005,2009,2009-10,dijon thompson,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+101123,Gerald Green,2005,2009,2009-10,gerald green,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+101125,Julius Hodge,2005,2009,2009-10,julius hodge,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+101160,Lawrence Roberts,2005,2009,2009-10,lawrence roberts,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+101132,Linas Kleiza,2005,2009,2009-10,linas kleiza,Scoring Bigs / Two-Way Forwards,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+101149,Martynas Andriuskevicius,2005,2009,2009-10,martynas andriuskevicius,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+101148,Mile Ilic,2005,2009,2009-10,mile ilic,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+101158,Orien Greene,2005,2009,2009-10,orien greene,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+101119,Rashad McCants,2005,2009,2009-10,rashad mccants,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+101156,Robert Whaley,2005,2009,2009-10,robert whaley,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+101136,Salim Stoudamire,2005,2009,2009-10,salim stoudamire,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+101166,Uros Slokar,2005,2009,2009-10,uros slokar,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+101144,Von Wafer,2005,2009,2009-10,von wafer,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+101134,Wayne Simien,2005,2009,2009-10,wayne simien,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+101117,Yaroslav Korolev,2005,2009,2009-10,yaroslav korolev,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+200747,Adam Morrison,2006,2010,2010-11,adam morrison,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+200792,Alexander Johnson,2006,2010,2010-11,alexander johnson,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+200784,Bobby Jones,2006,2010,2010-11,bobby jones,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+200759,Cedric Simmons,2006,2010,2010-11,cedric simmons,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+200798,Cheikh Samb,2006,2010,2010-11,cheikh samb,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+200806,Damir Markota,2006,2010,2010-11,damir markota,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+200786,David Noel,2006,2010,2010-11,david noel,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+200793,Dee Brown,2006,2010,2010-11,dee brown,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+200799,Guillermo Diaz,2006,2010,2010-11,guillermo diaz,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+200801,Hassan Adams,2006,2010,2010-11,hassan adams,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+200788,James Augustine,2006,2010,2010-11,james augustine,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+200778,James White,2006,2010,2010-11,james white,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+200767,Josh Boone,2006,2010,2010-11,josh boone,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+200785,Kosta Perovic,2006,2010,2010-11,kosta perovic,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+200790,Marcus Vinicius,2006,2010,2010-11,marcus vinicius,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+200776,Mardy Collins,2006,2010,2010-11,mardy collins,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+200754,Mouhamed Sene,2006,2010,2010-11,mouhamed sene,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+200762,Oleksiy Pecherov,2006,2010,2010-11,oleksiy pecherov,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+200782,P.J. Tucker,2006,2010,2010-11,p j tucker,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+200753,Patrick O'Bryant,2006,2010,2010-11,patrick obryant,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+200781,Paul Davis,2006,2010,2010-11,paul davis,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+200763,Quincy Douby,2006,2010,2010-11,quincy douby,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+200771,Sergio Rodriguez,2006,2010,2010-11,sergio rodriguez,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+200807,Will Blalock,2006,2010,2010-11,will blalock,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201166,Aaron Brooks,2007,2011,2011-12,aaron brooks,High-Usage Primary Creators,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+201151,Acie Law,2007,2011,2011-12,acie law,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+201154,Al Thornton,2007,2011,2011-12,al thornton,Scoring Bigs / Two-Way Forwards,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+201169,Alando Tucker,2007,2011,2011-12,alando tucker,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201181,Chris Richard,2007,2011,2011-12,chris richard,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201199,DJ Strawberry,2007,2011,2011-12,dj strawberry,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201193,Demetris Nichols,2007,2011,2011-12,demetris nichols,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201172,Gabe Pruitt,2007,2011,2011-12,gabe pruitt,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201191,JamesOn Curry,2007,2011,2011-12,jameson curry,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201159,Javaris Crittenton,2007,2011,2011-12,javaris crittenton,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201145,Jeff Green,2007,2011,2011-12,jeff green,Scoring Bigs / Two-Way Forwards,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+201176,Jermareo Davidson,2007,2011,2011-12,jermareo davidson,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201153,Julian Wright,2007,2011,2011-12,julian wright,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+201178,Kyrylo Fesenko,2007,2011,2011-12,kyrylo fesenko,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+201173,Marcus Williams,2007,2011,2011-12,marcus williams,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201165,Morris Almond,2007,2011,2011-12,morris almond,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201174,Nick Fazekas,2007,2011,2011-12,nick fazekas,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201186,Stephane Lasme,2007,2011,2011-12,stephane lasme,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201180,Sun Sun,2007,2011,2011-12,sun sun,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201192,Taurean Green,2007,2011,2011-12,taurean green,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201163,Wilson Chandler,2007,2011,2011-12,wilson chandler,Scoring Bigs / Two-Way Forwards,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+201582,Alexis Ajinca,2008,2012,2012-13,alexis ajinca,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201616,Darnell Jackson,2008,2012,2012-13,darnell jackson,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201611,Henry Walker,2008,2012,2012-13,henry walker,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+201592,J.R. Giddens,2008,2012,2012-13,j r giddens,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201570,Joe Alexander,2008,2012,2012-13,joe alexander,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201621,Joe Crawford,2008,2012,2012-13,joe crawford,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201595,Joey Dorsey,2008,2012,2012-13,joey dorsey,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201602,Kyle Weaver,2008,2012,2012-13,kyle weaver,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201612,Malik Hairston,2008,2012,2012-13,malik hairston,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201446,Mike Taylor,2008,2012,2012-13,mike taylor,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201605,Nathan Jawai,2008,2012,2012-13,nathan jawai,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201607,Patrick Ewing,2008,2012,2012-13,patrick ewing,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201606,Sean Singletary,2008,2012,2012-13,sean singletary,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201623,Semih Erden,2008,2012,2012-13,semih erden,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201603,Sonny Weems,2008,2012,2012-13,sonny weems,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201594,Walter Sharpe,2008,2012,2012-13,walter sharpe,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201957,Byron Mullens,2009,2013,2013-14,byron mullens,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+201963,Christian Eyenga,2009,2013,2013-14,christian eyenga,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201969,DaJuan Summers,2009,2013,2013-14,dajuan summers,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+201974,Derrick Brown,2009,2013,2013-14,derrick brown,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201966,Jermaine Taylor,2009,2013,2013-14,jermaine taylor,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201972,Jon Brockman,2009,2013,2013-14,jon brockman,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201938,Jonny Flynn,2009,2013,2013-14,jonny flynn,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201991,Lester Hudson,2009,2013,2013-14,lester hudson,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201988,Patty Mills,2009,2013,2013-14,patty mills,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+201958,Rodrigue Beaubois,2009,2013,2013-14,rodrigue beaubois,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+201970,Sam Young,2009,2013,2013-14,sam young,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+201981,Taylor Griffin,2009,2013,2013-14,taylor griffin,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+201944,Terrence Williams,2009,2013,2013-14,terrence williams,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+202360,Andy Rautins,2010,2014,2014-15,andy rautins,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202356,Armon Johnson,2010,2014,2014-15,armon johnson,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202342,Craig Brackins,2010,2014,2014-15,craig brackins,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202345,Damion James,2010,2014,2014-15,damion james,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+202350,Daniel Orton,2010,2014,2014-15,daniel orton,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202359,Darington Hobson,2010,2014,2014-15,darington hobson,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202382,Derrick Caracter,2010,2014,2014-15,derrick caracter,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202365,Devin Ebanks,2010,2014,2014-15,devin ebanks,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202354,Dexter Pittman,2010,2014,2014-15,dexter pittman,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+202346,Dominique Jones,2010,2014,2014-15,dominique jones,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202371,Gani Lawal,2010,2014,2014-15,gani lawal,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202380,Hamady Ndiaye,2010,2014,2014-15,hamady ndiaye,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+202341,James Anderson,2010,2014,2014-15,james anderson,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+202348,Jordan Crawford,2010,2014,2014-15,jordan crawford,High-Usage Primary Creators,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+202351,Lazar Hayward,2010,2014,2014-15,lazar hayward,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202376,Luke Harangody,2010,2014,2014-15,luke harangody,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202377,Pape Sy,2010,2014,2014-15,pape sy,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202385,Ryan Reid,2010,2014,2014-15,ryan reid,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202374,Solomon Alabi,2010,2014,2014-15,solomon alabi,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202378,Willie Warren,2010,2014,2014-15,willie warren,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202724,Charles Jenkins,2011,2015,2015-16,charles jenkins,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202698,Chris Singleton,2011,2015,2015-16,chris singleton,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202721,Darius Morris,2011,2015,2015-16,darius morris,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+202732,DeAndre Liggins,2011,2015,2015-16,deandre liggins,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202700,Donatas Motiejunas,2011,2015,2015-16,donatas motiejunas,Scoring Bigs / Two-Way Forwards,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202683,Enes Freedom,2011,2015,2015-16,enes freedom,Scoring Bigs / Two-Way Forwards,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+202707,JaJuan Johnson,2011,2015,2015-16,jajuan johnson,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202686,Jan Vesely,2011,2015,2015-16,jan vesely,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202719,Jeremy Tyler,2011,2015,2015-16,jeremy tyler,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202716,Jordan Williams,2011,2015,2015-16,jordan williams,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202725,Josh Harrellson,2011,2015,2015-16,josh harrellson,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202729,Josh Selby,2011,2015,2015-16,josh selby,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202728,Keith Benson,2011,2015,2015-16,keith benson,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202723,Malcolm Lee,2011,2015,2015-16,malcolm lee,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+202705,MarShon Brooks,2011,2015,2015-16,marshon brooks,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202701,Nolan Smith,2011,2015,2015-16,nolan smith,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202727,Travis Leslie,2011,2015,2015-16,travis leslie,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202717,Trey Thompkins,2011,2015,2015-16,trey thompkins,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202715,Tyler Honeycutt,2011,2015,2015-16,tyler honeycutt,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+202731,Vernon Macklin,2011,2015,2015-16,vernon macklin,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203102,Arnett Moultrie,2012,2016,2016-17,arnett moultrie,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203108,Bernard James,2012,2016,2016-17,bernard james,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203130,Darius Johnson-Odom,2012,2016,2016-17,darius johnson odom,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203121,Darius Miller,2012,2016,2016-17,darius miller,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203117,Doron Lamb,2012,2016,2016-17,doron lamb,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203097,Fab Melo,2012,2016,2016-17,fab melo,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203128,Furkan Aldemir,2012,2016,2016-17,furkan aldemir,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203099,Jared Cunningham,2012,2016,2016-17,jared cunningham,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+203106,Jeffery Taylor,2012,2016,2016-17,jeffery taylor,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203088,Kendall Marshall,2012,2016,2016-17,kendall marshall,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+203122,Kevin Murphy,2012,2016,2016-17,kevin murphy,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203119,Kim English,2012,2016,2016-17,kim english,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203123,Kostas Papanikolaou,2012,2016,2016-17,kostas papanikolaou,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203126,Kris Joseph,2012,2016,2016-17,kris joseph,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203104,Marquis Teague,2012,2016,2016-17,marquis teague,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203090,Maurice Harkless,2012,2016,2016-17,maurice harkless,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+203136,Ognjen Kuzmic,2012,2016,2016-17,ognjen kuzmic,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203111,Orlando Johnson,2012,2016,2016-17,orlando johnson,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+203103,Perry Jones III,2012,2016,2016-17,perry jones,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203113,Quincy Miller,2012,2016,2016-17,quincy miller,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203135,Robert Sacre,2012,2016,2016-17,robert sacre,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+203091,Royce White,2012,2016,2016-17,royce white,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203129,Tornike Shengelia,2012,2016,2016-17,tornike shengelia,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203116,Tyshawn Taylor,2012,2016,2016-17,tyshawn taylor,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203461,Anthony Bennett,2013,2017,2017-18,anthony bennett,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+203462,Archie Goodwin,2013,2017,2017-18,archie goodwin,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+203475,Erick Green,2013,2017,2017-18,erick green,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203513,Erik Murphy,2013,2017,2017-18,erik murphy,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203318,Glen Rice,2013,2017,2017-18,glen rice,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203511,Grant Jerrett,2013,2017,2017-18,grant jerrett,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203479,Jamaal Franklin,2013,2017,2017-18,jamaal franklin,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203517,Nemanja Nedovic,2013,2017,2017-18,nemanja nedovic,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203491,Peyton Siva,2013,2017,2017-18,peyton siva,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203510,Pierre Jackson,2013,2017,2017-18,pierre jackson,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203492,Ray McCallum,2013,2017,2017-18,ray mccallum,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203495,Ricky Ledo,2013,2017,2017-18,ricky ledo,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203527,Ryan Kelly,2013,2017,2017-18,ryan kelly,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+203508,Sergey Karasev,2013,2017,2017-18,sergey karasev,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203502,Tony Mitchell,2013,2017,2017-18,tony mitchell,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203940,Adreian Payne,2014,2018,2018-19,adreian payne,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+203912,C.J. Wilcox,2014,2018,2018-19,c j wilcox,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203946,Cameron Bairstow,2014,2018,2018-19,cameron bairstow,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203921,Cleanthony Early,2014,2018,2018-19,cleanthony early,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203928,Cory Jefferson,2014,2018,2018-19,cory jefferson,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203996,Damien Inglis,2014,2018,2018-19,damien inglis,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203906,Devyn Marble,2014,2018,2018-19,devyn marble,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+204002,Edy Tavares,2014,2018,2018-19,edy tavares,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203923,James Young,2014,2018,2018-19,james young,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+203948,Johnny O'Bryant III,2014,2018,2018-19,johnny obryant,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+203919,Jordan Adams,2014,2018,2018-19,jordan adams,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203962,Josh Huestis,2014,2018,2018-19,josh huestis,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203909,KJ McDaniels,2014,2018,2018-19,kj mcdaniels,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203934,Lamar Patterson,2014,2018,2018-19,lamar patterson,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203900,Markel Brown,2014,2018,2018-19,markel brown,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+203956,Mitch McGary,2014,2018,2018-19,mitch mcgary,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203910,Nick Johnson,2014,2018,2018-19,nick johnson,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203798,PJ Hairston,2014,2018,2018-19,pj hairston,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203893,Russ Smith,2014,2018,2018-19,russ smith,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203902,Semaj Christon,2014,2018,2018-19,semaj christon,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203648,Thanasis Antetokounmpo,2014,2018,2018-19,thanasis antetokounmpo,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+203898,Tyler Ennis,2014,2018,2018-19,tyler ennis,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1626150,Andrew Harrison,2015,2019,2019-20,andrew harrison,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1626148,Anthony Brown,2015,2019,2019-20,anthony brown,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1626183,Branden Dawson,2015,2019,2019-20,branden dawson,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1626191,Chris McCullough,2015,2019,2019-20,chris mccullough,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1626177,Dakari Johnson,2015,2019,2019-20,dakari johnson,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1626199,Darrun Hilliard,2015,2019,2019-20,darrun hilliard,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1626185,Jarell Martin,2015,2019,2019-20,jarell martin,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1626202,Joe Young,2015,2019,2019-20,joe young,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1626175,Jordan Mickey,2015,2019,2019-20,jordan mickey,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1626147,Justin Anderson,2015,2019,2019-20,justin anderson,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1626154,RJ Hunter,2015,2019,2019-20,rj hunter,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1626176,Rakeem Christmas,2015,2019,2019-20,rakeem christmas,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1626173,Rashad Vaughn,2015,2019,2019-20,rashad vaughn,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1626155,Sam Dekker,2015,2019,2019-20,sam dekker,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627790,Ante Zizic,2016,2020,2020-21,ante zizic,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627791,Ben Bentil,2016,2020,2020-21,ben bentil,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627744,Brice Johnson,2016,2020,2020-21,brice johnson,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627767,Cheick Diallo,2016,2020,2020-21,cheick diallo,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1627778,Chinanu Onuaku,2016,2020,2020-21,chinanu onuaku,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627772,Daniel Hamilton,2016,2020,2020-21,daniel hamilton,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627738,Deyonta Davis,2016,2020,2020-21,deyonta davis,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627754,Diamond Stone,2016,2020,2020-21,diamond stone,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627733,Dragan Bender,2016,2020,2020-21,dragan bender,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1627834,Georgios Papagiannis,2016,2020,2020-21,georgios papagiannis,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627785,Isaiah Whitehead,2016,2020,2020-21,isaiah whitehead,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627762,Joel Bolomboy,2016,2020,2020-21,joel bolomboy,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627770,Kay Felder,2016,2020,2020-21,kay felder,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627781,Malachi Richardson,2016,2020,2020-21,malachi richardson,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627779,Marcus Paige,2016,2020,2020-21,marcus paige,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627771,Michael Gbinije,2016,2020,2020-21,michael gbinije,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627835,Paul Zipser,2016,2020,2020-21,paul zipser,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627746,Skal Labissiere,2016,2020,2020-21,skal labissiere,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1627757,Stephen Zimmerman,2016,2020,2020-21,stephen zimmerman,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627789,Timothe Luwawu-Cabarrot,2016,2020,2020-21,timothe luwawu cabarrot,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1627755,Tyler Ulis,2016,2020,2020-21,tyler ulis,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627820,Tyrone Wallace,2016,2020,2020-21,tyrone wallace,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627735,Wade Baldwin IV,2016,2020,2020-21,wade baldwin,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1627753,Zhou Qi,2016,2020,2020-21,zhou qi,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628409,Alec Peters,2017,2021,2021-22,alec peters,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628394,Anžejs Pasečņiks,2017,2021,2021-22,anzejs pasecniks,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628403,Caleb Swanigan,2017,2021,2021-22,caleb swanigan,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628407,Dwayne Bacon,2017,2021,2021-22,dwayne bacon,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1628412,Frank Mason III,2017,2021,2021-22,frank mason,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1628385,Harry Giles III,2017,2021,2021-22,harry giles,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628387,Ike Anigbogu,2017,2021,2021-22,ike anigbogu,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628397,Ivan Rabb,2017,2021,2021-22,ivan rabb,Low-Usage Interior Bigs,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628444,Jabari Bird,2017,2021,2021-22,jabari bird,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628417,Jaron Blossomgame,2017,2021,2021-22,jaron blossomgame,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628393,Jawun Evans,2017,2021,2021-22,jawun evans,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628413,Jonah Bolden,2017,2021,2021-22,jonah bolden,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628383,Justin Patton,2017,2021,2021-22,justin patton,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628443,Kadeem Allen,2017,2021,2021-22,kadeem allen,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628430,Nigel Williams-Goss,2017,2021,2021-22,nigel williams goss,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628414,Sindarius Thornwell,2017,2021,2021-22,sindarius thornwell,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1628388,T.J. Leaf,2017,2021,2021-22,t j leaf,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1628390,Terrance Ferguson,2017,2021,2021-22,terrance ferguson,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1628416,Tyler Dorsey,2017,2021,2021-22,tyler dorsey,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628399,Tyler Lydon,2017,2021,2021-22,tyler lydon,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629083,Arnoldas Kulboka,2018,2022,2022-23,arnoldas kulboka,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628990,Chandler Hutchison,2018,2022,2022-23,chandler hutchison,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1628985,Devon Hall,2018,2022,2022-23,devon hall,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629058,Dzanan Musa,2018,2022,2022-23,dzanan musa,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629059,Elie Okobo,2018,2022,2022-23,elie okobo,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628994,George King,2018,2022,2022-23,george king,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629067,Isaac Bonga,2018,2022,2022-23,isaac bonga,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1628980,Jacob Evans,2018,2022,2022-23,jacob evans,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629010,Jerome Robinson,2018,2022,2022-23,jerome robinson,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628987,Kevin Hervey,2018,2022,2022-23,kevin hervey,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629017,Khyri Thomas,2018,2022,2022-23,khyri thomas,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1628982,Melvin Frazier Jr.,2018,2022,2022-23,melvin frazier,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1628970,Miles Bridges,2018,2022,2022-23,miles bridges,Scoring Bigs / Two-Way Forwards,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1629016,Omari Spellman,2018,2022,2022-23,omari spellman,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629034,Ray Spalding,2018,2022,2022-23,ray spalding,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629066,Rodions Kurucs,2018,2022,2022-23,rodions kurucs,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629118,Thomas Welsh,2018,2022,2022-23,thomas welsh,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629053,Vincent Edwards,2018,2022,2022-23,vincent edwards,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629346,Alen Smailagic,2019,2023,2023-24,alen smailagic,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629035,Carsen Edwards,2019,2023,2023-24,carsen edwards,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629686,Deividas Sirvydis,2019,2023,2023-24,deividas sirvydis,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629608,Dewan Hernandez,2019,2023,2023-24,dewan hernandez,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629672,Eric Paschall,2019,2023,2023-24,eric paschall,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629649,Ignas Brazdeikis,2019,2023,2023-24,ignas brazdeikis,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629676,Isaiah Roby,2019,2023,2023-24,isaiah roby,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1629714,Jarrell Brantley,2019,2023,2023-24,jarrell brantley,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1629633,Jarrett Culver,2019,2023,2023-24,jarrett culver,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1629648,Jordan Bone,2019,2023,2023-24,jordan bone,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629713,Justin James,2019,2023,2023-24,justin james,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629625,Justin Wright-Foreman,2019,2023,2023-24,justin wright foreman,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629644,KZ Okpala,2019,2023,2023-24,kz okpala,Low-Usage Interior Bigs,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1629657,Kyle Guy,2019,2023,2023-24,kyle guy,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629621,Marial Shayok,2019,2023,2023-24,marial shayok,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629662,Mfiondu Kabengele,2019,2023,2023-24,mfiondu kabengele,Fringe / Low-Opportunity Players,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1629671,Miye Oni,2019,2023,2023-24,miye oni,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629683,Quinndary Weatherspoon,2019,2023,2023-24,quinndary weatherspoon,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629641,Romeo Langford,2019,2023,2023-24,romeo langford,Perimeter Wings & Connectors,role_shifting_materially,No matched Year-5 salary row after current normalization and season merge.
+1629635,Sekou Doumbouya,2019,2023,2023-24,sekou doumbouya,Perimeter Wings & Connectors,insufficient_data,No matched Year-5 salary row after current normalization and season merge.
+1629682,Tremont Waters,2019,2023,2023-24,tremont waters,Fringe / Low-Opportunity Players,insufficient_data,No matched Year-5 salary row after current normalization and season merge.

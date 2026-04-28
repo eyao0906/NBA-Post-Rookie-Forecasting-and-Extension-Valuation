@@ -1,0 +1,4 @@
+metric,value
+same_prediction_rate_between_models_test_set,0.7103448275862069
+logit_accuracy_test_set_on_common_players,0.6275862068965518
+lstm_accuracy_test_set_on_common_players,0.6344827586206897

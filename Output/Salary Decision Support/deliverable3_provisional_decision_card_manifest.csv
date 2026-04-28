@@ -1,0 +1,1059 @@
+PLAYER_ID,PLAYER_NAME,provisional_action_bucket,provisional_action_label,holdout_for_case_study,holdout_reason,case_study_priority,decision_card_ready_flag
+1920,A.J. Bramlett,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1893,Aleksandar Radojevic,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1889,Andre Miller,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1905,Andrei Kirilenko,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1884,Baron Davis,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1898,Cal Bowdler,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1916,Calvin Booth,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1914,Chris Herren,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1894,Corey Maggette,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1904,Devean George,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1901,Dion Glover,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1882,Elton Brand,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1915,Evan Eschmeyer,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1921,Gordan Giricek,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1899,James Posey,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1891,Jason Terry,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1902,Jeff Foster,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1911,John Celestand,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1886,Jonathan Bender,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1908,Jumaine Jones,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1903,Kenny Thomas,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1885,Lamar Odom,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1930,Lari Ketner,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1919,Laron Profit,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1924,Lee Nailon,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1910,Leon Smith,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1938,Manu Ginobili,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1897,Metta World Peace,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1913,Michael Ruffin,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1918,Obinna Ekezie,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1900,Quincy Lewis,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1888,Richard Hamilton,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1934,Rodney Buford,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1926,Ryan Robertson,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1909,Scott Padgett,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1890,Shawn Marion,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1883,Steve Francis,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1906,Tim James,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1937,Tim Young,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1928,Todd MacCulloch,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1892,Trajan Langdon,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1907,Vonteego Cummings,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1887,Wally Szczerbiak,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1917,Wang Zhi-zhi,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1895,William Avery,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2062,A.J. Guyton,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2073,Brian Cardinal,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2036,Chris Mihm,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2084,Chris Porter,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2042,Courtney Alexander,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2053,Dalibor Bagaric,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2061,Dan Langhi,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2082,Dan McClintock,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2032,Darius Miles,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2052,DeShawn Stevenson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2035,DerMarr Johnson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2046,Desmond Mason,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2051,Donnell Harvey,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2067,Eddie House,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2059,Eduardo Najera,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2057,Erick Barkley,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2081,Ernest Brown,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2041,Etan Thomas,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2069,Hanno Mottola,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2045,Hedo Turkoglu,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2080,Igor Rakocevic,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2074,Jabari Smith,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2054,Jake Tsakalidis,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2063,Jake Voskuhl,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2048,Jamaal Magloire,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2037,Jamal Crawford,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2044,Jason Collier,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2078,Jason Hart,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2040,Jerome Moiso,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2038,Joel Przybilla,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2079,Kaniel Dickens,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2030,Kenyon Martin,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2039,Keyon Dooling,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2064,Khalid El-Amin,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2068,Lavor Postell,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2055,Mamadou N'diaye,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2033,Marcus Fizer,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2058,Mark Madsen,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2060,Marko Jaric,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2043,Mateen Cleaves,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2072,Michael Redd,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2034,Mike Miller,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2065,Mike Smith,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2050,Morris Peterson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2071,Olumide Oyedeji,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2056,Primoz Brezec,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2047,Quentin Richardson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2066,Soumaila Samake,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2049,Speedy Claxton,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2031,Stromile Swift,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2228,Alton Ford,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2264,Alvin Jones,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2238,Antonis Fotsis,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2250,Bobby Simmons,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2220,Brandon Armstrong,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2217,Brendan Haywood,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2243,Brian Scalabrine,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2245,Damone Brown,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2205,DeSagana Diop,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2248,Earl Watson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2204,Eddie Griffin,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2201,Eddy Curry,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2222,Gerald Wallace,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2240,Gilbert Arenas,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2224,Jamaal Tinsley,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2249,Jamison Brewer,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2260,Jarron Collins,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2215,Jason Collins,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2202,Jason Richardson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2244,Jeff Trepagnier,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2219,Jeryl Sasser,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2207,Joe Johnson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2218,Joseph Forte,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2208,Kedrick Brown,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2256,Ken Johnson,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2261,Kenny Satterfield,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2213,Kirk Haston,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2198,Kwame Brown,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2254,Loren Woods,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2246,Mehmet Okur,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2214,Michael Bradley,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2241,Omar Cook,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2200,Pau Gasol,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2221,Raul Lopez,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2210,Richard Jefferson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2206,Rodney White,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2257,Ruben Boumtje-Boumtje,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2223,Samuel Dalembert,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2253,Sean Lampley,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2203,Shane Battier,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2212,Steven Hunter,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2242,Terence Morris,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2225,Tony Parker,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2239,Trenton Hassell,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2211,Troy Murphy,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2199,Tyson Chandler,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2209,Vladimir Radmanovic,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2226,Will Solomon,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2216,Zach Randolph,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2405,Amar'e Stoudemire,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2411,Bostjan Nachbar,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2430,Carlos Boozer,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2406,Caron Butler,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2418,Casey Jacobsen,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2423,Chris Jefferies,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2442,Chris Owens,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2404,Chris Wilcox,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2451,Corsley Edwards,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2414,Curtis Borchardt,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2402,Dajuan Wagner,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2424,Dan Dickau,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2429,Dan Gadzuric,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2443,Darius Songaila,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2400,Drew Gooden,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2436,Flip Murray,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2421,Frank Williams,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2410,Fred Jones,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2441,Jamal Sampson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2407,Jared Jeffries,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2398,Jay Williams,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2412,Jiri Welsch,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2422,John Salmons,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2413,Juan Dixon,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2416,Kareem Rush,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2437,Lonny Baxter,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2409,Marcus Haislip,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2435,Mario Kasun,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2440,Matt Barnes,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2408,Melvin Ely,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2399,Mike Dunleavy,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2420,Nenad Krstic,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2403,Nene,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2401,Nikoloz Tskitishvili,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2417,Qyntel Woods,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2450,Randy Holcomb,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2446,Rasual Butler,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2425,Robert Archibald,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2427,Roger Mason Jr.,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2415,Ryan Humphrey,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2447,Tamar Slay,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2419,Tayshaun Prince,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2432,Tito Maddox,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2428,Vincent Yarbrough,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2397,Yao Ming,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2601,Andreas Glyniadakis,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2564,Boris Diaw,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2567,Brian Cook,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2568,Carlos Delfino,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2546,Carmelo Anthony,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2547,Chris Bosh,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2549,Chris Kaman,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2563,Dahntay Jones,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2545,Darko Milicic,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2561,David West,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2583,Derrick Zimmerman,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2548,Dwyane Wade,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2592,James Jones,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2591,James Lang,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2553,Jarvis Hayes,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2574,Jason Kapono,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2602,Jerome Beasley,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2572,Josh Howard,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2586,Keith Bogans,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2570,Kendrick Perkins,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2550,Kirk Hinrich,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2594,Kyle Korver,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2544,LeBron James,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2571,Leandro Barbosa,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2557,Luke Ridnour,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2575,Luke Walton,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2573,Maciej Lampe,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2556,Marcus Banks,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2588,Matt Bonner,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2552,Michael Sweetney,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2554,Mickael Pietrus,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2590,Mo Williams,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2569,Ndudi Ebi,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2555,Nick Collison,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2558,Reece Gaines,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2562,Sasha Pavlovic,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2582,Slavko Vranes,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2581,Steve Blake,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2551,T.J. Ford,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2580,Travis Hansen,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2566,Travis Outlaw,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2559,Troy Bell,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2584,Willie Green,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2560,Zarko Cabarkapa,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2585,Zaza Pachulia,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2565,Zoran Planinic,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2744,Al Jefferson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2760,Anderson Varejao,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2765,Andre Emmett,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2738,Andre Iguodala,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2740,Andris Biedrins,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2766,Antonio Burks,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2732,Ben Gordon,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2757,Beno Udrih,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2774,Bernard Robinson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2768,Chris Duhon,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2758,David Harrison,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2753,Delonte West,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2734,Devin Harris,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2764,Donta Smith,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2748,Dorell Wright,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2730,Dwight Howard,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2731,Emeka Okafor,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2775,Ha Ha,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2747,JR Smith,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2761,Jackson Vroman,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2749,Jameer Nelson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2735,Josh Childress,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2746,Josh Smith,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2770,Justin Reed,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2755,Kevin Martin,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2745,Kirk Snyder,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2743,Kris Humphries,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2763,Lionel Chalmers,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2784,Luis Flores,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2739,Luke Jackson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2736,Luol Deng,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2782,Matt Freije,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2776,Pape Sow,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2750,Pavel Podkolzin,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2762,Peter John Ramos,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2737,Rafael Araujo,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2741,Robert Swift,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2767,Royal Ivey,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2756,Sasha Vujacic,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2742,Sebastian Telfair,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2752,Sergei Monia,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2733,Shaun Livingston,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+2754,Tony Allen,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2772,Trevor Ariza,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+2779,Vassilis Spanoulis,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+2751,Viktor Khryapa,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+101165,Alex Acker,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+101161,Amir Johnson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+101154,Andray Blatche,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101106,Andrew Bogut,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101115,Andrew Bynum,wait_and_save_flexibility,Wait and save flexibility,True,Reserved salary suggestion demo player; exclude from future salary-model training/calibration.,reserved_demo,True
+101120,Antoine Wright,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101152,Bracey Wright,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+101138,Brandon Bass,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+101139,CJ Miles,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+101112,Channing Frye,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+101111,Charlie Villanueva,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101108,Chris Paul,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101147,Chris Taft,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+101137,Daniel Ewing,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+101122,Danny Granger,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101135,David Lee,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101114,Deron Williams,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101159,Dijon Thompson,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+101141,Ersan Ilyasova,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101128,Francisco Garcia,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101123,Gerald Green,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+101124,Hakim Warrick,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101133,Ian Mahinmi,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+101113,Ike Diogu,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+101127,Jarrett Jack,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101131,Jason Maxiell,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101121,Joey Graham,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101130,Johan Petro,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+101125,Julius Hodge,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+101160,Lawrence Roberts,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101132,Linas Kleiza,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+101150,Lou Williams,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101129,Luther Head,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101162,Marcin Gortat,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101110,Martell Webster,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+101149,Martynas Andriuskevicius,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+101107,Marvin Williams,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101148,Mile Ilic,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+101145,Monta Ellis,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101126,Nate Robinson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101158,Orien Greene,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+101119,Rashad McCants,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+101109,Raymond Felton,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101156,Robert Whaley,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+101146,Roko Ukic,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+101142,Ronny Turiaf,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+101155,Ryan Gomes,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101136,Salim Stoudamire,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101118,Sean May,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+101143,Travis Diener,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+101166,Uros Slokar,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+101144,Von Wafer,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+101134,Wayne Simien,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+101117,Yaroslav Korolev,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+200747,Adam Morrison,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+200792,Alexander Johnson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200745,Andrea Bargnani,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+200784,Bobby Jones,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+200750,Brandon Roy,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200759,Cedric Simmons,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+200798,Cheikh Samb,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+200783,Craig Smith,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200806,Damir Markota,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+200789,Daniel Gibson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200786,David Noel,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+200793,Dee Brown,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+200799,Guillermo Diaz,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+200801,Hassan Adams,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+200756,Hilton Armstrong,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200755,JJ Redick,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200788,James Augustine,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+200778,James White,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+200770,Jordan Farmar,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200767,Josh Boone,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+200785,Kosta Perovic,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+200768,Kyle Lowry,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+200746,LaMarcus Aldridge,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200796,Leon Powe,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200790,Marcus Vinicius,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+200776,Mardy Collins,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+200772,Maurice Ager,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+200754,Mouhamed Sene,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200762,Oleksiy Pecherov,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+200782,P.J. Tucker,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+200753,Patrick O'Bryant,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+200781,Paul Davis,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+200794,Paul Millsap,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+200763,Quincy Douby,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200765,Rajon Rondo,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200751,Randy Foye,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200764,Renaldo Balkman,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+200760,Rodney Carney,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200758,Ronnie Brewer,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200752,Rudy Gay,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200797,Ryan Hollins,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+200771,Sergio Rodriguez,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+200769,Shannon Brown,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+200761,Shawne Williams,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+200749,Shelden Williams,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200780,Solomon Jones,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+200779,Steve Novak,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+200757,Thabo Sefolosha,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200748,Tyrus Thomas,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+200807,Will Blalock,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201166,Aaron Brooks,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201189,Aaron Gray,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201151,Acie Law,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201143,Al Horford,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201154,Al Thornton,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201169,Alando Tucker,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201167,Arron Afflalo,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201148,Brandan Wright,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201171,Carl Landry,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201181,Chris Richard,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201147,Corey Brewer,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201199,DJ Strawberry,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201161,Daequan Cook,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201193,Demetris Nichols,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201187,Dominic McGuire,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201172,Gabe Pruitt,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201175,Glen Davis,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201141,Greg Oden,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201191,JamesOn Curry,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201162,Jared Dudley,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201160,Jason Smith,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201159,Javaris Crittenton,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201145,Jeff Green,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201176,Jermareo Davidson,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201149,Joakim Noah,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201177,Josh McRoberts,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201153,Julian Wright,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201142,Kevin Durant,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201178,Kyrylo Fesenko,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201188,Marc Gasol,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201158,Marco Belinelli,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201173,Marcus Williams,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201144,Mike Conley,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201165,Morris Almond,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201174,Nick Fazekas,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201156,Nick Young,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201196,Ramon Sessions,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201155,Rodney Stuckey,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201164,Rudy Fernandez,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201157,Sean Williams,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201150,Spencer Hawes,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201186,Stephane Lasme,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201180,Sun Sun,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201192,Taurean Green,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201152,Thaddeus Young,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201168,Tiago Splitter,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201163,Wilson Chandler,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201146,Yi Jianlian,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201582,Alexis Ajinca,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201576,Anthony Randolph,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201575,Brandon Rush,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201572,Brook Lopez,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201604,Chris Douglas-Roberts,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201584,Courtney Lee,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201571,D.J. Augustin,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201591,DJ White,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201568,Danilo Gallinari,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201616,Darnell Jackson,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201589,Darrell Arthur,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201599,DeAndre Jordan,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201565,Derrick Rose,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201590,Donte Greene,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201569,Eric Gordon,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201588,George Hill,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201609,Goran Dragic,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201611,Henry Walker,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201592,J.R. Giddens,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201581,JJ Hickson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201580,JaVale McGee,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201574,Jason Thompson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201573,Jerryd Bayless,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201570,Joe Alexander,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201621,Joe Crawford,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201595,Joey Dorsey,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201567,Kevin Love,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201585,Kosta Koufos,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201602,Kyle Weaver,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201601,Luc Mbah a Moute,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201612,Malik Hairston,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201596,Mario Chalmers,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201578,Marreese Speights,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201563,Michael Beasley,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201446,Mike Taylor,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201605,Nathan Jawai,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201587,Nicolas Batum,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201593,Nikola Pekovic,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201564,O.J. Mayo,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201600,Omer Asik,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201607,Patrick Ewing,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201577,Robin Lopez,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201579,Roy Hibbert,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201566,Russell Westbrook,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201583,Ryan Anderson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201606,Sean Singletary,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201623,Semih Erden,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201586,Serge Ibaka,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201603,Sonny Weems,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201594,Walter Sharpe,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201985,AJ Price,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201948,Austin Daye,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201933,Blake Griffin,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201943,Brandon Jennings,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201957,Byron Mullens,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201978,Chase Budinger,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201963,Christian Eyenga,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201969,DaJuan Summers,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201980,Danny Green,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201967,Dante Cunningham,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201954,Darren Collison,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201971,DeJuan Blair,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201942,DeMar DeRozan,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201960,DeMarre Carroll,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201974,Derrick Brown,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201947,Earl Clark,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201953,Eric Maynor,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201945,Gerald Henderson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201934,Hasheem Thabeet,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201935,James Harden,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201949,James Johnson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201965,Jeff Ayres,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201952,Jeff Teague,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201966,Jermaine Taylor,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201975,Jodie Meeks,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201972,Jon Brockman,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201973,Jonas Jerebko,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201938,Jonny Flynn,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201941,Jordan Hill,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201950,Jrue Holiday,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201991,Lester Hudson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201977,Marcus Thornton,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201986,Nando De Colo,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201956,Omri Casspi,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201976,Patrick Beverley,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201988,Patty Mills,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201937,Ricky Rubio,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201958,Rodrigue Beaubois,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201970,Sam Young,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201939,Stephen Curry,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201959,Taj Gibson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201981,Taylor Griffin,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+201944,Terrence Williams,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201962,Toney Douglas,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201951,Ty Lawson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201946,Tyler Hansbrough,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201936,Tyreke Evans,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+201964,Victor Claver,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+201961,Wayne Ellington,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202329,Al-Farouq Aminu,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202360,Andy Rautins,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202356,Armon Johnson,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202340,Avery Bradley,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202332,Cole Aldrich,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202342,Craig Brackins,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202345,Damion James,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202350,Daniel Orton,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202359,Darington Hobson,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202326,DeMarcus Cousins,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202382,Derrick Caracter,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202324,Derrick Favors,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202365,Devin Ebanks,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202354,Dexter Pittman,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202346,Dominique Jones,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202334,Ed Davis,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202327,Ekpe Udoh,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202343,Elliot Williams,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202339,Eric Bledsoe,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202323,Evan Turner,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202371,Gani Lawal,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202330,Gordon Hayward,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202328,Greg Monroe,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202349,Greivis Vasquez,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202380,Hamady Ndiaye,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202355,Hassan Whiteside,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202341,James Anderson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202363,Jarvis Varnado,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202379,Jeremy Evans,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202366,Jerome Jordan,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202322,John Wall,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202348,Jordan Crawford,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202338,Kevin Seraphin,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202362,Lance Stephenson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202361,Landry Fields,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202336,Larry Sanders,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202351,Lazar Hayward,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202337,Luke Babbitt,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202376,Luke Harangody,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202377,Pape Sy,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202335,Patrick Patterson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202331,Paul George,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202347,Quincy Pondexter,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202385,Ryan Reid,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202374,Solomon Alabi,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202344,Trevor Booker,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202325,Wesley Johnson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202378,Willie Warren,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202333,Xavier Henry,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202692,Alec Burks,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202726,Andrew Goudelock,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202687,Bismack Biyombo,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202711,Bojan Bogdanovic,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202688,Brandon Knight,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202718,Chandler Parsons,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202724,Charles Jenkins,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202698,Chris Singleton,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202709,Cory Joseph,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202721,Darius Morris,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202732,DeAndre Liggins,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202682,Derrick Williams,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202700,Donatas Motiejunas,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202734,E'Twaun Moore,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202683,Enes Freedom,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202697,Iman Shumpert,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202738,Isaiah Thomas,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202707,JaJuan Johnson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202686,Jan Vesely,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202719,Jeremy Tyler,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202690,Jimmer Fredette,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202710,Jimmy Butler III,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202720,Jon Leuer,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202685,Jonas Valančiūnas,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202706,Jordan Hamilton,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202716,Jordan Williams,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202725,Josh Harrellson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202729,Josh Selby,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202712,Justin Harper,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202695,Kawhi Leonard,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202728,Keith Benson,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202689,Kemba Walker,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202702,Kenneth Faried,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202691,Klay Thompson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202713,Kyle Singler,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202681,Kyrie Irving,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202730,Lavoy Allen,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202723,Malcolm Lee,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202705,MarShon Brooks,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202694,Marcus Morris Sr.,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202693,Markieff Morris,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202703,Nikola Mirotic,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202696,Nikola Vučević,offer_now_disciplined_band,Offer now at disciplined price,True,Reserved salary suggestion demo player; exclude from future salary-model training/calibration.,reserved_demo,True
+202701,Nolan Smith,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202708,Norris Cole,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202704,Reggie Jackson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202714,Shelvin Mack,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202699,Tobias Harris,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202727,Travis Leslie,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202717,Trey Thompkins,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+202684,Tristan Thompson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+202715,Tyler Honeycutt,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+202731,Vernon Macklin,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203083,Andre Drummond,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203094,Andrew Nicholson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203076,Anthony Davis,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203102,Arnett Moultrie,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203085,Austin Rivers,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203108,Bernard James,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203078,Bradley Beal,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203081,Damian Lillard,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203130,Darius Johnson-Odom,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203121,Darius Miller,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203079,Dion Waiters,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203117,Doron Lamb,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203110,Draymond Green,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203095,Evan Fournier,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203097,Fab Melo,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203105,Festus Ezeli,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203128,Furkan Aldemir,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203084,Harrison Barnes,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203109,Jae Crowder,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203099,Jared Cunningham,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203096,Jared Sullinger,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203106,Jeffery Taylor,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203087,Jeremy Lamb,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203089,John Henson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203098,John Jenkins,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203120,Justin Hamilton,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203088,Kendall Marshall,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203122,Kevin Murphy,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203114,Khris Middleton,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203119,Kim English,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203123,Kostas Papanikolaou,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203126,Kris Joseph,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203124,Kyle O'Quinn,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203104,Marquis Teague,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203090,Maurice Harkless,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203086,Meyers Leonard,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203077,Michael Kidd-Gilchrist,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203118,Mike Scott,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203101,Miles Plumlee,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203136,Ognjen Kuzmic,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203111,Orlando Johnson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203103,Perry Jones III,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203112,Quincy Acy,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203113,Quincy Miller,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203133,Robbie Hummel,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203135,Robert Sacre,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203091,Royce White,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203093,Terrence Jones,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203082,Terrence Ross,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203080,Thomas Robinson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203100,Tony Wroten,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203129,Tornike Shengelia,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203092,Tyler Zeller,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203116,Tyshawn Taylor,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203115,Will Barton,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203518,Alex Abrines,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203458,Alex Len,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203459,Allen Crabbe,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203460,Andre Roberson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203461,Anthony Bennett,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203462,Archie Goodwin,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203463,Ben McLemore,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203468,CJ McCollum,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203467,Carrick Felix,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203469,Cody Zeller,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203471,Dennis Schröder,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203475,Erick Green,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203513,Erik Murphy,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203507,Giannis Antetokounmpo,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203318,Glen Rice,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203476,Gorgui Dieng,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203511,Grant Jerrett,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203477,Isaiah Canaan,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203479,Jamaal Franklin,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203516,James Ennis III,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203481,Jeff Withey,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203530,Joffrey Lauvergne,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203482,Kelly Olynyk,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203484,Kentavious Caldwell-Pope,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203485,Lorenzo Brown,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203512,Lucas Nogueira,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203486,Mason Plumlee,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203487,Michael Carter-Williams,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203488,Mike Muscala,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203489,Nate Wolters,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203517,Nemanja Nedovic,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203457,Nerlens Noel,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203490,Otto Porter Jr.,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203491,Peyton Siva,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203510,Pierre Jackson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203526,Raul Neto,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203492,Ray McCallum,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203493,Reggie Bullock Jr.,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203495,Ricky Ledo,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203497,Rudy Gobert,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203527,Ryan Kelly,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203508,Sergey Karasev,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203498,Shabazz Muhammad,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203499,Shane Larkin,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203524,Solomon Hill,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203500,Steven Adams,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203501,Tim Hardaway Jr.,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203502,Tony Mitchell,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203503,Tony Snell,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203504,Trey Burke,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203506,Victor Oladipo,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203932,Aaron Gordon,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203940,Adreian Payne,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203952,Andrew Wiggins,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203992,Bogdan Bogdanović,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203998,Bruno Caboclo,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203912,C.J. Wilcox,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203946,Cameron Bairstow,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203921,Cleanthony Early,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203991,Clint Capela,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203928,Cory Jefferson,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203996,Damien Inglis,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203957,Dante Exum,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203967,Dario Saric,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203906,Devyn Marble,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203926,Doug McDermott,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203939,Dwight Powell,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+204002,Edy Tavares,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203901,Elfrid Payton,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203914,Gary Harris,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203922,Glenn Robinson III,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203953,Jabari Parker,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203923,James Young,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203950,Jarnell Stokes,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203924,Jerami Grant,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203925,Joe Harris,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203954,Joel Embiid,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203948,Johnny O'Bryant III,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203919,Jordan Adams,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203903,Jordan Clarkson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203895,Jordan McRae,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203962,Josh Huestis,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203944,Julius Randle,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203994,Jusuf Nurkić,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203909,KJ McDaniels,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203937,Kyle Anderson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203934,Lamar Patterson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203935,Marcus Smart,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203900,Markel Brown,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203956,Mitch McGary,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203910,Nick Johnson,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203917,Nik Stauskas,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203999,Nikola Jokić,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203943,Noah Vonleh,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203798,PJ Hairston,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203918,Rodney Hood,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203893,Russ Smith,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203902,Semaj Christon,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203894,Shabazz Napier,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203915,Spencer Dinwiddie,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203933,T.J. Warren,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+203648,Thanasis Antetokounmpo,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+203898,Tyler Ennis,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+203897,Zach LaVine,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626150,Andrew Harrison,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626148,Anthony Brown,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1626171,Bobby Portis,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626183,Branden Dawson,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1626166,Cameron Payne,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1626224,Cedi Osman,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626191,Chris McCullough,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1626156,D'Angelo Russell,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626177,Dakari Johnson,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1626199,Darrun Hilliard,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626153,Delon Wright,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626164,Devin Booker,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626144,Emmanuel Mudiay,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626163,Frank Kaminsky,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1626143,Jahlil Okafor,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1626185,Jarell Martin,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626170,Jerian Grant,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626202,Joe Young,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1626175,Jordan Mickey,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1626147,Justin Anderson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1626159,Justise Winslow,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626157,Karl-Anthony Towns,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626162,Kelly Oubre Jr.,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+204001,Kristaps Porziņģis,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626204,Larry Nance Jr.,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1626209,Mario Hezonja,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1626149,Montrezl Harrell,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1626167,Myles Turner,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626181,Norman Powell,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1626192,Pat Connaughton,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626154,RJ Hunter,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1626176,Rakeem Christmas,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1626173,Rashad Vaughn,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626158,Richaun Holmes,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1626178,Rondae Hollis-Jefferson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626155,Sam Dekker,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626169,Stanley Johnson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626179,Terry Rozier,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626168,Trey Lyles,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1626145,Tyus Jones,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1626161,Willie Cauley-Stein,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1626195,Willy Hernangomez,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1627773,AJ Hammons,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1627846,Abdel Nader,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627790,Ante Zizic,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1627791,Ben Bentil,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1627732,Ben Simmons,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627742,Brandon Ingram,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627744,Brice Johnson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1627741,Buddy Hield,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627747,Caris LeVert,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627767,Cheick Diallo,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627778,Chinanu Onuaku,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1627745,Damian Jones,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1627772,Daniel Hamilton,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1627761,DeAndre' Bembry,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1627749,Dejounte Murray,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627743,Demetrius Jackson,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1627756,Denzel Valentine,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627738,Deyonta Davis,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1627754,Diamond Stone,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1627734,Domantas Sabonis,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1627733,Dragan Bender,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627788,Furkan Korkmaz,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1627777,Georges Niang,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627834,Georgios Papagiannis,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1627824,Guerschon Yabusele,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1627740,Henry Ellenson,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1627785,Isaiah Whitehead,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627826,Ivica Zubac,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1627774,Jake Layman,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627751,Jakob Poeltl,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1627750,Jamal Murray,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1627759,Jaylen Brown,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627762,Joel Bolomboy,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1627823,Juancho Hernangomez,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1627770,Kay Felder,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1627739,Kris Dunn,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627781,Malachi Richardson,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1627763,Malcolm Brogdon,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627736,Malik Beasley,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1627779,Marcus Paige,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1627737,Marquese Chriss,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1627771,Michael Gbinije,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1627783,Pascal Siakam,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627775,Patrick McCaw,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1627835,Paul Zipser,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1627746,Skal Labissiere,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1627757,Stephen Zimmerman,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1627752,Taurean Prince,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627748,Thon Maker,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1627789,Timothe Luwawu-Cabarrot,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627755,Tyler Ulis,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1627820,Tyrone Wallace,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1627735,Wade Baldwin IV,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1627753,Zhou Qi,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628409,Alec Peters,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628394,Anžejs Pasečņiks,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628389,Bam Adebayo,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628403,Caleb Swanigan,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628391,D.J. Wilson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628422,Damyean Dotson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628432,Davon Reed,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628368,De'Aaron Fox,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628401,Derrick White,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628415,Dillon Brooks,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628378,Donovan Mitchell,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628407,Dwayne Bacon,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628410,Edmond Sumner,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628402,Frank Jackson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628412,Frank Mason III,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628373,Frank Ntilikina,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628385,Harry Giles III,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628387,Ike Anigbogu,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628392,Isaiah Hartenstein,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628397,Ivan Rabb,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628444,Jabari Bird,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628417,Jaron Blossomgame,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628386,Jarrett Allen,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628393,Jawun Evans,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628369,Jayson Tatum,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628381,John Collins,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628413,Jonah Bolden,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628371,Jonathan Isaac,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628395,Jordan Bell,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628404,Josh Hart,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628367,Josh Jackson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628382,Justin Jackson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628383,Justin Patton,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628443,Kadeem Allen,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628398,Kyle Kuzma,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628374,Lauri Markkanen,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628366,Lonzo Ball,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628379,Luke Kennard,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628370,Malik Monk,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628420,Monte Morris,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628430,Nigel Williams-Goss,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628384,OG Anunoby,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628400,Semi Ojeleye,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628414,Sindarius Thornwell,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628425,Sterling Brown,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628388,T.J. Leaf,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628390,Terrance Ferguson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628418,Thomas Bryant,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628396,Tony Bradley,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628416,Tyler Dorsey,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628399,Tyler Lydon,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628427,Vlatko Čančar,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628411,Wes Iwundu,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628380,Zach Collins,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628988,Aaron Holiday,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628993,Alize Johnson,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1629014,Anfernee Simons,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629083,Arnoldas Kulboka,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628971,Bruce Brown,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628990,Chandler Hutchison,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629002,Chimezie Metu,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629012,Collin Sexton,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629001,De'Anthony Melton,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629028,Deandre Ayton,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628985,Devon Hall,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628984,Devonte' Graham,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628978,Donte DiVincenzo,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629058,Dzanan Musa,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1629059,Elie Okobo,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629018,Gary Trent Jr.,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628994,George King,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628960,Grayson Allen,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628977,Hamidou Diallo,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629067,Isaac Bonga,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628980,Jacob Evans,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628973,Jalen Brunson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628991,Jaren Jackson Jr.,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629020,Jarred Vanderbilt,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629010,Jerome Robinson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628975,Jevon Carter,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629006,Josh Okogie,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628966,Keita Bates-Diop,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628987,Kevin Hervey,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628989,Kevin Huerter,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628995,Kevin Knox II,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629017,Khyri Thomas,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628961,Kostas Antetokounmpo,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1629013,Landry Shamet,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629022,Lonnie Walker IV,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629029,Luka Dončić,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628963,Marvin Bagley III,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628982,Melvin Frazier Jr.,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629008,Michael Porter Jr.,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628969,Mikal Bridges,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628970,Miles Bridges,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629011,Mitchell Robinson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628964,Mo Bamba,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629021,Moritz Wagner,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629016,Omari Spellman,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629034,Ray Spalding,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1629057,Robert Williams III,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629066,Rodions Kurucs,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628983,Shai Gilgeous-Alexander,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629003,Shake Milton,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629004,Svi Mykhailiuk,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629118,Thomas Welsh,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1629027,Trae Young,offer_now_disciplined_band,Offer now at disciplined price,True,Reserved salary suggestion demo player; exclude from future salary-model training/calibration.,reserved_demo,True
+1628972,Troy Brown Jr.,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629053,Vincent Edwards,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1628976,Wendell Carter Jr.,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629015,Zhaire Smith,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629678,Admiral Schofield,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629346,Alen Smailagic,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1629626,Bol Bol,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629634,Brandon Clarke,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1628981,Bruno Fernando,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629629,Cam Reddish,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629661,Cameron Johnson,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629035,Carsen Edwards,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1629643,Chuma Okeke,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629632,Coby White,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1628998,Cody Martin,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629655,Daniel Gafford,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629647,Darius Bazley,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629636,Darius Garland,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629631,De'Andre Hunter,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629686,Deividas Sirvydis,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1629608,Dewan Hernandez,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1629712,Didi Louzada,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1629685,Dylan Windler,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629672,Eric Paschall,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629048,Goga Bitadze,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629684,Grant Williams,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629649,Ignas Brazdeikis,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629676,Isaiah Roby,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629630,Ja Morant,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629667,Jalen McDaniels,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629714,Jarrell Brantley,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629633,Jarrett Culver,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629637,Jaxson Hayes,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629669,Jaylen Nowell,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629648,Jordan Bone,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629673,Jordan Poole,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629713,Justin James,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1629625,Justin Wright-Foreman,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1629644,KZ Okpala,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629640,Keldon Johnson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629645,Kevin Porter Jr.,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629657,Kyle Guy,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1629677,Luka Samanic,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1629621,Marial Shayok,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1629680,Matisse Thybulle,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629662,Mfiondu Kabengele,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629671,Miye Oni,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629642,Nassir Little,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629651,Nic Claxton,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629638,Nickeil Alexander-Walker,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629023,P.J. Washington,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629683,Quinndary Weatherspoon,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629628,RJ Barrett,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629641,Romeo Langford,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629060,Rui Hachimura,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629635,Sekou Doumbouya,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629659,Talen Horton-Tucker,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629611,Terance Mann,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1629682,Tremont Waters,avoid_overcommitting,Avoid overcommitting,False,,full_cohort,True
+1629660,Ty Jerome,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True
+1629639,Tyler Herro,offer_now_disciplined_band,Offer now at disciplined price,False,,full_cohort,True
+1629627,Zion Williamson,wait_and_save_flexibility,Wait and save flexibility,False,,full_cohort,True

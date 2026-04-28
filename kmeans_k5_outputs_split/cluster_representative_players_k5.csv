@@ -1,0 +1,51 @@
+cluster_id,representative_rank,player_name,distance_in_pca_space,cluster_archetype_k5
+0,1,Brandon Knight,2.8506568659347455,High-Usage Primary Creators
+0,2,Rodney Stuckey,2.909469147389268,High-Usage Primary Creators
+0,3,Kemba Walker,3.0855200363965176,High-Usage Primary Creators
+0,4,Isaiah Thomas,3.3268352600607916,High-Usage Primary Creators
+0,5,Bradley Beal,3.4121795030821898,High-Usage Primary Creators
+0,6,Jamal Murray,3.4370571894109863,High-Usage Primary Creators
+0,7,Brandon Jennings,3.613569043448205,High-Usage Primary Creators
+0,8,Victor Oladipo,3.813844645957609,High-Usage Primary Creators
+0,9,Jameer Nelson,3.837382699731094,High-Usage Primary Creators
+0,10,Nate Robinson,3.9042863126526517,High-Usage Primary Creators
+1,1,Ed Davis,3.1611005545962785,Low-Usage Interior Bigs
+1,2,Jake Tsakalidis,3.539771560293208,Low-Usage Interior Bigs
+1,3,Todd MacCulloch,3.5700791816076105,Low-Usage Interior Bigs
+1,4,Jason Smith,3.613949072666838,Low-Usage Interior Bigs
+1,5,Trevor Booker,3.6466987891429956,Low-Usage Interior Bigs
+1,6,Jon Leuer,3.665166056493589,Low-Usage Interior Bigs
+1,7,Noah Vonleh,3.687897227292369,Low-Usage Interior Bigs
+1,8,Keita Bates-Diop,3.6965052763156905,Low-Usage Interior Bigs
+1,9,Chris Wilcox,3.7354434862697556,Low-Usage Interior Bigs
+1,10,Jordan Hill,3.7815742943834447,Low-Usage Interior Bigs
+2,1,Svi Mykhailiuk,2.950116543900892,Perimeter Wings & Connectors
+2,2,Damyean Dotson,3.087125594394635,Perimeter Wings & Connectors
+2,3,Wayne Ellington,3.190545377572486,Perimeter Wings & Connectors
+2,4,E'Twaun Moore,3.250568381116376,Perimeter Wings & Connectors
+2,5,Timothe Luwawu-Cabarrot,3.252394820093149,Perimeter Wings & Connectors
+2,6,Norman Powell,3.261690499908019,Perimeter Wings & Connectors
+2,7,Nik Stauskas,3.3286286153667777,Perimeter Wings & Connectors
+2,8,Donte Greene,3.452982158355137,Perimeter Wings & Connectors
+2,9,Kirk Snyder,3.574167168630729,Perimeter Wings & Connectors
+2,10,Austin Daye,3.646524600629284,Perimeter Wings & Connectors
+3,1,Nick Johnson,2.3100097286731356,Fringe / Low-Opportunity Players
+3,2,Damir Markota,2.6215041341005296,Fringe / Low-Opportunity Players
+3,3,Damien Inglis,2.8081772800234286,Fringe / Low-Opportunity Players
+3,4,Antonis Fotsis,3.0825404405031707,Fringe / Low-Opportunity Players
+3,5,Kim English,3.355869757478011,Fringe / Low-Opportunity Players
+3,6,Mike Smith,3.3921196753853415,Fringe / Low-Opportunity Players
+3,7,Robert Whaley,3.463670493483214,Fringe / Low-Opportunity Players
+3,8,AJ Hammons,3.544931892377649,Fringe / Low-Opportunity Players
+3,9,DJ Strawberry,3.6636685050194644,Fringe / Low-Opportunity Players
+3,10,JaJuan Johnson,3.880451272375931,Fringe / Low-Opportunity Players
+4,1,Markieff Morris,2.649763963939417,Scoring Bigs / Two-Way Forwards
+4,2,Willie Cauley-Stein,3.189009744957006,Scoring Bigs / Two-Way Forwards
+4,3,Aaron Gordon,3.3606567769465654,Scoring Bigs / Two-Way Forwards
+4,4,Myles Turner,3.436337313811375,Scoring Bigs / Two-Way Forwards
+4,5,Marvin Williams,3.4656743288353304,Scoring Bigs / Two-Way Forwards
+4,6,Luol Deng,3.56285451122901,Scoring Bigs / Two-Way Forwards
+4,7,Josh Howard,3.761838229203298,Scoring Bigs / Two-Way Forwards
+4,8,Jaylen Brown,3.7840658588682743,Scoring Bigs / Two-Way Forwards
+4,9,Miles Bridges,3.8221513848255766,Scoring Bigs / Two-Way Forwards
+4,10,Kenny Thomas,3.8229071443494234,Scoring Bigs / Two-Way Forwards

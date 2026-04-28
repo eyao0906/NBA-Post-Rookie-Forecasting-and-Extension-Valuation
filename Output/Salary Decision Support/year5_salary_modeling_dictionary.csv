@@ -1,0 +1,118 @@
+column_name,dtype,source_table,field_role,recommended_for_baseline_model,notes
+PLAYER_ID,int64,year5_salary_target_table.csv,identifier,0,Player identifier only; not a modeling feature.
+PLAYER_NAME,object,year5_salary_target_table.csv,identifier,0,Player identifier only; not a modeling feature.
+draft_year,int64,year5_salary_target_table.csv,identifier,0,Player identifier only; not a modeling feature.
+year5_salary_cap_pct,float64,year5_salary_target_table.csv,target,0,Canonical Year-5 salary-cap percentage target.
+holdout_for_case_study,int64,salary_demo_player_holdout_manifest.csv,training_meta,0,Training / split control metadata; not a predictive feature.
+holdout_reason,object,salary_demo_player_holdout_manifest.csv,training_meta,0,Training / split control metadata; not a predictive feature.
+modeling_row_status,object,derived_phase5,training_meta,0,Training / split control metadata; not a predictive feature.
+split_group_draft_year,int64,derived_phase5,training_meta,0,Training / split control metadata; not a predictive feature.
+target_observed_flag,int64,derived_phase5,training_meta,0,Training / split control metadata; not a predictive feature.
+training_eligible_flag,int64,derived_phase5,training_meta,0,Training / split control metadata; not a predictive feature.
+box_role_total_path_length,float64,player_identity_drift_table.csv,numeric_predictor,1,Early-career drift / shot-coverage / subtype-confidence predictor.
+box_role_y1_to_y4_displacement,float64,player_identity_drift_table.csv,numeric_predictor,1,Early-career drift / shot-coverage / subtype-confidence predictor.
+cluster_0_onehot_k5,int64,player_identity_drift_table.csv,numeric_predictor,1,Saved macro-role one-hot indicator from Deliverable 2.
+cluster_1_onehot_k5,int64,player_identity_drift_table.csv,numeric_predictor,1,Saved macro-role one-hot indicator from Deliverable 2.
+cluster_2_onehot_k5,int64,player_identity_drift_table.csv,numeric_predictor,1,Saved macro-role one-hot indicator from Deliverable 2.
+cluster_3_onehot_k5,int64,player_identity_drift_table.csv,numeric_predictor,1,Saved macro-role one-hot indicator from Deliverable 2.
+cluster_4_onehot_k5,int64,player_identity_drift_table.csv,numeric_predictor,1,Saved macro-role one-hot indicator from Deliverable 2.
+dist_to_cluster_0_k5,float64,player_identity_drift_table.csv,numeric_predictor,1,Distance-to-centroid predictor from saved macro-role backbone.
+dist_to_cluster_1_k5,float64,player_identity_drift_table.csv,numeric_predictor,1,Distance-to-centroid predictor from saved macro-role backbone.
+dist_to_cluster_2_k5,float64,player_identity_drift_table.csv,numeric_predictor,1,Distance-to-centroid predictor from saved macro-role backbone.
+dist_to_cluster_3_k5,float64,player_identity_drift_table.csv,numeric_predictor,1,Distance-to-centroid predictor from saved macro-role backbone.
+dist_to_cluster_4_k5,float64,player_identity_drift_table.csv,numeric_predictor,1,Distance-to-centroid predictor from saved macro-role backbone.
+observed_boxscore_seasons,int64,player_identity_drift_table.csv,numeric_predictor,1,Early-career drift / shot-coverage / subtype-confidence predictor.
+observed_shot_seasons,float64,player_identity_drift_table.csv,numeric_predictor,1,Early-career drift / shot-coverage / subtype-confidence predictor.
+own_cluster_distance,float64,player_identity_drift_table.csv,numeric_predictor,1,Prototype-fit / cluster-fit predictor available before Year 5.
+pca_10,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_11,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_12,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_13,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_14,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_15,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_16,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_17,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_18,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_19,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_1_k5,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_20,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_21,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_22,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_23,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_24,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_2_k5,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_3_k5,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_4_k5,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_5_k5,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_6,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_7,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_8,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+pca_9,float64,player_identity_drift_table.csv,numeric_predictor,1,Saved PCA score from Deliverable 2 macro-role backbone.
+prototype_ambiguity_ratio,float64,player_identity_drift_table.csv,numeric_predictor,1,Prototype-fit / cluster-fit predictor available before Year 5.
+prototype_fit_rank_distance,float64,player_identity_drift_table.csv,numeric_predictor,1,Prototype-fit / cluster-fit predictor available before Year 5.
+prototype_margin_second_minus_first,float64,player_identity_drift_table.csv,numeric_predictor,1,Prototype-fit / cluster-fit predictor available before Year 5.
+seasons_with_embeddings,float64,player_identity_drift_table.csv,numeric_predictor,1,Early-career drift / shot-coverage / subtype-confidence predictor.
+shot_emb_1,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_10,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_11,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_12,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_13,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_14,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_15,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_16,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_17,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_18,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_19,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_2,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_20,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_21,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_22,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_23,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_24,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_3,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_4,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_5,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_6,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_7,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_8,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_emb_9,float64,player_identity_drift_table.csv,numeric_predictor,1,Shot-style embedding dimension from Deliverable 2.
+shot_style_entropy,float64,player_identity_drift_table.csv,numeric_predictor,1,Early-career drift / shot-coverage / subtype-confidence predictor.
+shot_style_prob_0,float64,player_identity_drift_table.csv,numeric_predictor,1,Soft shot-style subtype membership probability.
+shot_style_prob_1,float64,player_identity_drift_table.csv,numeric_predictor,1,Soft shot-style subtype membership probability.
+shot_style_prob_2,float64,player_identity_drift_table.csv,numeric_predictor,1,Soft shot-style subtype membership probability.
+shot_style_prob_3,float64,player_identity_drift_table.csv,numeric_predictor,1,Soft shot-style subtype membership probability.
+shot_style_prob_4,float64,player_identity_drift_table.csv,numeric_predictor,1,Soft shot-style subtype membership probability.
+shot_style_subtype_changes,float64,player_identity_drift_table.csv,numeric_predictor,1,Early-career drift / shot-coverage / subtype-confidence predictor.
+shot_style_subtype_probability,float64,player_identity_drift_table.csv,numeric_predictor,1,Early-career drift / shot-coverage / subtype-confidence predictor.
+shotstyle_total_path_length,float64,player_identity_drift_table.csv,numeric_predictor,1,Early-career drift / shot-coverage / subtype-confidence predictor.
+shotstyle_y1_to_y4_displacement,float64,player_identity_drift_table.csv,numeric_predictor,1,Early-career drift / shot-coverage / subtype-confidence predictor.
+total_shot_attempts_covered,float64,player_identity_drift_table.csv,numeric_predictor,1,Early-career drift / shot-coverage / subtype-confidence predictor.
+cluster_archetype_k5,object,player_identity_drift_table.csv,categorical_predictor,1,Pre-Year5 categorical predictor; encode later if used in the baseline model.
+embedding_aggregation,object,player_identity_drift_table.csv,categorical_predictor,1,Pre-Year5 categorical predictor; encode later if used in the baseline model.
+hybrid_archetype_label,object,player_identity_drift_table.csv,categorical_predictor,1,Pre-Year5 categorical predictor; encode later if used in the baseline model.
+identity_drift_class,object,player_identity_drift_table.csv,categorical_predictor,1,Pre-Year5 categorical predictor; encode later if used in the baseline model.
+macro_cluster_id,int64,player_identity_drift_table.csv,categorical_predictor,1,Pre-Year5 categorical predictor; encode later if used in the baseline model.
+shot_style_subtype,object,player_identity_drift_table.csv,categorical_predictor,1,Pre-Year5 categorical predictor; encode later if used in the baseline model.
+shot_style_subtype_id,float64,player_identity_drift_table.csv,categorical_predictor,1,Pre-Year5 categorical predictor; encode later if used in the baseline model.
+any_player_option,float64,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+any_qualifying_offer,float64,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+any_team_option,float64,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+any_terminated,float64,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+any_two_way_contract,float64,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+cap_match_flag,int64,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+luxury_tax,float64,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+name_key,object,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+name_key_raw,object,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+raw_salary_rows,float64,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+raw_team_count,float64,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+salary_cap,float64,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+salary_match_type,object,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+salary_name_match_flag,int64,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+salary_player_name_example,object,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+year5_salary_match_flag,int64,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+year5_season_start,int64,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+year5_season_string,object,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+year_salary_total,float64,year5_salary_target_table.csv,target_audit_context,0,"Built from the Year-5 salary merge; keep for audit, exclude from predictive modeling."
+DRAFT_YEAR,float64,player_identity_drift_table.csv,redundant_meta,0,Redundant draft-year field from upstream table; exclude from modeling.
+comp_based_interpretation,object,final_player_archetype_profile_table.csv,context_or_other,0,Unclassified context field; review before using in a predictive model.
+supporting_shot_style_explanation,object,final_player_archetype_profile_table.csv,context_or_other,0,Unclassified context field; review before using in a predictive model.

@@ -1,0 +1,45 @@
+{
+  "script": "01_salary_target_audit.py",
+  "project_root": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3",
+  "inventory_csv_used": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Salary Decision Support\\project_inventory.csv",
+  "resolved_inputs": {
+    "final_player_profile": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\final_player_archetype_profile_table.csv",
+    "hybrid_archetype_table": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\player_hybrid_archetype_table.csv",
+    "identity_drift_table": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\player_identity_drift_table.csv",
+    "macro_archetype_backbone": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\archetype_macro_player_table.csv",
+    "realistic_comp_engine": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\realistic_comps.csv",
+    "ceiling_comp_engine": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\ceiling_comps_hof.csv",
+    "report_ready_dossier_manifest": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\player_dossier_demo\\report_ready_player_dossier_manifest.csv",
+    "report_ready_dossier_selection": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\player_dossier_demo\\report_ready_player_dossier_selection.csv",
+    "report_ready_dossier_table": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\player_dossier_demo\\report_ready_player_dossier_table.csv",
+    "report_ready_dossiers_markdown": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\player_dossier_demo\\report_ready_player_dossiers.md",
+    "comp_salary_detail": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\SalaryBlock\\comp_salary_detail_table.csv",
+    "deliverable3_block2_context": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\SalaryBlock\\deliverable3_block2_archetype_comp_market_context.csv",
+    "year5_salary_merge_summary": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\SalaryBlock\\year5_salary_merge_summary.csv",
+    "year5_salary_target": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\SalaryBlock\\year5_salary_target_table.csv",
+    "year5_salary_unmatched_diagnostic": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Player Archetype Analysis\\SalaryBlock\\year5_salary_unmatched_diagnostic.csv"
+  },
+  "demo_players_reserved_for_case_study": [
+    "Trae Young",
+    "Nikola Vucevic",
+    "Nikola Vučević",
+    "Andrew Bynum"
+  ],
+  "demo_holdout_count": 3,
+  "matched_player_count": 665,
+  "unmatched_player_count": 393,
+  "year5_salary_match_rate": 0.6285444234404537,
+  "outputs": {
+    "salary_target_audit_summary_csv": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Salary Decision Support\\salary_target_audit_summary.csv",
+    "salary_target_audit_summary_md": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Salary Decision Support\\salary_target_audit_summary.md",
+    "salary_target_match_by_draft_year_csv": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Salary Decision Support\\salary_target_match_by_draft_year.csv",
+    "salary_target_match_type_breakdown_csv": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Salary Decision Support\\salary_target_match_type_breakdown.csv",
+    "salary_target_contract_flag_summary_csv": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Salary Decision Support\\salary_target_contract_flag_summary.csv",
+    "salary_target_cap_pct_distribution_summary_csv": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Salary Decision Support\\salary_target_cap_pct_distribution_summary.csv",
+    "salary_target_match_by_macro_archetype_csv": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Salary Decision Support\\salary_target_match_by_macro_archetype.csv",
+    "salary_target_match_by_identity_drift_csv": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Salary Decision Support\\salary_target_match_by_identity_drift.csv",
+    "salary_target_unmatched_with_profile_csv": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Salary Decision Support\\salary_target_unmatched_with_profile.csv",
+    "salary_demo_player_holdout_manifest_csv": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Salary Decision Support\\salary_demo_player_holdout_manifest.csv",
+    "salary_target_audit_metadata_json": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Salary Decision Support\\salary_target_audit_metadata.json"
+  }
+}

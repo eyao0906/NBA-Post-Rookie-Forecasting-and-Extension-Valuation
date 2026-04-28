@@ -1,0 +1,14 @@
+metric,count
+total_players,1247
+players_with_s1_s4_logs,1058
+players_missing_s1_s4_logs,189
+players_with_later_career_targets,1049
+players_missing_later_career_targets,198
+players_with_player_features,1058
+players_missing_player_features,189
+players_with_season_features,1058
+players_missing_season_features,189
+players_with_cluster_assignments,1058
+players_missing_cluster_assignments,189
+players_with_shotchart_rows,1039
+players_missing_shotchart_rows,208

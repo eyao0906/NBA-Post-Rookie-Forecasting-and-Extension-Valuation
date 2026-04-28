@@ -1,0 +1,8 @@
+metric,value
+total_players,1058.0
+players_with_year5_salary_cap_match,665.0
+players_without_year5_salary_cap_match,393.0
+year5_salary_match_rate,0.6285444234404537
+players_matched_via_manual_alias,0.0
+players_with_multirow_salary_season,21.0
+players_with_multiteam_salary_season,21.0

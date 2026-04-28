@@ -1,0 +1,93 @@
+Deliverable 2 Minutes — Player Archetype & Comparable Profile Story
+
+Project framing
+Deliverable 2 should be written as a hybrid player-intelligence module, not as a simple clustering exercise. The core story is that the project does not define a player only by one static K-means cluster. Instead, it combines three layers: (1) a macro role backbone from the existing PCA + K-means pipeline, (2) a learned shot-style subtype from spatial ShotChartDetail data, and (3) early-career identity drift across Seasons 1–4. The practical question behind the deliverable is: who is this player right now, how stable is that identity, who has looked like this before, and what is the realistic upside versus aspirational ceiling?
+
+Motive and rationale
+The motive for Deliverable 2 is to make the archetype analysis more basketball-relevant and more computationally defensible than “PCA + K-means plus some shot plots.” The existing clustering artifacts already provide broad role families and prototype-fit information, so they remain the macro-archetype backbone. But those boxscore clusters alone are not rich enough to describe offensive style, spatial tendencies, or developmental evolution. That is why the shot-style pipeline is core scope: raw shot rows are converted into stable player-season spatial tensors, a CNN autoencoder learns compact shot-style embeddings, and a Gaussian mixture model turns those embeddings into interpretable shot-style subtypes. The deliverable becomes substantially stronger once archetype is defined as macro role + shot-style subtype + identity drift, and once comparable-player search uses both boxscore and spatial style information.
+
+What inputs anchor the deliverable
+The boxscore backbone comes from the existing engineered feature tables and the saved PCA + K-means artifacts, especially the full clustered player table, the merge-ready clustering predictors, the cluster summary tables, and the representative-player table. The spatial layer comes from raw_shotchart_S1_to_S4_main.csv for drafted players and raw_shotchart_S1_to_S4_hof_shotstyle.csv for the Hall of Fame auxiliary pool. The drift layer uses season-level boxscore features together with season-level shot embeddings. The comp layer uses later-career target outcomes for contextual comparison. The working assumption throughout the deliverable is that the saved clustering artifacts remain authoritative and are reused rather than recomputed, while the shot-style layer acts as a second structured feature family rather than replacing the boxscore pipeline.
+
+How the final implementation is structured
+The code is organized as a reproducible 00–10 workflow under src\Player Archetypes Analysis, with shared paths and logging utilities centralized in archetype_workflow_utils.py. The folder structure is stable: outputs are written to Output\Player Archetype Analysis, visuals to visual\Player Archetype, and the running workflow documentation is written to player_archetype_analysis_workflow_log.txt.
+
+Implementation story by phase
+
+Phase 0 — path audit and project map
+The workflow begins with 00_project_inventory.py. This script is not just a hardcoded existence checker. It resolves expected files, searches recursively if needed, and produces an inventory table with expected_path, resolved_path, existence flags, and path-correction indicators. In the report story, this phase is useful because it shows that the workflow was designed to be reproducible and auditable before modeling even starts.
+
+Phase 1 — cohort and coverage audit
+01_cohort_coverage_audit.py constructs drafted-player and HOF coverage audits across cohort files, raw logs, targets, feature tables, clustering outputs, and shot-chart coverage. The draft cohort is broad enough to support the hybrid archetype workflow, while the HOF library is clearly smaller and therefore positioned as an auxiliary ceiling-comp pool rather than the main comp universe. This phase matters for the narrative because it justifies later warnings about shrinkage, low shot volume, and missing downstream coverage.
+
+Phase 2 — lock the macro archetype backbone
+02_build_macro_archetype_table.py reuses the saved PCA + K-means outputs instead of refitting them. The important implementation detail is that it explicitly merges player_feature_table_1999_2019_clustered_k5.csv with cluster_modeling_predictors_k5.csv, so the final macro table retains one-hot cluster indicators, centroid-distance features, PCA-style columns when available, and prototype-fit measures such as own-cluster distance and ambiguity. This is the correct boxscore backbone for Deliverable 2. In the write-up, the macro role should be described as a broad role family rather than the full final archetype. The five saved clusters remain the high-level taxonomy, and representative players plus cluster summaries defend their interpretation.
+
+Phase 3 — build shot-style spatial tensors
+03_build_shotstyle_tensors.py transforms raw shot-chart rows into stable player-season tensors on a fixed half-court grid. The implementation uses a 25x25 grid, coordinate cleaning, a minimum-shot threshold, and three channels: attempt density, made-shot density, and smoothed make-rate. The script exports season-level tensor metadata, coverage audits, and real aggregated player tensor artifacts, so the tensor layer is no longer just descriptive metadata. The conceptual point for the deliverable is that raw ShotChartDetail data are not treated as final features directly. They are first converted into a structured spatial representation that can support learning, subtype analysis, and visuals.
+
+Phase 4 — train the shot-style embedding model
+04_train_shot_autoencoder.py trains a CNN autoencoder on drafted-player player-season shot tensors and then applies the fitted model to both drafted-player and HOF tensors. The normalization and decoder logic were patched so that reconstruction targets and model outputs are consistent: the tensors are normalized with train-set statistics, the decoder output is linear rather than bounded by a sigmoid, and reconstructions are inverse-transformed for display. The script exports season-level embeddings, player-level embeddings, training history, model weights, nearest-neighbor diagnostics, and reconstruction examples. The deliverable story should emphasize that the autoencoder is not used here as a predictive model; it is a representation-learning step that compresses shot-style structure into a reusable embedding space.
+
+Phase 5 — create shot-style subtypes
+05_cluster_shot_embeddings.py applies a Gaussian mixture model to the player-level shot embeddings and also scores season-level embeddings using the same fitted GMM. This creates both a player-level subtype layer and a season-level subtype transition layer. The outputs include subtype assignments, soft probabilities, subtype entropy, representative players, and a merged hybrid archetype table that combines macro role and shot-style subtype. This is the point where the final archetype becomes hybrid. In the report, the subtype labels should be presented as descriptive, post-hoc style names rather than as externally validated ontology labels. The strength of this phase is that shot style is modeled as overlapping and probabilistic rather than forced into a rigid partition.
+
+Phase 6 — engineer identity drift and role evolution
+06_build_identity_drift.py quantifies early-career movement in both boxscore role space and shot-style embedding space. It uses season-level boxscore features from player_season_feature_table_1999_2019.csv, season-level shot embeddings, and season-level subtype assignments. The script computes Year-1 to Year-4 displacement, total path length, subtype changes, and a final stability classification such as stable, evolving_gradually, role_shifting_materially, or insufficient_data. This phase is central to the deliverable story because it prevents the archetype from being treated as static. The correct framing is that some players simply reinforce an initial profile, while others materially reshape their role and shot identity over the rookie-contract window.
+
+Phase 7 — build the comparable-player infrastructure
+07_build_comps.py constructs two comp systems. The realistic comp pool comes from the drafted-player cohort and uses a weighted hybrid similarity score built from macro-role compatibility, PCA distance when available, prototype-fit distance, shot-style embedding distance, and drift similarity. Crucially, the code no longer uses arbitrary cluster-ID ordering. The ceiling comp layer uses the Hall of Fame pool only as an upside library, not as the main comparison set. HOF players are assigned approximate macro roles by nearest drafted-player macro centroids in available feature space, then compared using shot embeddings plus PCA-style distance where available. In the report, the realistic comps should be treated as the main evidence, while the HOF comp should be described explicitly as an aspirational analog rather than a direct forecast.
+
+Phase 8 — assemble the final Deliverable 2 tables
+08_assemble_player_archetype_profiles.py brings the workflow together into final tables. The assembled profile combines macro role, shot-style subtype, hybrid archetype label, prototype-fit ambiguity, own-cluster distance, subtype confidence, identity drift outputs, realistic comp list, similarity summary, optional ceiling comp, comp-group median later-career outcomes, and a plain-language shot-style explanation. This is effectively the stakeholder-ready core of Deliverable 2. The key storytelling move is that the three layers — role family, spatial style, and drift — become one integrated player dossier rather than separate technical artifacts.
+
+Phase 9 — build stakeholder visuals
+09_make_player_archetype_visuals.py creates presentation-ready visuals: macro archetype mix, shot-style subtype mix, embedding neighborhoods, drift movement, comp infrastructure, average subtype shot maps, and a sample player dossier visual. These outputs matter because Deliverable 2 is not just a table-generation exercise. It also needs visuals that communicate why two players may share a broad role family while differing materially in shot style or developmental path.
+
+Phase 10 — document the workflow
+10_write_workflow_log.py appends a structured summary of script roles, assumptions, limitations, and next-review notes. Even if that script is not discussed directly in the report, it matters as evidence that the workflow was designed to be reproducible and reviewable.
+
+What the final Deliverable 2 should say conceptually
+The strongest narrative is:
+1. We begin with an existing, interpretable macro role backbone from PCA + K-means.
+2. We enrich that backbone with a learned shot-style subtype from spatial shot maps.
+3. We then track whether that identity is stable or evolving across the first four NBA seasons.
+4. Finally, we search for realistic historical comps and optional HOF ceiling analogs using a similarity system that respects both boxscore role and shot style.
+
+That framing directly supports the business question: who is this player, how firm is that identity, who has historically looked similar, and what is the plausible range of later-career outcomes?
+
+Main outcomes currently supported by the implementation
+The workflow now produces:
+- a finalized macro archetype table,
+- season-level and player-level shot embeddings,
+- shot-style subtype tables,
+- a hybrid archetype table,
+- role and shot-style drift summaries,
+- realistic comp tables,
+- HOF ceiling comp tables,
+- a combined comp dossier table,
+- final player-archetype profile and case-study tables,
+- and a full set of supporting visuals.
+
+Substantive takeaways to emphasize in the story
+First, the deliverable is no longer a static clustering appendix. It is a full player-intelligence layer built on both boxscore and spatial shot information.
+Second, the shot-style autoencoder is justified because it turns high-dimensional shot-location data into compact representations that improve subtype interpretation, drift analysis, and comp search.
+Third, identity drift matters. A rookie-contract player should not be summarized only by the endpoint profile; the path from Year 1 to Year 4 carries information about developmental stability and role change.
+Fourth, realistic comps and ceiling comps serve different purposes. Realistic comps anchor expectation, while ceiling comps frame upside.
+Fifth, the deliverable is deliberately honest about limitations: subtype labels are descriptive rather than fully validated taxonomy labels, HOF macro-role assignment is still partly inferred rather than based on a perfect saved transform, and boxscore drift is approximated in standardized season-feature space because saved season-level PCA trajectories were not available.
+
+How to draft the report section from these minutes
+When writing Deliverable 2, use the following sequence:
+- Start with the business question: player identity and extension support require more than a single boxscore cluster.
+- State the design choice: define archetype as macro role + shot-style subtype + early-career drift.
+- Explain the macro backbone briefly and say it is reused from the existing PCA + K-means work.
+- Explain the shot-style pipeline as the new computational core: tensors, autoencoder embeddings, GMM subtypes.
+- Explain drift as the season-to-season layer that makes the archetype dynamic.
+- Explain realistic comps and HOF ceiling comps as two separate comp systems with different interpretation.
+- End with the deliverable outputs: profile table, case-study table, subtype maps, drift plots, comp visuals, and stakeholder-facing dossier view.
+
+Recommended writing tone
+Do not oversell this as a perfect taxonomy of NBA roles. Present it as a structured and computationally serious player-profile system that improves interpretability and decision support compared with a boxscore-only clustering approach. The main claim is not that every label is exact. The main claim is that the combined workflow gives a more faithful picture of player type, style, and developmental direction than any one layer alone.
+
+Clean one-paragraph summary for a new chat window
+Deliverable 2 is implemented as a hybrid archetype workflow rather than a single clustering step. The existing PCA + K-means outputs are reused as a macro role backbone, raw ShotChartDetail data are converted into player-season spatial tensors and compressed through a CNN autoencoder into shot-style embeddings, a Gaussian mixture model produces shot-style subtypes at both player and season level, and a drift module quantifies how each player’s boxscore role and shot identity move from Year 1 to Year 4. A comparable-player infrastructure then combines macro-role fit, PCA proximity, shot-style embedding distance, prototype fit, and drift similarity to generate realistic historical comps from the drafted-player pool plus optional HOF ceiling analogs. The final deliverable is a stakeholder-facing player dossier containing current archetype, subtype confidence, drift classification, realistic comps, ceiling comp if justified, comp-group median outcome, and a plain-language shot-style explanation.

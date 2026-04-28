@@ -1,0 +1,703 @@
+---
+title: "NBA Post-Rookie Forecasting and Extension Valuation"
+subtitle: "Executive Report"
+author: "Ethan Yao"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    fig-pos: H
+    tbl-pos: H
+    geometry:
+      - top=0.7in
+      - bottom=0.7in
+      - left=0.75in
+      - right=0.75in
+    colorlinks: true
+    include-in-header:
+      text: |
+        \usepackage{booktabs}
+        \usepackage{array}
+        \usepackage{tabularx}
+        \usepackage{longtable}
+        \usepackage{makecell}
+        \usepackage{threeparttable}
+        \usepackage{pdflscape}
+        \usepackage{float}
+        \renewcommand\theadfont{\normalsize\bfseries}
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+library(readr)
+library(dplyr)
+library(knitr)
+library(stringr)
+library(tibble)
+
+output_dir <- normalizePath("../Output/Player Archetype Analysis", winslash = "/", mustWork = TRUE)
+output_salary_dir <- normalizePath("../Output/Salary Decision Support", winslash = "/", mustWork = TRUE)
+visual_dir <- normalizePath("../visual/Player Archetype", winslash = "/", mustWork = TRUE)
+dossier_output_dir <- normalizePath(file.path(output_dir, "player_dossier_demo"), winslash = "/", mustWork = TRUE)
+dossier_visual_dir <- normalizePath(file.path(visual_dir, "player_dossier_demo"), winslash = "/", mustWork = TRUE)
+
+macro_summary <- read_csv(file.path(output_dir, "archetype_macro_summary_table.csv"), show_col_types = FALSE)
+shot_summary <- read_csv(file.path(output_dir, "shot_style_cluster_summary.csv"), show_col_types = FALSE)
+drift_table <- read_csv(file.path(output_dir, "player_identity_drift_table.csv"), show_col_types = FALSE)
+comp_dossier <- read_csv(file.path(output_dir, "player_comp_dossier_table.csv"), show_col_types = FALSE)
+final_profiles <- read_csv(file.path(output_dir, "final_player_archetype_profile_table.csv"), show_col_types = FALSE)
+cohort_audit <- read_csv(file.path(output_dir, "cohort_join_audit.csv"), show_col_types = FALSE)
+dossier_selection <- read_csv(file.path(dossier_output_dir, "report_ready_player_dossier_selection.csv"), show_col_types = FALSE)
+
+n_candidates <- nrow(cohort_audit)
+n_fully_covered <- sum(cohort_audit$fully_covered_for_hybrid_pipeline, na.rm = TRUE)
+coverage_pct <- round(100 * n_fully_covered / n_candidates, 1)
+
+drift_counts <- drift_table %>%
+  count(identity_drift_class, name = "players") %>%
+  mutate(share = round(100 * players / sum(players), 1))
+
+macro_table_exec <- macro_summary %>%
+  transmute(
+    `Macro role family` = macro_archetype,
+    `Representative players` = representative_players,
+    `Minutes` = round(mean_min_mean, 1),
+    `PTS/36` = round(pts_per36_4yr_mean, 1),
+    `REB/36` = round(reb_per36_4yr_mean, 1),
+    `AST/36` = round(ast_per36_4yr_mean, 1)
+  )
+
+shot_table_exec <- shot_summary %>%
+  transmute(
+    `Shot-style subtype` = shot_style_subtype,
+    `Players` = subtype_size,
+    `Avg. membership prob.` = round(avg_membership_probability, 3),
+    `Avg. entropy` = round(avg_entropy, 3),
+    `Style note` = descriptive_style_notes
+  )
+
+drift_table_exec <- drift_counts %>%
+  transmute(
+    `Drift class` = identity_drift_class,
+    `Players` = players,
+    `Share (%)` = share
+  )
+
+case_table_exec <- final_profiles %>%
+  filter(PLAYER_NAME %in% c("Trae Young", "Kemba Walker", "Roy Hibbert", "Nikola Vučević", "Kyle O'Quinn")) %>%
+  transmute(
+    Player = PLAYER_NAME,
+    `Hybrid archetype` = hybrid_archetype_label,
+    `Drift class` = identity_drift_class,
+    `Realistic comps` = realistic_comp_list,
+    `Ceiling analog` = ceiling_comp_PLAYER_NAME,
+    `Comp group median points` = round(median_comp_group_points, 1),
+    `Comp group median minutes` = round(median_comp_group_minutes, 1)
+  )
+```
+
+
+# Salary Decision Support
+## Decision problem and design choice
+This is the natural final stage of the project. Module 1 identifies which players deserve serious future-value attention. Module 2 clarifies what kind of player the team would actually be extending, how stable that identity appears to be, and what realistic historical precedents look like. Module 3 then turns those earlier signals into contract-facing guidance. Once the front office has narrowed the field, the next practical question that ultimately drives the extension decision is no longer only whether the player is promising, but how much the team should offer and how aggressively it should act.
+
+For that reason, this module is framed as salary decision support rather than as a pure salary model. A front office is not asking for one mathematically convenient number in isolation. It is asking for a disciplined range, a negotiation stance, and a reasoned explanation of why the organization should move early, stay price-sensitive, or remain cautious. The design choice of this chapter is therefore to build a structured decision layer rather than to let one regression output stand in for the full extension question.
+
+## Workflow and methodology
+The workflow is organized as a staged pricing framework. First, Year-5 contract value is normalized as salary-cap percentage rather than raw dollars so that the contract discussion remains comparable across changing cap environments. Second, that normalized salary target is linked to the realistic comparable-player infrastructure from player archetype analysis. Those realistic comparable players are then used to construct a market anchor with three interpretable price levels: a protected price, a fair price, and a walk-away maximum. This turns the comp layer from descriptive basketball context into contract discipline.
+
+The next layer adds a baseline salary model. That model acts as a second valuation lens that can either support the comp-based band or warn that a player’s statistical profile looks cheaper or more expensive than the comparable-player market alone suggests. In practical terms, the organization is not asked to choose one source of evidence blindly. It is asked to compare a historical market view against a structured predictive view before settling on contract posture.
+
+After that, module 3 adds action logic. Role scarcity, comparable-player support, and identity clarity help determine whether the team should push early inside the justified range or remain more disciplined even when the player is extension-worthy. In that sense, the system does not stop at fair value. It explicitly asks how assertively the team should behave around that value.
+
+The final layer uses performance-forecasting results from module 1 in the way a front office would actually use them at the rookie-extension window. The held-out **146-player** test subset is treated as a retrospective out-of-sample decision group: players whose later path is unknown at decision time, but for whom the system can still produce Sleeper / Neutral / Bust probabilities, a confidence-based uncertainty proxy, and forward-looking performance forecasts. In practical terms, this is the same decision setting the model is meant to support when a real front office evaluates a current rookie-extension case. Module 3 then takes those forecast signals and asks the next contract-facing question: how should they change the pricing and negotiation posture? Under the current salary-data coverage, **138** of those out-of-sample players carry enough matched Year-5 salary support to push all the way through the forecast-adjusted salary layer, so that group functions as the clearest demonstration of how the full extension workflow operates in practice rather than as a narrow technical footnote. 
+
+The appendix contains the detailed target-construction, comp-weighting, salary-model, and merge mechanics. Here the essential message is simpler: Module 3 turns forecast evidence, player identity, and historical market structure into a contract-decision framework that is directly usable for real extension investigations.  
+
+### Final takeaway: extension guidance in practice
+
+Trae Young, Nikola Vučević, and Andrew Bynum are used here as retrospective Year-4 case studies. They are not meant to stand in for the full cohort. Instead, they show how the final salary-decision-support workflow turns earlier forecast and archetype evidence into concrete extension-facing outputs: a protected / fair / walk-away contract band, an internal negotiation posture, and a staged extension stance. Under the current project scope, these three rows are useful because they make the salary-decision workflow visible without requiring the report to overclaim full-cohort final guidance.
+
+```{=latex}
+\setlength{\tabcolsep}{1pt}
+```
+
+```{r}
+#| label: tbl-d3-cases
+#| tbl-cap: "Final case-study outputs. Reported values are drawn directly from the staged final workflow table and show only technical decision metrics rather than narrative interpretation."
+library(readr)
+library(dplyr)
+library(stringr)
+library(kableExtra)
+
+d3_cases_raw <- read_csv(
+  file.path(output_salary_dir, "deliverable3_final_case_study_table.csv"),
+  show_col_types = FALSE
+)
+
+d3_case_tbl <- d3_cases_raw %>%
+  mutate(
+    sort_id = case_when(
+      PLAYER_NAME == "Trae Young" ~ 1L,
+      PLAYER_NAME %in% c("Nikola Vučević", "Nikola Vucevic") ~ 2L,
+      PLAYER_NAME == "Andrew Bynum" ~ 3L,
+      TRUE ~ 999L
+    )
+  ) %>%
+  filter(sort_id < 999L) %>%
+  arrange(sort_id) %>%
+  transmute(
+    Player = PLAYER_NAME,
+    Archetype = hybrid_archetype_label %>%
+      str_replace_all("&#124;", "|") %>%
+      str_replace_all("\\s*\\|\\s*", " / ") %>%
+      str_squish(),
+    Prot = sprintf("%.1f%%", 100 * protected_price_cap_pct),
+    Fair = sprintf("%.1f%%", 100 * fair_price_cap_pct),
+    Walk = sprintf("%.1f%%", 100 * walk_away_max_cap_pct),
+    Open = sprintf("%.1f%%", 100 * staged_open_cap_pct),
+    Tgt = sprintf("%.1f%%", 100 * staged_target_cap_pct),
+    Max = sprintf("%.1f%%", 100 * staged_hard_max_cap_pct),
+    PredictedClass = paste(predicted_class),
+    Adj = forecast_adjustment_mode %>%
+      str_replace_all("_", " ") %>%
+      str_to_title(),
+    Stance = staged_extension_stance_label
+  ) %>%
+  as.data.frame()
+
+kable(
+  d3_case_tbl,
+  booktabs = TRUE,
+  escape = TRUE,
+  align = c("l", "l", rep("r", 6), "l", "l", "l")
+) |>
+  column_spec(1, width = "2.3cm") |>
+  column_spec(2, width = "4.4cm") |>
+  column_spec(9, width = "2.0cm") |>
+  column_spec(10, width = "2.4cm") |>
+  column_spec(11, width = "2.5cm") |>
+  kable_styling(
+    latex_options = c("hold_position", "scale_down"),
+    font_size = 7,
+    position = "left",
+    full_width = FALSE
+  )
+```
+
+```{=latex}
+\setlength{\tabcolsep}{6pt}
+```
+
+@tbl-d3-cases shows that the three players do not produce the same contract signal even though all three are credible retrospective extension cases. Trae Young remains the clearest aggressive case. His final workflow row reports a protected price of **25.0%** of cap, a fair price of **25.3%**, and a walk-away maximum of **25.3%**, with an internal negotiation posture of **25.2% open / 25.3% target / 25.3% hard max**. The final staged stance is therefore **Offer now**. In technical terms, the recommendation follows from a narrow justified band, strong support, and an adjustment mode of **upside_push_within_band**, which means the forecast layer strengthens an already concentrated and defensible market position rather than forcing a new premium outside the current band.
+
+Nikola Vučević now illustrates a more informative forecast-updated case than in earlier drafts. His final row reports a protected price of **13.7%** of cap, a fair price of **18.8%**, and a walk-away maximum of **22.9%**, with an internal posture of **16.5% open / 18.8% target / 22.9% hard max**. The final staged stance is also **Offer now**. Importantly, however, that does not make his contract case identical to Trae Young’s. Vučević’s band remains materially wider than Trae’s. The upside signal is strong enough to move him out of the disciplined-price framing, but the broader protected / fair / walk-away structure still shows that his negotiation environment is less concentrated and therefore less cleanly aggressive than Trae Young’s.
+
+Andrew Bynum provides the contrasting waiting case. The framework reports a protected price of **7.2%** of cap, a fair price of **11.2%**, and a walk-away maximum of **17.3%**, with an internal posture of **7.2% open / 9.2% target / 11.2% hard max**. The final staged stance is **Wait and save flexibility**, with an adjustment mode of **hold_band_with_neutral_support**. In practical terms, that means the framework does not reject the player outright, but it also does not see enough evidence to justify an aggressive early push. This is the value of the third example: it shows that the system is not designed to convert every promising retrospective case into “offer now.” It is willing to preserve timing flexibility when the current evidence remains more balanced.
+
+Taken together, those three cases show what salary decision support is meant to accomplish. The workflow is not only sorting players into better and worse categories. It is showing how different technical contract outputs — especially the protected / fair / walk-away structure, the open / target / hard-max posture, and the supported forecast layer — should lead to different extension behavior. Trae Young’s case is an early-commitment case because the justified range is already narrow and the player’s role is harder to replace. Vučević’s case shows how an updated upside signal can strengthen the recommendation into an offer-now posture without erasing the fact that the market band is still wider than Trae Young’s. Andrew Bynum’s case shows the opposite side of the system: a player can still remain extension-relevant while the workflow recommends waiting and preserving flexibility rather than locking into an early commitment. The table therefore reports the technical decision metrics first, and the interpretation follows from those metrics rather than being embedded inside the result table itself.
+
+### Limitations and credibility
+First, this chapter remains a staged final framework rather than a single fully validated full-cohort recommendation engine. The market-anchor and provisional pricing layers are available more broadly, while the strongest forecast-adjusted salary logic is concentrated on the supported overlap. Second, the current uncertainty input is still a confidence proxy inherited from the forecast handoff rather than a richer interval-style uncertainty package. Third, durability and availability risk are not yet fully embedded in the final extension posture.
+
+The main value of the current design is not that it covers every player uniformly, but that it creates a consistent retrospective decision sample. The held-out **146-player** subset carries both the later-performance forecast outputs and the Sleeper / Neutral / Bust classification results, so these players can be treated as realistic “unknown future” rookie-extension cases under the study design. That makes the supported subset especially useful for showing how the framework behaves when the organization must commit before the player’s later trajectory is known. Trae Young, Nikola Vučević, and Andrew Bynum therefore function as concrete examples of that decision setting rather than as isolated anecdotes.
+
+A further limitation is that the calibration of the salary-decision layer is still affected by performance-forecast uncertainty upstream. Even when the forecast and classification outputs come from the same held-out test subset, those predictions still carry residual forecasting error, and that uncertainty necessarily propagates into extension guidance whenever the forecast layer is allowed to adjust contract posture. For that reason, the project treats forecast-adjusted guidance as strongest on the supported overlap and avoids claiming that the same calibration quality already holds uniformly across the full cohort.
+
+The point of this module is that the project already provides a coherent decision workflow for extension timing and price discipline under partial future information, which is exactly the setting front offices actually face. That is enough to make this module decision-useful now, while still leaving room for fuller integration later.
+
+## Appendix 3 — Salary Decision Support
+This appendix documents the quantitative structure behind Module 3. The main text keeps the decision-facing narrative, while this section records how the salary-decision-support layer is built step by step. Module 3 is not treated as a single end-to-end contract model. Instead, it is a staged framework built by linking two upstream inputs with a contract-facing pricing workflow. 
+
+Block 1 handoff is the forecast input from the player performance module and provides class probabilities, a confidence proxy, and supported forward-performance outputs. Block 2 is the pricing-context input from the player identity and comparable-player module and provides archetype context, comparable-player market evidence, and the protected / fair / walk-away band logic. Using those two inputs, Module 3 builds a Year-5 salary-cap target backbone, a comparable-player market anchor, a provisional action layer, a baseline salary model, a salary-model / market-band reconciliation layer, and a forecast-adjusted extension layer. 
+
+In this study, the 146-player held-out prediction sample from the player performance module is used as a retrospective extension-decision sample: each player is treated as if the team is standing at the end of the rookie contract with future outcomes still unknown, which makes the final salary recommendation exercise both testable and front-office facing. The final technical case-study layer now uses Trae Young, Nikola Vučević, and Andrew Bynum as explicit examples of different extension postures inside that staged framework.
+
+```{r}
+#| include: false
+library(readr)
+library(dplyr)
+library(kableExtra)
+
+output_salary_dir <- file.path("..", "Output", "Salary Decision Support")
+```
+
+### A3.1 Year-5 salary-cap target
+
+The first step is target construction. Historical player salary rows are matched to the first post-rookie contract season and normalized by the NBA salary cap. This creates a Year-5 salary-cap percentage target that is comparable across eras. The table below shows the core target-audit output used to define the salary backbone.
+
+```{r}
+#| label: tbl-d3-target-backbone
+#| tbl-cap: "Year-5 salary-cap target backbone. This audit table summarizes the contract-value target used throughout Module 3."
+library(readr)
+library(dplyr)
+library(kableExtra)
+
+d3_target <- read_csv(file.path(output_salary_dir, "salary_target_audit_summary.csv"), show_col_types = FALSE)
+
+tbl_d3_target <- d3_target |>
+  filter(
+    metric %in% c(
+      "total_players_from_target_table",
+      "players_with_year5_salary_cap_match",
+      "players_without_year5_salary_cap_match",
+      "year5_salary_match_rate"
+    )
+  ) |>
+  filter(metric_group == "recomputed_target_summary") |>
+  mutate(
+    Panel = "Year-5 target backbone",
+    Metric = case_when(
+      metric == "total_players_from_target_table" ~ "Total cohort rows",
+      metric == "players_with_year5_salary_cap_match" ~ "Matched Year-5 salary targets",
+      metric == "players_without_year5_salary_cap_match" ~ "Unmatched Year-5 salary targets",
+      metric == "year5_salary_match_rate" ~ "Recomputed match rate",
+      TRUE ~ metric
+    ),
+    Value = case_when(
+      metric == "year5_salary_match_rate" ~ sprintf("%.3f", value),
+      TRUE ~ format(value, big.mark = ",")
+    )
+  ) |>
+  select(Panel, Metric, Value, notes)
+
+kable(
+  tbl_d3_target,
+  booktabs = TRUE,
+  align = c("l", "l", "r", "l")
+) |>
+  column_spec(1, width = "2.8cm") |>
+  column_spec(4, width = "6.5cm") |>
+  kable_styling(
+    latex_options = c("hold_position", "scale_down"),
+    font_size = 8,
+    position = "center"
+  )
+```
+
+Let $i$ index players. The contract-value target is defined as Year-5 salary normalized by the corresponding NBA salary cap:
+
+$$
+y_i = \frac{\text{Year5Salary}_i}{\text{SalaryCap}_i}.
+$$
+
+This normalization converts raw salary into a cross-era comparable contract measure. The target is therefore not salary in dollars, but the share of the cap consumed by the first post-rookie contract.
+
+### A3.2 Comparable-player market anchor
+
+For each focal player $i$, let $\mathcal{C}_i$ denote the realistic comparable-player set inherited from player archetype analysis after it is merged to historical Year-5 salary-cap outcomes. Each comparable player $j \in \mathcal{C}_i$ has:
+
+* a matched Year-5 salary-cap percentage $y_j$,
+* a similarity score $s_{ij}$,
+* and a normalized similarity weight
+
+$$
+w_{ij} = \frac{s_{ij}}{\sum_{k \in \mathcal{C}*i} s*{ik}},
+\qquad
+\sum_{j \in \mathcal{C}*i} w*{ij} = 1.
+$$
+
+The market anchor is then built as a three-part price board:
+
+$$
+P_i = Q_{0.25}{y_j : j \in \mathcal{C}_i},
+$$
+
+$$
+F_i = \sum_{j \in \mathcal{C}*i} w*{ij} y_j,
+$$
+
+$$
+W_i = Q_{0.75}{y_j : j \in \mathcal{C}_i},
+$$
+
+where $P_i$ is the protected price, $F_i$ is the fair price, and $W_i$ is the walk-away maximum. Ceiling comps are excluded from this pricing anchor by design.
+
+Two useful diagnostics are also defined from this band:
+
+$$
+\text{BandWidth}_i = W_i - P_i,
+$$
+
+$$
+\text{RelativeBandWidth}_i = \frac{W_i - P_i}{F_i}.
+$$
+
+```{r}
+#| label: tbl-d3-market-anchor
+#| tbl-cap: "Comp-market anchor construction summary. Protected, fair, and walk-away bands are only treated as supported when the comparable-player market evidence is sufficiently usable."
+library(readr)
+library(dplyr)
+library(kableExtra)
+
+d3_anchor <- read_csv(file.path(output_salary_dir, "salary_market_anchor_band_summary.csv"), show_col_types = FALSE)
+
+tbl_d3_anchor <- d3_anchor |>
+  filter(
+    metric %in% c(
+      "players_in_block2_context",
+      "players_with_supported_market_anchor_band",
+      "supported_market_anchor_share",
+      "fair_price_median",
+      "walk_away_max_median"
+    )
+  ) |>
+  mutate(
+    Panel = "Comp-market anchor",
+    Metric = case_when(
+      metric == "players_in_block2_context" ~ "Players in Block 2 context",
+      metric == "players_with_supported_market_anchor_band" ~ "Players with supported market anchor",
+      metric == "supported_market_anchor_share" ~ "Supported anchor share",
+      metric == "fair_price_median" ~ "Median fair price",
+      metric == "walk_away_max_median" ~ "Median walk-away max",
+      TRUE ~ metric
+    ),
+    Value = case_when(
+      metric %in% c("players_in_block2_context", "players_with_supported_market_anchor_band") ~ format(value, big.mark = ","),
+      metric == "supported_market_anchor_share" ~ sprintf("%.3f", value),
+      metric %in% c("fair_price_median", "walk_away_max_median") ~ sprintf("%.3f", value),
+      TRUE ~ as.character(value)
+    )
+  ) |>
+  select(Panel, Metric, Value, notes)
+
+kable(
+  tbl_d3_anchor,
+  booktabs = TRUE,
+  align = c("l", "l", "r", "l")
+) |>
+  column_spec(1, width = "2.8cm") |>
+  column_spec(4, width = "6.5cm") |>
+  kable_styling(
+    latex_options = c("hold_position", "scale_down"),
+    font_size = 8,
+    position = "center"
+  )
+```
+
+### A3.3 Provisional decision logic
+
+The provisional action layer is deliberately rules-based rather than fitted as another opaque model. Its goal is to convert market evidence into extension posture before stronger forecast support is added.
+
+For each player $i$, define the following evidence quantities:
+
+* $n_i$: number of comps with matched salary support,
+* $r_i$: comp salary match rate,
+* $n_i^{\text{eff}}$: effective comp depth,
+* $m_i$: share of supported comps from the same macro role family,
+* $a_i$: relative anchor-band width,
+* $u_i$: prototype ambiguity proxy,
+* $z_i$: scarcity tier from Deliverable 2 role-family interpretation.
+
+The effective comp depth is computed as:
+
+$$
+n_i^{\text{eff}} = \frac{1}{\sum_{j \in \mathcal{C}*i} w*{ij}^2}.
+$$
+
+The workflow then maps players into conservative support buckets and provisional action buckets. This phase remains intentionally Block-2-only and does not yet apply player performance forecast premiums, bust penalties, or durability penalties. 
+
+```{r}
+#| label: tbl-d3-provisional-action
+#| tbl-cap: "Provisional action logic. This technical table shows how provisional extension buckets distribute across comp-support tiers before any forecast adjustment is activated."
+library(kableExtra)
+
+d3_prov <- read_csv(file.path(output_salary_dir, "salary_provisional_comp_support_breakdown.csv"), show_col_types = FALSE)
+
+tbl_d3_prov <- d3_prov |>
+  mutate(
+    comp_support_bucket = gsub("_", " ", comp_support_bucket),
+    provisional_action_bucket = gsub("_", " ", provisional_action_bucket),
+    player_count = format(player_count, big.mark = ",")
+  )
+
+kable(
+  tbl_d3_prov,
+  booktabs = TRUE,
+  align = c("l", "l", "r")
+) |>
+  column_spec(1, width = "3.0cm") |>
+  column_spec(2, width = "4.2cm") |>
+  kable_styling(
+    latex_options = c("hold_position", "scale_down"),
+    font_size = 8,
+    position = "center"
+  )
+```
+
+The important point is that this layer is not meant to predict salary. It is meant to convert historical market structure into disciplined extension behavior.
+
+### A3.4 Baseline salary model
+
+The market anchor is paired with a baseline salary model so that the salary decision support module has both a historical market view and a predictive tabular view. Let $x_i \in \mathbb{R}^p$ denote the pre-Year5 feature vector for player $i$, built from the prepared salary-model table. This feature set includes structured early-career information such as macro role and identity drift, while audit-only merge fields are excluded from training.
+
+Candidate benchmark models are:
+
+1. global mean:
+   $$
+   \hat{y}_i = \bar{y},
+   $$
+
+2. macro-archetype mean:
+   $$
+   \hat{y}*i = \bar{y}*{g(i)},
+   $$
+   where $g(i)$ is the player’s macro-archetype group,
+
+3. ordinary least squares:
+   $$
+   \hat{y}_i = \beta_0 + x_i^\top \beta,
+   $$
+
+4. ridge regression:
+   $$
+   \hat{y}_i = \beta_0 + x_i^\top \beta,
+   $$
+   with coefficients estimated by
+
+$$
+(\hat{\beta}*0,\hat{\beta}) =
+\arg\min*{\beta_0,\beta}
+\sum_{i=1}^N (y_i - \beta_0 - x_i^\top \beta)^2
+* \lambda |\beta|_2^2.
+$$
+
+The workflow uses draft-year-aware GroupKFold outer validation, and model selection is based on grouped out-of-fold RMSE:
+
+$$
+\text{RMSE} =
+\sqrt{
+\frac{1}{N}
+\sum_{i=1}^N
+(y_i - \hat{y}_i)^2
+}.
+$$
+
+```{r}
+#| label: tbl-d3-baseline-model
+#| tbl-cap: "Baseline Year-5 salary-model comparison. The model layer is used as a predictive cross-check against the comp-market anchor rather than as a replacement for it."
+library(kableExtra)
+
+d3_model <- read_csv(file.path(output_salary_dir, "year5_salary_baseline_model_comparison.csv"), show_col_types = FALSE) |>
+  arrange(rank_rmse)
+
+tbl_d3_model <- d3_model |>
+  transmute(
+    Model = model_name,
+    RMSE = sprintf("%.4f", rmse),
+    MAE = sprintf("%.4f", mae),
+    `Median AE` = sprintf("%.4f", medae),
+    `R-squared` = sprintf("%.3f", r2)
+  )
+
+kable(
+  tbl_d3_model,
+  booktabs = TRUE,
+  align = c("l", "r", "r", "r", "r")
+) |>
+  column_spec(1, width = "3.4cm") |>
+  kable_styling(
+    latex_options = c("hold_position", "scale_down"),
+    font_size = 8,
+    position = "center"
+  )
+```
+
+### A3.5 Salary-model / market-band reconciliation
+
+The baseline salary model is not blended mechanically with the market anchor. Instead, salary decision support module first compares the two. Let $\hat{y}_i^{M}$ denote the selected model’s salary-cap prediction, and let $[P_i, F_i, W_i]$ denote the market band.
+
+The first reconciliation layer classifies where the model sits relative to the band:
+
+$$
+R_i =
+\begin{cases}
+\text{below protected}, & \hat{y}_i^{M} < P_i, \\[4pt]
+\text{between protected and fair}, & P_i \le \hat{y}_i^{M} < F_i, \\[4pt]
+\text{between fair and walk-away}, & F_i \le \hat{y}_i^{M} \le W_i, \\[4pt]
+\text{above walk-away}, & \hat{y}_i^{M} > W_i.
+\end{cases}
+$$
+
+A second layer defines the pricing interpretation: whether the baseline model confirms the market band, discounts it, or suggests a premium-review case. This is why the final negotiation object remains band-based rather than point-prediction-based.
+
+```{r}
+#| label: tbl-d3-reconciliation
+#| tbl-cap: "Salary-model and market-band reconciliation. This table shows the alignment states used to compare the baseline Year-5 salary model against the comp-market band."
+library(kableExtra)
+
+d3_rec <- read_csv(file.path(output_salary_dir, "deliverable3_salary_reconciliation_summary.csv"), show_col_types = FALSE)
+
+tbl_d3_rec <- d3_rec |>
+  filter(metric_group == "alignment_bucket") |>
+  transmute(
+    `Alignment bucket` = gsub("_", " ", metric),
+    Players = format(value, big.mark = ","),
+    Notes = notes
+  )
+
+kable(
+  tbl_d3_rec,
+  booktabs = TRUE,
+  align = c("l", "r", "l")
+) |>
+  column_spec(1, width = "4.2cm") |>
+  column_spec(3, width = "6.5cm") |>
+  kable_styling(
+    latex_options = c("hold_position", "scale_down"),
+    font_size = 8,
+    position = "center"
+  )
+```
+
+### A3.6 Forecast-adjusted extension logic
+
+The final stage adds forecast adjustment from the official Block 1 handoff from the player performance module. In the current workflow, that handoff provides class probabilities, a confidence-based uncertainty proxy, and held-out forward-performance predictions for a 146-player retrospective decision sample. Within module 3, this forecast information becomes action-changing only when the same row also has usable pricing support from the market-anchor layer. The resulting supported subset is therefore the part of the workflow where retrospective extension recommendations can be evaluated most directly.
+
+* $p_i^{S}$ = sleeper probability,
+* $p_i^{N}$ = neutral probability,
+* $p_i^{B}$ = bust probability,
+* $c_i$ = confidence score / uncertainty proxy from the forecast layer.
+
+The simplest directional forecast-tilt statistic is
+
+$$
+\phi_i = p_i^{S} - p_i^{B}.
+$$
+
+Positive $\phi_i$ means upside pressure; negative $\phi_i$ means downside pressure. Because the current uncertainty input is still only a confidence proxy, the workflow keeps this forecast adjustment conservative. It mainly changes how hard the team should push **within** the existing band rather than authorizing uncontrolled expansion beyond the walk-away maximum.
+
+In practical terms, the forecast layer mainly changes how hard the team should push within the existing protected / fair / walk-away band, rather than authorizing uncontrolled expansion beyond the walk-away maximum. The value of the 146-player held-out sample is that it turns Module 3 into a genuine retrospective extension-decision exercise rather than a purely descriptive pricing study. The system can ask: if these players had been treated as pending rookie-extension decisions at the time, would the combined market, player-identity, and forecast signals have produced a disciplined and useful contract posture?
+
+```{r}
+#| label: tbl-d3-supported-subset
+#| tbl-cap: "Forecast-adjusted supported subset. This overlap is the most defensible sample for showing how performance forecast, class probabilities, and salary guidance can be integrated under the current project scope."
+library(readr)
+library(dplyr)
+library(kableExtra)
+
+d3_sup <- read_csv(file.path(output_salary_dir, "deliverable3_forecast_adjustment_supported_subset_summary.csv"), show_col_types = FALSE)
+
+tbl_d3_sup <- d3_sup |>
+  mutate(
+    Metric = case_when(
+      metric == "supported_subset_rows" ~ "Supported rows",
+      metric == "supported_subset_with_salary_target" ~ "Supported rows with salary target",
+      metric == "supported_subset_label_accuracy" ~ "Label accuracy",
+      metric == "supported_subset_perf_rmse" ~ "Performance RMSE",
+      metric == "supported_subset_perf_mae" ~ "Performance MAE",
+      TRUE ~ metric
+    ),
+    Value = case_when(
+      metric %in% c("supported_subset_rows", "supported_subset_with_salary_target") ~ format(value, big.mark = ","),
+      TRUE ~ sprintf("%.2f", value)
+    )
+  ) |>
+  select(Metric, Value)
+
+kable(
+  tbl_d3_sup,
+  booktabs = TRUE,
+  align = c("l", "r")
+) |>
+  column_spec(1, width = "5.2cm") |>
+  kable_styling(
+    latex_options = c("hold_position", "scale_down"),
+    font_size = 8,
+    position = "center"
+  )
+```
+
+### A3.7 Why the forecast-adjusted subset is treated separately
+
+The official Block 1 handoff contains class probabilities more broadly, and it also provides a 146-player held-out prediction sample that most closely matches the real extension-decision problem. For those players, the system can stand at the end of the rookie-contract window, treat the player as a pending extension case, generate a contract posture using only information available at that time, and then compare that recommendation with what later happened. As a result, Module 3 explicitly separates three populations:
+
+1. the salary-model training sample,
+2. the retrospective forecast-adjusted decision sample,
+3. and the broader cohort that remains in Block-2-only or classification-overlay-only status.
+
+This split gives the final decision layer its strongest business value. The 146-player held-out sample provides the cleanest retrospective test of whether the full workflow behaves sensibly when the future is genuinely treated as unknown, while the narrower supported subset inside Module 3 ensures that action-changing forecast adjustments are only applied when both forecast evidence and pricing support are available.
+
+```{r}
+#| label: tbl-d3-framework-status
+#| tbl-cap: "Staged framework status. Salary decision support explicitly separates Block-2-only rows, classification-overlay-only rows, and the narrower forecast-adjusted supported subset."
+library(kableExtra)
+
+d3_status <- read_csv(file.path(output_salary_dir, "deliverable3_framework_status_matrix.csv"), show_col_types = FALSE)
+
+tbl_d3_status <- d3_status |>
+  filter(metric_group %in% c("framework_status", "forecast_support_status")) |>
+  mutate(
+    Group = gsub("_", " ", metric_group),
+    Status = gsub("_", " ", framework_status),
+    Players = format(player_count, big.mark = ",")
+  ) |>
+  select(Group, Status, Players)
+
+kable(
+  tbl_d3_status,
+  booktabs = TRUE,
+  align = c("l", "l", "r")
+) |>
+  column_spec(1, width = "3.0cm") |>
+  column_spec(2, width = "5.5cm") |>
+  kable_styling(
+    latex_options = c("hold_position", "scale_down"),
+    font_size = 8,
+    position = "center"
+  )
+```
+
+### A3.8 Final case-study outputs
+
+The appendix closes with the final technical case-study extraction for Trae Young, Nikola Vučević, and Andrew Bynum. These rows are presented as explicit retrospective rookie-extension examples inside the held-out decision framework. Together they show how Module 3 converts market anchors, player identity, and supported forecast evidence into different extension postures and negotiation ranges when the future is treated as unknown at decision time.
+
+```{r}
+#| label: tbl-d3-final-cases-tech
+#| tbl-cap: "Trae Young, Nikola Vučević, and Andrew Bynum are retained as final retrospective examples of how the staged framework becomes extension guidance under different offer scenarios."
+library(kableExtra)
+
+d3_cases <- read_csv(file.path(output_salary_dir, "deliverable3_final_case_study_table.csv"), show_col_types = FALSE)
+
+tbl_d3_cases <- d3_cases |>
+  transmute(
+    Player = PLAYER_NAME,
+    Stance = staged_extension_stance_label,
+    `Open / Target / Max` = sprintf(
+      "%.1f%% / %.1f%% / %.1f%%",
+      100 * staged_open_cap_pct,
+      100 * staged_target_cap_pct,
+      100 * staged_hard_max_cap_pct
+    ),
+    `Forecast support` = forecast_support_status,
+    `Adjustment mode` = gsub("_", " ", forecast_adjustment_mode)
+  )
+
+kable(
+  tbl_d3_cases,
+  booktabs = TRUE,
+  align = c("l", "l", "l", "l", "l")
+) |>
+  column_spec(1, width = "2.8cm") |>
+  column_spec(5, width = "4.8cm") |>
+  kable_styling(
+    latex_options = c("hold_position", "scale_down"),
+    font_size = 8,
+    position = "center"
+  )
+```
+
+### A3.9 Boundary of the current Deliverable 3 system
+
+The current system is complete as a staged salary-decision-support workflow, but not yet as a fully closed final recommendation engine. In particular, durability / availability risk remains not yet integrated, and the uncertainty layer still uses the performance forecasting confidence proxy rather than a richer interval package. The correct interpretation is therefore:
+
+* market-anchor construction is active,
+* provisional action logic is active,
+* baseline salary modeling is active,
+* salary-model / market-band reconciliation is active,
+* forecast-adjusted logic is active where supported,
+* the final recommendation should be treated as conditional on richer uncertainty and durability integration in future work.

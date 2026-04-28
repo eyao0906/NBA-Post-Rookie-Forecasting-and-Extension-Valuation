@@ -1,0 +1,9 @@
+comp_support_bucket,provisional_action_bucket,player_count
+insufficient,avoid_overcommitting,114
+insufficient,wait_and_save_flexibility,3
+moderate,avoid_overcommitting,44
+moderate,offer_now_disciplined_band,51
+moderate,wait_and_save_flexibility,252
+strong,offer_now_disciplined_band,423
+weak,avoid_overcommitting,80
+weak,wait_and_save_flexibility,91

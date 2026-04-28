@@ -1,0 +1,28 @@
+{
+  "script": "06_fit_baseline_salary_models.py",
+  "project_root": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3",
+  "inputs": {
+    "modeling_table": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Salary Decision Support\\year5_salary_modeling_table.csv",
+    "training_manifest": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Salary Decision Support\\year5_salary_training_manifest.csv",
+    "modeling_dictionary": "C:\\Users\\Ethan Yao\\Downloads\\STAT-946-Case-Study-3\\Output\\Salary Decision Support\\year5_salary_modeling_dictionary.csv"
+  },
+  "selected_model": "ridge_alpha_10",
+  "artifact_kind": "joblib",
+  "outputs": [
+    "year5_salary_baseline_oof_predictions.csv",
+    "year5_salary_baseline_cv_fold_metrics.csv",
+    "year5_salary_baseline_model_comparison.csv",
+    "year5_salary_baseline_selected_model_coefficients.csv",
+    "year5_salary_baseline_selected_model_predictions.csv",
+    "year5_salary_baseline_demo_holdout_predictions.csv",
+    "year5_salary_baseline_summary.csv",
+    "year5_salary_baseline_summary.md",
+    "year5_salary_baseline_metadata.json",
+    "year5_salary_baseline_selected_model.joblib"
+  ],
+  "notes": [
+    "Outer validation uses GroupKFold with draft-year groups.",
+    "Trae Young and Nikola Vučević remain outside the training pool when marked in the Phase 5 manifest.",
+    "This phase fits disciplined baseline models only and does not yet integrate Deliverable 1 forecast adjustments."
+  ]
+}

@@ -1,0 +1,69 @@
+Player Archetype Workflow Patch Log
+
+Patched files
+- 00_project_inventory.py
+- 02_build_macro_archetype_table.py
+- 03_build_shotstyle_tensors.py
+- 04_train_shot_autoencoder.py
+- 05_cluster_shot_embeddings.py
+- 06_build_identity_drift.py
+- 07_build_comps.py
+- 09_make_player_archetype_visuals.py
+
+Issue-by-issue notes
+
+00_project_inventory.py
+- Fixed issue: the old script only hardcoded expected paths and checked exists().
+- Why incorrect: it could not resolve slight path mismatches or shifted files under the project tree.
+- New logic: added deterministic recursive filename resolution with expected_path, resolved_path, exists, and path_corrected_flag columns.
+- Downstream impact: none; this remains an audit-only script.
+
+02_build_macro_archetype_table.py
+- Fixed issue: the old script read cluster_modeling_predictors_k5.csv but effectively subset only the clustered table.
+- Why incorrect: predictor-only fields such as one-hot columns, centroid distances, or PCA scores could be dropped silently.
+- New logic: explicit merge of clustered table with predictors using shared player keys; summary table representative-player merge cleaned to one pass.
+- Downstream impact: preserves macro output contract while making predictor coverage real.
+
+03_build_shotstyle_tensors.py
+- Fixed issue: shot_tensor_player.parquet previously described only metadata while implying real player-level tensors existed.
+- Why incorrect: output naming/content mismatch was analytically misleading.
+- New logic: keeps metadata parquet, and also exports real aggregated player tensor artifacts to draft_player_tensors.npz and hof_player_tensors.npz.
+- Downstream impact: no breakage to 04; adds truthful tensor artifacts for later use.
+
+04_train_shot_autoencoder.py
+- Fixed issue: z-scored targets were paired with a Sigmoid decoder.
+- Why incorrect: Sigmoid constrains reconstructions to [0,1], which is inconsistent with z-scored reconstruction targets.
+- New logic: removed Sigmoid and kept linear decoder output; validation and HOF normalization now use train-set normalization statistics via a helper; reconstruction examples are inverse-transformed for display.
+- Downstream impact: embedding column naming and output files unchanged.
+
+05_cluster_shot_embeddings.py
+- Fixed issue: only player-level subtype assignments were produced.
+- Why incorrect: drift logic needs season-level subtype transitions.
+- New logic: same fitted GMM is now used to score season-level embeddings; exports shot_style_player_season_table.csv with subtype IDs, subtype labels, probabilities, and entropy.
+- Downstream impact: 06 now consumes season-level subtype assignments correctly.
+
+06_build_identity_drift.py
+- Fixed issue: subtype changes were previously computed from a player-level subtype merge, making subtype constant across seasons.
+- Why incorrect: subtype-change counts were structurally wrong.
+- New logic: subtype changes now come from shot_style_player_season_table.csv joined on PLAYER_ID and season_num.
+- Downstream impact: identity drift outputs retain schema but now use real season-level subtype evolution.
+
+07_build_comps.py
+- Fixed issue A: realistic comps used abs(cluster_id_i - cluster_id_j) and adjacent cluster IDs as macro distance.
+- Why incorrect: K-means labels are arbitrary and unordered.
+- New logic A: realistic comps now use same-macro indicator, macro mismatch penalty, PCA distance if available, prototype-fit distance gap, shot-style embedding distance, and drift similarity.
+- Fixed issue B: HOF macro role was hardcoded to a fake placeholder.
+- Why incorrect: ceiling macro-role match was not meaningful.
+- New logic B: HOF players now receive inferred macro assignments by nearest drafted-player macro centroids in available PCA feature space; ceiling comps use shot embedding distance plus PCA distance.
+- Downstream impact: 08 continues to consume the same dossier/ceiling outputs, now with valid macro-role logic.
+
+09_make_player_archetype_visuals.py
+- Fixed issue: visuals were too thin for Deliverable 2.
+- Why insufficient: did not show subtype-average shot structure or a stronger dossier view.
+- New logic: added average subtype shot-map panel from drafted-player tensors linked to season-level subtype assignments, and improved sample dossier visual.
+- Downstream impact: no schema changes; only adds visuals.
+
+Remaining limitations
+- HOF macro-role assignment is an inferred fallback from available comparable feature space, not a fully replayed saved PCA/K-means transform object for HOF.
+- The current subtype count remains fixed at five for consistency and stability; formal model-selection tuning is still optional future work.
+- Boxscore drift still uses available season-level feature space rather than a saved season-level PCA trajectory artifact.

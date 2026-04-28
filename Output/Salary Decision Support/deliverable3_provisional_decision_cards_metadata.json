@@ -1,0 +1,19 @@
+{
+  "script": "04_assemble_provisional_decision_cards.py",
+  "project_root": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3",
+  "inputs": {
+    "decision_inputs_table": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_provisional_decision_inputs_table.csv"
+  },
+  "outputs": [
+    "deliverable3_provisional_decision_cards.csv",
+    "deliverable3_provisional_case_study_table.csv",
+    "deliverable3_provisional_decision_card_manifest.csv",
+    "deliverable3_provisional_decision_cards_summary.csv",
+    "deliverable3_provisional_decision_cards_summary.md"
+  ],
+  "notes": [
+    "This phase assembles stakeholder-facing decision-card outputs from the Phase 3 table.",
+    "The stance remains provisional_block2_only.",
+    "Trae Young and Nikola Vučević stay reserved as case-study demos when present in the holdout manifest."
+  ]
+}

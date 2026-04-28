@@ -1,0 +1,16 @@
+file_key,file_name,plot_kind,title,x_col,y_cols,x_label,y_label
+selected_players_ridge_data,selected_players_ridge_data.csv,line_actual_vs_predicted,Predicted vs Actual Year-5 Salary Cap Percentage - Ridge,x_label,actual|predicted,,Salary Cap Percentage
+selected_players_elastic_net_data,selected_players_elastic_net_data.csv,line_actual_vs_predicted,Predicted vs Actual Year-5 Salary Cap Percentage - Elastic Net,x_label,actual|predicted,,Salary Cap Percentage
+ridge_goal1_full_model_data,ridge_goal1_full_model_data.csv,line_actual_vs_predicted,"Ridge + Goal 1 (feature)
+Full Model: R² = 0.725, RMSE = 0.039",x_label,actual|predicted,,Salary Cap Percentage
+elastic_net_goal1_full_model_data,elastic_net_goal1_full_model_data.csv,line_actual_vs_predicted,"Elastic Net + Goal 1 (feature)
+Full Model: R² = 0.725, RMSE = 0.039",x_label,actual|predicted,,Salary Cap Percentage
+ridge_goal12_full_model_data,ridge_goal12_full_model_data.csv,line_actual_vs_predicted,"Ridge + Goal 1 + Goal 2 (feature)
+Full Model: R² = 0.721, RMSE = 0.040",x_label,actual|predicted,,Salary Cap Percentage
+elastic_net_goal12_full_model_data,elastic_net_goal12_full_model_data.csv,line_actual_vs_predicted,"Elastic Net + Goal 1 + Goal 2 (feature)
+Full Model: R² = 0.725, RMSE = 0.039",x_label,actual|predicted,,Salary Cap Percentage
+bias_top5_groups_large_error_data,bias_top5_groups_large_error_data.csv,bar_ridge_vs_enet,Top 5 Groups with Highest Bias-Adjusted Large-Error Percentage (|error| >= 0.03),x_label,Ridge|Elastic Net,Group: Class | Age | Macro | Shot,Bias-adjusted percentage of players in group with large error (%)
+bias_by_age_group_data,bias_by_age_group_data.csv,bar_ridge_vs_enet,Bias-Adjusted Large-Error Percentage by Age Group (|error| >= 0.03),x_label,Ridge|Elastic Net,Age Group,Bias-adjusted % of players in group with large error
+bias_by_predicted_class_data,bias_by_predicted_class_data.csv,bar_ridge_vs_enet,Bias-Adjusted Large-Error Percentage by Predicted Class (|error| >= 0.03),x_label,Ridge|Elastic Net,Predicted Class,Bias-adjusted % of players in group with large error
+bias_by_macro_archetype_data,bias_by_macro_archetype_data.csv,bar_ridge_vs_enet,Bias-Adjusted Large-Error Percentage by Macro Archetype (|error| >= 0.03),x_label,Ridge|Elastic Net,Macro Archetype,Bias-adjusted % of players in group with large error
+bias_by_shot_style_subtype_data,bias_by_shot_style_subtype_data.csv,bar_ridge_vs_enet,Bias-Adjusted Large-Error Percentage by Shot Style Subtype (|error| >= 0.03),x_label,Ridge|Elastic Net,Shot Style Subtype,Bias-adjusted % of players in group with large error

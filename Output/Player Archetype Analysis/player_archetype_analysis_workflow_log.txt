@@ -1,0 +1,438 @@
+
+================================================================================
+PHASE 2 — LOCK THE MACRO ARCHETYPE BACKBONE
+================================================================================
+1. What was completed
+Reused the saved PCA + K-means artifacts instead of refitting them. Built a finalized macro-archetype player table with cluster IDs, interpretable cluster names, one-hot and distance features, and prototype-fit measures.
+
+2. What was learned
+The existing five-cluster system already provides role-family information plus useful ambiguity signals via own-cluster distance and distance margins. That makes it a reasonable macro-role backbone for the hybrid archetype system.
+
+3. What assumptions still matter
+The saved cluster names remain authoritative because no material feature-schema inconsistency was detected. Prototype fit is summarized through centroid-distance features rather than any fresh clustering pass.
+
+4. What files were read
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\kmeans_k5_outputs_split\player_feature_table_1999_2019_clustered_k5.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\kmeans_k5_outputs_split\cluster_modeling_predictors_k5.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\kmeans_k5_outputs_split\cluster_summary_k5.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\kmeans_k5_outputs_split\cluster_summary_zscores_k5.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\kmeans_k5_outputs_split\cluster_representative_players_k5.csv
+
+5. What files were written
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\archetype_macro_player_table.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\archetype_macro_summary_table.csv
+
+
+================================================================================
+PHASE 5 — CREATE SHOT-STYLE SUBTYPES
+================================================================================
+1. What was completed
+Clustered player-level shot embeddings with a Gaussian mixture model, exported both player-level and season-level subtype assignments and soft probabilities, summarized subtype sizes and style notes, and merged the subtype layer into the hybrid archetype table.
+
+2. What was learned
+A soft-clustering view is useful because some player shot maps sit between neighboring styles rather than mapping cleanly to one rigid subtype. The subtype probability and entropy columns will help express ambiguity in the final deliverable.
+
+3. What assumptions still matter
+Five shot-style subtypes are used to keep the second layer interpretable and comparable in complexity to the five macro-role clusters. Subtype labels are descriptive post-hoc names rather than externally validated taxonomy labels.
+
+4. What files were read
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\shot_embedding_player.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\shot_embedding_player_season.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\archetype_macro_player_table.csv
+
+5. What files were written
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\shot_style_cluster_summary.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\shot_style_representative_players.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\shot_style_player_table.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\shot_style_player_season_table.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\player_hybrid_archetype_table.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\visual\Player Archetype\shot_style_embedding_scatter.png
+
+
+================================================================================
+PHASE 6 — ENGINEER DRIFT / ROLE EVOLUTION
+================================================================================
+1. What was completed
+Computed early-career movement in both boxscore role space and shot-style embedding space, plus total path length and subtype-change counts, then assembled a player-level identity drift table with stability classifications.
+
+2. What was learned
+Year-1 to Year-4 displacement alone is not enough because some players follow long, nonlinear developmental paths. Combining endpoint displacement, path length, and subtype changes gives a better early-career drift summary.
+
+3. What assumptions still matter
+Boxscore role space is approximated with standardized season-level features rather than the original PCA season scores, which were not available as a saved season-level artifact. Subtype changes are counted only where the player has usable season-level shot embeddings.
+
+4. What files were read
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\data\player_season_feature_table_1999_2019.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\shot_embedding_player_season.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\shot_style_player_season_table.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\player_hybrid_archetype_table.csv
+
+5. What files were written
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\player_role_drift_summary.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\player_shotstyle_drift_summary.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\player_identity_drift_table.csv
+
+
+================================================================================
+PHASE 7 — BUILD COMPARABLE-PLAYER INFRASTRUCTURE
+================================================================================
+1. What was completed
+Built realistic drafted-cohort comps using a weighted hybrid similarity score across macro-role compatibility, shot-style embedding distance, prototype fit, and drift similarity. Also created optional HOF ceiling comps from the auxiliary HOF pool and summarized comp-group later-career outcomes in dossier form.
+
+2. What was learned
+The historical drafted-player cohort is large enough to support realistic comp neighborhoods without relying on HOF players for the main comparison task. HOF comps work better as ceiling analogs than as everyday nearest neighbors.
+
+3. What assumptions still matter
+Realistic comps use macro-role match indicators, PCA distance when available, prototype-fit distance, shot-style embedding distance, and drift similarity without relying on arbitrary cluster-ID ordering. HOF ceiling comps receive inferred macro-role assignments from the drafted-player macro reference space rather than a hardcoded placeholder label.
+
+4. What files were read
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\player_identity_drift_table.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\hof_shot_embedding_player.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\data\career_totals_targets.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\data\HOF_career_total_targets.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\data\cohort_HOF.csv
+
+5. What files were written
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\realistic_comps.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\ceiling_comps_hof.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\player_comp_dossier_table.csv
+
+
+================================================================================
+PHASE 8 — ASSEMBLE FINAL DELIVERABLE 2 TABLES
+================================================================================
+1. What was completed
+Assembled the final player-archetype profile table by combining macro role, shot-style subtype, hybrid label, ambiguity metrics, drift summaries, realistic comps, optional ceiling comps, comp-group outcomes, and a plain-language shot-style explanation.
+
+2. What was learned
+The deliverable becomes much more interpretable when the three layers are presented together rather than as separate technical artifacts.
+
+3. What assumptions still matter
+Case-study rows are selected as a compact stakeholder-ready subset rather than an exhaustive manual curation.
+
+4. What files were read
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\player_identity_drift_table.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\player_comp_dossier_table.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\shot_style_cluster_summary.csv
+
+5. What files were written
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\final_player_archetype_profile_table.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\final_player_archetype_case_study_table.csv
+
+
+================================================================================
+PHASE 11 — BUILD PRACTICAL PLAYER DOSSIER DEMO PACKAGE
+================================================================================
+1. What was completed
+Selected one dossier-ready player per shot-style subtype from the finalized Deliverable 2 table, exported a report-ready dossier summary table, wrote plain-language markdown cards, and created player-specific three-panel shot-chart figures for practical front-office demonstration use.
+
+2. What was learned
+Deliverable 2 becomes more report-ready when the hybrid archetype outputs are translated into a small number of explicit player cards instead of leaving the final profile table as the only stakeholder-facing artifact.
+
+3. What assumptions still matter
+Selection prioritizes subtype confidence, realistic comp support, prototype clarity, and shot-volume coverage. These dossiers are meant to complement, not replace, the separate forecast and salary decision deliverables.
+
+4. What files were read
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\final_player_archetype_profile_table.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\shot_style_player_table.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\data\Shot Chart Details Raw\raw_shotchart_S1_to_S4_main.csv
+
+5. What files were written
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\player_dossier_demo\report_ready_player_dossier_table.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\player_dossier_demo\report_ready_player_dossier_selection.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\player_dossier_demo\report_ready_player_dossier_manifest.csv
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\Output\Player Archetype Analysis\player_dossier_demo\report_ready_player_dossiers.md
+- C:\Users\Ethan Yao\Downloads\STAT-946-Case-Study-3\visual\Player Archetype\player_dossier_demo
+
+
+================================================================================
+PHASE 2 — LOCK THE MACRO ARCHETYPE BACKBONE
+================================================================================
+1. What was completed
+Reused the saved PCA + K-means artifacts instead of refitting them. Built a finalized macro-archetype player table with cluster IDs, interpretable cluster names, one-hot and distance features, and prototype-fit measures.
+
+2. What was learned
+The existing five-cluster system already provides role-family information plus useful ambiguity signals via own-cluster distance and distance margins. That makes it a reasonable macro-role backbone for the hybrid archetype system.
+
+3. What assumptions still matter
+The saved cluster names remain authoritative because no material feature-schema inconsistency was detected. Prototype fit is summarized through centroid-distance features rather than any fresh clustering pass.
+
+4. What files were read
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/kmeans_k5_outputs_split/player_feature_table_1999_2019_clustered_k5.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/kmeans_k5_outputs_split/cluster_modeling_predictors_k5.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/kmeans_k5_outputs_split/cluster_summary_k5.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/kmeans_k5_outputs_split/cluster_summary_zscores_k5.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/kmeans_k5_outputs_split/cluster_representative_players_k5.csv
+
+5. What files were written
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/archetype_macro_player_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/archetype_macro_summary_table.csv
+
+
+================================================================================
+PHASE 5 — CREATE SHOT-STYLE SUBTYPES
+================================================================================
+1. What was completed
+Clustered player-level shot embeddings with a Gaussian mixture model, exported both player-level and season-level subtype assignments and soft probabilities, summarized subtype sizes and style notes, and merged the subtype layer into the hybrid archetype table.
+
+2. What was learned
+A soft-clustering view is useful because some player shot maps sit between neighboring styles rather than mapping cleanly to one rigid subtype. The subtype probability and entropy columns will help express ambiguity in the final deliverable.
+
+3. What assumptions still matter
+Five shot-style subtypes are used to keep the second layer interpretable and comparable in complexity to the five macro-role clusters. Subtype labels are descriptive post-hoc names rather than externally validated taxonomy labels.
+
+4. What files were read
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_embedding_player.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_embedding_player_season.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/archetype_macro_player_table.csv
+
+5. What files were written
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_style_cluster_summary.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_style_representative_players.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_style_player_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_style_player_season_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_hybrid_archetype_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/visual/Player Archetype/shot_style_embedding_scatter.png
+
+
+================================================================================
+PHASE 6 — ENGINEER DRIFT / ROLE EVOLUTION
+================================================================================
+1. What was completed
+Computed early-career movement in both boxscore role space and shot-style embedding space, plus total path length and subtype-change counts, then assembled a player-level identity drift table with stability classifications.
+
+2. What was learned
+Year-1 to Year-4 displacement alone is not enough because some players follow long, nonlinear developmental paths. Combining endpoint displacement, path length, and subtype changes gives a better early-career drift summary.
+
+3. What assumptions still matter
+Boxscore role space is approximated with standardized season-level features rather than the original PCA season scores, which were not available as a saved season-level artifact. Subtype changes are counted only where the player has usable season-level shot embeddings.
+
+4. What files were read
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/data/player_season_feature_table_1999_2019.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_embedding_player_season.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_style_player_season_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_hybrid_archetype_table.csv
+
+5. What files were written
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_role_drift_summary.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_shotstyle_drift_summary.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_identity_drift_table.csv
+
+
+================================================================================
+PHASE 7 — BUILD COMPARABLE-PLAYER INFRASTRUCTURE
+================================================================================
+1. What was completed
+Built realistic drafted-cohort comps using a weighted hybrid similarity score across macro-role compatibility, shot-style embedding distance, prototype fit, and drift similarity. Also created optional HOF ceiling comps from the auxiliary HOF pool and summarized comp-group later-career outcomes in dossier form.
+
+2. What was learned
+The historical drafted-player cohort is large enough to support realistic comp neighborhoods without relying on HOF players for the main comparison task. HOF comps work better as ceiling analogs than as everyday nearest neighbors.
+
+3. What assumptions still matter
+Realistic comps use macro-role match indicators, PCA distance when available, prototype-fit distance, shot-style embedding distance, and drift similarity without relying on arbitrary cluster-ID ordering. HOF ceiling comps receive inferred macro-role assignments from the drafted-player macro reference space rather than a hardcoded placeholder label.
+
+4. What files were read
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_identity_drift_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/hof_shot_embedding_player.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/data/career_totals_targets.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/data/HOF_career_total_targets.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/data/cohort_HOF.csv
+
+5. What files were written
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/realistic_comps.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/ceiling_comps_hof.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_comp_dossier_table.csv
+
+
+================================================================================
+PHASE 8 — ASSEMBLE FINAL DELIVERABLE 2 TABLES
+================================================================================
+1. What was completed
+Assembled the final player-archetype profile table by combining macro role, shot-style subtype, hybrid label, ambiguity metrics, drift summaries, realistic comps, optional ceiling comps, comp-group outcomes, and a plain-language shot-style explanation.
+
+2. What was learned
+The deliverable becomes much more interpretable when the three layers are presented together rather than as separate technical artifacts.
+
+3. What assumptions still matter
+Case-study rows are selected as a compact stakeholder-ready subset rather than an exhaustive manual curation.
+
+4. What files were read
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_identity_drift_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_comp_dossier_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_style_cluster_summary.csv
+
+5. What files were written
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/final_player_archetype_profile_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/final_player_archetype_case_study_table.csv
+
+
+================================================================================
+PHASE 11 — BUILD PRACTICAL PLAYER DOSSIER DEMO PACKAGE
+================================================================================
+1. What was completed
+Selected one dossier-ready player per shot-style subtype from the finalized Deliverable 2 table, exported a report-ready dossier summary table, wrote plain-language markdown cards, and created player-specific three-panel shot-chart figures for practical front-office demonstration use.
+
+2. What was learned
+Deliverable 2 becomes more report-ready when the hybrid archetype outputs are translated into a small number of explicit player cards instead of leaving the final profile table as the only stakeholder-facing artifact.
+
+3. What assumptions still matter
+Selection prioritizes subtype confidence, realistic comp support, prototype clarity, and shot-volume coverage. These dossiers are meant to complement, not replace, the separate forecast and salary decision deliverables.
+
+4. What files were read
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/final_player_archetype_profile_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_style_player_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/data/Shot Chart Details Raw/raw_shotchart_S1_to_S4_main.csv
+
+5. What files were written
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_dossier_demo/report_ready_player_dossier_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_dossier_demo/report_ready_player_dossier_selection.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_dossier_demo/report_ready_player_dossier_manifest.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_dossier_demo/report_ready_player_dossiers.md
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/visual/Player Archetype/player_dossier_demo
+
+
+================================================================================
+PHASE 2 — LOCK THE MACRO ARCHETYPE BACKBONE
+================================================================================
+1. What was completed
+Reused the saved PCA + K-means artifacts instead of refitting them. Built a finalized macro-archetype player table with cluster IDs, interpretable cluster names, one-hot and distance features, and prototype-fit measures.
+
+2. What was learned
+The existing five-cluster system already provides role-family information plus useful ambiguity signals via own-cluster distance and distance margins. That makes it a reasonable macro-role backbone for the hybrid archetype system.
+
+3. What assumptions still matter
+The saved cluster names remain authoritative because no material feature-schema inconsistency was detected. Prototype fit is summarized through centroid-distance features rather than any fresh clustering pass.
+
+4. What files were read
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/kmeans_k5_outputs_split/player_feature_table_1999_2019_clustered_k5.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/kmeans_k5_outputs_split/cluster_modeling_predictors_k5.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/kmeans_k5_outputs_split/cluster_summary_k5.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/kmeans_k5_outputs_split/cluster_summary_zscores_k5.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/kmeans_k5_outputs_split/cluster_representative_players_k5.csv
+
+5. What files were written
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/archetype_macro_player_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/archetype_macro_summary_table.csv
+
+
+================================================================================
+PHASE 5 — CREATE SHOT-STYLE SUBTYPES
+================================================================================
+1. What was completed
+Clustered player-level shot embeddings with a Gaussian mixture model, exported both player-level and season-level subtype assignments and soft probabilities, summarized subtype sizes and style notes, and merged the subtype layer into the hybrid archetype table.
+
+2. What was learned
+A soft-clustering view is useful because some player shot maps sit between neighboring styles rather than mapping cleanly to one rigid subtype. The subtype probability and entropy columns will help express ambiguity in the final deliverable.
+
+3. What assumptions still matter
+Five shot-style subtypes are used to keep the second layer interpretable and comparable in complexity to the five macro-role clusters. Subtype labels are descriptive post-hoc names rather than externally validated taxonomy labels.
+
+4. What files were read
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_embedding_player.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_embedding_player_season.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/archetype_macro_player_table.csv
+
+5. What files were written
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_style_cluster_summary.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_style_representative_players.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_style_player_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_style_player_season_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_hybrid_archetype_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/visual/Player Archetype/shot_style_embedding_scatter.png
+
+
+================================================================================
+PHASE 6 — ENGINEER DRIFT / ROLE EVOLUTION
+================================================================================
+1. What was completed
+Computed early-career movement in both boxscore role space and shot-style embedding space, plus total path length and subtype-change counts, then assembled a player-level identity drift table with stability classifications.
+
+2. What was learned
+Year-1 to Year-4 displacement alone is not enough because some players follow long, nonlinear developmental paths. Combining endpoint displacement, path length, and subtype changes gives a better early-career drift summary.
+
+3. What assumptions still matter
+Boxscore role space is approximated with standardized season-level features rather than the original PCA season scores, which were not available as a saved season-level artifact. Subtype changes are counted only where the player has usable season-level shot embeddings.
+
+4. What files were read
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/data/player_season_feature_table_1999_2019.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_embedding_player_season.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_style_player_season_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_hybrid_archetype_table.csv
+
+5. What files were written
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_role_drift_summary.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_shotstyle_drift_summary.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_identity_drift_table.csv
+
+
+================================================================================
+PHASE 7 — BUILD COMPARABLE-PLAYER INFRASTRUCTURE
+================================================================================
+1. What was completed
+Built realistic drafted-cohort comps using a weighted hybrid similarity score across macro-role compatibility, shot-style embedding distance, prototype fit, and drift similarity. Also created optional HOF ceiling comps from the auxiliary HOF pool and summarized comp-group later-career outcomes in dossier form.
+
+2. What was learned
+The historical drafted-player cohort is large enough to support realistic comp neighborhoods without relying on HOF players for the main comparison task. HOF comps work better as ceiling analogs than as everyday nearest neighbors.
+
+3. What assumptions still matter
+Realistic comps use macro-role match indicators, PCA distance when available, prototype-fit distance, shot-style embedding distance, and drift similarity without relying on arbitrary cluster-ID ordering. HOF ceiling comps receive inferred macro-role assignments from the drafted-player macro reference space rather than a hardcoded placeholder label.
+
+4. What files were read
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_identity_drift_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/hof_shot_embedding_player.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/data/career_totals_targets.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/data/HOF_career_total_targets.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/data/cohort_HOF.csv
+
+5. What files were written
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/realistic_comps.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/ceiling_comps_hof.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_comp_dossier_table.csv
+
+
+================================================================================
+PHASE 8 — ASSEMBLE FINAL DELIVERABLE 2 TABLES
+================================================================================
+1. What was completed
+Assembled the final player-archetype profile table by combining macro role, shot-style subtype, hybrid label, ambiguity metrics, drift summaries, realistic comps, optional ceiling comps, comp-group outcomes, and a plain-language shot-style explanation.
+
+2. What was learned
+The deliverable becomes much more interpretable when the three layers are presented together rather than as separate technical artifacts.
+
+3. What assumptions still matter
+Case-study rows are selected as a compact stakeholder-ready subset rather than an exhaustive manual curation.
+
+4. What files were read
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_identity_drift_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_comp_dossier_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_style_cluster_summary.csv
+
+5. What files were written
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/final_player_archetype_profile_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/final_player_archetype_case_study_table.csv
+
+
+================================================================================
+PHASE 11 — BUILD PRACTICAL PLAYER DOSSIER DEMO PACKAGE
+================================================================================
+1. What was completed
+Selected one dossier-ready player per shot-style subtype from the finalized Deliverable 2 table, exported a report-ready dossier summary table, wrote plain-language markdown cards, and created player-specific three-panel shot-chart figures for practical front-office demonstration use.
+
+2. What was learned
+Deliverable 2 becomes more report-ready when the hybrid archetype outputs are translated into a small number of explicit player cards instead of leaving the final profile table as the only stakeholder-facing artifact.
+
+3. What assumptions still matter
+Selection prioritizes subtype confidence, realistic comp support, prototype clarity, and shot-volume coverage. These dossiers are meant to complement, not replace, the separate forecast and salary decision deliverables.
+
+4. What files were read
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/final_player_archetype_profile_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/shot_style_player_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/data/Shot Chart Details Raw/raw_shotchart_S1_to_S4_main.csv
+
+5. What files were written
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_dossier_demo/report_ready_player_dossier_table.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_dossier_demo/report_ready_player_dossier_selection.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_dossier_demo/report_ready_player_dossier_manifest.csv
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_dossier_demo/report_ready_player_dossiers.md
+- /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/visual/Player Archetype/player_dossier_demo
+

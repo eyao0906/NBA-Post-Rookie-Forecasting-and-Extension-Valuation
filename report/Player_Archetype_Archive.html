@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Player Archetype &amp; Comparable Profile Archive</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="Player_Archetype_Archive_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Player_Archetype_Archive_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="Player_Archetype_Archive_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="Player_Archetype_Archive_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="Player_Archetype_Archive_files/libs/quarto-html/popper.min.js"></script>
+<script src="Player_Archetype_Archive_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Player_Archetype_Archive_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Player_Archetype_Archive_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Player_Archetype_Archive_files/libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Player_Archetype_Archive_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Player_Archetype_Archive_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Player_Archetype_Archive_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Player Archetype &amp; Comparable Profile Archive</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'readr' was built under R version 4.3.3</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'dplyr' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>output_dir <span class="ot">&lt;-</span> <span class="fu">normalizePath</span>(<span class="st">"../Output/Player Archetype Analysis"</span>, <span class="at">winslash =</span> <span class="st">"/"</span>, <span class="at">mustWork =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>output_salary_dir <span class="ot">&lt;-</span> <span class="fu">normalizePath</span>(<span class="st">"../Output/Salary Decision Support"</span>, <span class="at">winslash =</span> <span class="st">"/"</span>, <span class="at">mustWork =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>visual_dir <span class="ot">&lt;-</span> <span class="fu">normalizePath</span>(<span class="st">"../visual/Player Archetype"</span>, <span class="at">winslash =</span> <span class="st">"/"</span>, <span class="at">mustWork =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>dossier_output_dir <span class="ot">&lt;-</span> <span class="fu">normalizePath</span>(<span class="fu">file.path</span>(output_dir, <span class="st">"player_dossier_demo"</span>), <span class="at">winslash =</span> <span class="st">"/"</span>, <span class="at">mustWork =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>dossier_visual_dir <span class="ot">&lt;-</span> <span class="fu">normalizePath</span>(<span class="fu">file.path</span>(visual_dir, <span class="st">"player_dossier_demo"</span>), <span class="at">winslash =</span> <span class="st">"/"</span>, <span class="at">mustWork =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>macro_summary <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">file.path</span>(output_dir, <span class="st">"archetype_macro_summary_table.csv"</span>), <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>shot_summary <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">file.path</span>(output_dir, <span class="st">"shot_style_cluster_summary.csv"</span>), <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>drift_table <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">file.path</span>(output_dir, <span class="st">"player_identity_drift_table.csv"</span>), <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>comp_dossier <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">file.path</span>(output_dir, <span class="st">"player_comp_dossier_table.csv"</span>), <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>final_profiles <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">file.path</span>(output_dir, <span class="st">"final_player_archetype_profile_table.csv"</span>), <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>cohort_audit <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">file.path</span>(output_dir, <span class="st">"cohort_join_audit.csv"</span>), <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>dossier_selection <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">file.path</span>(dossier_output_dir, <span class="st">"report_ready_player_dossier_selection.csv"</span>), <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>n_candidates <span class="ot">&lt;-</span> <span class="fu">nrow</span>(cohort_audit)</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>n_fully_covered <span class="ot">&lt;-</span> <span class="fu">sum</span>(cohort_audit<span class="sc">$</span>fully_covered_for_hybrid_pipeline, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>coverage_pct <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> n_fully_covered <span class="sc">/</span> n_candidates, <span class="dv">1</span>)</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>drift_counts <span class="ot">&lt;-</span> drift_table <span class="sc">%&gt;%</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(identity_drift_class, <span class="at">name =</span> <span class="st">"players"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">share =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> players <span class="sc">/</span> <span class="fu">sum</span>(players), <span class="dv">1</span>))</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>macro_table_exec <span class="ot">&lt;-</span> macro_summary <span class="sc">%&gt;%</span></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">transmute</span>(</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Macro role family</span><span class="st">`</span> <span class="ot">=</span> macro_archetype,</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Representative players</span><span class="st">`</span> <span class="ot">=</span> representative_players,</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Minutes</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">round</span>(mean_min_mean, <span class="dv">1</span>),</span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">PTS/36</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">round</span>(pts_per36_4yr_mean, <span class="dv">1</span>),</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">REB/36</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">round</span>(reb_per36_4yr_mean, <span class="dv">1</span>),</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">AST/36</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">round</span>(ast_per36_4yr_mean, <span class="dv">1</span>)</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>shot_table_exec <span class="ot">&lt;-</span> shot_summary <span class="sc">%&gt;%</span></span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">transmute</span>(</span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Shot-style subtype</span><span class="st">`</span> <span class="ot">=</span> shot_style_subtype,</span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Players</span><span class="st">`</span> <span class="ot">=</span> subtype_size,</span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Avg. membership prob.</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">round</span>(avg_membership_probability, <span class="dv">3</span>),</span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Avg. entropy</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">round</span>(avg_entropy, <span class="dv">3</span>),</span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Style note</span><span class="st">`</span> <span class="ot">=</span> descriptive_style_notes</span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a>drift_table_exec <span class="ot">&lt;-</span> drift_counts <span class="sc">%&gt;%</span></span>
+<span id="cb8-47"><a href="#cb8-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">transmute</span>(</span>
+<span id="cb8-48"><a href="#cb8-48" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Drift class</span><span class="st">`</span> <span class="ot">=</span> identity_drift_class,</span>
+<span id="cb8-49"><a href="#cb8-49" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Players</span><span class="st">`</span> <span class="ot">=</span> players,</span>
+<span id="cb8-50"><a href="#cb8-50" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Share (%)</span><span class="st">`</span> <span class="ot">=</span> share</span>
+<span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb8-52"><a href="#cb8-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-53"><a href="#cb8-53" aria-hidden="true" tabindex="-1"></a>case_table_exec <span class="ot">&lt;-</span> final_profiles <span class="sc">%&gt;%</span></span>
+<span id="cb8-54"><a href="#cb8-54" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PLAYER_NAME <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Trae Young"</span>, <span class="st">"Kemba Walker"</span>, <span class="st">"Roy Hibbert"</span>, <span class="st">"Nikola Vučević"</span>, <span class="st">"Kyle O'Quinn"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb8-55"><a href="#cb8-55" aria-hidden="true" tabindex="-1"></a>  <span class="fu">transmute</span>(</span>
+<span id="cb8-56"><a href="#cb8-56" aria-hidden="true" tabindex="-1"></a>    <span class="at">Player =</span> PLAYER_NAME,</span>
+<span id="cb8-57"><a href="#cb8-57" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Hybrid archetype</span><span class="st">`</span> <span class="ot">=</span> hybrid_archetype_label,</span>
+<span id="cb8-58"><a href="#cb8-58" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Drift class</span><span class="st">`</span> <span class="ot">=</span> identity_drift_class,</span>
+<span id="cb8-59"><a href="#cb8-59" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Realistic comps</span><span class="st">`</span> <span class="ot">=</span> realistic_comp_list,</span>
+<span id="cb8-60"><a href="#cb8-60" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Ceiling analog</span><span class="st">`</span> <span class="ot">=</span> ceiling_comp_PLAYER_NAME,</span>
+<span id="cb8-61"><a href="#cb8-61" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Comp group median points</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">round</span>(median_comp_group_points, <span class="dv">1</span>),</span>
+<span id="cb8-62"><a href="#cb8-62" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Comp group median minutes</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">round</span>(median_comp_group_minutes, <span class="dv">1</span>)</span>
+<span id="cb8-63"><a href="#cb8-63" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<section id="player-archetype-comparable-profile" class="level1">
+<h1>Player Archetype &amp; Comparable Profile</h1>
+<section id="decision-problem-and-design-choice" class="level2">
+<h2 class="anchored" data-anchor-id="decision-problem-and-design-choice">Decision problem and design choice</h2>
+<p>Performance forecast tells the front office which rookies have outperformed enough to merit serious extension consideration. Player archetype analysis begins where that screen ends. Once the candidate pool is narrowed, the key question is no longer simply who produced, but what type of player the team would actually be extending and whether that player fits the current roster construction. In other words, among the over-performing rookies identified by the forecast layer, which ones fit the team better, and what kind of player profile is the team actually trying to add or retain?</p>
+<p>This module is built to answer that next basketball decision directly: who is this player now, how stable is that identity, who has looked like this before, and what kind of upside is genuinely consistent with team fit? To do that, this module defines archetype as three things together:</p>
+<ol type="1">
+<li><p><strong>Macro role backbone</strong>: The player’s broad role family,</p></li>
+<li><p><strong>Shot-style subtype</strong>: The player’s learned spatial scoring identity,</p></li>
+<li><p><strong>Early-career drift</strong>: Whether that profile held, evolved gradually, or changed materially from Seasons 1–4.</p></li>
+</ol>
+<p>That composite identity is then connected to realistic comparables, optional Hall-of-Fame ceiling analogs, and a stakeholder-facing player dossier. Eventually, this module aims to produce a more faithful decision summary than a boxscore-only cluster system does.</p>
+</section>
+<section id="methodology-and-design-choices" class="level2">
+<h2 class="anchored" data-anchor-id="methodology-and-design-choices">Methodology and design choices</h2>
+<section id="macro-role-backbone---pca-k-means" class="level3">
+<h3 class="anchored" data-anchor-id="macro-role-backbone---pca-k-means">Macro role backbone - PCA + K-means</h3>
+<p>We begin with a PCA + K-means (K = 5) layer to define the player’s broad macro role. PCA reduces the many early-career boxscore dimensions into the main axes of variation, and K-means groups players who share similar overall role profiles in that lower-dimensional space. Setting K = 5 gives a role structure that is detailed enough to separate distinct basketball functions, but still compact enough to remain interpretable for decision-makers.</p>
+<p>This produces five broad archetypes:</p>
+<ul>
+<li><strong>High-usage primary creators</strong> who drive offense with volume scoring and creation.</li>
+<li><strong>Low-usage interior bigs</strong> who occupy more traditional low-touch frontcourt roles.</li>
+<li><strong>Perimeter wings and connectors</strong> who link possessions without dominating them.</li>
+<li><strong>Fringe or low-opportunity players</strong> whose profiles are shaped by limited minutes, usage, or role clarity.</li>
+<li><strong>Scoring bigs / two-way forwards</strong> who provide frontcourt scoring while also contributing across multiple dimensions.</li>
+</ul>
+<p>Table <span class="math inline">\(\ref{tab:macro-summary}\)</span> shows that high-usage creators lead in playmaking and offensive burden, interior bigs dominate the rebounding and rim profile, and perimeter connectors sit in the lower-usage spacing-and-linkage middle.</p>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="fu">file.path</span>(visual_dir, <span class="st">"macro_archetype_summary_chart.png"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-macro-chart" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-macro-chart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../visual/Player%20Archetype/macro_archetype_summary_chart.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="978">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-macro-chart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Distribution of the cohort across the five macro role families.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><a href="#fig-macro-chart" class="quarto-xref">Figure&nbsp;1</a> shows that the macro layer gives a workable first pass through the cohort. It is intelligible enough to be useful, and broad enough to be incomplete. That incompleteness is exactly why the shot-style layer is needed.</p>
+</section>
+<section id="shot-style-representation-learning---cnn-autoencoder-gaussian-mixture-model" class="level3">
+<h3 class="anchored" data-anchor-id="shot-style-representation-learning---cnn-autoencoder-gaussian-mixture-model">Shot-style representation learning - CNN autoencoder + Gaussian mixture model</h3>
+<p>The real upgrade comes from the shot-style layer. Raw <code>ShotChartDetail</code> events are first placed onto a fixed half-court grid so that player-season shot maps can be compared on common terrain.</p>
+<p>Those court tensors are then compressed into a lower-dimensional embedding space with a convolutional autoencoder. Here the autoencoder is not the endpoint model but a representation-learning device. Its job is to preserve the meaningful spatial structure of shot behavior while filtering noise and reducing dimensionality to something reusable.</p>
+<p>The embedding space is then clustered with a Gaussian mixture model. That introduces an important practical feature: probabilistic subtype membership. Players can fit a subtype strongly, weakly, or ambiguously. In this setting, that is an advantage rather than a flaw. The boundaries between basketball styles are not perfectly crisp, and the model should not pretend otherwise.</p>
+<p><a href="#tbl-shot-summary" class="quarto-xref">Table&nbsp;1</a> and <a href="#fig-shot-summary" class="quarto-xref">Figure&nbsp;2</a> show five learned shot-style subtypes with distinct spatial identities:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(shot_table_exec, <span class="at">booktabs =</span> <span class="cn">TRUE</span>, <span class="at">longtable =</span> <span class="cn">FALSE</span>, <span class="at">align =</span> <span class="fu">c</span>(<span class="st">"l"</span>, <span class="st">"r"</span>, <span class="st">"r"</span>, <span class="st">"r"</span>, <span class="st">"l"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="tbl-shot-summary" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-shot-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Learned shot-style subtype summary. Membership is probabilistic because the subtype model allows overlapping spatial identities; ambiguity is therefore treated as information rather than failure.
+</figcaption>
+<div aria-describedby="tbl-shot-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 5%">
+<col style="width: 14%">
+<col style="width: 8%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Shot-style subtype</th>
+<th style="text-align: right;">Players</th>
+<th style="text-align: right;">Avg. membership prob.</th>
+<th style="text-align: right;">Avg. entropy</th>
+<th style="text-align: left;">Style note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Rim Pressure Drivers</td>
+<td style="text-align: right;">495</td>
+<td style="text-align: right;">0.986</td>
+<td style="text-align: right;">0.039</td>
+<td style="text-align: left;">Paint-oriented creators with heavy rim pressure and lower perimeter dependence.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Balanced Three-Level Scorers</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: right;">0.968</td>
+<td style="text-align: right;">0.092</td>
+<td style="text-align: left;">Profiles with meaningful rim, midrange, and three-point balance.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arc-Heavy Spacers</td>
+<td style="text-align: right;">161</td>
+<td style="text-align: right;">0.985</td>
+<td style="text-align: right;">0.044</td>
+<td style="text-align: left;">High-frequency perimeter shot makers and floor-spacing profiles.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Interior Finishers</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">0.988</td>
+<td style="text-align: right;">0.042</td>
+<td style="text-align: left;">Big-oriented finishing maps concentrated near the basket and paint.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Midrange Shot Creators</td>
+<td style="text-align: right;">168</td>
+<td style="text-align: right;">0.981</td>
+<td style="text-align: right;">0.053</td>
+<td style="text-align: left;">Self-created midrange-heavy profiles with intermediate-area usage.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="fu">file.path</span>(visual_dir, <span class="st">"shot_style_subtype_summary_chart.png"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-shot-summary" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-shot-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../visual/Player%20Archetype/shot_style_subtype_summary_chart.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-shot-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Distribution of learned shot-style subtypes. The subtype layer adds a distinct spatial taxonomy rather than simply renaming the macro boxscore clusters.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="fu">file.path</span>(visual_dir, <span class="st">"subtype_shot_charts_on_court.png"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-subtype-dictionary" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-subtype-dictionary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../visual/Player%20Archetype/subtype_shot_charts_on_court.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-subtype-dictionary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Subtype shot-chart dictionary shown on the court. These subtype-level maps illustrate how players sharing a broad macro role can still differ materially in spatial shot identity.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><a href="#fig-subtype-dictionary" class="quarto-xref">Figure&nbsp;3</a> demonstrates why a broad macro label is not enough. Two players can both register as scoring-oriented wings or creators while deriving offense from materially different spatial patterns. One attacks downhill. Another lives around the arc. A third works through intermediate creation. Those are not cosmetic differences. They affect fit, development bets, and the credibility of historical comparisons.</p>
+<p>The subtype labels are descriptive post-hoc names, not externally validated ontology classes. That limitation is acceptable so long as the labels are treated as disciplined summaries of learned structure rather than as revealed basketball truth.</p>
+</section>
+<section id="identity-drift" class="level3">
+<h3 class="anchored" data-anchor-id="identity-drift">Identity drift</h3>
+<p>Static labels miss a basic fact of player development: the route matters. A Year-4 endpoint can conceal whether a player reinforced an early identity, evolved in a steady direction, or shifted materially enough to change how the front office should think about role and projection.</p>
+<p>The identity-drift layer tracks movement from Season 1 to Season 4 in both standardized season-level boxscore feature space and shot-style embedding space. The purpose is to answer a practical question: is the player becoming more clearly himself, or is the identity still moving underneath the numbers?</p>
+<p>The resulting drift classes are intentionally plain:</p>
+<ul>
+<li><strong>stable</strong>,</li>
+<li><strong>evolving_gradually</strong>,</li>
+<li><strong>role_shifting_materially</strong>,</li>
+</ul>
+<p><a href="#fig-drift-cases" class="quarto-xref">Figure&nbsp;4</a> make the point that Year-4 identity is better understood as a path than as a still photograph.</p>
+<div id="fig-drift-cases" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-drift-cases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../visual/Player%20Archetype/shot_style_drift_case_studies.png" class="img-fluid figure-img" style="width:85.0%" data-fig-pos="H">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-drift-cases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Shot-style drift case studies
+</figcaption>
+</figure>
+</div>
+<p>In decision terms, the difference among <strong>stable</strong>, <strong>evolving_gradually</strong>, and <strong>role_shifting_materially</strong> is a difference in interpretive risk. A stable player reinforces the current reading. A gradually evolving player may still support a coherent developmental projection. A materially shifting player requires more caution because the apparent identity may still be under construction.</p>
+</section>
+<section id="comparable-player-infrastructure" class="level3">
+<h3 class="anchored" data-anchor-id="comparable-player-infrastructure">Comparable-player infrastructure</h3>
+<p>A realistic comp set shouldanswer the question, “who has actually looked like this before in a way that is relevant to decision-making?” The realistic comparable engine therefore blends macro-role compatibility, shot-style information, prototype fit, and drift-relevant structure so that the resulting comp list is not just “same cluster, nearest distance.”</p>
+<p>The workflow also includes Hall-of-Fame ceiling analogs. They are optional upside markers that help separate aspirational ceiling from realistic expectation.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'kableExtra' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'kableExtra'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:dplyr':
+
+    group_rows</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(case_table_exec, <span class="at">booktabs =</span> <span class="cn">TRUE</span>, <span class="at">longtable =</span> <span class="cn">FALSE</span>, <span class="at">align =</span> <span class="fu">c</span>(<span class="st">"l"</span>, <span class="st">"l"</span>, <span class="st">"l"</span>, <span class="st">"l"</span>, <span class="st">"l"</span>, <span class="st">"r"</span>, <span class="st">"r"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="tbl-case-profiles" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-case-profiles-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Compact case-study extraction from the integrated profile output. The table illustrates how current hybrid archetype, drift, realistic comparables, and optional ceiling analogs are returned together at the player level.
+</figcaption>
+<div aria-describedby="tbl-case-profiles-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 25%">
+<col style="width: 9%">
+<col style="width: 33%">
+<col style="width: 5%">
+<col style="width: 9%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Player</th>
+<th style="text-align: left;">Hybrid archetype</th>
+<th style="text-align: left;">Drift class</th>
+<th style="text-align: left;">Realistic comps</th>
+<th style="text-align: left;">Ceiling analog</th>
+<th style="text-align: right;">Comp group median points</th>
+<th style="text-align: right;">Comp group median minutes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Roy Hibbert</td>
+<td style="text-align: left;">Scoring Bigs / Two-Way Forwards | Arc-Heavy Spacers</td>
+<td style="text-align: left;">role_shifting_materially</td>
+<td style="text-align: left;">Aaron Gordon, Will Barton, Joffrey Lauvergne, Skal Labissiere, Darnell Jackson</td>
+<td style="text-align: left;">Manu Ginobili</td>
+<td style="text-align: right;">256</td>
+<td style="text-align: right;">636.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Kemba Walker</td>
+<td style="text-align: left;">High-Usage Primary Creators | Rim Pressure Drivers</td>
+<td style="text-align: left;">role_shifting_materially</td>
+<td style="text-align: left;">Isaiah Thomas, D’Angelo Russell, Marcus Smart, Paul George, Nickeil Alexander-Walker</td>
+<td style="text-align: left;">Paul Pierce</td>
+<td style="text-align: right;">554</td>
+<td style="text-align: right;">1452.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Nikola Vučević</td>
+<td style="text-align: left;">Scoring Bigs / Two-Way Forwards | Midrange Shot Creators</td>
+<td style="text-align: left;">role_shifting_materially</td>
+<td style="text-align: left;">Bobby Portis, Tobias Harris, T.J. Warren, Jaylen Brown, Jimmy Butler III</td>
+<td style="text-align: left;">Paul Pierce</td>
+<td style="text-align: right;">1002</td>
+<td style="text-align: right;">1904.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Kyle O’Quinn</td>
+<td style="text-align: left;">Low-Usage Interior Bigs | Interior Finishers</td>
+<td style="text-align: left;">role_shifting_materially</td>
+<td style="text-align: left;">Lavoy Allen, James Anderson, Stanley Johnson, Xavier Henry, Cory Joseph</td>
+<td style="text-align: left;">Paul Pierce</td>
+<td style="text-align: right;">283</td>
+<td style="text-align: right;">1015.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Trae Young</td>
+<td style="text-align: left;">High-Usage Primary Creators | Balanced Three-Level Scorers</td>
+<td style="text-align: left;">role_shifting_materially</td>
+<td style="text-align: left;">Luka Dončić, Donovan Mitchell, Shai Gilgeous-Alexander, Jamal Murray, Jordan Poole</td>
+<td style="text-align: left;">Paul Pierce</td>
+<td style="text-align: right;">1589</td>
+<td style="text-align: right;">2154.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>The realistic comps are the main evidence. That is the historical anchor a front office should trust first. The real question is not whether the list contains a famous name, but whether the group makes sense when role, style, and developmental shape are considered together. When it does, the comp-group median later-career statistics become useful contextual anchors rather than pseudo-forecasts.</p>
+<p>Ceiling analogs belong in a different bucket. Their job is to describe plausible upside families, not expected outcomes. A Hall-of-Fame comparison may be informative as aspiration, but it becomes misleading the moment it is allowed to masquerade as a realistic nearest-neighbor forecast.</p>
+</section>
+<section id="stakeholder-facing-dossier-output" class="level3">
+<h3 class="anchored" data-anchor-id="stakeholder-facing-dossier-output">Stakeholder-facing dossier output</h3>
+<p>The final output assembles the results into a stakeholder-facing player dossier: current hybrid archetype, fit ambiguity, subtype confidence, drift status, realistic comps, optional ceiling analog, and comp-group later-career context.</p>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="fu">file.path</span>(visual_dir, <span class="st">"sample_player_dossier_visual.png"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-sample-dossier" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sample-dossier-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../visual/Player%20Archetype/sample_player_dossier_visual.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sample-dossier-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Sample integrated player dossier visual. This panel shows how the hybrid archetype output becomes a front-office-facing summary card rather than a collection of disconnected analytical artifacts.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>We use historical Year-4 players Trae Young and Nikola Vučević as retrospective case studies. Their dossier cards are meant to be read from the standpoint of a front office making the extension decision immediately after the rookie contract, using only the first four seasons to define the player’s profile. Everything that happens afterward is used only to check whether that reading was directionally right.</p>
+<div id="fig-trae-dossier" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-trae-dossier-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../visual/Player%20Archetype/player_dossier_demo/trae_young_dossier_demo.png" class="img-fluid figure-img" data-fig-pos="H">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-trae-dossier-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Player-specific dossier demonstration for Trae Young. This example shows how the system moves from cohort taxonomy to a concrete player-facing decision summary with current archetype, drift, realistic peers, and ceiling framing.
+</figcaption>
+</figure>
+</div>
+<div id="fig-vucevic-dossier" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-vucevic-dossier-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../visual/Player%20Archetype/player_dossier_demo/nikola_vu_evi_dossier_demo.png" class="img-fluid figure-img" data-fig-pos="H">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-vucevic-dossier-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: Player-specific dossier demonstration for Nikola Vučević. This example highlights how macro role, learned shot-style subtype, and comp context combine into a more nuanced profile than a broad big-man cluster alone would provide.
+</figcaption>
+</figure>
+</div>
+<p>Read this contrast clearly. <strong>Trae Young’s</strong> dossier points to an offensive engine: a lead creator carrying expanding initiation and scoring responsibility, belonging to a scarce, high-value role family. <strong>Vučević’s</strong> dossier points to a very different kind of asset: a skilled scoring big whose offensive game developed meaningfully, but whose archetype is more replaceable than that of a primary creator. Both players can look strong by the end of Year 4, but they do not represent the same contract bet. One profiles like a franchise-driving offensive hub; the other profiles like a valuable frontcourt scorer whose market should be judged more carefully against role scarcity and replaceability.</p>
+<p>That is exactly why the archetype dossier matters. Raw forecast numbers can suggest that two players project well, but they cannot by themselves explain what kind of value is being bought, how rare that role is, how the player got there, or which historical paths are truly comparable. Player archetype analysis exists to supply that missing decision context through role identity, developmental drift, realistic comparables, and the later-career outcomes of the comp group, rather than reducing the player to a single cluster label.</p>
+<p>That matters because extension decisions are comparative judgments under uncertainty. This module does not remove uncertainty, but it organizes it better.</p>
+</section>
+</section>
+<section id="limitations-and-credibility" class="level2">
+<h2 class="anchored" data-anchor-id="limitations-and-credibility">Limitations and credibility</h2>
+<p>First, the <strong>shot-style subtype labels are descriptive post-hoc names</strong>, not externally validated basketball ontology classes. They are useful summaries, not natural laws.</p>
+<p>Second, <strong>Hall-of-Fame ceiling analogs are auxiliary and aspirational</strong>, not realistic comps. They should be handled as upside framing only.</p>
+<p>Third, <strong>identity drift in boxscore role space is approximated in standardized season-feature space</strong>. That preserves useful structure, but it is still an approximation.</p>
+<p>And most importantly, this is an analytic module designed to improve decision support, not to replace judgment. The conclusion is to impose better discipline on the questions a front office was already going to ask.</p>
+</section>
+<section id="appendix" class="level2">
+<h2 class="anchored" data-anchor-id="appendix">Appendix</h2>
+<section id="a2.6-mathematical-note-on-cnn-autoencoder-training-for-shot-style-embeddings" class="level3">
+<h3 class="anchored" data-anchor-id="a2.6-mathematical-note-on-cnn-autoencoder-training-for-shot-style-embeddings">A2.6 Mathematical note on CNN autoencoder training for shot-style embeddings</h3>
+<p>The shot-style layer is the main computational upgrade beyond the boxscore backbone. The project design treats ShotChartDetail as a core feature family rather than a decorative add-on, but raw shot rows are not used directly. Instead, they are first aggregated into stable player-season spatial tensors, then compressed into a learned embedding with a CNN autoencoder. This section explains what that means mathematically and how the model was trained in the implemented workflow.</p>
+<p>Each player-season shot map is converted into a three-channel half-court tensor. Conceptually, the tensor contains shot frequency, make frequency, and a smoothed make-rate layer defined on a fixed spatial grid. Let <span class="math inline">\(T_i \in \mathbb{R}^{3 \times H \times W}\)</span> denote the tensor for player-season i. The encoder <span class="math inline">\(f_\theta(\cdot)\)</span> maps <span class="math inline">\(T_i\)</span> to a latent vector <span class="math inline">\(z_i \in \mathbb{R}^{d}\)</span>, and the decoder <span class="math inline">\(g_\phi(\cdot)\)</span> reconstructs the original tensor: <span class="math display">\[
+z_i = f_\theta(T_i), \qquad \hat{T}_i = g_\phi(z_i).
+\]</span></p>
+<p>The model is trained to minimize reconstruction error, <span class="math display">\[
+\min_{\theta,\phi} \sum_{i=1}^{N} \|T_i - \hat{T}_i\|_F^2,
+\]</span></p>
+<p>so the latent vector keeps the spatial information needed to recreate the shot map without forcing the downstream workflow to operate on the full high-dimensional tensor directly. This is why the main narrative describes the autoencoder as a representation-learning device rather than as the endpoint model.</p>
+<p>The implemented network uses three convolutional encoder blocks and a latent dimension of 24. The training configuration uses batch size 128, a maximum of 18 epochs, learning rate <span class="math inline">\(10^{-3}\)</span>, and patience 5 for validation-based early stopping. Normalization is performed channel-wise using training-sample means and standard deviations, and the validation split is player-aware rather than random at the season level: the code uses a deterministic PLAYER_ID-based rule so that a player’s seasons are not split across training and validation in a way that would leak structure. The decoder output is linear because the reconstruction targets are z-scored rather than bounded in <span class="math inline">\([0,1]\)</span>.</p>
+<p>After the season-level embeddings are learned, the workflow aggregates them to the player level using shot-volume weights with mild recency emphasis toward later rookie-contract seasons. That design choice matters because the system is trying to describe the player the front office sees by the end of Year 4, not a purely equal-weighted average of all earlier years. The implementation also exports training history, nearest-neighbor diagnostics, reconstruction visuals, model weights, and embedding artifacts, which makes the layer much easier to defend in the appendix than if it were presented only as a black-box latent representation.</p>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="fu">file.path</span>(visual_dir, <span class="st">"shot_autoencoder_training_curve.png"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-ae-training-curve-app" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ae-training-curve-app-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../visual/Player%20Archetype/shot_autoencoder_training_curve.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:72.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ae-training-curve-app-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: CNN autoencoder training history. The curve is useful for checking whether the shot-style embedding model converged stably rather than fitting noise.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="fu">file.path</span>(visual_dir, <span class="st">"shot_embedding_reconstruction_examples.png"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-ae-reconstruction-app" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ae-reconstruction-app-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../visual/Player%20Archetype/shot_embedding_reconstruction_examples.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ae-reconstruction-app-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9: Reconstruction examples from the CNN autoencoder. These panels show whether the learned embedding preserves the broad spatial structure of player-season shot maps.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Figures <a href="#fig-ae-training-curve-app" class="quarto-xref">Figure&nbsp;8</a> and <a href="#fig-ae-reconstruction-app" class="quarto-xref">Figure&nbsp;9</a> are useful because they answer two different credibility questions. The training curve checks whether optimization is stable and whether validation error behaves sensibly. The reconstruction examples check whether the latent space still preserves the main shape of the original shot maps. Together with the nearest-neighbor diagnostics exported by the workflow, these plots support the claim that the autoencoder is learning a reusable shot-style representation rather than merely compressing noise.</p>
+</section>
+<section id="a2.7-mathematical-note-on-gaussian-mixture-shot-style-subtypes" class="level3">
+<h3 class="anchored" data-anchor-id="a2.7-mathematical-note-on-gaussian-mixture-shot-style-subtypes">A2.7 Mathematical note on Gaussian mixture shot-style subtypes</h3>
+<p>Once player-level shot embeddings are available, the project does not cluster raw shot maps again. Instead, it applies a Gaussian mixture model in the embedding space. This is an important design choice because shot styles overlap. Unlike the macro-role backbone, which is intended to impose a broad hard partition for readability, the shot-style layer benefits from soft assignment: players can fit one subtype strongly, another weakly, or sit between neighboring styles. The main narrative already states this idea in basketball language; this appendix states it more explicitly in probabilistic terms.</p>
+<p>Let <span class="math inline">\(z_i \in \mathbb{R}^{d}\)</span> denote the player-level shot embedding from the autoencoder. A Gaussian mixture model with (K=5) components assumes <span class="math display">\[
+p(z_i) = \sum_{k=1}^{K} \pi_k , \mathcal{N}(z_i \mid \mu_k, \Sigma_k),
+\]</span> where <span class="math inline">\(\pi_k\)</span> is the mixture weight of subtype k, <span class="math inline">\(\mu_k\)</span> is its mean embedding, and <span class="math inline">\(\Sigma_k\)</span> is its covariance matrix. The implemented workflow uses (K=5), full covariance, and a fixed random seed. For each player, the fitted model returns posterior membership probabilities <span class="math display">\[
+\gamma_{ik} = P(\text{subtype } k \mid z_i),
+\]</span> and the system retains both the dominant subtype and the full vector of soft probabilities. It also computes a simple entropy measure, <span class="math display">\[
+H_i = - \sum_{k=1}^{K} \gamma_{ik}\log(\gamma_{ik}),
+\]</span> so that subtype ambiguity is explicit rather than hidden. Low entropy means the player fits one subtype cleanly; higher entropy means the player sits between neighboring styles.</p>
+<p>That soft-membership logic is exactly why this layer is better suited to GMM than another K-means pass. A wing scorer can be mostly arc-heavy while still carrying some three-level balance. A creator can be primarily rim-pressure oriented without being purely downhill-only. The workflow formalizes that overlap rather than pretending subtype boundaries are perfectly crisp. In the implementation, the subtype labels are then mapped into a basketball-readable dictionary: Rim Pressure Drivers, Balanced Three-Level Scorers, Arc-Heavy Spacers, Interior Finishers, and Midrange Shot Creators. The report’s Table <a href="#tbl-shot-summary" class="quarto-xref">Table&nbsp;1</a> shows the resulting subtype sizes, average membership probabilities, entropy, and style notes, while Figures <a href="#fig-shot-summary" class="quarto-xref">Figure&nbsp;2</a> and <a href="#fig-subtype-dictionary" class="quarto-xref">Figure&nbsp;3</a> show how the subtype layer differs from the macro boxscore layer.</p>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="fu">file.path</span>(visual_dir, <span class="st">"embedding_neighborhood_plot.png"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-gmm-neighborhood-app" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gmm-neighborhood-app-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../visual/Player%20Archetype/embedding_neighborhood_plot.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:76.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gmm-neighborhood-app-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10: Embedding-neighborhood view of the learned shot-style space. This diagnostic is helpful for checking whether the Gaussian mixture subtypes form interpretable local neighborhoods rather than arbitrary labels.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Figure <a href="#fig-gmm-neighborhood-app" class="quarto-xref">Figure&nbsp;10</a> is useful because it gives a low-dimensional neighborhood view of the embedding space after subtype assignment. It is not a proof that the Gaussian components are perfectly separated. Instead, it shows whether the subtype layer produces locally coherent neighborhoods that are compatible with the subtype dictionary and the representative-player evidence. The workflow log also makes two important interpretive cautions explicit: first, the GMM labels are descriptive post-hoc names rather than externally validated ontology classes; second, they should be reviewed for basketball face validity and presentation language before final submission.</p>
+<p>The practical consequence is that the Gaussian mixture layer turns the autoencoder embedding into something the rest of Deliverable 2 can use. It feeds directly into hybrid archetype labels, drift classification, comparable-player search, and the dossier card. That is why the shot-style layer is not just an appendix curiosity. It is one of the central reasons Deliverable 2 improves on a boxscore-only cluster system.</p>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

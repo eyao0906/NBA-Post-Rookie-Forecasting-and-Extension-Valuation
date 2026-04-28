@@ -1,0 +1,29 @@
+Deliverable 3 Block 1 workflow log
+=================================
+
+project_root: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3
+data_dir: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/data
+output_dir: /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support
+
+Inputs used:
+- final_lstm_predictions_all_players.csv: finalized Sleeper/Neutral/Bust probabilities and confidence proxy. Resolved from /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/data/final_lstm_predictions_all_players.csv.
+- player_train_test_split_with_score.csv: earliest-window realized Years 5-7 component-score truth by player. Resolved from /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/data/player_train_test_split_with_score.csv.
+- player_performance_testset_forecast_result.csv: test-set performance component forecasts. Resolved from /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/data/player_performance_testset_forecast_result.csv.
+- all_player_stats_1999-2025.csv: actual Years 5-7 games / minutes / points / rebounds / assists averages and draft-year bridge. Resolved from /home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/data/all_player_stats_1999-2025.csv.
+
+Workflow choices:
+- One earliest INPUT_SEASON/FORECAST_SEASON window per PLAYER_ID is retained to match post-rookie extension framing.
+- player_name_key is an accent-insensitive normalized name key used to bridge Andrew Bynum type spelling differences.
+- confidence_score from the finalized LSTM probability table is treated as the current uncertainty proxy for Deliverable 3 Block 1.
+- predicted performance components are only available for the held-out test players in the current exported results.
+- non-test players still receive class probabilities and realized target-side component truth when present.
+
+Outputs written:
+- deliverable3_block1_forecast_handoff.csv
+- deliverable3_block1_join_audit.csv
+- deliverable3_block1_case_study_examples.csv
+
+Row count written: 1,121
+Rows with PLAYER_ID resolved: 509
+Rows with test performance predictions: 146
+Case-study rows: 3

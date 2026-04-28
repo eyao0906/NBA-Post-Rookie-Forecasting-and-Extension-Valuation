@@ -1,0 +1,1059 @@
+PLAYER_ID,PLAYER_NAME,draft_year,year5_season_start,year5_season_string,salary_player_name_example,year_salary_total,salary_cap,luxury_tax,year5_salary_cap_pct,raw_salary_rows,raw_team_count,any_team_option,any_player_option,any_qualifying_offer,any_two_way_contract,any_terminated,salary_name_match_flag,cap_match_flag,year5_salary_match_flag,salary_match_type,name_key_raw,name_key
+1882,Elton Brand,1999,2003,2003-04,Elton Brand,10960000.0,43840000.0,67907202.0,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,elton brand,elton brand
+1883,Steve Francis,1999,2003,2003-04,Steve Francis,10960000.0,43840000.0,67907202.0,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,steve francis,steve francis
+1884,Baron Davis,1999,2003,2003-04,Baron Davis,10960000.0,43840000.0,67907202.0,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,baron davis,baron davis
+1885,Lamar Odom,1999,2003,2003-04,Lamar Odom,9963596.0,43840000.0,67907202.0,0.22727180656934307,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,lamar odom,lamar odom
+1886,Jonathan Bender,1999,2003,2003-04,Jonathan Bender,5800000.0,43840000.0,67907202.0,0.1322992700729927,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jonathan bender,jonathan bender
+1887,Wally Szczerbiak,1999,2003,2003-04,Wally Szczerbiak,8000000.0,43840000.0,67907202.0,0.18248175182481752,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,wally szczerbiak,wally szczerbiak
+1888,Richard Hamilton,1999,2003,2003-04,Richard Hamilton,6500000.0,43840000.0,67907202.0,0.14826642335766424,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,richard hamilton,richard hamilton
+1889,Andre Miller,1999,2003,2003-04,Andre Miller,8000000.0,43840000.0,67907202.0,0.18248175182481752,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,andre miller,andre miller
+1890,Shawn Marion,1999,2003,2003-04,Shawn Marion,10960000.0,43840000.0,67907202.0,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,shawn marion,shawn marion
+1891,Jason Terry,1999,2003,2003-04,Jason Terry,8333333.0,43840000.0,67907202.0,0.19008515054744526,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jason terry,jason terry
+1892,Trajan Langdon,1999,2003,2003-04,,,43840000.0,67907202.0,,,,,,,,,0,1,0,unmatched,trajan langdon,trajan langdon
+1893,Aleksandar Radojevic,1999,2003,2003-04,,,43840000.0,67907202.0,,,,,,,,,0,1,0,unmatched,aleksandar radojevic,aleksandar radojevic
+1894,Corey Maggette,1999,2003,2003-04,Corey Maggette,7000000.0,43840000.0,67907202.0,0.15967153284671534,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,corey maggette,corey maggette
+1895,William Avery,1999,2003,2003-04,,,43840000.0,67907202.0,,,,,,,,,0,1,0,unmatched,william avery,william avery
+1897,Metta World Peace,1999,2003,2003-04,Metta World Peace,5473684.0,43840000.0,67907202.0,0.1248559306569343,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,metta world peace,metta world peace
+1898,Cal Bowdler,1999,2003,2003-04,,,43840000.0,67907202.0,,,,,,,,,0,1,0,unmatched,cal bowdler,cal bowdler
+1899,James Posey,1999,2003,2003-04,James Posey,4917000.0,43840000.0,67907202.0,0.11215784671532847,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,james posey,james posey
+1900,Quincy Lewis,1999,2003,2003-04,Quincy Lewis,202341.0,43840000.0,67907202.0,0.004615442518248175,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,quincy lewis,quincy lewis
+1901,Dion Glover,1999,2003,2003-04,Dion Glover,1000000.0,43840000.0,67907202.0,0.02281021897810219,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dion glover,dion glover
+1902,Jeff Foster,1999,2003,2003-04,Jeff Foster,4000000.0,43840000.0,67907202.0,0.09124087591240876,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jeff foster,jeff foster
+1903,Kenny Thomas,1999,2003,2003-04,Kenny Thomas,5500000.0,43840000.0,67907202.0,0.12545620437956204,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kenny thomas,kenny thomas
+1904,Devean George,1999,2003,2003-04,Devean George,4546000.0,43840000.0,67907202.0,0.10369525547445256,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,devean george,devean george
+1905,Andrei Kirilenko,1999,2003,2003-04,Andrei Kirilenko,955800.0,43840000.0,67907202.0,0.021802007299270072,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,andrei kirilenko,andrei kirilenko
+1906,Tim James,1999,2003,2003-04,,,43840000.0,67907202.0,,,,,,,,,0,1,0,unmatched,tim james,tim james
+1907,Vonteego Cummings,1999,2003,2003-04,,,43840000.0,67907202.0,,,,,,,,,0,1,0,unmatched,vonteego cummings,vonteego cummings
+1908,Jumaine Jones,1999,2003,2003-04,Jumaine Jones,1500000.0,43840000.0,67907202.0,0.034215328467153285,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jumaine jones,jumaine jones
+1909,Scott Padgett,1999,2003,2003-04,Scott Padgett,688679.0,43840000.0,67907202.0,0.015708918795620436,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,scott padgett,scott padgett
+1910,Leon Smith,1999,2003,2003-04,,,43840000.0,67907202.0,,,,,,,,,0,1,0,unmatched,leon smith,leon smith
+1911,John Celestand,1999,2003,2003-04,,,43840000.0,67907202.0,,,,,,,,,0,1,0,unmatched,john celestand,john celestand
+1913,Michael Ruffin,1999,2003,2003-04,Michael Ruffin,663679.0,43840000.0,67907202.0,0.015138663321167884,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,michael ruffin,michael ruffin
+1914,Chris Herren,1999,2003,2003-04,,,43840000.0,67907202.0,,,,,,,,,0,1,0,unmatched,chris herren,chris herren
+1915,Evan Eschmeyer,1999,2003,2003-04,Evan Eschmeyer,3017266.0,43840000.0,67907202.0,0.06882449817518248,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,evan eschmeyer,evan eschmeyer
+1916,Calvin Booth,1999,2003,2003-04,Calvin Booth,5446800.0,43840000.0,67907202.0,0.124242700729927,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,calvin booth,calvin booth
+1917,Wang Zhi-zhi,1999,2003,2003-04,Wang Zhizhi,2620943.0,43840000.0,67907202.0,0.05978428375912409,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,wang zhizhi,wang zhizhi
+1918,Obinna Ekezie,1999,2003,2003-04,Obinna Ekezie,688679.0,43840000.0,67907202.0,0.015708918795620436,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,obinna ekezie,obinna ekezie
+1919,Laron Profit,1999,2003,2003-04,,,43840000.0,67907202.0,,,,,,,,,0,1,0,unmatched,laron profit,laron profit
+1920,A.J. Bramlett,1999,2003,2003-04,,,43840000.0,67907202.0,,,,,,,,,0,1,0,unmatched,a j bramlett,a j bramlett
+1921,Gordan Giricek,1999,2003,2003-04,Gordan Giricek,1540000.0,43840000.0,67907202.0,0.03512773722627737,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,gordan giricek,gordan giricek
+1924,Lee Nailon,1999,2003,2003-04,,,43840000.0,67907202.0,,,,,,,,,0,1,0,unmatched,lee nailon,lee nailon
+1926,Ryan Robertson,1999,2003,2003-04,,,43840000.0,67907202.0,,,,,,,,,0,1,0,unmatched,ryan robertson,ryan robertson
+1928,Todd MacCulloch,1999,2003,2003-04,Todd MacCulloch,5445600.0,43840000.0,67907202.0,0.12421532846715329,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,todd macculloch,todd macculloch
+1930,Lari Ketner,1999,2003,2003-04,,,43840000.0,67907202.0,,,,,,,,,0,1,0,unmatched,lari ketner,lari ketner
+1934,Rodney Buford,1999,2003,2003-04,Rodney Buford,145686.0,43840000.0,67907202.0,0.003323129562043796,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,rodney buford,rodney buford
+1937,Tim Young,1999,2003,2003-04,,,43840000.0,67907202.0,,,,,,,,,0,1,0,unmatched,tim young,tim young
+1938,Manu Ginobili,1999,2003,2003-04,Manu Ginobili,1457500.0,43840000.0,67907202.0,0.03324589416058394,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,manu ginobili,manu ginobili
+2030,Kenyon Martin,2000,2004,2004-05,Kenyon Martin,9454546.0,43870000.0,65719039.0,0.21551278778208344,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kenyon martin,kenyon martin
+2031,Stromile Swift,2000,2004,2004-05,Stromile Swift,5993105.0,43870000.0,65719039.0,0.1366105539092774,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,stromile swift,stromile swift
+2032,Darius Miles,2000,2004,2004-05,Darius Miles,6750000.0,43870000.0,65719039.0,0.15386368816959198,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,darius miles,darius miles
+2033,Marcus Fizer,2000,2004,2004-05,Marcus Fizer,735960.0,43870000.0,65719039.0,0.016775928880784136,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,marcus fizer,marcus fizer
+2034,Mike Miller,2000,2004,2004-05,Mike Miller,6000000.0,43870000.0,65719039.0,0.1367677228174151,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,mike miller,mike miller
+2035,DerMarr Johnson,2000,2004,2004-05,DerMarr Johnson,745046.0,43870000.0,65719039.0,0.01698304080237064,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dermarr johnson,dermarr johnson
+2036,Chris Mihm,2000,2004,2004-05,Chris Mihm,3371393.0,43870000.0,65719039.0,0.07684962388876225,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,chris mihm,chris mihm
+2037,Jamal Crawford,2000,2004,2004-05,Jamal Crawford,5760000.0,43870000.0,65719039.0,0.13129701390471848,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jamal crawford,jamal crawford
+2038,Joel Przybilla,2000,2004,2004-05,Joel Przybilla,1500000.0,43870000.0,65719039.0,0.03419193070435377,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,joel przybilla,joel przybilla
+2039,Keyon Dooling,2000,2004,2004-05,Keyon Dooling,745046.0,43870000.0,65719039.0,0.01698304080237064,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,keyon dooling,keyon dooling
+2040,Jerome Moiso,2000,2004,2004-05,Jerome Moiso,1760000.0,43870000.0,65719039.0,0.04011853202644176,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jerome moiso,jerome moiso
+2041,Etan Thomas,2000,2004,2004-05,Etan Thomas,4903000.0,43870000.0,65719039.0,0.1117620241622977,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,etan thomas,etan thomas
+2042,Courtney Alexander,2000,2004,2004-05,Courtney Alexander,79029.0,43870000.0,65719039.0,0.0018014360610895828,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,courtney alexander,courtney alexander
+2043,Mateen Cleaves,2000,2004,2004-05,Mateen Cleaves,735960.0,43870000.0,65719039.0,0.016775928880784136,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,mateen cleaves,mateen cleaves
+2044,Jason Collier,2000,2004,2004-05,Jason Collier,1500000.0,43870000.0,65719039.0,0.03419193070435377,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jason collier,jason collier
+2045,Hedo Turkoglu,2000,2004,2004-05,Hidayet Turkoglu,4903000.0,43870000.0,65719039.0,0.1117620241622977,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,hidayet turkoglu,hidayet turkoglu
+2046,Desmond Mason,2000,2004,2004-05,Desmond Mason,6529630.0,43870000.0,65719039.0,0.148840437656713,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,desmond mason,desmond mason
+2047,Quentin Richardson,2000,2004,2004-05,Quentin Richardson,5800000.0,43870000.0,65719039.0,0.13220879872350125,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,quentin richardson,quentin richardson
+2048,Jamaal Magloire,2000,2004,2004-05,Jamaal Magloire,8533333.0,43870000.0,65719039.0,0.1945140870754502,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jamaal magloire,jamaal magloire
+2049,Speedy Claxton,2000,2004,2004-05,Speedy Claxton,3300000.0,43870000.0,65719039.0,0.0752222475495783,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,speedy claxton,speedy claxton
+2050,Morris Peterson,2000,2004,2004-05,Morris Peterson,4400000.0,43870000.0,65719039.0,0.1002963300661044,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,morris peterson,morris peterson
+2051,Donnell Harvey,2000,2004,2004-05,,,43870000.0,65719039.0,,,,,,,,,0,1,0,unmatched,donnell harvey,donnell harvey
+2052,DeShawn Stevenson,2000,2004,2004-05,DeShawn Stevenson,2500000.0,43870000.0,65719039.0,0.056986551173922956,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,deshawn stevenson,deshawn stevenson
+2053,Dalibor Bagaric,2000,2004,2004-05,,,43870000.0,65719039.0,,,,,,,,,0,1,0,unmatched,dalibor bagaric,dalibor bagaric
+2054,Jake Tsakalidis,2000,2004,2004-05,,,43870000.0,65719039.0,,,,,,,,,0,1,0,unmatched,jake tsakalidis,jake tsakalidis
+2055,Mamadou N'diaye,2000,2004,2004-05,Mamadou N'diaye,750000.0,43870000.0,65719039.0,0.017095965352176886,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,mamadou ndiaye,mamadou ndiaye
+2056,Primoz Brezec,2000,2004,2004-05,Primoz Brezec,1554326.0,43870000.0,65719039.0,0.03543027125598359,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,primoz brezec,primoz brezec
+2057,Erick Barkley,2000,2004,2004-05,,,43870000.0,65719039.0,,,,,,,,,0,1,0,unmatched,erick barkley,erick barkley
+2058,Mark Madsen,2000,2004,2004-05,Mark Madsen,745046.0,43870000.0,65719039.0,0.01698304080237064,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,mark madsen,mark madsen
+2059,Eduardo Najera,2000,2004,2004-05,Eduardo Najera,3809524.0,43870000.0,65719039.0,0.08683665374971507,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,eduardo najera,eduardo najera
+2060,Marko Jaric,2000,2004,2004-05,Marko Jaric,2100000.0,43870000.0,65719039.0,0.04786870298609528,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,marko jaric,marko jaric
+2061,Dan Langhi,2000,2004,2004-05,,,43870000.0,65719039.0,,,,,,,,,0,1,0,unmatched,dan langhi,dan langhi
+2062,A.J. Guyton,2000,2004,2004-05,,,43870000.0,65719039.0,,,,,,,,,0,1,0,unmatched,a j guyton,a j guyton
+2063,Jake Voskuhl,2000,2004,2004-05,Jake Voskuhl,1687500.0,43870000.0,65719039.0,0.038465922042397994,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jake voskuhl,jake voskuhl
+2064,Khalid El-Amin,2000,2004,2004-05,,,43870000.0,65719039.0,,,,,,,,,0,1,0,unmatched,khalid el amin,khalid el amin
+2065,Mike Smith,2000,2004,2004-05,,,43870000.0,65719039.0,,,,,,,,,0,1,0,unmatched,mike smith,mike smith
+2066,Soumaila Samake,2000,2004,2004-05,,,43870000.0,65719039.0,,,,,,,,,0,1,0,unmatched,soumaila samake,soumaila samake
+2067,Eddie House,2000,2004,2004-05,Eddie House,1388327.0,43870000.0,65719039.0,0.03164638705265557,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,eddie house,eddie house
+2068,Lavor Postell,2000,2004,2004-05,,,43870000.0,65719039.0,,,,,,,,,0,1,0,unmatched,lavor postell,lavor postell
+2069,Hanno Mottola,2000,2004,2004-05,,,43870000.0,65719039.0,,,,,,,,,0,1,0,unmatched,hanno mottola,hanno mottola
+2071,Olumide Oyedeji,2000,2004,2004-05,,,43870000.0,65719039.0,,,,,,,,,0,1,0,unmatched,olumide oyedeji,olumide oyedeji
+2072,Michael Redd,2000,2004,2004-05,Michael Redd,3000000.0,43870000.0,65719039.0,0.06838386140870754,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,michael redd,michael redd
+2073,Brian Cardinal,2000,2004,2004-05,Brian Cardinal,4903000.0,43870000.0,65719039.0,0.1117620241622977,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,brian cardinal,brian cardinal
+2074,Jabari Smith,2000,2004,2004-05,Jabari Smith Sr,720046.0,43870000.0,65719039.0,0.01641317529063141,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jabari smith,jabari smith
+2078,Jason Hart,2000,2004,2004-05,Jason Hart,1400000.0,43870000.0,65719039.0,0.03191246865739685,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jason hart,jason hart
+2079,Kaniel Dickens,2000,2004,2004-05,Kaniel Dickens,483938.0,43870000.0,65719039.0,0.01103118304080237,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kaniel dickens,kaniel dickens
+2080,Igor Rakocevic,2000,2004,2004-05,,,43870000.0,65719039.0,,,,,,,,,0,1,0,unmatched,igor rakocevic,igor rakocevic
+2081,Ernest Brown,2000,2004,2004-05,,,43870000.0,65719039.0,,,,,,,,,0,1,0,unmatched,ernest brown,ernest brown
+2082,Dan McClintock,2000,2004,2004-05,,,43870000.0,65719039.0,,,,,,,,,0,1,0,unmatched,dan mcclintock,dan mcclintock
+2084,Chris Porter,2000,2004,2004-05,,,43870000.0,65719039.0,,,,,,,,,0,1,0,unmatched,chris porter,chris porter
+2198,Kwame Brown,2001,2005,2005-06,Kwame Brown,7500000.0,49500000.0,71839551.0,0.15151515151515152,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kwame brown,kwame brown
+2199,Tyson Chandler,2001,2005,2005-06,Tyson Chandler,9000000.0,49500000.0,71839551.0,0.18181818181818182,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tyson chandler,tyson chandler
+2200,Pau Gasol,2001,2005,2005-06,Pau Gasol,10993000.0,49500000.0,71839551.0,0.22208080808080807,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,pau gasol,pau gasol
+2201,Eddy Curry,2001,2005,2005-06,Eddy Curry,7390000.0,49500000.0,71839551.0,0.14929292929292928,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,eddy curry,eddy curry
+2202,Jason Richardson,2001,2005,2005-06,Jason Richardson,8888888.0,49500000.0,71839551.0,0.17957349494949496,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jason richardson,jason richardson
+2203,Shane Battier,2001,2005,2005-06,Shane Battier,4903000.0,49500000.0,71839551.0,0.09905050505050506,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,shane battier,shane battier
+2204,Eddie Griffin,2001,2005,2005-06,Eddie Griffin,2500000.0,49500000.0,71839551.0,0.050505050505050504,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,eddie griffin,eddie griffin
+2205,DeSagana Diop,2001,2005,2005-06,DeSagana Diop,1850000.0,49500000.0,71839551.0,0.03737373737373737,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,desagana diop,desagana diop
+2206,Rodney White,2001,2005,2005-06,,,49500000.0,71839551.0,,,,,,,,,0,1,0,unmatched,rodney white,rodney white
+2207,Joe Johnson,2001,2005,2005-06,Joe Johnson,12000000.0,49500000.0,71839551.0,0.24242424242424243,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,joe johnson,joe johnson
+2208,Kedrick Brown,2001,2005,2005-06,,,49500000.0,71839551.0,,,,,,,,,0,1,0,unmatched,kedrick brown,kedrick brown
+2209,Vladimir Radmanovic,2001,2005,2005-06,Vladimir Radmanovic,3166155.0,49500000.0,71839551.0,0.06396272727272727,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,vladimir radmanovic,vladimir radmanovic
+2210,Richard Jefferson,2001,2005,2005-06,Richard Jefferson,10200000.0,49500000.0,71839551.0,0.20606060606060606,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,richard jefferson,richard jefferson
+2211,Troy Murphy,2001,2005,2005-06,Troy Murphy,7365079.0,49500000.0,71839551.0,0.14878947474747475,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,troy murphy,troy murphy
+2212,Steven Hunter,2001,2005,2005-06,Steven Hunter,2800000.0,49500000.0,71839551.0,0.05656565656565657,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,steven hunter,steven hunter
+2213,Kirk Haston,2001,2005,2005-06,,,49500000.0,71839551.0,,,,,,,,,0,1,0,unmatched,kirk haston,kirk haston
+2214,Michael Bradley,2001,2005,2005-06,Michael Bradley,819550.0,49500000.0,71839551.0,0.016556565656565658,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,michael bradley,michael bradley
+2215,Jason Collins,2001,2005,2005-06,Jason Collins,5500000.0,49500000.0,71839551.0,0.1111111111111111,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jason collins,jason collins
+2216,Zach Randolph,2001,2005,2005-06,Zach Randolph,10666667.0,49500000.0,71839551.0,0.21548822222222222,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,zach randolph,zach randolph
+2217,Brendan Haywood,2001,2005,2005-06,Brendan Haywood,4000000.0,49500000.0,71839551.0,0.08080808080808081,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,brendan haywood,brendan haywood
+2218,Joseph Forte,2001,2005,2005-06,,,49500000.0,71839551.0,,,,,,,,,0,1,0,unmatched,joseph forte,joseph forte
+2219,Jeryl Sasser,2001,2005,2005-06,,,49500000.0,71839551.0,,,,,,,,,0,1,0,unmatched,jeryl sasser,jeryl sasser
+2220,Brandon Armstrong,2001,2005,2005-06,,,49500000.0,71839551.0,,,,,,,,,0,1,0,unmatched,brandon armstrong,brandon armstrong
+2221,Raul Lopez,2001,2005,2005-06,Raul Lopez,1744313.0,49500000.0,71839551.0,0.035238646464646466,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,raul lopez,raul lopez
+2222,Gerald Wallace,2001,2005,2005-06,Gerald Wallace,5000000.0,49500000.0,71839551.0,0.10101010101010101,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,gerald wallace,gerald wallace
+2223,Samuel Dalembert,2001,2005,2005-06,Samuel Dalembert,8470000.0,49500000.0,71839551.0,0.1711111111111111,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,samuel dalembert,samuel dalembert
+2224,Jamaal Tinsley,2001,2005,2005-06,Jamaal Tinsley,5400000.0,49500000.0,71839551.0,0.10909090909090909,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jamaal tinsley,jamaal tinsley
+2225,Tony Parker,2001,2005,2005-06,Tony Parker,8400000.0,49500000.0,71839551.0,0.1696969696969697,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tony parker,tony parker
+2226,Will Solomon,2001,2005,2005-06,,,49500000.0,71839551.0,,,,,,,,,0,1,0,unmatched,will solomon,will solomon
+2228,Alton Ford,2001,2005,2005-06,,,49500000.0,71839551.0,,,,,,,,,0,1,0,unmatched,alton ford,alton ford
+2238,Antonis Fotsis,2001,2005,2005-06,,,49500000.0,71839551.0,,,,,,,,,0,1,0,unmatched,antonis fotsis,antonis fotsis
+2239,Trenton Hassell,2001,2005,2005-06,Trenton Hassell,4350000.0,49500000.0,71839551.0,0.08787878787878788,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,trenton hassell,trenton hassell
+2240,Gilbert Arenas,2001,2005,2005-06,Gilbert Arenas,10243200.0,49500000.0,71839551.0,0.20693333333333333,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,gilbert arenas,gilbert arenas
+2241,Omar Cook,2001,2005,2005-06,,,49500000.0,71839551.0,,,,,,,,,0,1,0,unmatched,omar cook,omar cook
+2242,Terence Morris,2001,2005,2005-06,Terence Morris,835810.0,49500000.0,71839551.0,0.016885050505050504,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,terence morris,terence morris
+2243,Brian Scalabrine,2001,2005,2005-06,Brian Scalabrine,2586207.0,49500000.0,71839551.0,0.05224660606060606,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,brian scalabrine,brian scalabrine
+2244,Jeff Trepagnier,2001,2005,2005-06,,,49500000.0,71839551.0,,,,,,,,,0,1,0,unmatched,jeff trepagnier,jeff trepagnier
+2245,Damone Brown,2001,2005,2005-06,,,49500000.0,71839551.0,,,,,,,,,0,1,0,unmatched,damone brown,damone brown
+2246,Mehmet Okur,2001,2005,2005-06,Mehmet Okur,8250000.0,49500000.0,71839551.0,0.16666666666666666,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,mehmet okur,mehmet okur
+2248,Earl Watson,2001,2005,2005-06,Earl Watson,5000000.0,49500000.0,71839551.0,0.10101010101010101,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,earl watson,earl watson
+2249,Jamison Brewer,2001,2005,2005-06,,,49500000.0,71839551.0,,,,,,,,,0,1,0,unmatched,jamison brewer,jamison brewer
+2250,Bobby Simmons,2001,2005,2005-06,Bobby Simmons,8000000.0,49500000.0,71839551.0,0.16161616161616163,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,bobby simmons,bobby simmons
+2253,Sean Lampley,2001,2005,2005-06,,,49500000.0,71839551.0,,,,,,,,,0,1,0,unmatched,sean lampley,sean lampley
+2254,Loren Woods,2001,2005,2005-06,Loren Woods,780000.0,49500000.0,71839551.0,0.01575757575757576,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,loren woods,loren woods
+2256,Ken Johnson,2001,2005,2005-06,,,49500000.0,71839551.0,,,,,,,,,0,1,0,unmatched,ken johnson,ken johnson
+2257,Ruben Boumtje-Boumtje,2001,2005,2005-06,,,49500000.0,71839551.0,,,,,,,,,0,1,0,unmatched,ruben boumtje boumtje,ruben boumtje boumtje
+2260,Jarron Collins,2001,2005,2005-06,Jarron Collins,1700000.0,49500000.0,71839551.0,0.03434343434343434,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jarron collins,jarron collins
+2261,Kenny Satterfield,2001,2005,2005-06,,,49500000.0,71839551.0,,,,,,,,,0,1,0,unmatched,kenny satterfield,kenny satterfield
+2264,Alvin Jones,2001,2005,2005-06,,,49500000.0,71839551.0,,,,,,,,,0,1,0,unmatched,alvin jones,alvin jones
+2397,Yao Ming,2002,2006,2006-07,Yao Ming,12455000.0,53135000.0,74973988.0,0.23440293591794487,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,yao ming,yao ming
+2398,Jay Williams,2002,2006,2006-07,,,53135000.0,74973988.0,,,,,,,,,0,1,0,unmatched,jay williams,jay williams
+2399,Mike Dunleavy,2002,2006,2006-07,Mike Dunleavy,7438016.0,53135000.0,74973988.0,0.1399833631316458,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,mike dunleavy,mike dunleavy
+2400,Drew Gooden,2002,2006,2006-07,Drew Gooden,6645402.0,53135000.0,74973988.0,0.12506637809353532,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,drew gooden,drew gooden
+2401,Nikoloz Tskitishvili,2002,2006,2006-07,,,53135000.0,74973988.0,,,,,,,,,0,1,0,unmatched,nikoloz tskitishvili,nikoloz tskitishvili
+2402,Dajuan Wagner,2002,2006,2006-07,Dajuan Wagner,771331.0,53135000.0,74973988.0,0.01451643925849252,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dajuan wagner,dajuan wagner
+2403,Nene,2002,2006,2006-07,Nenê,8000000.0,53135000.0,74973988.0,0.15055989460807379,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,nene,nene
+2404,Chris Wilcox,2002,2006,2006-07,Chris Wilcox,6250000.0,53135000.0,74973988.0,0.11762491766255764,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,chris wilcox,chris wilcox
+2405,Amar'e Stoudemire,2002,2006,2006-07,Amare Stoudemire,12455000.0,53135000.0,74973988.0,0.23440293591794487,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,amare stoudemire,amare stoudemire
+2406,Caron Butler,2002,2006,2006-07,Caron Butler,7438000.0,53135000.0,74973988.0,0.1399830620118566,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,caron butler,caron butler
+2407,Jared Jeffries,2002,2006,2006-07,Jared Jeffries,5215000.0,53135000.0,74973988.0,0.0981462312976381,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jared jeffries,jared jeffries
+2408,Melvin Ely,2002,2006,2006-07,Melvin Ely,3303813.0,53135000.0,74973988.0,0.062177717135598005,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,melvin ely,melvin ely
+2409,Marcus Haislip,2002,2006,2006-07,,,53135000.0,74973988.0,,,,,,,,,0,1,0,unmatched,marcus haislip,marcus haislip
+2410,Fred Jones,2002,2006,2006-07,Fred Jones,3100000.0,53135000.0,74973988.0,0.058341959160628586,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,fred jones,fred jones
+2411,Bostjan Nachbar,2002,2006,2006-07,Bostjan Nachbar,2500000.0,53135000.0,74973988.0,0.047049967065023054,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,bostjan nachbar,bostjan nachbar
+2412,Jiri Welsch,2002,2006,2006-07,,,53135000.0,74973988.0,,,,,,,,,0,1,0,unmatched,jiri welsch,jiri welsch
+2413,Juan Dixon,2002,2006,2006-07,Juan Dixon,2550000.0,53135000.0,74973988.0,0.04799096640632351,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,juan dixon,juan dixon
+2414,Curtis Borchardt,2002,2006,2006-07,,,53135000.0,74973988.0,,,,,,,,,0,1,0,unmatched,curtis borchardt,curtis borchardt
+2415,Ryan Humphrey,2002,2006,2006-07,,,53135000.0,74973988.0,,,,,,,,,0,1,0,unmatched,ryan humphrey,ryan humphrey
+2416,Kareem Rush,2002,2006,2006-07,Kareem Rush,19466.0,53135000.0,74973988.0,0.0003663498635550955,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kareem rush,kareem rush
+2417,Qyntel Woods,2002,2006,2006-07,,,53135000.0,74973988.0,,,,,,,,,0,1,0,unmatched,qyntel woods,qyntel woods
+2418,Casey Jacobsen,2002,2006,2006-07,Casey Jacobsen,31250.0,53135000.0,74973988.0,0.0005881245883127882,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,casey jacobsen,casey jacobsen
+2419,Tayshaun Prince,2002,2006,2006-07,Tayshaun Prince,7851240.0,53135000.0,74973988.0,0.14776023336783664,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tayshaun prince,tayshaun prince
+2420,Nenad Krstic,2002,2006,2006-07,Nenad Krstic,1080480.0,53135000.0,74973988.0,0.020334619365766443,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,nenad krstic,nenad krstic
+2421,Frank Williams,2002,2006,2006-07,,,53135000.0,74973988.0,,,,,,,,,0,1,0,unmatched,frank williams,frank williams
+2422,John Salmons,2002,2006,2006-07,John Salmons,4400000.0,53135000.0,74973988.0,0.08280794203444057,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,john salmons,john salmons
+2423,Chris Jefferies,2002,2006,2006-07,,,53135000.0,74973988.0,,,,,,,,,0,1,0,unmatched,chris jefferies,chris jefferies
+2424,Dan Dickau,2002,2006,2006-07,Dan Dickau,2753218.0,53135000.0,74973988.0,0.05181552648913146,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dan dickau,dan dickau
+2425,Robert Archibald,2002,2006,2006-07,,,53135000.0,74973988.0,,,,,,,,,0,1,0,unmatched,robert archibald,robert archibald
+2427,Roger Mason Jr.,2002,2006,2006-07,Roger Mason,744551.0,53135000.0,74973988.0,0.014012440011291993,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,roger mason,roger mason
+2428,Vincent Yarbrough,2002,2006,2006-07,,,53135000.0,74973988.0,,,,,,,,,0,1,0,unmatched,vincent yarbrough,vincent yarbrough
+2429,Dan Gadzuric,2002,2006,2006-07,Dan Gadzuric,5252065.0,53135000.0,74973988.0,0.09884379410934413,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dan gadzuric,dan gadzuric
+2430,Carlos Boozer,2002,2006,2006-07,Carlos Boozer,11260483.0,53135000.0,74973988.0,0.2119221417145008,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,carlos boozer,carlos boozer
+2432,Tito Maddox,2002,2006,2006-07,,,53135000.0,74973988.0,,,,,,,,,0,1,0,unmatched,tito maddox,tito maddox
+2435,Mario Kasun,2002,2006,2006-07,Mario Kasun,919551.0,53135000.0,74973988.0,0.017305937705843606,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,mario kasun,mario kasun
+2436,Flip Murray,2002,2006,2006-07,,,53135000.0,74973988.0,,,,,,,,,0,1,0,unmatched,flip murray,flip murray
+2437,Lonny Baxter,2002,2006,2006-07,,,53135000.0,74973988.0,,,,,,,,,0,1,0,unmatched,lonny baxter,lonny baxter
+2440,Matt Barnes,2002,2006,2006-07,Matt Barnes,771331.0,53135000.0,74973988.0,0.01451643925849252,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,matt barnes,matt barnes
+2441,Jamal Sampson,2002,2006,2006-07,Jamal Sampson,771331.0,53135000.0,74973988.0,0.01451643925849252,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jamal sampson,jamal sampson
+2442,Chris Owens,2002,2006,2006-07,,,53135000.0,74973988.0,,,,,,,,,0,1,0,unmatched,chris owens,chris owens
+2443,Darius Songaila,2002,2006,2006-07,Darius Songaila,3650000.0,53135000.0,74973988.0,0.06869295191493366,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,darius songaila,darius songaila
+2446,Rasual Butler,2002,2006,2006-07,Rasual Butler,3000000.0,53135000.0,74973988.0,0.05645996047802766,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,rasual butler,rasual butler
+2447,Tamar Slay,2002,2006,2006-07,,,53135000.0,74973988.0,,,,,,,,,0,1,0,unmatched,tamar slay,tamar slay
+2450,Randy Holcomb,2002,2006,2006-07,,,53135000.0,74973988.0,,,,,,,,,0,1,0,unmatched,randy holcomb,randy holcomb
+2451,Corsley Edwards,2002,2006,2006-07,,,53135000.0,74973988.0,,,,,,,,,0,1,0,unmatched,corsley edwards,corsley edwards
+2544,LeBron James,2003,2007,2007-08,LeBron James,13041250.0,55630000.0,75594893.0,0.23442836598957398,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,lebron james,lebron james
+2545,Darko Milicic,2003,2007,2007-08,Darko Milicic,6500000.0,55630000.0,75594893.0,0.11684342980406255,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,darko milicic,darko milicic
+2546,Carmelo Anthony,2003,2007,2007-08,Carmelo Anthony,13041250.0,55630000.0,75594893.0,0.23442836598957398,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,carmelo anthony,carmelo anthony
+2547,Chris Bosh,2003,2007,2007-08,Chris Bosh,12455000.0,55630000.0,75594893.0,0.22388998741686142,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,chris bosh,chris bosh
+2548,Dwyane Wade,2003,2007,2007-08,Dwyane Wade,13041250.0,55630000.0,75594893.0,0.23442836598957398,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dwyane wade,dwyane wade
+2549,Chris Kaman,2003,2007,2007-08,Chris Kaman,8600000.0,55630000.0,75594893.0,0.15459284558691352,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,chris kaman,chris kaman
+2550,Kirk Hinrich,2003,2007,2007-08,Kirk Hinrich,11250000.0,55630000.0,75594893.0,0.20222901312241595,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kirk hinrich,kirk hinrich
+2551,T.J. Ford,2003,2007,2007-08,TJ Ford,8000000.0,55630000.0,75594893.0,0.14380729822038468,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tj ford,tj ford
+2552,Michael Sweetney,2003,2007,2007-08,,,55630000.0,75594893.0,,,,,,,,,0,1,0,unmatched,michael sweetney,michael sweetney
+2553,Jarvis Hayes,2003,2007,2007-08,Jarvis Hayes,1200000.0,55630000.0,75594893.0,0.021571094733057704,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jarvis hayes,jarvis hayes
+2554,Mickael Pietrus,2003,2007,2007-08,Mickael Pietrus,3470770.0,55630000.0,75594893.0,0.062390257055545566,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,mickael pietrus,mickael pietrus
+2555,Nick Collison,2003,2007,2007-08,Nick Collison,5750000.0,55630000.0,75594893.0,0.10336149559590149,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,nick collison,nick collison
+2556,Marcus Banks,2003,2007,2007-08,Marcus Banks,3966207.0,55630000.0,75594893.0,0.07129618910659716,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,marcus banks,marcus banks
+2557,Luke Ridnour,2003,2007,2007-08,Luke Ridnour,6500000.0,55630000.0,75594893.0,0.11684342980406255,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,luke ridnour,luke ridnour
+2558,Reece Gaines,2003,2007,2007-08,,,55630000.0,75594893.0,,,,,,,,,0,1,0,unmatched,reece gaines,reece gaines
+2559,Troy Bell,2003,2007,2007-08,,,55630000.0,75594893.0,,,,,,,,,0,1,0,unmatched,troy bell,troy bell
+2560,Zarko Cabarkapa,2003,2007,2007-08,,,55630000.0,75594893.0,,,,,,,,,0,1,0,unmatched,zarko cabarkapa,zarko cabarkapa
+2561,David West,2003,2007,2007-08,David West,10650000.0,55630000.0,75594893.0,0.1914434657558871,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,david west,david west
+2562,Sasha Pavlovic,2003,2007,2007-08,,,55630000.0,75594893.0,,,,,,,,,0,1,0,unmatched,sasha pavlovic,sasha pavlovic
+2563,Dahntay Jones,2003,2007,2007-08,Dahntay Jones,753767.0,55630000.0,75594893.0,0.013549649469710589,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dahntay jones,dahntay jones
+2564,Boris Diaw,2003,2007,2007-08,Boris Diaw,9000000.0,55630000.0,75594893.0,0.16178321049793276,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,boris diaw,boris diaw
+2565,Zoran Planinic,2003,2007,2007-08,,,55630000.0,75594893.0,,,,,,,,,0,1,0,unmatched,zoran planinic,zoran planinic
+2566,Travis Outlaw,2003,2007,2007-08,Travis Outlaw,4000000.0,55630000.0,75594893.0,0.07190364911019234,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,travis outlaw,travis outlaw
+2567,Brian Cook,2003,2007,2007-08,Brian Cook,3500000.0,55630000.0,75594893.0,0.0629156929714183,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,brian cook,brian cook
+2568,Carlos Delfino,2003,2007,2007-08,Carlos Delfino,1868141.0,55630000.0,75594893.0,0.03358153873809096,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,carlos delfino,carlos delfino
+2569,Ndudi Ebi,2003,2007,2007-08,,,55630000.0,75594893.0,,,,,,,,,0,1,0,unmatched,ndudi ebi,ndudi ebi
+2570,Kendrick Perkins,2003,2007,2007-08,Kendrick Perkins,4480912.0,55630000.0,75594893.0,0.08054848103541255,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kendrick perkins,kendrick perkins
+2571,Leandro Barbosa,2003,2007,2007-08,Leandro Barbosa,5600000.0,55630000.0,75594893.0,0.10066510875426928,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,leandro barbosa,leandro barbosa
+2572,Josh Howard,2003,2007,2007-08,Josh Howard,9000000.0,55630000.0,75594893.0,0.16178321049793276,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,josh howard,josh howard
+2573,Maciej Lampe,2003,2007,2007-08,,,55630000.0,75594893.0,,,,,,,,,0,1,0,unmatched,maciej lampe,maciej lampe
+2574,Jason Kapono,2003,2007,2007-08,Jason Kapono,5356000.0,55630000.0,75594893.0,0.09627898615854755,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jason kapono,jason kapono
+2575,Luke Walton,2003,2007,2007-08,Luke Walton,4000000.0,55630000.0,75594893.0,0.07190364911019234,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,luke walton,luke walton
+2580,Travis Hansen,2003,2007,2007-08,,,55630000.0,75594893.0,,,,,,,,,0,1,0,unmatched,travis hansen,travis hansen
+2581,Steve Blake,2003,2007,2007-08,Steve Blake,4250000.0,55630000.0,75594893.0,0.07639762717957936,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,steve blake,steve blake
+2582,Slavko Vranes,2003,2007,2007-08,,,55630000.0,75594893.0,,,,,,,,,0,1,0,unmatched,slavko vranes,slavko vranes
+2583,Derrick Zimmerman,2003,2007,2007-08,,,55630000.0,75594893.0,,,,,,,,,0,1,0,unmatched,derrick zimmerman,derrick zimmerman
+2584,Willie Green,2003,2007,2007-08,Willie Green,3094000.0,55630000.0,75594893.0,0.055617472586733774,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,willie green,willie green
+2585,Zaza Pachulia,2003,2007,2007-08,Zaza Pachulia,4000000.0,55630000.0,75594893.0,0.07190364911019234,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,zaza pachulia,zaza pachulia
+2586,Keith Bogans,2003,2007,2007-08,Keith Bogans,2440000.0,55630000.0,75594893.0,0.04386122595721733,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,keith bogans,keith bogans
+2588,Matt Bonner,2003,2007,2007-08,Matt Bonner,2678000.0,55630000.0,75594893.0,0.048139493079273774,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,matt bonner,matt bonner
+2590,Mo Williams,2003,2007,2007-08,,,55630000.0,75594893.0,,,,,,,,,0,1,0,unmatched,mo williams,mo williams
+2591,James Lang,2003,2007,2007-08,,,55630000.0,75594893.0,,,,,,,,,0,1,0,unmatched,james lang,james lang
+2592,James Jones,2003,2007,2007-08,James Jones,2900000.0,55630000.0,75594893.0,0.05213014560488945,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,james jones,james jones
+2594,Kyle Korver,2003,2007,2007-08,Kyle Korver,4400000.0,55630000.0,75594893.0,0.07909401402121158,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kyle korver,kyle korver
+2601,Andreas Glyniadakis,2003,2007,2007-08,,,55630000.0,75594893.0,,,,,,,,,0,1,0,unmatched,andreas glyniadakis,andreas glyniadakis
+2602,Jerome Beasley,2003,2007,2007-08,,,55630000.0,75594893.0,,,,,,,,,0,1,0,unmatched,jerome beasley,jerome beasley
+2730,Dwight Howard,2004,2008,2008-09,Dwight Howard,13758000.0,58680000.0,80023973.0,0.23445807770961144,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dwight howard,dwight howard
+2731,Emeka Okafor,2004,2008,2008-09,Emeka Okafor,9537500.0,58680000.0,80023973.0,0.1625340831629175,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,emeka okafor,emeka okafor
+2732,Ben Gordon,2004,2008,2008-09,Ben Gordon,6404750.0,58680000.0,80023973.0,0.1091470688479891,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ben gordon,ben gordon
+2733,Shaun Livingston,2004,2008,2008-09,Shaun Livingston,370000.0,58680000.0,80023973.0,0.006305385139740968,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,shaun livingston,shaun livingston
+2734,Devin Harris,2004,2008,2008-09,Devin Harris,7800000.0,58680000.0,80023973.0,0.1329243353783231,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,devin harris,devin harris
+2735,Josh Childress,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,josh childress,josh childress
+2736,Luol Deng,2004,2008,2008-09,Luol Deng,9385000.0,58680000.0,80023973.0,0.15993524199045672,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,luol deng,luol deng
+2737,Rafael Araujo,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,rafael araujo,rafael araujo
+2738,Andre Iguodala,2004,2008,2008-09,Andre Iguodala,11300000.0,58680000.0,80023973.0,0.19256987048398091,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,andre iguodala,andre iguodala
+2739,Luke Jackson,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,luke jackson,luke jackson
+2740,Andris Biedrins,2004,2008,2008-09,Andris Biedrins,9000000.0,58680000.0,80023973.0,0.15337423312883436,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,andris biedrins,andris biedrins
+2741,Robert Swift,2004,2008,2008-09,Robert Swift,3579131.0,58680000.0,80023973.0,0.060994052488070896,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,robert swift,robert swift
+2742,Sebastian Telfair,2004,2008,2008-09,Sebastian Telfair,2300000.0,58680000.0,80023973.0,0.039195637355146556,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,sebastian telfair,sebastian telfair
+2743,Kris Humphries,2004,2008,2008-09,Kris Humphries,3200000.0,58680000.0,80023973.0,0.054533060668029994,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kris humphries,kris humphries
+2744,Al Jefferson,2004,2008,2008-09,Al Jefferson,11000000.0,58680000.0,80023973.0,0.18745739604635311,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,al jefferson,al jefferson
+2745,Kirk Snyder,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,kirk snyder,kirk snyder
+2746,Josh Smith,2004,2008,2008-09,Josh Smith,10000000.0,58680000.0,80023973.0,0.17041581458759372,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,josh smith,josh smith
+2747,JR Smith,2004,2008,2008-09,JR Smith,4985001.0,58680000.0,80023973.0,0.08495230061349693,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,smith,smith
+2748,Dorell Wright,2004,2008,2008-09,Dorell Wright,2612835.0,58680000.0,80023973.0,0.044526840490797547,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dorell wright,dorell wright
+2749,Jameer Nelson,2004,2008,2008-09,Jameer Nelson,7700000.0,58680000.0,80023973.0,0.13122017723244717,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jameer nelson,jameer nelson
+2750,Pavel Podkolzin,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,pavel podkolzin,pavel podkolzin
+2751,Viktor Khryapa,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,viktor khryapa,viktor khryapa
+2752,Sergei Monia,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,sergei monia,sergei monia
+2753,Delonte West,2004,2008,2008-09,Delonte West,3850000.0,58680000.0,80023973.0,0.06561008861622358,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,delonte west,delonte west
+2754,Tony Allen,2004,2008,2008-09,Tony Allen,2500000.0,58680000.0,80023973.0,0.04260395364689843,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tony allen,tony allen
+2755,Kevin Martin,2004,2008,2008-09,Kevin Martin,8760335.0,58680000.0,80023973.0,0.14928996250852078,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kevin martin,kevin martin
+2756,Sasha Vujacic,2004,2008,2008-09,Sasha Vujacic,4524887.0,58680000.0,80023973.0,0.07711123040218132,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,sasha vujacic,sasha vujacic
+2757,Beno Udrih,2004,2008,2008-09,Beno Udrih,5585000.0,58680000.0,80023973.0,0.09517723244717109,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,beno udrih,beno udrih
+2758,David Harrison,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,david harrison,david harrison
+2760,Anderson Varejao,2004,2008,2008-09,Anderson Varejao,5784480.0,58680000.0,80023973.0,0.09857668711656442,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,anderson varejao,anderson varejao
+2761,Jackson Vroman,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,jackson vroman,jackson vroman
+2762,Peter John Ramos,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,peter john ramos,peter john ramos
+2763,Lionel Chalmers,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,lionel chalmers,lionel chalmers
+2764,Donta Smith,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,donta smith,donta smith
+2765,Andre Emmett,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,andre emmett,andre emmett
+2766,Antonio Burks,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,antonio burks,antonio burks
+2767,Royal Ivey,2004,2008,2008-09,Royal Ivey,854957.0,58680000.0,80023973.0,0.014569819359236538,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,royal ivey,royal ivey
+2768,Chris Duhon,2004,2008,2008-09,Chris Duhon,5585000.0,58680000.0,80023973.0,0.09517723244717109,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,chris duhon,chris duhon
+2770,Justin Reed,2004,2008,2008-09,Justin Reed,1573000.0,58680000.0,80023973.0,0.026806407634628493,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,justin reed,justin reed
+2772,Trevor Ariza,2004,2008,2008-09,Trevor Ariza,3100000.0,58680000.0,80023973.0,0.05282890252215405,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,trevor ariza,trevor ariza
+2774,Bernard Robinson,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,bernard robinson,bernard robinson
+2775,Ha Ha,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,ha ha,ha ha
+2776,Pape Sow,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,pape sow,pape sow
+2779,Vassilis Spanoulis,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,vassilis spanoulis,vassilis spanoulis
+2782,Matt Freije,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,matt freije,matt freije
+2784,Luis Flores,2004,2008,2008-09,,,58680000.0,80023973.0,,,,,,,,,0,1,0,unmatched,luis flores,luis flores
+101106,Andrew Bogut,2005,2009,2009-10,Andrew Bogut,10000000.0,57700000.0,77414680.0,0.1733102253032929,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,andrew bogut,andrew bogut
+101107,Marvin Williams,2005,2009,2009-10,Marvin Williams,7500000.0,57700000.0,77414680.0,0.12998266897746968,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,marvin williams,marvin williams
+101108,Chris Paul,2005,2009,2009-10,Chris Paul,13520500.0,57700000.0,77414680.0,0.23432409012131716,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,chris paul,chris paul
+101109,Raymond Felton,2005,2009,2009-10,Raymond Felton,5501196.0,57700000.0,77414680.0,0.09534135181975736,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,raymond felton,raymond felton
+101110,Martell Webster,2005,2009,2009-10,Martell Webster,4344000.0,57700000.0,77414680.0,0.07528596187175043,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,martell webster,martell webster
+101111,Charlie Villanueva,2005,2009,2009-10,Charlie Villanueva,6500000.0,57700000.0,77414680.0,0.11265164644714037,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,charlie villanueva,charlie villanueva
+101112,Channing Frye,2005,2009,2009-10,Channing Frye,2000000.0,57700000.0,77414680.0,0.03466204506065858,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,channing frye,channing frye
+101113,Ike Diogu,2005,2009,2009-10,Ike Diogu,884881.0,57700000.0,77414680.0,0.015335892547660311,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ike diogu,ike diogu
+101114,Deron Williams,2005,2009,2009-10,Deron Williams,12323900.0,57700000.0,77414680.0,0.21358578856152513,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,deron williams,deron williams
+101115,Andrew Bynum,2005,2009,2009-10,Andrew Bynum,12526998.0,57700000.0,77414680.0,0.21710568457538995,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,andrew bynum,andrew bynum
+101117,Yaroslav Korolev,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,yaroslav korolev,yaroslav korolev
+101118,Sean May,2005,2009,2009-10,Sean May,884881.0,57700000.0,77414680.0,0.015335892547660311,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,sean may,sean may
+101119,Rashad McCants,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,rashad mccants,rashad mccants
+101120,Antoine Wright,2005,2009,2009-10,Antoine Wright,2110550.0,57700000.0,77414680.0,0.03657798960138648,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,antoine wright,antoine wright
+101121,Joey Graham,2005,2009,2009-10,Joey Graham,884881.0,57700000.0,77414680.0,0.015335892547660311,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,joey graham,joey graham
+101122,Danny Granger,2005,2009,2009-10,Danny Granger,9930500.0,57700000.0,77414680.0,0.172105719237435,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,danny granger,danny granger
+101123,Gerald Green,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,gerald green,gerald green
+101124,Hakim Warrick,2005,2009,2009-10,Hakim Warrick,3000000.0,57700000.0,77414680.0,0.05199306759098787,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,hakim warrick,hakim warrick
+101125,Julius Hodge,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,julius hodge,julius hodge
+101126,Nate Robinson,2005,2009,2009-10,Nate Robinson,4000000.0,57700000.0,77414680.0,0.06932409012131716,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,nate robinson,nate robinson
+101127,Jarrett Jack,2005,2009,2009-10,Jarrett Jack,4500000.0,57700000.0,77414680.0,0.0779896013864818,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jarrett jack,jarrett jack
+101128,Francisco Garcia,2005,2009,2009-10,Francisco Garcia,5800000.0,57700000.0,77414680.0,0.10051993067590988,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,francisco garcia,francisco garcia
+101129,Luther Head,2005,2009,2009-10,Luther Head,884881.0,57700000.0,77414680.0,0.015335892547660311,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,luther head,luther head
+101130,Johan Petro,2005,2009,2009-10,Johan Petro,884881.0,57700000.0,77414680.0,0.015335892547660311,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,johan petro,johan petro
+101131,Jason Maxiell,2005,2009,2009-10,Jason Maxiell,5000000.0,57700000.0,77414680.0,0.08665511265164645,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jason maxiell,jason maxiell
+101132,Linas Kleiza,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,linas kleiza,linas kleiza
+101133,Ian Mahinmi,2005,2009,2009-10,Ian Mahinmi,1079640.0,57700000.0,77414680.0,0.018711265164644716,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ian mahinmi,ian mahinmi
+101134,Wayne Simien,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,wayne simien,wayne simien
+101135,David Lee,2005,2009,2009-10,David Lee,7000000.0,57700000.0,77414680.0,0.12131715771230503,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,david lee,david lee
+101136,Salim Stoudamire,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,salim stoudamire,salim stoudamire
+101137,Daniel Ewing,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,daniel ewing,daniel ewing
+101138,Brandon Bass,2005,2009,2009-10,Brandon Bass,4000000.0,57700000.0,77414680.0,0.06932409012131716,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,brandon bass,brandon bass
+101139,CJ Miles,2005,2009,2009-10,CJ Miles,3700000.0,57700000.0,77414680.0,0.06412478336221837,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,cj miles,cj miles
+101141,Ersan Ilyasova,2005,2009,2009-10,Ersan Ilyasova,2100000.0,57700000.0,77414680.0,0.036395147313691506,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ersan ilyasova,ersan ilyasova
+101142,Ronny Turiaf,2005,2009,2009-10,Ronny Turiaf,4140000.0,57700000.0,77414680.0,0.07175043327556326,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ronny turiaf,ronny turiaf
+101143,Travis Diener,2005,2009,2009-10,Travis Diener,1740000.0,57700000.0,77414680.0,0.030155979202772965,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,travis diener,travis diener
+101144,Von Wafer,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,von wafer,von wafer
+101145,Monta Ellis,2005,2009,2009-10,Monta Ellis,11000000.0,57700000.0,77414680.0,0.19064124783362218,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,monta ellis,monta ellis
+101146,Roko Ukic,2005,2009,2009-10,Roko Ukic,303232.0,57700000.0,77414680.0,0.005255320623916811,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,roko ukic,roko ukic
+101147,Chris Taft,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,chris taft,chris taft
+101148,Mile Ilic,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,mile ilic,mile ilic
+101149,Martynas Andriuskevicius,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,martynas andriuskevicius,martynas andriuskevicius
+101150,Lou Williams,2005,2009,2009-10,Louis Williams,4972500.0,57700000.0,77414680.0,0.0861785095320624,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,louis williams,louis williams
+101152,Bracey Wright,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,bracey wright,bracey wright
+101154,Andray Blatche,2005,2009,2009-10,Andray Blatche,3000000.0,57700000.0,77414680.0,0.05199306759098787,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,andray blatche,andray blatche
+101155,Ryan Gomes,2005,2009,2009-10,Ryan Gomes,3867500.0,57700000.0,77414680.0,0.06702772963604853,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ryan gomes,ryan gomes
+101156,Robert Whaley,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,robert whaley,robert whaley
+101158,Orien Greene,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,orien greene,orien greene
+101159,Dijon Thompson,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,dijon thompson,dijon thompson
+101160,Lawrence Roberts,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,lawrence roberts,lawrence roberts
+101161,Amir Johnson,2005,2009,2009-10,Amir Johnson,3666666.0,57700000.0,77414680.0,0.06354707105719237,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,amir johnson,amir johnson
+101162,Marcin Gortat,2005,2009,2009-10,Marcin Gortat,5854000.0,57700000.0,77414680.0,0.10145580589254766,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,marcin gortat,marcin gortat
+101165,Alex Acker,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,alex acker,alex acker
+101166,Uros Slokar,2005,2009,2009-10,,,57700000.0,77414680.0,,,,,,,,,0,1,0,unmatched,uros slokar,uros slokar
+200745,Andrea Bargnani,2006,2010,2010-11,Andrea Bargnani,8500000.0,58044000.0,75491545.0,0.14644063124526221,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,andrea bargnani,andrea bargnani
+200746,LaMarcus Aldridge,2006,2010,2010-11,LaMarcus Aldridge,11244000.0,58044000.0,75491545.0,0.1937151126731445,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,lamarcus aldridge,lamarcus aldridge
+200747,Adam Morrison,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,adam morrison,adam morrison
+200748,Tyrus Thomas,2006,2010,2010-11,Tyrus Thomas,6611570.0,58044000.0,75491545.0,0.11390617462614568,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tyrus thomas,tyrus thomas
+200749,Shelden Williams,2006,2010,2010-11,Shelden Williams,915852.0,58044000.0,75491545.0,0.015778581765557163,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,shelden williams,shelden williams
+200750,Brandon Roy,2006,2010,2010-11,Brandon Roy,13520500.0,58044000.0,75491545.0,0.2329353593825374,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,brandon roy,brandon roy
+200751,Randy Foye,2006,2010,2010-11,Randy Foye,4250000.0,58044000.0,75491545.0,0.07322031562263111,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,randy foye,randy foye
+200752,Rudy Gay,2006,2010,2010-11,Rudy Gay,13603750.0,58044000.0,75491545.0,0.23436961615326304,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,rudy gay,rudy gay
+200753,Patrick O'Bryant,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,patrick obryant,patrick obryant
+200754,Mouhamed Sene,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,mouhamed sene,mouhamed sene
+200755,JJ Redick,2006,2010,2010-11,JJ Redick,7250000.0,58044000.0,75491545.0,0.12490524429742954,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jj redick,jj redick
+200756,Hilton Armstrong,2006,2010,2010-11,Hilton Armstrong,992680.0,58044000.0,75491545.0,0.017102198332299635,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,hilton armstrong,hilton armstrong
+200757,Thabo Sefolosha,2006,2010,2010-11,Thabo Sefolosha,3250000.0,58044000.0,75491545.0,0.05599200606436496,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,thabo sefolosha,thabo sefolosha
+200758,Ronnie Brewer,2006,2010,2010-11,Ronnie Brewer,4790000.0,58044000.0,75491545.0,0.08252360278409482,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ronnie brewer,ronnie brewer
+200759,Cedric Simmons,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,cedric simmons,cedric simmons
+200760,Rodney Carney,2006,2010,2010-11,Rodney Carney,651872.0,58044000.0,75491545.0,0.011230652608366067,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,rodney carney,rodney carney
+200761,Shawne Williams,2006,2010,2010-11,Shawne Williams,885210.0,58044000.0,75491545.0,0.015250671904072772,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,shawne williams,shawne williams
+200762,Oleksiy Pecherov,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,oleksiy pecherov,oleksiy pecherov
+200763,Quincy Douby,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,quincy douby,quincy douby
+200764,Renaldo Balkman,2006,2010,2010-11,Renaldo Balkman,1675000.0,58044000.0,75491545.0,0.028857418510095788,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,renaldo balkman,renaldo balkman
+200765,Rajon Rondo,2006,2010,2010-11,Rajon Rondo,9090911.0,58044000.0,75491545.0,0.15662102887464682,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,rajon rondo,rajon rondo
+200767,Josh Boone,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,josh boone,josh boone
+200768,Kyle Lowry,2006,2010,2010-11,Kyle Lowry,5750000.0,58044000.0,75491545.0,0.09906277996003032,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kyle lowry,kyle lowry
+200769,Shannon Brown,2006,2010,2010-11,Shannon Brown,2200000.0,58044000.0,75491545.0,0.03790228102818551,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,shannon brown,shannon brown
+200770,Jordan Farmar,2006,2010,2010-11,Jordan Farmar,3750000.0,58044000.0,75491545.0,0.06460616084349803,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jordan farmar,jordan farmar
+200771,Sergio Rodriguez,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,sergio rodriguez,sergio rodriguez
+200772,Maurice Ager,2006,2010,2010-11,Maurice Ager,83305.0,58044000.0,75491545.0,0.001435204327751361,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,maurice ager,maurice ager
+200776,Mardy Collins,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,mardy collins,mardy collins
+200778,James White,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,james white,james white
+200779,Steve Novak,2006,2010,2010-11,Steve Novak,734945.0,58044000.0,75491545.0,0.01266185996829991,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,steve novak,steve novak
+200780,Solomon Jones,2006,2010,2010-11,Solomon Jones,1500000.0,58044000.0,75491545.0,0.025842464337399215,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,solomon jones,solomon jones
+200781,Paul Davis,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,paul davis,paul davis
+200782,P.J. Tucker,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,p j tucker,p j tucker
+200783,Craig Smith,2006,2010,2010-11,Craig Smith,2300000.0,58044000.0,75491545.0,0.039625111984012126,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,craig smith,craig smith
+200784,Bobby Jones,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,bobby jones,bobby jones
+200785,Kosta Perovic,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,kosta perovic,kosta perovic
+200786,David Noel,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,david noel,david noel
+200788,James Augustine,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,james augustine,james augustine
+200789,Daniel Gibson,2006,2010,2010-11,Daniel Gibson,4015334.0,58044000.0,75491545.0,0.06917741713183102,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,daniel gibson,daniel gibson
+200790,Marcus Vinicius,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,marcus vinicius,marcus vinicius
+200792,Alexander Johnson,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,alexander johnson,alexander johnson
+200793,Dee Brown,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,dee brown,dee brown
+200794,Paul Millsap,2006,2010,2010-11,Paul Millsap,7600000.0,58044000.0,75491545.0,0.13093515264282268,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,paul millsap,paul millsap
+200796,Leon Powe,2006,2010,2010-11,Leon Powe,915852.0,58044000.0,75491545.0,0.015778581765557163,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,leon powe,leon powe
+200797,Ryan Hollins,2006,2010,2010-11,Ryan Hollins,2333333.0,58044000.0,75491545.0,0.04019938322651782,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ryan hollins,ryan hollins
+200798,Cheikh Samb,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,cheikh samb,cheikh samb
+200799,Guillermo Diaz,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,guillermo diaz,guillermo diaz
+200801,Hassan Adams,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,hassan adams,hassan adams
+200806,Damir Markota,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,damir markota,damir markota
+200807,Will Blalock,2006,2010,2010-11,,,58044000.0,75491545.0,,,,,,,,,0,1,0,unmatched,will blalock,will blalock
+201141,Greg Oden,2007,2011,2011-12,Greg Oden,1500000.0,58044000.0,73970553.0,0.025842464337399215,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,greg oden,greg oden
+201142,Kevin Durant,2007,2011,2011-12,Kevin Durant,15506632.0,58044000.0,73970553.0,0.2671530563021156,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kevin durant,kevin durant
+201143,Al Horford,2007,2011,2011-12,Al Horford,12000000.0,58044000.0,73970553.0,0.20673971469919372,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,al horford,al horford
+201144,Mike Conley,2007,2011,2011-12,Mike Conley,6611571.0,58044000.0,73970553.0,0.11390619185445525,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,mike conley,mike conley
+201145,Jeff Green,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,jeff green,jeff green
+201146,Yi Jianlian,2007,2011,2011-12,Yi Jianlian,827197.0,58044000.0,73970553.0,0.014251205981669079,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,yi jianlian,yi jianlian
+201147,Corey Brewer,2007,2011,2011-12,Corey Brewer,3059000.0,58044000.0,73970553.0,0.052701398938736134,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,corey brewer,corey brewer
+201148,Brandan Wright,2007,2011,2011-12,Brandan Wright,915852.0,58044000.0,73970553.0,0.015778581765557163,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,brandan wright,brandan wright
+201149,Joakim Noah,2007,2011,2011-12,Joakim Noah,12000000.0,58044000.0,73970553.0,0.20673971469919372,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,joakim noah,joakim noah
+201150,Spencer Hawes,2007,2011,2011-12,Spencer Hawes,4051024.0,58044000.0,73970553.0,0.06979229549996555,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,spencer hawes,spencer hawes
+201151,Acie Law,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,acie law,acie law
+201152,Thaddeus Young,2007,2011,2011-12,Thaddeus Young,7478261.0,58044000.0,73970553.0,0.12883779546550891,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,thaddeus young,thaddeus young
+201153,Julian Wright,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,julian wright,julian wright
+201154,Al Thornton,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,al thornton,al thornton
+201155,Rodney Stuckey,2007,2011,2011-12,Rodney Stuckey,8500000.0,58044000.0,73970553.0,0.14644063124526221,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,rodney stuckey,rodney stuckey
+201156,Nick Young,2007,2011,2011-12,Nick Young,3695857.0,58044000.0,73970553.0,0.06367336847908484,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,nick young,nick young
+201157,Sean Williams,2007,2011,2011-12,Sean Williams,885120.0,58044000.0,73970553.0,0.015249121356212529,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,sean williams,sean williams
+201158,Marco Belinelli,2007,2011,2011-12,Marco Belinelli,3377604.0,58044000.0,73970553.0,0.058190407277237954,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,marco belinelli,marco belinelli
+201159,Javaris Crittenton,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,javaris crittenton,javaris crittenton
+201160,Jason Smith,2007,2011,2011-12,Jason Smith,2500000.0,58044000.0,73970553.0,0.043070773895665354,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jason smith,jason smith
+201161,Daequan Cook,2007,2011,2011-12,Daequan Cook,3341558.0,58044000.0,73970553.0,0.057569395630900695,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,daequan cook,daequan cook
+201162,Jared Dudley,2007,2011,2011-12,Jared Dudley,4250000.0,58044000.0,73970553.0,0.07322031562263111,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jared dudley,jared dudley
+201163,Wilson Chandler,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,wilson chandler,wilson chandler
+201164,Rudy Fernandez,2007,2011,2011-12,Rudy Fernandez,2180443.0,58044000.0,73970553.0,0.0375653469781545,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,rudy fernandez,rudy fernandez
+201165,Morris Almond,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,morris almond,morris almond
+201166,Aaron Brooks,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,aaron brooks,aaron brooks
+201167,Arron Afflalo,2007,2011,2011-12,Arron Afflalo,7562500.0,58044000.0,73970553.0,0.1302890910343877,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,arron afflalo,arron afflalo
+201168,Tiago Splitter,2007,2011,2011-12,Tiago Splitter,3672000.0,58044000.0,73970553.0,0.06326235269795327,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tiago splitter,tiago splitter
+201169,Alando Tucker,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,alando tucker,alando tucker
+201171,Carl Landry,2007,2011,2011-12,Carl Landry,8500000.0,58044000.0,73970553.0,0.14644063124526221,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,carl landry,carl landry
+201172,Gabe Pruitt,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,gabe pruitt,gabe pruitt
+201173,Marcus Williams,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,marcus williams,marcus williams
+201174,Nick Fazekas,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,nick fazekas,nick fazekas
+201175,Glen Davis,2007,2011,2011-12,Glen Davis,6300000.0,58044000.0,73970553.0,0.1085383502170767,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,glen davis,glen davis
+201176,Jermareo Davidson,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,jermareo davidson,jermareo davidson
+201177,Josh McRoberts,2007,2011,2011-12,Josh McRoberts,3000000.0,58044000.0,73970553.0,0.05168492867479843,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,josh mcroberts,josh mcroberts
+201178,Kyrylo Fesenko,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,kyrylo fesenko,kyrylo fesenko
+201180,Sun Sun,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,sun sun,sun sun
+201181,Chris Richard,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,chris richard,chris richard
+201186,Stephane Lasme,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,stephane lasme,stephane lasme
+201187,Dominic McGuire,2007,2011,2011-12,Dominic McGuire,915852.0,58044000.0,73970553.0,0.015778581765557163,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dominic mcguire,dominic mcguire
+201188,Marc Gasol,2007,2011,2011-12,Marc Gasol,12922194.0,58044000.0,73970553.0,0.2226275584039694,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,marc gasol,marc gasol
+201189,Aaron Gray,2007,2011,2011-12,Aaron Gray,2500000.0,58044000.0,73970553.0,0.043070773895665354,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,aaron gray,aaron gray
+201191,JamesOn Curry,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,jameson curry,jameson curry
+201192,Taurean Green,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,taurean green,taurean green
+201193,Demetris Nichols,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,demetris nichols,demetris nichols
+201196,Ramon Sessions,2007,2011,2011-12,Ramon Sessions,4257973.0,58044000.0,73970553.0,0.07335767693473916,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ramon sessions,ramon sessions
+201199,DJ Strawberry,2007,2011,2011-12,,,58044000.0,73970553.0,,,,,,,,,0,1,0,unmatched,dj strawberry,dj strawberry
+201446,Mike Taylor,2008,2012,2012-13,,,58044000.0,72903264.0,,,,,,,,,0,1,0,unmatched,mike taylor,mike taylor
+201563,Michael Beasley,2008,2012,2012-13,Michael Beasley,5750000.0,58044000.0,72903264.0,0.09906277996003032,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,michael beasley,michael beasley
+201564,O.J. Mayo,2008,2012,2012-13,OJ Mayo,4020000.0,58044000.0,72903264.0,0.0692578044242299,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,oj mayo,oj mayo
+201565,Derrick Rose,2008,2012,2012-13,Derrick Rose,16402500.0,58044000.0,72903264.0,0.2825873475294604,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,derrick rose,derrick rose
+201566,Russell Westbrook,2008,2012,2012-13,Russell Westbrook,13668750.0,58044000.0,72903264.0,0.23548945627455034,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,russell westbrook,russell westbrook
+201567,Kevin Love,2008,2012,2012-13,Kevin Love,13668750.0,58044000.0,72903264.0,0.23548945627455034,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kevin love,kevin love
+201568,Danilo Gallinari,2008,2012,2012-13,Danilo Gallinari,9439000.0,58044000.0,72903264.0,0.16261801392047412,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,danilo gallinari,danilo gallinari
+201569,Eric Gordon,2008,2012,2012-13,Eric Gordon,13668750.0,58044000.0,72903264.0,0.23548945627455034,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,eric gordon,eric gordon
+201570,Joe Alexander,2008,2012,2012-13,,,58044000.0,72903264.0,,,,,,,,,0,1,0,unmatched,joe alexander,joe alexander
+201571,D.J. Augustin,2008,2012,2012-13,DJ Augustin,3500000.0,58044000.0,72903264.0,0.0602990834539315,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dj augustin,dj augustin
+201572,Brook Lopez,2008,2012,2012-13,Brook Lopez,13668000.0,58044000.0,72903264.0,0.23547653504238164,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,brook lopez,brook lopez
+201573,Jerryd Bayless,2008,2012,2012-13,Jerryd Bayless,3100000.0,58044000.0,72903264.0,0.053407759630625044,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jerryd bayless,jerryd bayless
+201574,Jason Thompson,2008,2012,2012-13,Jason Thompson,5250000.0,58044000.0,72903264.0,0.09044862518089725,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jason thompson,jason thompson
+201575,Brandon Rush,2008,2012,2012-13,Brandon Rush,4000000.0,58044000.0,72903264.0,0.06891323823306457,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,brandon rush,brandon rush
+201576,Anthony Randolph,2008,2012,2012-13,Anthony Randolph,1674641.0,58044000.0,72903264.0,0.028851233546964374,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,anthony randolph,anthony randolph
+201577,Robin Lopez,2008,2012,2012-13,Robin Lopez,4899293.0,58044000.0,72903264.0,0.08440653642064641,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,robin lopez,robin lopez
+201578,Marreese Speights,2008,2012,2012-13,Marreese Speights,4200000.0,58044000.0,72903264.0,0.0723589001447178,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,marreese speights,marreese speights
+201579,Roy Hibbert,2008,2012,2012-13,Roy Hibbert,13668750.0,58044000.0,72903264.0,0.23548945627455034,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,roy hibbert,roy hibbert
+201580,JaVale McGee,2008,2012,2012-13,JaVale McGee,10000000.0,58044000.0,72903264.0,0.17228309558266142,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,javale mcgee,javale mcgee
+201581,JJ Hickson,2008,2012,2012-13,JJ Hickson,4000000.0,58044000.0,72903264.0,0.06891323823306457,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jj hickson,jj hickson
+201582,Alexis Ajinca,2008,2012,2012-13,,,58044000.0,72903264.0,,,,,,,,,0,1,0,unmatched,alexis ajinca,alexis ajinca
+201583,Ryan Anderson,2008,2012,2012-13,Ryan Anderson,8700000.0,58044000.0,72903264.0,0.14988629315691546,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ryan anderson,ryan anderson
+201584,Courtney Lee,2008,2012,2012-13,Courtney Lee,5000000.0,58044000.0,72903264.0,0.08614154779133071,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,courtney lee,courtney lee
+201585,Kosta Koufos,2008,2012,2012-13,Kosta Koufos,3000000.0,58044000.0,72903264.0,0.05168492867479843,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kosta koufos,kosta koufos
+201586,Serge Ibaka,2008,2012,2012-13,Serge Ibaka,2253061.0,58044000.0,72903264.0,0.038816432361656675,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,serge ibaka,serge ibaka
+201587,Nicolas Batum,2008,2012,2012-13,Nicolas Batum,11950000.0,58044000.0,72903264.0,0.2058782992212804,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,nicolas batum,nicolas batum
+201588,George Hill,2008,2012,2012-13,George Hill,8000000.0,58044000.0,72903264.0,0.13782647646612914,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,george hill,george hill
+201589,Darrell Arthur,2008,2012,2012-13,Darrell Arthur,3006217.0,58044000.0,72903264.0,0.05179203707532217,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,darrell arthur,darrell arthur
+201590,Donte Greene,2008,2012,2012-13,Donte Greene,5387.0,58044000.0,72903264.0,9.280890359037971e-05,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,donte greene,donte greene
+201591,DJ White,2008,2012,2012-13,DJ White,263980.0,58044000.0,72903264.0,0.004547929157191096,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dj white,dj white
+201592,J.R. Giddens,2008,2012,2012-13,,,58044000.0,72903264.0,,,,,,,,,0,1,0,unmatched,j r giddens,j r giddens
+201593,Nikola Pekovic,2008,2012,2012-13,Nikola Pekovic,4640000.0,58044000.0,72903264.0,0.0799393563503549,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,nikola pekovic,nikola pekovic
+201594,Walter Sharpe,2008,2012,2012-13,,,58044000.0,72903264.0,,,,,,,,,0,1,0,unmatched,walter sharpe,walter sharpe
+201595,Joey Dorsey,2008,2012,2012-13,,,58044000.0,72903264.0,,,,,,,,,0,1,0,unmatched,joey dorsey,joey dorsey
+201596,Mario Chalmers,2008,2012,2012-13,Mario Chalmers,4000000.0,58044000.0,72903264.0,0.06891323823306457,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,mario chalmers,mario chalmers
+201599,DeAndre Jordan,2008,2012,2012-13,DeAndre Jordan,10532977.0,58044000.0,72903264.0,0.18146538832609743,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,deandre jordan,deandre jordan
+201600,Omer Asik,2008,2012,2012-13,Omer Asik,5000000.0,58044000.0,72903264.0,0.08614154779133071,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,omer asik,omer asik
+201601,Luc Mbah a Moute,2008,2012,2012-13,Luc Mbah a Moute,4794192.0,58044000.0,72903264.0,0.08259582385776308,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,luc mbah a moute,luc mbah a moute
+201602,Kyle Weaver,2008,2012,2012-13,,,58044000.0,72903264.0,,,,,,,,,0,1,0,unmatched,kyle weaver,kyle weaver
+201603,Sonny Weems,2008,2012,2012-13,,,58044000.0,72903264.0,,,,,,,,,0,1,0,unmatched,sonny weems,sonny weems
+201604,Chris Douglas-Roberts,2008,2012,2012-13,Chris Douglas-Roberts,72892.0,58044000.0,72903264.0,0.0012558059403211357,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,chris douglas roberts,chris douglas roberts
+201605,Nathan Jawai,2008,2012,2012-13,,,58044000.0,72903264.0,,,,,,,,,0,1,0,unmatched,nathan jawai,nathan jawai
+201606,Sean Singletary,2008,2012,2012-13,,,58044000.0,72903264.0,,,,,,,,,0,1,0,unmatched,sean singletary,sean singletary
+201607,Patrick Ewing,2008,2012,2012-13,,,58044000.0,72903264.0,,,,,,,,,0,1,0,unmatched,patrick ewing,patrick ewing
+201609,Goran Dragic,2008,2012,2012-13,Goran Dragic,7500000.0,58044000.0,72903264.0,0.12921232168699606,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,goran dragic,goran dragic
+201611,Henry Walker,2008,2012,2012-13,,,58044000.0,72903264.0,,,,,,,,,0,1,0,unmatched,henry walker,henry walker
+201612,Malik Hairston,2008,2012,2012-13,,,58044000.0,72903264.0,,,,,,,,,0,1,0,unmatched,malik hairston,malik hairston
+201616,Darnell Jackson,2008,2012,2012-13,,,58044000.0,72903264.0,,,,,,,,,0,1,0,unmatched,darnell jackson,darnell jackson
+201621,Joe Crawford,2008,2012,2012-13,,,58044000.0,72903264.0,,,,,,,,,0,1,0,unmatched,joe crawford,joe crawford
+201623,Semih Erden,2008,2012,2012-13,,,58044000.0,72903264.0,,,,,,,,,0,1,0,unmatched,semih erden,semih erden
+201933,Blake Griffin,2009,2013,2013-14,Blake Griffin,16402500.0,58679000.0,72519787.0,0.2795293034986963,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,blake griffin,blake griffin
+201934,Hasheem Thabeet,2009,2013,2013-14,Hasheem Thabeet,1200000.0,58679000.0,72519787.0,0.020450246255048654,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,hasheem thabeet,hasheem thabeet
+201935,James Harden,2009,2013,2013-14,James Harden,13668750.0,58679000.0,72519787.0,0.23294108624891358,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,james harden,james harden
+201936,Tyreke Evans,2009,2013,2013-14,Tyreke Evans,11796247.0,58679000.0,72519787.0,0.20103013002948245,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tyreke evans,tyreke evans
+201937,Ricky Rubio,2009,2013,2013-14,Ricky Rubio,4002120.0,58679000.0,72519787.0,0.06820361628521276,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ricky rubio,ricky rubio
+201938,Jonny Flynn,2009,2013,2013-14,,,58679000.0,72519787.0,,,,,,,,,0,1,0,unmatched,jonny flynn,jonny flynn
+201939,Stephen Curry,2009,2013,2013-14,Stephen Curry,9887642.0,58679000.0,72519787.0,0.16850392815146817,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,stephen curry,stephen curry
+201941,Jordan Hill,2009,2013,2013-14,Jordan Hill,3500000.0,58679000.0,72519787.0,0.059646551577225246,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jordan hill,jordan hill
+201942,DeMar DeRozan,2009,2013,2013-14,DeMar DeRozan,9500000.0,58679000.0,72519787.0,0.1618977828524685,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,demar derozan,demar derozan
+201943,Brandon Jennings,2009,2013,2013-14,Brandon Jennings,7655503.0,58679000.0,72519787.0,0.13046410129688646,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,brandon jennings,brandon jennings
+201944,Terrence Williams,2009,2013,2013-14,,,58679000.0,72519787.0,,,,,,,,,0,1,0,unmatched,terrence williams,terrence williams
+201945,Gerald Henderson,2009,2013,2013-14,Gerald Henderson,6000000.0,58679000.0,72519787.0,0.10225123127524327,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,gerald henderson,gerald henderson
+201946,Tyler Hansbrough,2009,2013,2013-14,Tyler Hansbrough,3183000.0,58679000.0,72519787.0,0.05424427819151656,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tyler hansbrough,tyler hansbrough
+201947,Earl Clark,2009,2013,2013-14,Earl Clark,4361518.0,58679000.0,72519787.0,0.07432843095485608,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,earl clark,earl clark
+201948,Austin Daye,2009,2013,2013-14,Austin Daye,947907.0,58679000.0,72519787.0,0.016154109647403672,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,austin daye,austin daye
+201949,James Johnson,2009,2013,2013-14,James Johnson,507409.0,58679000.0,72519787.0,0.008647199168356653,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,james johnson,james johnson
+201950,Jrue Holiday,2009,2013,2013-14,Jrue Holiday,11000000.0,58679000.0,72519787.0,0.18746059067127932,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jrue holiday,jrue holiday
+201951,Ty Lawson,2009,2013,2013-14,Ty Lawson,10786517.0,58679000.0,72519787.0,0.18382244073689055,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ty lawson,ty lawson
+201952,Jeff Teague,2009,2013,2013-14,Jeff Teague,8000000.0,58679000.0,72519787.0,0.13633497503365768,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jeff teague,jeff teague
+201953,Eric Maynor,2009,2013,2013-14,Eric Maynor,2016000.0,58679000.0,72519787.0,0.03435641370848174,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,eric maynor,eric maynor
+201954,Darren Collison,2009,2013,2013-14,Darren Collison,1900000.0,58679000.0,72519787.0,0.032379556570493705,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,darren collison,darren collison
+201956,Omri Casspi,2009,2013,2013-14,Omri Casspi,947907.0,58679000.0,72519787.0,0.016154109647403672,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,omri casspi,omri casspi
+201957,Byron Mullens,2009,2013,2013-14,,,58679000.0,72519787.0,,,,,,,,,0,1,0,unmatched,byron mullens,byron mullens
+201958,Rodrigue Beaubois,2009,2013,2013-14,,,58679000.0,72519787.0,,,,,,,,,0,1,0,unmatched,rodrigue beaubois,rodrigue beaubois
+201959,Taj Gibson,2009,2013,2013-14,Taj Gibson,7550000.0,58679000.0,72519787.0,0.12866613268801444,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,taj gibson,taj gibson
+201960,DeMarre Carroll,2009,2013,2013-14,DeMarre Carroll,2500000.0,58679000.0,72519787.0,0.04260467969801803,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,demarre carroll,demarre carroll
+201961,Wayne Ellington,2009,2013,2013-14,Wayne Ellington,2500000.0,58679000.0,72519787.0,0.04260467969801803,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,wayne ellington,wayne ellington
+201962,Toney Douglas,2009,2013,2013-14,Toney Douglas,1600000.0,58679000.0,72519787.0,0.027266995006731538,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,toney douglas,toney douglas
+201963,Christian Eyenga,2009,2013,2013-14,,,58679000.0,72519787.0,,,,,,,,,0,1,0,unmatched,christian eyenga,christian eyenga
+201964,Victor Claver,2009,2013,2013-14,Victor Claver,1311240.0,58679000.0,72519787.0,0.022345984082891665,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,victor claver,victor claver
+201965,Jeff Ayres,2009,2013,2013-14,Jeff Ayres,1750000.0,58679000.0,72519787.0,0.029823275788612623,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jeff ayres,jeff ayres
+201966,Jermaine Taylor,2009,2013,2013-14,,,58679000.0,72519787.0,,,,,,,,,0,1,0,unmatched,jermaine taylor,jermaine taylor
+201967,Dante Cunningham,2009,2013,2013-14,Dante Cunningham,2180000.0,58679000.0,72519787.0,0.03715128069667172,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dante cunningham,dante cunningham
+201969,DaJuan Summers,2009,2013,2013-14,,,58679000.0,72519787.0,,,,,,,,,0,1,0,unmatched,dajuan summers,dajuan summers
+201970,Sam Young,2009,2013,2013-14,,,58679000.0,72519787.0,,,,,,,,,0,1,0,unmatched,sam young,sam young
+201971,DeJuan Blair,2009,2013,2013-14,DeJuan Blair,941000.0,58679000.0,72519787.0,0.016036401438333986,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dejuan blair,dejuan blair
+201972,Jon Brockman,2009,2013,2013-14,,,58679000.0,72519787.0,,,,,,,,,0,1,0,unmatched,jon brockman,jon brockman
+201973,Jonas Jerebko,2009,2013,2013-14,Jonas Jerebko,4500000.0,58679000.0,72519787.0,0.07668842345643245,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jonas jerebko,jonas jerebko
+201974,Derrick Brown,2009,2013,2013-14,,,58679000.0,72519787.0,,,,,,,,,0,1,0,unmatched,derrick brown,derrick brown
+201975,Jodie Meeks,2009,2013,2013-14,Jodie Meeks,1550000.0,58679000.0,72519787.0,0.02641490141277118,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jodie meeks,jodie meeks
+201976,Patrick Beverley,2009,2013,2013-14,Patrick Beverley,788872.0,58679000.0,72519787.0,0.013443855553093952,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,patrick beverley,patrick beverley
+201977,Marcus Thornton,2009,2013,2013-14,Marcus Thornton,8165000.0,58679000.0,72519787.0,0.1391468838937269,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,marcus thornton,marcus thornton
+201978,Chase Budinger,2009,2013,2013-14,Chase Budinger,5000000.0,58679000.0,72519787.0,0.08520935939603606,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,chase budinger,chase budinger
+201980,Danny Green,2009,2013,2013-14,Danny Green,3762500.0,58679000.0,72519787.0,0.06412004294551714,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,danny green,danny green
+201981,Taylor Griffin,2009,2013,2013-14,,,58679000.0,72519787.0,,,,,,,,,0,1,0,unmatched,taylor griffin,taylor griffin
+201985,AJ Price,2009,2013,2013-14,AJ Price,947907.0,58679000.0,72519787.0,0.016154109647403672,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,aj price,aj price
+201986,Nando De Colo,2009,2013,2013-14,Nando De Colo,1463000.0,58679000.0,72519787.0,0.024932258559280152,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,nando de colo,nando de colo
+201988,Patty Mills,2009,2013,2013-14,,,58679000.0,72519787.0,,,,,,,,,0,1,0,unmatched,patty mills,patty mills
+201991,Lester Hudson,2009,2013,2013-14,,,58679000.0,72519787.0,,,,,,,,,0,1,0,unmatched,lester hudson,lester hudson
+202322,John Wall,2010,2014,2014-15,John Wall,13701250.0,63065000.0,77841847.0,0.2172560057083961,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,john wall,john wall
+202323,Evan Turner,2010,2014,2014-15,Evan Turner,3278000.0,63065000.0,77841847.0,0.051978117814952825,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,evan turner,evan turner
+202324,Derrick Favors,2010,2014,2014-15,Derrick Favors,12950000.0,63065000.0,77841847.0,0.2053436930151431,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,derrick favors,derrick favors
+202325,Wesley Johnson,2010,2014,2014-15,Wesley Johnson,981084.0,63065000.0,77841847.0,0.015556711329580591,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,wesley johnson,wesley johnson
+202326,DeMarcus Cousins,2010,2014,2014-15,DeMarcus Cousins,13701250.0,63065000.0,77841847.0,0.2172560057083961,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,demarcus cousins,demarcus cousins
+202327,Ekpe Udoh,2010,2014,2014-15,Ekpe Udoh,981084.0,63065000.0,77841847.0,0.015556711329580591,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ekpe udoh,ekpe udoh
+202328,Greg Monroe,2010,2014,2014-15,Greg Monroe,5479933.0,63065000.0,77841847.0,0.0868934115595021,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,greg monroe,greg monroe
+202329,Al-Farouq Aminu,2010,2014,2014-15,Al-Farouq Aminu,981084.0,63065000.0,77841847.0,0.015556711329580591,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,al farouq aminu,al farouq aminu
+202330,Gordon Hayward,2010,2014,2014-15,Gordon Hayward,14746000.0,63065000.0,77841847.0,0.2338222468881313,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,gordon hayward,gordon hayward
+202331,Paul George,2010,2014,2014-15,Paul George,15800000.0,63065000.0,77841847.0,0.2505351621343059,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,paul george,paul george
+202332,Cole Aldrich,2010,2014,2014-15,Cole Aldrich,981084.0,63065000.0,77841847.0,0.015556711329580591,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,cole aldrich,cole aldrich
+202333,Xavier Henry,2010,2014,2014-15,Xavier Henry,1082000.0,63065000.0,77841847.0,0.01715690160945057,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,xavier henry,xavier henry
+202334,Ed Davis,2010,2014,2014-15,Ed Davis,981084.0,63065000.0,77841847.0,0.015556711329580591,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ed davis,ed davis
+202335,Patrick Patterson,2010,2014,2014-15,Patrick Patterson,5831326.0,63065000.0,77841847.0,0.0924653294220249,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,patrick patterson,patrick patterson
+202336,Larry Sanders,2010,2014,2014-15,Larry Sanders,11000000.0,63065000.0,77841847.0,0.174423214144137,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,larry sanders,larry sanders
+202337,Luke Babbitt,2010,2014,2014-15,Luke Babbitt,981084.0,63065000.0,77841847.0,0.015556711329580591,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,luke babbitt,luke babbitt
+202338,Kevin Seraphin,2010,2014,2014-15,Kevin Seraphin,3898691.0,63065000.0,77841847.0,0.06182020137952906,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kevin seraphin,kevin seraphin
+202339,Eric Bledsoe,2010,2014,2014-15,Eric Bledsoe,13000000.0,63065000.0,77841847.0,0.20613652580670735,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,eric bledsoe,eric bledsoe
+202340,Avery Bradley,2010,2014,2014-15,Avery Bradley,7191011.0,63065000.0,77841847.0,0.11402538650598588,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,avery bradley,avery bradley
+202341,James Anderson,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,james anderson,james anderson
+202342,Craig Brackins,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,craig brackins,craig brackins
+202343,Elliot Williams,2010,2014,2014-15,Elliot Williams,161511.0,63065000.0,77841847.0,0.002561024339966701,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,elliot williams,elliot williams
+202344,Trevor Booker,2010,2014,2014-15,Trevor Booker,5000000.0,63065000.0,77841847.0,0.07928327915642591,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,trevor booker,trevor booker
+202345,Damion James,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,damion james,damion james
+202346,Dominique Jones,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,dominique jones,dominique jones
+202347,Quincy Pondexter,2010,2014,2014-15,Quincy Pondexter,3146068.0,63065000.0,77841847.0,0.04988611749781971,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,quincy pondexter,quincy pondexter
+202348,Jordan Crawford,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,jordan crawford,jordan crawford
+202349,Greivis Vasquez,2010,2014,2014-15,Greivis Vasquez,6400000.0,63065000.0,77841847.0,0.10148259732022516,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,greivis vasquez,greivis vasquez
+202350,Daniel Orton,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,daniel orton,daniel orton
+202351,Lazar Hayward,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,lazar hayward,lazar hayward
+202354,Dexter Pittman,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,dexter pittman,dexter pittman
+202355,Hassan Whiteside,2010,2014,2014-15,Hassan Whiteside,775191.0,63065000.0,77841847.0,0.01229193689050979,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,hassan whiteside,hassan whiteside
+202356,Armon Johnson,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,armon johnson,armon johnson
+202359,Darington Hobson,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,darington hobson,darington hobson
+202360,Andy Rautins,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,andy rautins,andy rautins
+202361,Landry Fields,2010,2014,2014-15,Landry Fields,8500000.0,63065000.0,77841847.0,0.13478157456592404,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,landry fields,landry fields
+202362,Lance Stephenson,2010,2014,2014-15,Lance Stephenson,9000000.0,63065000.0,77841847.0,0.14270990248156665,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,lance stephenson,lance stephenson
+202363,Jarvis Varnado,2010,2014,2014-15,Jarvis Varnado,75000.0,63065000.0,77841847.0,0.0011892491873463887,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jarvis varnado,jarvis varnado
+202365,Devin Ebanks,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,devin ebanks,devin ebanks
+202366,Jerome Jordan,2010,2014,2014-15,Jerome Jordan,816482.0,63065000.0,77841847.0,0.012946674066439389,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jerome jordan,jerome jordan
+202371,Gani Lawal,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,gani lawal,gani lawal
+202374,Solomon Alabi,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,solomon alabi,solomon alabi
+202376,Luke Harangody,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,luke harangody,luke harangody
+202377,Pape Sy,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,pape sy,pape sy
+202378,Willie Warren,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,willie warren,willie warren
+202379,Jeremy Evans,2010,2014,2014-15,Jeremy Evans,1795000.0,63065000.0,77841847.0,0.028462697217156902,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jeremy evans,jeremy evans
+202380,Hamady Ndiaye,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,hamady ndiaye,hamady ndiaye
+202382,Derrick Caracter,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,derrick caracter,derrick caracter
+202385,Ryan Reid,2010,2014,2014-15,,,63065000.0,77841847.0,,,,,,,,,0,1,0,unmatched,ryan reid,ryan reid
+202681,Kyrie Irving,2011,2015,2015-16,Kyrie Irving,16407500.0,70000000.0,85323721.0,0.23439285714285715,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kyrie irving,kyrie irving
+202682,Derrick Williams,2011,2015,2015-16,Derrick Williams,4400000.0,70000000.0,85323721.0,0.06285714285714286,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,derrick williams,derrick williams
+202683,Enes Freedom,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,enes freedom,enes freedom
+202684,Tristan Thompson,2011,2015,2015-16,Tristan Thompson,14260000.0,70000000.0,85323721.0,0.2037142857142857,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tristan thompson,tristan thompson
+202685,Jonas Valančiūnas,2011,2015,2015-16,Jonas Valanciunas,4660482.0,70000000.0,85323721.0,0.06657831428571429,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jonas valanciunas,jonas valanciunas
+202686,Jan Vesely,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,jan vesely,jan vesely
+202687,Bismack Biyombo,2011,2015,2015-16,Bismack Biyombo,2814000.0,70000000.0,85323721.0,0.0402,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,bismack biyombo,bismack biyombo
+202688,Brandon Knight,2011,2015,2015-16,Brandon Knight,13500000.0,70000000.0,85323721.0,0.19285714285714287,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,brandon knight,brandon knight
+202689,Kemba Walker,2011,2015,2015-16,Kemba Walker,12000000.0,70000000.0,85323721.0,0.17142857142857143,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kemba walker,kemba walker
+202690,Jimmer Fredette,2011,2015,2015-16,Jimmer Fredette,625167.0,70000000.0,85323721.0,0.008930957142857143,3.0,3.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jimmer fredette,jimmer fredette
+202691,Klay Thompson,2011,2015,2015-16,Klay Thompson,15501000.0,70000000.0,85323721.0,0.22144285714285714,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,klay thompson,klay thompson
+202692,Alec Burks,2011,2015,2015-16,Alec Burks,9213484.0,70000000.0,85323721.0,0.1316212,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,alec burks,alec burks
+202693,Markieff Morris,2011,2015,2015-16,Markieff Morris,8000000.0,70000000.0,85323721.0,0.11428571428571428,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,markieff morris,markieff morris
+202694,Marcus Morris Sr.,2011,2015,2015-16,Marcus Morris,5000000.0,70000000.0,85323721.0,0.07142857142857142,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,marcus morris,marcus morris
+202695,Kawhi Leonard,2011,2015,2015-16,Kawhi Leonard,16407500.0,70000000.0,85323721.0,0.23439285714285715,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kawhi leonard,kawhi leonard
+202696,Nikola Vučević,2011,2015,2015-16,Nikola Vucevic,11250000.0,70000000.0,85323721.0,0.16071428571428573,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,nikola vucevic,nikola vucevic
+202697,Iman Shumpert,2011,2015,2015-16,Iman Shumpert,8988765.0,70000000.0,85323721.0,0.12841092857142858,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,iman shumpert,iman shumpert
+202698,Chris Singleton,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,chris singleton,chris singleton
+202699,Tobias Harris,2011,2015,2015-16,Tobias Harris,16000000.0,70000000.0,85323721.0,0.22857142857142856,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tobias harris,tobias harris
+202700,Donatas Motiejunas,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,donatas motiejunas,donatas motiejunas
+202701,Nolan Smith,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,nolan smith,nolan smith
+202702,Kenneth Faried,2011,2015,2015-16,Kenneth Faried,11235955.0,70000000.0,85323721.0,0.16051364285714287,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kenneth faried,kenneth faried
+202703,Nikola Mirotic,2011,2015,2015-16,Nikola Mirotic,5543725.0,70000000.0,85323721.0,0.07919607142857144,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,nikola mirotic,nikola mirotic
+202704,Reggie Jackson,2011,2015,2015-16,Reggie Jackson,13913044.0,70000000.0,85323721.0,0.19875777142857143,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,reggie jackson,reggie jackson
+202705,MarShon Brooks,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,marshon brooks,marshon brooks
+202706,Jordan Hamilton,2011,2015,2015-16,Jordan Hamilton,119461.0,70000000.0,85323721.0,0.0017065857142857144,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jordan hamilton,jordan hamilton
+202707,JaJuan Johnson,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,jajuan johnson,jajuan johnson
+202708,Norris Cole,2011,2015,2015-16,Norris Cole,3203780.0,70000000.0,85323721.0,0.04576828571428571,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,norris cole,norris cole
+202709,Cory Joseph,2011,2015,2015-16,Cory Joseph,7000000.0,70000000.0,85323721.0,0.1,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,cory joseph,cory joseph
+202710,Jimmy Butler III,2011,2015,2015-16,Jimmy Butler,16407500.0,70000000.0,85323721.0,0.23439285714285715,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jimmy butler,jimmy butler
+202711,Bojan Bogdanovic,2011,2015,2015-16,Bojan Bogdanovic,3425510.0,70000000.0,85323721.0,0.04893585714285714,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,bojan bogdanovic,bojan bogdanovic
+202712,Justin Harper,2011,2015,2015-16,Justin Harper,99418.0,70000000.0,85323721.0,0.0014202571428571429,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,justin harper,justin harper
+202713,Kyle Singler,2011,2015,2015-16,Kyle Singler,4500000.0,70000000.0,85323721.0,0.06428571428571428,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kyle singler,kyle singler
+202714,Shelvin Mack,2011,2015,2015-16,Shelvin Mack,2433333.0,70000000.0,85323721.0,0.0347619,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,shelvin mack,shelvin mack
+202715,Tyler Honeycutt,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,tyler honeycutt,tyler honeycutt
+202716,Jordan Williams,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,jordan williams,jordan williams
+202717,Trey Thompkins,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,trey thompkins,trey thompkins
+202718,Chandler Parsons,2011,2015,2015-16,Chandler Parsons,15361500.0,70000000.0,85323721.0,0.21945,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,chandler parsons,chandler parsons
+202719,Jeremy Tyler,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,jeremy tyler,jeremy tyler
+202720,Jon Leuer,2011,2015,2015-16,Jon Leuer,1035000.0,70000000.0,85323721.0,0.014785714285714286,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jon leuer,jon leuer
+202721,Darius Morris,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,darius morris,darius morris
+202723,Malcolm Lee,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,malcolm lee,malcolm lee
+202724,Charles Jenkins,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,charles jenkins,charles jenkins
+202725,Josh Harrellson,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,josh harrellson,josh harrellson
+202726,Andrew Goudelock,2011,2015,2015-16,Andrew Goudelock,200600.0,70000000.0,85323721.0,0.0028657142857142857,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,andrew goudelock,andrew goudelock
+202727,Travis Leslie,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,travis leslie,travis leslie
+202728,Keith Benson,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,keith benson,keith benson
+202729,Josh Selby,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,josh selby,josh selby
+202730,Lavoy Allen,2011,2015,2015-16,Lavoy Allen,3550000.0,70000000.0,85323721.0,0.05071428571428571,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,lavoy allen,lavoy allen
+202731,Vernon Macklin,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,vernon macklin,vernon macklin
+202732,DeAndre Liggins,2011,2015,2015-16,,,70000000.0,85323721.0,,,,,,,,,0,1,0,unmatched,deandre liggins,deandre liggins
+202734,E'Twaun Moore,2011,2015,2015-16,E'Twaun Moore,1015421.0,70000000.0,85323721.0,0.014506014285714285,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,etwaun moore,etwaun moore
+202738,Isaiah Thomas,2011,2015,2015-16,Isaiah Thomas,6912869.0,70000000.0,85323721.0,0.09875527142857143,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,isaiah thomas,isaiah thomas
+203076,Anthony Davis,2012,2016,2016-17,Anthony Davis,22116750.0,94143000.0,112368348.0,0.23492718523947612,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,anthony davis,anthony davis
+203077,Michael Kidd-Gilchrist,2012,2016,2016-17,Michael Kidd-Gilchrist,13000000.0,94143000.0,112368348.0,0.13808780259817513,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,michael kidd gilchrist,michael kidd gilchrist
+203078,Bradley Beal,2012,2016,2016-17,Bradley Beal,22116750.0,94143000.0,112368348.0,0.23492718523947612,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,bradley beal,bradley beal
+203079,Dion Waiters,2012,2016,2016-17,Dion Waiters,2898000.0,94143000.0,112368348.0,0.030782957840731654,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dion waiters,dion waiters
+203080,Thomas Robinson,2012,2016,2016-17,Thomas Robinson,1050961.0,94143000.0,112368348.0,0.011163453469721593,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,thomas robinson,thomas robinson
+203081,Damian Lillard,2012,2016,2016-17,Damian Lillard,24328425.0,94143000.0,112368348.0,0.2584199037634237,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,damian lillard,damian lillard
+203082,Terrence Ross,2012,2016,2016-17,Terrence Ross,10000000.0,94143000.0,112368348.0,0.10622138661398085,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,terrence ross,terrence ross
+203083,Andre Drummond,2012,2016,2016-17,Andre Drummond,22116750.0,94143000.0,112368348.0,0.23492718523947612,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,andre drummond,andre drummond
+203084,Harrison Barnes,2012,2016,2016-17,Harrison Barnes,22116750.0,94143000.0,112368348.0,0.23492718523947612,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,harrison barnes,harrison barnes
+203085,Austin Rivers,2012,2016,2016-17,Austin Rivers,11000000.0,94143000.0,112368348.0,0.11684352527537895,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,austin rivers,austin rivers
+203086,Meyers Leonard,2012,2016,2016-17,Meyers Leonard,9213484.0,94143000.0,112368348.0,0.09786690460257268,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,meyers leonard,meyers leonard
+203087,Jeremy Lamb,2012,2016,2016-17,Jeremy Lamb,7000000.0,94143000.0,112368348.0,0.0743549706297866,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jeremy lamb,jeremy lamb
+203088,Kendall Marshall,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,kendall marshall,kendall marshall
+203089,John Henson,2012,2016,2016-17,John Henson,12267606.0,94143000.0,112368348.0,0.13030821197539913,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,john henson,john henson
+203090,Maurice Harkless,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,maurice harkless,maurice harkless
+203091,Royce White,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,royce white,royce white
+203092,Tyler Zeller,2012,2016,2016-17,Tyler Zeller,8000000.0,94143000.0,112368348.0,0.08497710929118468,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tyler zeller,tyler zeller
+203093,Terrence Jones,2012,2016,2016-17,Terrence Jones,1207194.0,94143000.0,112368348.0,0.0128229820592078,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,terrence jones,terrence jones
+203094,Andrew Nicholson,2012,2016,2016-17,Andrew Nicholson,6088993.0,94143000.0,112368348.0,0.06467812795428232,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,andrew nicholson,andrew nicholson
+203095,Evan Fournier,2012,2016,2016-17,Evan Fournier,17000000.0,94143000.0,112368348.0,0.18057635724376747,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,evan fournier,evan fournier
+203096,Jared Sullinger,2012,2016,2016-17,Jared Sullinger,5628000.0,94143000.0,112368348.0,0.059781396386348426,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jared sullinger,jared sullinger
+203097,Fab Melo,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,fab melo,fab melo
+203098,John Jenkins,2012,2016,2016-17,John Jenkins,1050961.0,94143000.0,112368348.0,0.011163453469721593,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,john jenkins,john jenkins
+203099,Jared Cunningham,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,jared cunningham,jared cunningham
+203100,Tony Wroten,2012,2016,2016-17,Tony Wroten,25000.0,94143000.0,112368348.0,0.00026555346653495213,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tony wroten,tony wroten
+203101,Miles Plumlee,2012,2016,2016-17,Miles Plumlee,12400000.0,94143000.0,112368348.0,0.13171451940133627,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,miles plumlee,miles plumlee
+203102,Arnett Moultrie,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,arnett moultrie,arnett moultrie
+203103,Perry Jones III,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,perry jones,perry jones
+203104,Marquis Teague,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,marquis teague,marquis teague
+203105,Festus Ezeli,2012,2016,2016-17,Festus Ezeli,7400000.0,94143000.0,112368348.0,0.07860382609434584,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,festus ezeli,festus ezeli
+203106,Jeffery Taylor,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,jeffery taylor,jeffery taylor
+203108,Bernard James,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,bernard james,bernard james
+203109,Jae Crowder,2012,2016,2016-17,Jae Crowder,6286408.0,94143000.0,112368348.0,0.06677509745812221,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jae crowder,jae crowder
+203110,Draymond Green,2012,2016,2016-17,Draymond Green,15330435.0,94143000.0,112368348.0,0.16284200630955037,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,draymond green,draymond green
+203111,Orlando Johnson,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,orlando johnson,orlando johnson
+203112,Quincy Acy,2012,2016,2016-17,Quincy Acy,2965505.0,94143000.0,112368348.0,0.03150000531106933,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,quincy acy,quincy acy
+203113,Quincy Miller,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,quincy miller,quincy miller
+203114,Khris Middleton,2012,2016,2016-17,Khris Middleton,15200000.0,94143000.0,112368348.0,0.1614565076532509,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,khris middleton,khris middleton
+203115,Will Barton,2012,2016,2016-17,Will Barton,3533333.0,94143000.0,112368348.0,0.037531553062893686,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,will barton,will barton
+203116,Tyshawn Taylor,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,tyshawn taylor,tyshawn taylor
+203117,Doron Lamb,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,doron lamb,doron lamb
+203118,Mike Scott,2012,2016,2016-17,Mike Scott,3333333.0,94143000.0,112368348.0,0.03540712533061407,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,mike scott,mike scott
+203119,Kim English,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,kim english,kim english
+203120,Justin Hamilton,2012,2016,2016-17,Justin Hamilton,3000000.0,94143000.0,112368348.0,0.031866415984194256,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,justin hamilton,justin hamilton
+203121,Darius Miller,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,darius miller,darius miller
+203122,Kevin Murphy,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,kevin murphy,kevin murphy
+203123,Kostas Papanikolaou,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,kostas papanikolaou,kostas papanikolaou
+203124,Kyle O'Quinn,2012,2016,2016-17,Kyle O'Quinn,3918750.0,94143000.0,112368348.0,0.04162550587935375,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kyle oquinn,kyle oquinn
+203126,Kris Joseph,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,kris joseph,kris joseph
+203128,Furkan Aldemir,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,furkan aldemir,furkan aldemir
+203129,Tornike Shengelia,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,tornike shengelia,tornike shengelia
+203130,Darius Johnson-Odom,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,darius johnson odom,darius johnson odom
+203133,Robbie Hummel,2012,2016,2016-17,Robbie Hummel,150000.0,94143000.0,112368348.0,0.0015933207992097128,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,robbie hummel,robbie hummel
+203135,Robert Sacre,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,robert sacre,robert sacre
+203136,Ognjen Kuzmic,2012,2016,2016-17,,,94143000.0,112368348.0,,,,,,,,,0,1,0,unmatched,ognjen kuzmic,ognjen kuzmic
+203318,Glen Rice,2013,2017,2017-18,,,99093000.0,115455294.0,,,,,,,,,0,1,0,unmatched,glen rice,glen rice
+203457,Nerlens Noel,2013,2017,2017-18,Nerlens Noel,4187599.0,99093000.0,115455294.0,0.042259281684881876,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,nerlens noel,nerlens noel
+203458,Alex Len,2013,2017,2017-18,Alex Len,4187599.0,99093000.0,115455294.0,0.042259281684881876,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,alex len,alex len
+203459,Allen Crabbe,2013,2017,2017-18,Allen Crabbe,18500000.0,99093000.0,115455294.0,0.18669330830633848,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,allen crabbe,allen crabbe
+203460,Andre Roberson,2013,2017,2017-18,Andre Roberson,9259260.0,99093000.0,115455294.0,0.09344010172262421,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,andre roberson,andre roberson
+203461,Anthony Bennett,2013,2017,2017-18,,,99093000.0,115455294.0,,,,,,,,,0,1,0,unmatched,anthony bennett,anthony bennett
+203462,Archie Goodwin,2013,2017,2017-18,,,99093000.0,115455294.0,,,,,,,,,0,1,0,unmatched,archie goodwin,archie goodwin
+203463,Ben McLemore,2013,2017,2017-18,Ben McLemore,5200000.0,99093000.0,115455294.0,0.0524759569293492,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ben mclemore,ben mclemore
+203467,Carrick Felix,2013,2017,2017-18,Carrick Felix,140901.0,99093000.0,115455294.0,0.0014219066937119676,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,carrick felix,carrick felix
+203468,CJ McCollum,2013,2017,2017-18,CJ McCollum,23962573.0,99093000.0,115455294.0,0.24181902858930499,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,cj mccollum,cj mccollum
+203469,Cody Zeller,2013,2017,2017-18,Cody Zeller,12584270.0,99093000.0,115455294.0,0.12699454048217332,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,cody zeller,cody zeller
+203471,Dennis Schröder,2013,2017,2017-18,Dennis Schroeder,15500000.0,99093000.0,115455294.0,0.1564187177701755,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dennis schroeder,dennis schroeder
+203475,Erick Green,2013,2017,2017-18,,,99093000.0,115455294.0,,,,,,,,,0,1,0,unmatched,erick green,erick green
+203476,Gorgui Dieng,2013,2017,2017-18,Gorgui Dieng,14112360.0,99093000.0,115455294.0,0.1424153068329751,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,gorgui dieng,gorgui dieng
+203477,Isaiah Canaan,2013,2017,2017-18,Isaiah Canaan,1113863.0,99093000.0,115455294.0,0.011240582079460708,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,isaiah canaan,isaiah canaan
+203479,Jamaal Franklin,2013,2017,2017-18,,,99093000.0,115455294.0,,,,,,,,,0,1,0,unmatched,jamaal franklin,jamaal franklin
+203481,Jeff Withey,2013,2017,2017-18,Jeff Withey,593780.0,99093000.0,115455294.0,0.005992148789520955,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jeff withey,jeff withey
+203482,Kelly Olynyk,2013,2017,2017-18,Kelly Olynyk,12007169.0,99093000.0,115455294.0,0.12117070832450325,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kelly olynyk,kelly olynyk
+203484,Kentavious Caldwell-Pope,2013,2017,2017-18,Kentavious Caldwell-Pope,17745894.0,99093000.0,115455294.0,0.1790832248493839,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kentavious caldwell pope,kentavious caldwell pope
+203485,Lorenzo Brown,2013,2017,2017-18,Lorenzo Brown,77250.0,99093000.0,115455294.0,0.0007795707063061972,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1,1,1,exact_normalized_name,lorenzo brown,lorenzo brown
+203486,Mason Plumlee,2013,2017,2017-18,Mason Plumlee,14041096.0,99093000.0,115455294.0,0.14169614402631872,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,mason plumlee,mason plumlee
+203487,Michael Carter-Williams,2013,2017,2017-18,Michael Carter-Williams,2700000.0,99093000.0,115455294.0,0.027247131482546698,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,michael carter williams,michael carter williams
+203488,Mike Muscala,2013,2017,2017-18,Mike Muscala,5000000.0,99093000.0,115455294.0,0.050457650893604995,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,mike muscala,mike muscala
+203489,Nate Wolters,2013,2017,2017-18,Nate Wolters,77250.0,99093000.0,115455294.0,0.0007795707063061972,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1,1,1,exact_normalized_name,nate wolters,nate wolters
+203490,Otto Porter Jr.,2013,2017,2017-18,Otto Porter,24773250.0,99093000.0,115455294.0,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,otto porter,otto porter
+203491,Peyton Siva,2013,2017,2017-18,,,99093000.0,115455294.0,,,,,,,,,0,1,0,unmatched,peyton siva,peyton siva
+203492,Ray McCallum,2013,2017,2017-18,,,99093000.0,115455294.0,,,,,,,,,0,1,0,unmatched,ray mccallum,ray mccallum
+203493,Reggie Bullock Jr.,2013,2017,2017-18,Reggie Bullock,2500000.0,99093000.0,115455294.0,0.025228825446802498,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,reggie bullock,reggie bullock
+203495,Ricky Ledo,2013,2017,2017-18,,,99093000.0,115455294.0,,,,,,,,,0,1,0,unmatched,ricky ledo,ricky ledo
+203497,Rudy Gobert,2013,2017,2017-18,Rudy Gobert,21224719.0,99093000.0,115455294.0,0.214189892323373,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,rudy gobert,rudy gobert
+203498,Shabazz Muhammad,2013,2017,2017-18,Shabazz Muhammad,1924755.0,99093000.0,115455294.0,0.019423723169144137,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,shabazz muhammad,shabazz muhammad
+203499,Shane Larkin,2013,2017,2017-18,Shane Larkin,1524305.0,99093000.0,115455294.0,0.015382569909075314,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,shane larkin,shane larkin
+203500,Steven Adams,2013,2017,2017-18,Steven Adams,22471911.0,99093000.0,115455294.0,0.2267759680300324,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,steven adams,steven adams
+203501,Tim Hardaway Jr.,2013,2017,2017-18,Tim Hardaway Jr,16500000.0,99093000.0,115455294.0,0.1665102479488965,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tim hardaway,tim hardaway
+203502,Tony Mitchell,2013,2017,2017-18,,,99093000.0,115455294.0,,,,,,,,,0,1,0,unmatched,tony mitchell,tony mitchell
+203503,Tony Snell,2013,2017,2017-18,Tony Snell,9821429.0,99093000.0,115455294.0,0.09911324715166561,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tony snell,tony snell
+203504,Trey Burke,2013,2017,2017-18,Trey Burke,784160.0,99093000.0,115455294.0,0.00791337430494586,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,trey burke,trey burke
+203506,Victor Oladipo,2013,2017,2017-18,Victor Oladipo,21000000.0,99093000.0,115455294.0,0.21192213375314098,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,victor oladipo,victor oladipo
+203507,Giannis Antetokounmpo,2013,2017,2017-18,Giannis Antetokounmpo,22471911.0,99093000.0,115455294.0,0.2267759680300324,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,giannis antetokounmpo,giannis antetokounmpo
+203508,Sergey Karasev,2013,2017,2017-18,,,99093000.0,115455294.0,,,,,,,,,0,1,0,unmatched,sergey karasev,sergey karasev
+203510,Pierre Jackson,2013,2017,2017-18,,,99093000.0,115455294.0,,,,,,,,,0,1,0,unmatched,pierre jackson,pierre jackson
+203511,Grant Jerrett,2013,2017,2017-18,,,99093000.0,115455294.0,,,,,,,,,0,1,0,unmatched,grant jerrett,grant jerrett
+203512,Lucas Nogueira,2013,2017,2017-18,Lucas Nogueira,2947304.0,99093000.0,115455294.0,0.029742807261865116,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,lucas nogueira,lucas nogueira
+203513,Erik Murphy,2013,2017,2017-18,,,99093000.0,115455294.0,,,,,,,,,0,1,0,unmatched,erik murphy,erik murphy
+203516,James Ennis III,2013,2017,2017-18,James Ennis,3028410.0,99093000.0,115455294.0,0.030561290908540463,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,james ennis,james ennis
+203517,Nemanja Nedovic,2013,2017,2017-18,,,99093000.0,115455294.0,,,,,,,,,0,1,0,unmatched,nemanja nedovic,nemanja nedovic
+203518,Alex Abrines,2013,2017,2017-18,Alex Abrines,5725000.0,99093000.0,115455294.0,0.057774010273177724,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,alex abrines,alex abrines
+203524,Solomon Hill,2013,2017,2017-18,Solomon Hill,12236535.0,99093000.0,115455294.0,0.12348536223547577,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,solomon hill,solomon hill
+203526,Raul Neto,2013,2017,2017-18,Raul Neto,1471382.0,99093000.0,115455294.0,0.014848495857426862,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,raul neto,raul neto
+203527,Ryan Kelly,2013,2017,2017-18,,,99093000.0,115455294.0,,,,,,,,,0,1,0,unmatched,ryan kelly,ryan kelly
+203530,Joffrey Lauvergne,2013,2017,2017-18,Joffrey Lauvergne,1524305.0,99093000.0,115455294.0,0.015382569909075314,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,joffrey lauvergne,joffrey lauvergne
+203648,Thanasis Antetokounmpo,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,thanasis antetokounmpo,thanasis antetokounmpo
+203798,PJ Hairston,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,pj hairston,pj hairston
+203893,Russ Smith,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,russ smith,russ smith
+203894,Shabazz Napier,2014,2018,2018-19,Shabazz Napier,1942422.0,101869000.0,116573245.0,0.01906784203241418,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,shabazz napier,shabazz napier
+203895,Jordan McRae,2014,2018,2018-19,Jordan McRae,77250.0,101869000.0,116573245.0,0.0007583268707850279,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1,1,1,exact_normalized_name,jordan mcrae,jordan mcrae
+203897,Zach LaVine,2014,2018,2018-19,Zach LaVine,19500000.0,101869000.0,116573245.0,0.1914223168971915,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,zach lavine,zach lavine
+203898,Tyler Ennis,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,tyler ennis,tyler ennis
+203900,Markel Brown,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,markel brown,markel brown
+203901,Elfrid Payton,2014,2018,2018-19,Elfrid Payton,3000000.0,101869000.0,116573245.0,0.029449587214952538,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,elfrid payton,elfrid payton
+203902,Semaj Christon,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,semaj christon,semaj christon
+203903,Jordan Clarkson,2014,2018,2018-19,Jordan Clarkson,12500000.0,101869000.0,116573245.0,0.12270661339563557,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jordan clarkson,jordan clarkson
+203906,Devyn Marble,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,devyn marble,devyn marble
+203909,KJ McDaniels,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,kj mcdaniels,kj mcdaniels
+203910,Nick Johnson,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,nick johnson,nick johnson
+203912,C.J. Wilcox,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,c j wilcox,c j wilcox
+203914,Gary Harris,2014,2018,2018-19,Gary Harris,16517857.0,101869000.0,116573245.0,0.16214802344187143,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,gary harris,gary harris
+203915,Spencer Dinwiddie,2014,2018,2018-19,Spencer Dinwiddie,1656092.0,101869000.0,116573245.0,0.016257075263328393,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,spencer dinwiddie,spencer dinwiddie
+203917,Nik Stauskas,2014,2018,2018-19,Nik Stauskas,2161886.0,101869000.0,116573245.0,0.02122221676859496,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,nik stauskas,nik stauskas
+203918,Rodney Hood,2014,2018,2018-19,Rodney Hood,3472887.0,101869000.0,116573245.0,0.03409169619805829,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,rodney hood,rodney hood
+203919,Jordan Adams,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,jordan adams,jordan adams
+203921,Cleanthony Early,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,cleanthony early,cleanthony early
+203922,Glenn Robinson III,2014,2018,2018-19,Glenn Robinson III,4075000.0,101869000.0,116573245.0,0.040002355966977196,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,glenn robinson,glenn robinson
+203923,James Young,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,james young,james young
+203924,Jerami Grant,2014,2018,2018-19,Jerami Grant,8333333.0,101869000.0,116573245.0,0.08180440565824736,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jerami grant,jerami grant
+203925,Joe Harris,2014,2018,2018-19,Joe Harris,8333333.0,101869000.0,116573245.0,0.08180440565824736,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,joe harris,joe harris
+203926,Doug McDermott,2014,2018,2018-19,Doug McDermott,7333334.0,101869000.0,116573245.0,0.07198788640312559,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,doug mcdermott,doug mcdermott
+203928,Cory Jefferson,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,cory jefferson,cory jefferson
+203932,Aaron Gordon,2014,2018,2018-19,Aaron Gordon,21590909.0,101869000.0,116573245.0,0.21194778588186788,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,aaron gordon,aaron gordon
+203933,T.J. Warren,2014,2018,2018-19,TJ Warren,11750000.0,101869000.0,116573245.0,0.11534421659189743,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tj warren,tj warren
+203934,Lamar Patterson,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,lamar patterson,lamar patterson
+203935,Marcus Smart,2014,2018,2018-19,Marcus Smart,11160716.0,101869000.0,116573245.0,0.10955949307443874,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,marcus smart,marcus smart
+203937,Kyle Anderson,2014,2018,2018-19,Kyle Anderson,8641000.0,101869000.0,116573245.0,0.08482462770813495,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kyle anderson,kyle anderson
+203939,Dwight Powell,2014,2018,2018-19,Dwight Powell,9631250.0,101869000.0,116573245.0,0.09454544562133721,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dwight powell,dwight powell
+203940,Adreian Payne,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,adreian payne,adreian payne
+203943,Noah Vonleh,2014,2018,2018-19,Noah Vonleh,1621415.0,101869000.0,116573245.0,0.015916667484710757,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,noah vonleh,noah vonleh
+203944,Julius Randle,2014,2018,2018-19,Julius Randle,8641000.0,101869000.0,116573245.0,0.08482462770813495,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,julius randle,julius randle
+203946,Cameron Bairstow,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,cameron bairstow,cameron bairstow
+203948,Johnny O'Bryant III,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,johnny obryant,johnny obryant
+203950,Jarnell Stokes,2014,2018,2018-19,Jarnell Stokes,77250.0,101869000.0,116573245.0,0.0007583268707850279,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1,1,1,exact_normalized_name,jarnell stokes,jarnell stokes
+203952,Andrew Wiggins,2014,2018,2018-19,Andrew Wiggins,25467250.0,101869000.0,116573245.0,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,andrew wiggins,andrew wiggins
+203953,Jabari Parker,2014,2018,2018-19,Jabari Parker,20000000.0,101869000.0,116573245.0,0.1963305814330169,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jabari parker,jabari parker
+203954,Joel Embiid,2014,2018,2018-19,Joel Embiid,25467250.0,101869000.0,116573245.0,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,joel embiid,joel embiid
+203956,Mitch McGary,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,mitch mcgary,mitch mcgary
+203957,Dante Exum,2014,2018,2018-19,Dante Exum,10600000.0,101869000.0,116573245.0,0.10405520815949897,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dante exum,dante exum
+203962,Josh Huestis,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,josh huestis,josh huestis
+203967,Dario Saric,2014,2018,2018-19,Dario Saric,2526840.0,101869000.0,116573245.0,0.024804798319410223,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dario saric,dario saric
+203991,Clint Capela,2014,2018,2018-19,Clint Capela,15793104.0,101869000.0,116573245.0,0.15503346454760525,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,clint capela,clint capela
+203992,Bogdan Bogdanović,2014,2018,2018-19,Bogdan Bogdanovic,9000000.0,101869000.0,116573245.0,0.08834876164485761,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,bogdan bogdanovic,bogdan bogdanovic
+203994,Jusuf Nurkić,2014,2018,2018-19,Jusuf Nurkic,11111111.0,101869000.0,116573245.0,0.1090725441498395,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jusuf nurkic,jusuf nurkic
+203996,Damien Inglis,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,damien inglis,damien inglis
+203998,Bruno Caboclo,2014,2018,2018-19,Bruno Caboclo,705361.0,101869000.0,116573245.0,0.006924196762508712,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,bruno caboclo,bruno caboclo
+203999,Nikola Jokić,2014,2018,2018-19,Nikola Jokic,25467250.0,101869000.0,116573245.0,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,nikola jokic,nikola jokic
+204002,Edy Tavares,2014,2018,2018-19,,,101869000.0,116573245.0,,,,,,,,,0,1,0,unmatched,edy tavares,edy tavares
+204001,Kristaps Porziņģis,2015,2019,2019-20,Kristaps Porzingis,27285000.0,109140000.0,123384194.0,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kristaps porzingis,kristaps porzingis
+1626143,Jahlil Okafor,2015,2019,2019-20,Jahlil Okafor,1702486.0,109140000.0,123384194.0,0.015599102070734836,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jahlil okafor,jahlil okafor
+1626144,Emmanuel Mudiay,2015,2019,2019-20,Emmanuel Mudiay,1737145.0,109140000.0,123384194.0,0.015916666666666666,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,emmanuel mudiay,emmanuel mudiay
+1626145,Tyus Jones,2015,2019,2019-20,Tyus Jones,10116000.0,109140000.0,123384194.0,0.09268829026937878,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tyus jones,tyus jones
+1626147,Justin Anderson,2015,2019,2019-20,,,109140000.0,123384194.0,,,,,,,,,0,1,0,unmatched,justin anderson,justin anderson
+1626148,Anthony Brown,2015,2019,2019-20,,,109140000.0,123384194.0,,,,,,,,,0,1,0,unmatched,anthony brown,anthony brown
+1626149,Montrezl Harrell,2015,2019,2019-20,Montrezl Harrell,6000000.0,109140000.0,123384194.0,0.05497526113249038,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,montrezl harrell,montrezl harrell
+1626150,Andrew Harrison,2015,2019,2019-20,,,109140000.0,123384194.0,,,,,,,,,0,1,0,unmatched,andrew harrison,andrew harrison
+1626153,Delon Wright,2015,2019,2019-20,Delon Wright,9473684.0,109140000.0,123384194.0,0.08680304196444934,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,delon wright,delon wright
+1626154,RJ Hunter,2015,2019,2019-20,,,109140000.0,123384194.0,,,,,,,,,0,1,0,unmatched,rj hunter,rj hunter
+1626155,Sam Dekker,2015,2019,2019-20,,,109140000.0,123384194.0,,,,,,,,,0,1,0,unmatched,sam dekker,sam dekker
+1626156,D'Angelo Russell,2015,2019,2019-20,D'Angelo Russell,27285000.0,109140000.0,123384194.0,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dangelo russell,dangelo russell
+1626157,Karl-Anthony Towns,2015,2019,2019-20,Karl-Anthony Towns,27285000.0,109140000.0,123384194.0,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,karl anthony towns,karl anthony towns
+1626158,Richaun Holmes,2015,2019,2019-20,Richaun Holmes,4767000.0,109140000.0,123384194.0,0.0436778449697636,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,richaun holmes,richaun holmes
+1626159,Justise Winslow,2015,2019,2019-20,Justise Winslow,13000000.0,109140000.0,123384194.0,0.11911306578706249,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,justise winslow,justise winslow
+1626161,Willie Cauley-Stein,2015,2019,2019-20,Willie Cauley-Stein,2177483.0,109140000.0,123384194.0,0.01995128275609309,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,willie cauley stein,willie cauley stein
+1626162,Kelly Oubre Jr.,2015,2019,2019-20,Kelly Oubre,15625000.0,109140000.0,123384194.0,0.14316474253252703,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kelly oubre,kelly oubre
+1626163,Frank Kaminsky,2015,2019,2019-20,Frank Kaminsky,4767000.0,109140000.0,123384194.0,0.0436778449697636,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,frank kaminsky,frank kaminsky
+1626164,Devin Booker,2015,2019,2019-20,Devin Booker,27285000.0,109140000.0,123384194.0,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,devin booker,devin booker
+1626166,Cameron Payne,2015,2019,2019-20,Cameron Payne,196288.0,109140000.0,123384194.0,0.0017984973428623785,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,cameron payne,cameron payne
+1626167,Myles Turner,2015,2019,2019-20,Myles Turner,18000000.0,109140000.0,123384194.0,0.16492578339747113,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,myles turner,myles turner
+1626168,Trey Lyles,2015,2019,2019-20,Trey Lyles,5500000.0,109140000.0,123384194.0,0.05039398937144952,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,trey lyles,trey lyles
+1626169,Stanley Johnson,2015,2019,2019-20,Stanley Johnson,3623000.0,109140000.0,123384194.0,0.03319589518050211,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,stanley johnson,stanley johnson
+1626170,Jerian Grant,2015,2019,2019-20,Jerian Grant,196288.0,109140000.0,123384194.0,0.0017984973428623785,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jerian grant,jerian grant
+1626171,Bobby Portis,2015,2019,2019-20,Bobby Portis,15000000.0,109140000.0,123384194.0,0.13743815283122596,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,bobby portis,bobby portis
+1626173,Rashad Vaughn,2015,2019,2019-20,,,109140000.0,123384194.0,,,,,,,,,0,1,0,unmatched,rashad vaughn,rashad vaughn
+1626175,Jordan Mickey,2015,2019,2019-20,,,109140000.0,123384194.0,,,,,,,,,0,1,0,unmatched,jordan mickey,jordan mickey
+1626176,Rakeem Christmas,2015,2019,2019-20,,,109140000.0,123384194.0,,,,,,,,,0,1,0,unmatched,rakeem christmas,rakeem christmas
+1626177,Dakari Johnson,2015,2019,2019-20,,,109140000.0,123384194.0,,,,,,,,,0,1,0,unmatched,dakari johnson,dakari johnson
+1626178,Rondae Hollis-Jefferson,2015,2019,2019-20,Rondae Hollis-Jefferson,2500000.0,109140000.0,123384194.0,0.022906358805204325,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,rondae hollis jefferson,rondae hollis jefferson
+1626179,Terry Rozier,2015,2019,2019-20,Terry Rozier,19894737.0,109140000.0,123384194.0,0.18228639362286972,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,terry rozier,terry rozier
+1626181,Norman Powell,2015,2019,2019-20,Norman Powell,10116576.0,109140000.0,123384194.0,0.09269356789444749,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,norman powell,norman powell
+1626183,Branden Dawson,2015,2019,2019-20,,,109140000.0,123384194.0,,,,,,,,,0,1,0,unmatched,branden dawson,branden dawson
+1626185,Jarell Martin,2015,2019,2019-20,,,109140000.0,123384194.0,,,,,,,,,0,1,0,unmatched,jarell martin,jarell martin
+1626191,Chris McCullough,2015,2019,2019-20,,,109140000.0,123384194.0,,,,,,,,,0,1,0,unmatched,chris mccullough,chris mccullough
+1626192,Pat Connaughton,2015,2019,2019-20,Pat Connaughton,1723050.0,109140000.0,123384194.0,0.015787520615722923,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,pat connaughton,pat connaughton
+1626195,Willy Hernangomez,2015,2019,2019-20,Willy Hernangomez,1676735.0,109140000.0,123384194.0,0.01536315741249771,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,willy hernangomez,willy hernangomez
+1626199,Darrun Hilliard,2015,2019,2019-20,,,109140000.0,123384194.0,,,,,,,,,0,1,0,unmatched,darrun hilliard,darrun hilliard
+1626202,Joe Young,2015,2019,2019-20,,,109140000.0,123384194.0,,,,,,,,,0,1,0,unmatched,joe young,joe young
+1626204,Larry Nance Jr.,2015,2019,2019-20,Larry Nance Jr,12727273.0,109140000.0,123384194.0,0.1166141927799157,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,larry nance,larry nance
+1626209,Mario Hezonja,2015,2019,2019-20,Mario Hezonja,1737145.0,109140000.0,123384194.0,0.015916666666666666,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,mario hezonja,mario hezonja
+1626224,Cedi Osman,2015,2019,2019-20,Cedi Osman,2907143.0,109140000.0,123384194.0,0.026636824262415246,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,cedi osman,cedi osman
+1627732,Ben Simmons,2016,2020,2020-21,Ben Simmons,30559200.0,109140000.0,117838496.0,0.28,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ben simmons,ben simmons
+1627733,Dragan Bender,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,dragan bender,dragan bender
+1627734,Domantas Sabonis,2016,2020,2020-21,Domantas Sabonis,19800000.0,109140000.0,117838496.0,0.18141836173721826,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,domantas sabonis,domantas sabonis
+1627735,Wade Baldwin IV,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,wade baldwin,wade baldwin
+1627736,Malik Beasley,2016,2020,2020-21,Malik Beasley,13425895.0,109140000.0,117838496.0,0.12301534726039949,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,malik beasley,malik beasley
+1627737,Marquese Chriss,2016,2020,2020-21,Marquese Chriss,1824003.0,109140000.0,117838496.0,0.016712506871907642,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,marquese chriss,marquese chriss
+1627738,Deyonta Davis,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,deyonta davis,deyonta davis
+1627739,Kris Dunn,2016,2020,2020-21,Kris Dunn,4767000.0,109140000.0,117838496.0,0.0436778449697636,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kris dunn,kris dunn
+1627740,Henry Ellenson,2016,2020,2020-21,Henry Ellenson,168983.0,109140000.0,117838496.0,0.001548314091991937,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,henry ellenson,henry ellenson
+1627741,Buddy Hield,2016,2020,2020-21,Buddy Hield,24931817.0,109140000.0,117838496.0,0.22843885834707714,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,buddy hield,buddy hield
+1627742,Brandon Ingram,2016,2020,2020-21,Brandon Ingram,27285000.0,109140000.0,117838496.0,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,brandon ingram,brandon ingram
+1627743,Demetrius Jackson,2016,2020,2020-21,Demetrius Jackson,92857.0,109140000.0,117838496.0,0.0008508063038299432,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,demetrius jackson,demetrius jackson
+1627744,Brice Johnson,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,brice johnson,brice johnson
+1627745,Damian Jones,2016,2020,2020-21,Damian Jones,1487284.0,109140000.0,117838496.0,0.013627304379695804,3.0,3.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,damian jones,damian jones
+1627746,Skal Labissiere,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,skal labissiere,skal labissiere
+1627747,Caris LeVert,2016,2020,2020-21,Caris LeVert,16203704.0,109140000.0,117838496.0,0.1484671431189298,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,caris levert,caris levert
+1627748,Thon Maker,2016,2020,2020-21,Thon Maker,1737145.0,109140000.0,117838496.0,0.015916666666666666,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,thon maker,thon maker
+1627749,Dejounte Murray,2016,2020,2020-21,Dejounte Murray,14286000.0,109140000.0,117838496.0,0.1308960967564596,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dejounte murray,dejounte murray
+1627750,Jamal Murray,2016,2020,2020-21,Jamal Murray,27285000.0,109140000.0,117838496.0,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jamal murray,jamal murray
+1627751,Jakob Poeltl,2016,2020,2020-21,Jakob Poeltl,8101852.0,109140000.0,117838496.0,0.0742335715594649,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jakob poeltl,jakob poeltl
+1627752,Taurean Prince,2016,2020,2020-21,Taurean Prince,12250000.0,109140000.0,117838496.0,0.11224115814550119,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,taurean prince,taurean prince
+1627753,Zhou Qi,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,zhou qi,zhou qi
+1627754,Diamond Stone,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,diamond stone,diamond stone
+1627755,Tyler Ulis,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,tyler ulis,tyler ulis
+1627756,Denzel Valentine,2016,2020,2020-21,Denzel Valentine,4642800.0,109140000.0,117838496.0,0.042539857064321056,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,denzel valentine,denzel valentine
+1627757,Stephen Zimmerman,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,stephen zimmerman,stephen zimmerman
+1627759,Jaylen Brown,2016,2020,2020-21,Jaylen Brown,25035118.0,109140000.0,117838496.0,0.22938535825545173,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jaylen brown,jaylen brown
+1627761,DeAndre' Bembry,2016,2020,2020-21,DeAndre Bembry,1737145.0,109140000.0,117838496.0,0.015916666666666666,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,deandre bembry,deandre bembry
+1627762,Joel Bolomboy,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,joel bolomboy,joel bolomboy
+1627763,Malcolm Brogdon,2016,2020,2020-21,Malcolm Brogdon,20700000.0,109140000.0,117838496.0,0.1896646509070918,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,malcolm brogdon,malcolm brogdon
+1627767,Cheick Diallo,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,cheick diallo,cheick diallo
+1627770,Kay Felder,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,kay felder,kay felder
+1627771,Michael Gbinije,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,michael gbinije,michael gbinije
+1627772,Daniel Hamilton,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,daniel hamilton,daniel hamilton
+1627773,AJ Hammons,2016,2020,2020-21,AJ Hammons,350087.0,109140000.0,117838496.0,0.0032076873740150267,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,aj hammons,aj hammons
+1627774,Jake Layman,2016,2020,2020-21,Jake Layman,3761085.0,109140000.0,117838496.0,0.034461105002748765,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jake layman,jake layman
+1627775,Patrick McCaw,2016,2020,2020-21,Patrick McCaw,4000000.0,109140000.0,117838496.0,0.03665017408832692,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,patrick mccaw,patrick mccaw
+1627777,Georges Niang,2016,2020,2020-21,Georges Niang,1783557.0,109140000.0,117838496.0,0.016341918636613523,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,georges niang,georges niang
+1627778,Chinanu Onuaku,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,chinanu onuaku,chinanu onuaku
+1627779,Marcus Paige,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,marcus paige,marcus paige
+1627781,Malachi Richardson,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,malachi richardson,malachi richardson
+1627783,Pascal Siakam,2016,2020,2020-21,Pascal Siakam,30559200.0,109140000.0,117838496.0,0.28,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,pascal siakam,pascal siakam
+1627785,Isaiah Whitehead,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,isaiah whitehead,isaiah whitehead
+1627788,Furkan Korkmaz,2016,2020,2020-21,Furkan Korkmaz,1762796.0,109140000.0,117838496.0,0.016151695070551586,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,furkan korkmaz,furkan korkmaz
+1627789,Timothe Luwawu-Cabarrot,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,timothe luwawu cabarrot,timothe luwawu cabarrot
+1627790,Ante Zizic,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,ante zizic,ante zizic
+1627791,Ben Bentil,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,ben bentil,ben bentil
+1627820,Tyrone Wallace,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,tyrone wallace,tyrone wallace
+1627823,Juancho Hernangomez,2016,2020,2020-21,Juan Hernangomez,6493000.0,109140000.0,117838496.0,0.05949239508887667,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,juan hernangomez,juan hernangomez
+1627824,Guerschon Yabusele,2016,2020,2020-21,Guerschon Yabusele,1039080.0,109140000.0,117838496.0,0.009520615722924683,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,guerschon yabusele,guerschon yabusele
+1627826,Ivica Zubac,2016,2020,2020-21,Ivica Zubac,7000000.0,109140000.0,117838496.0,0.06413780465457211,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ivica zubac,ivica zubac
+1627834,Georgios Papagiannis,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,georgios papagiannis,georgios papagiannis
+1627835,Paul Zipser,2016,2020,2020-21,,,109140000.0,117838496.0,,,,,,,,,0,1,0,unmatched,paul zipser,paul zipser
+1627846,Abdel Nader,2016,2020,2020-21,Abdel Nader,1752950.0,109140000.0,117838496.0,0.016061480667033168,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,abdel nader,abdel nader
+1628366,Lonzo Ball,2017,2021,2021-22,Lonzo Ball,18604651.0,112414000.0,112414000.0,0.16550119202234598,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,lonzo ball,lonzo ball
+1628367,Josh Jackson,2017,2021,2021-22,Josh Jackson,5005350.0,112414000.0,112414000.0,0.04452603768213924,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,josh jackson,josh jackson
+1628368,De'Aaron Fox,2017,2021,2021-22,De'Aaron Fox,28103500.0,112414000.0,112414000.0,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,deaaron fox,deaaron fox
+1628369,Jayson Tatum,2017,2021,2021-22,Jayson Tatum,28103500.0,112414000.0,112414000.0,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jayson tatum,jayson tatum
+1628370,Malik Monk,2017,2021,2021-22,Malik Monk,1789256.0,112414000.0,112414000.0,0.01591666518405181,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,malik monk,malik monk
+1628371,Jonathan Isaac,2017,2021,2021-22,Jonathan Isaac,17400000.0,112414000.0,112414000.0,0.15478499119326775,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jonathan isaac,jonathan isaac
+1628373,Frank Ntilikina,2017,2021,2021-22,Frank Ntilikina,1789256.0,112414000.0,112414000.0,0.01591666518405181,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,frank ntilikina,frank ntilikina
+1628374,Lauri Markkanen,2017,2021,2021-22,Lauri Markkanen,15690909.0,112414000.0,112414000.0,0.13958144892984858,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,lauri markkanen,lauri markkanen
+1628378,Donovan Mitchell,2017,2021,2021-22,Donovan Mitchell,28103500.0,112414000.0,112414000.0,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,donovan mitchell,donovan mitchell
+1628379,Luke Kennard,2017,2021,2021-22,Luke Kennard,13347727.0,112414000.0,112414000.0,0.11873723023822655,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,luke kennard,luke kennard
+1628380,Zach Collins,2017,2021,2021-22,Zach Collins,7000000.0,112414000.0,112414000.0,0.06226982404326863,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,zach collins,zach collins
+1628381,John Collins,2017,2021,2021-22,John Collins,23000000.0,112414000.0,112414000.0,0.20460085042788265,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,john collins,john collins
+1628382,Justin Jackson,2017,2021,2021-22,Justin Jackson,308493.0,112414000.0,112414000.0,0.0027442578326542957,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,justin jackson,justin jackson
+1628383,Justin Patton,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,justin patton,justin patton
+1628384,OG Anunoby,2017,2021,2021-22,OG Anunoby,16071429.0,112414000.0,112414000.0,0.14296643656484068,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,og anunoby,og anunoby
+1628385,Harry Giles III,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,harry giles,harry giles
+1628386,Jarrett Allen,2017,2021,2021-22,Jarrett Allen,20000000.0,112414000.0,112414000.0,0.17791378298076752,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jarrett allen,jarrett allen
+1628387,Ike Anigbogu,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,ike anigbogu,ike anigbogu
+1628388,T.J. Leaf,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,t j leaf,t j leaf
+1628389,Bam Adebayo,2017,2021,2021-22,Bam Adebayo,28103500.0,112414000.0,112414000.0,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,bam adebayo,bam adebayo
+1628390,Terrance Ferguson,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,terrance ferguson,terrance ferguson
+1628391,D.J. Wilson,2017,2021,2021-22,DJ Wilson,308493.0,112414000.0,112414000.0,0.0027442578326542957,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dj wilson,dj wilson
+1628392,Isaiah Hartenstein,2017,2021,2021-22,Isaiah Hartenstein,1729217.0,112414000.0,112414000.0,0.015382576903232694,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,isaiah hartenstein,isaiah hartenstein
+1628393,Jawun Evans,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,jawun evans,jawun evans
+1628394,Anžejs Pasečņiks,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,anzejs pasecniks,anzejs pasecniks
+1628395,Jordan Bell,2017,2021,2021-22,Jordan Bell,102831.0,112414000.0,112414000.0,0.0009147526108847652,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jordan bell,jordan bell
+1628396,Tony Bradley,2017,2021,2021-22,Tony Bradley,1789256.0,112414000.0,112414000.0,0.01591666518405181,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tony bradley,tony bradley
+1628397,Ivan Rabb,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,ivan rabb,ivan rabb
+1628398,Kyle Kuzma,2017,2021,2021-22,Kyle Kuzma,13000000.0,112414000.0,112414000.0,0.11564395893749889,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kyle kuzma,kyle kuzma
+1628399,Tyler Lydon,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,tyler lydon,tyler lydon
+1628400,Semi Ojeleye,2017,2021,2021-22,Semi Ojeleye,1789256.0,112414000.0,112414000.0,0.01591666518405181,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,semi ojeleye,semi ojeleye
+1628401,Derrick White,2017,2021,2021-22,Derrick White,15678571.0,112414000.0,112414000.0,0.13947169391712777,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,derrick white,derrick white
+1628402,Frank Jackson,2017,2021,2021-22,Frank Jackson,3000000.0,112414000.0,112414000.0,0.026687067447115128,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,frank jackson,frank jackson
+1628403,Caleb Swanigan,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,caleb swanigan,caleb swanigan
+1628404,Josh Hart,2017,2021,2021-22,Josh Hart,12000000.0,112414000.0,112414000.0,0.10674826978846051,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,josh hart,josh hart
+1628407,Dwayne Bacon,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,dwayne bacon,dwayne bacon
+1628409,Alec Peters,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,alec peters,alec peters
+1628410,Edmond Sumner,2017,2021,2021-22,Edmond Sumner,2320000.0,112414000.0,112414000.0,0.02063799882576903,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,edmond sumner,edmond sumner
+1628411,Wes Iwundu,2017,2021,2021-22,Wesley Iwundu,1926834.0,112414000.0,112414000.0,0.01714051630579821,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,wesley iwundu,wesley iwundu
+1628412,Frank Mason III,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,frank mason,frank mason
+1628413,Jonah Bolden,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,jonah bolden,jonah bolden
+1628414,Sindarius Thornwell,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,sindarius thornwell,sindarius thornwell
+1628415,Dillon Brooks,2017,2021,2021-22,Dillon Brooks,12200000.0,112414000.0,112414000.0,0.10852740761826819,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,dillon brooks,dillon brooks
+1628416,Tyler Dorsey,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,tyler dorsey,tyler dorsey
+1628417,Jaron Blossomgame,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,jaron blossomgame,jaron blossomgame
+1628418,Thomas Bryant,2017,2021,2021-22,Thomas Bryant,8666667.0,112414000.0,112414000.0,0.07709597559022897,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,thomas bryant,thomas bryant
+1628420,Monte Morris,2017,2021,2021-22,Monte Morris,8449074.0,112414000.0,112414000.0,0.07516033590122227,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,monte morris,monte morris
+1628422,Damyean Dotson,2017,2021,2021-22,Damyean Dotson,205662.0,112414000.0,112414000.0,0.0018295052217695304,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,damyean dotson,damyean dotson
+1628425,Sterling Brown,2017,2021,2021-22,Sterling Brown,3000000.0,112414000.0,112414000.0,0.026687067447115128,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,sterling brown,sterling brown
+1628427,Vlatko Čančar,2017,2021,2021-22,Vlatko Cancar,1782621.0,112414000.0,112414000.0,0.01585764228654794,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,vlatko cancar,vlatko cancar
+1628430,Nigel Williams-Goss,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,nigel williams goss,nigel williams goss
+1628432,Davon Reed,2017,2021,2021-22,Davon Reed,532398.0,112414000.0,112414000.0,0.004736047111569734,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1,1,1,exact_normalized_name,davon reed,davon reed
+1628443,Kadeem Allen,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,kadeem allen,kadeem allen
+1628444,Jabari Bird,2017,2021,2021-22,,,112414000.0,112414000.0,,,,,,,,,0,1,0,unmatched,jabari bird,jabari bird
+1628960,Grayson Allen,2018,2022,2022-23,Grayson Allen,8925000.0,123655000.0,,0.07217662043589018,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,grayson allen,grayson allen
+1628961,Kostas Antetokounmpo,2018,2022,2022-23,Kostas Antetokounmpo,172555.0,123655000.0,,0.0013954550968420202,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kostas antetokounmpo,kostas antetokounmpo
+1628963,Marvin Bagley III,2018,2022,2022-23,Marvin Bagley,12500000.0,123655000.0,,0.10108770369172294,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,marvin bagley,marvin bagley
+1628964,Mo Bamba,2018,2022,2022-23,Mo Bamba,10300000.0,123655000.0,,0.0832962678419797,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,mo bamba,mo bamba
+1628966,Keita Bates-Diop,2018,2022,2022-23,Keita Bates-Diop,1878720.0,123655000.0,,0.015193239254377098,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,keita bates diop,keita bates diop
+1628969,Mikal Bridges,2018,2022,2022-23,Mikal Bridges,20100000.0,123655000.0,,0.1625490275362905,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,mikal bridges,mikal bridges
+1628970,Miles Bridges,2018,2022,2022-23,,,123655000.0,,,,,,,,,,0,1,0,unmatched,miles bridges,miles bridges
+1628971,Bruce Brown,2018,2022,2022-23,Bruce Brown,6479000.0,123655000.0,,0.052395778577493834,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,bruce brown,bruce brown
+1628972,Troy Brown Jr.,2018,2022,2022-23,Troy Brown,1968175.0,123655000.0,,0.015916663297076545,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,troy brown,troy brown
+1628973,Jalen Brunson,2018,2022,2022-23,Jalen Brunson,27733332.0,123655000.0,,0.22427990780801424,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jalen brunson,jalen brunson
+1628975,Jevon Carter,2018,2022,2022-23,Jevon Carter,6025000.0,123655000.0,,0.04872427317941046,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jevon carter,jevon carter
+1628976,Wendell Carter Jr.,2018,2022,2022-23,Wendell Carter,14150000.0,123655000.0,,0.11443128057903036,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,wendell carter,wendell carter
+1628977,Hamidou Diallo,2018,2022,2022-23,Hamidou Diallo,5200000.0,123655000.0,,0.04205248473575674,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,hamidou diallo,hamidou diallo
+1628978,Donte DiVincenzo,2018,2022,2022-23,Donte DiVincenzo,4500000.0,123655000.0,,0.03639157332902026,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,donte divincenzo,donte divincenzo
+1628980,Jacob Evans,2018,2022,2022-23,,,123655000.0,,,,,,,,,,0,1,0,unmatched,jacob evans,jacob evans
+1628982,Melvin Frazier Jr.,2018,2022,2022-23,,,123655000.0,,,,,,,,,,0,1,0,unmatched,melvin frazier,melvin frazier
+1628983,Shai Gilgeous-Alexander,2018,2022,2022-23,Shai Gilgeous-Alexander,30913750.0,123655000.0,,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,shai gilgeous alexander,shai gilgeous alexander
+1628984,Devonte' Graham,2018,2022,2022-23,Devonte Graham,11550000.0,123655000.0,,0.093405038211152,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,devonte graham,devonte graham
+1628985,Devon Hall,2018,2022,2022-23,,,123655000.0,,,,,,,,,,0,1,0,unmatched,devon hall,devon hall
+1628987,Kevin Hervey,2018,2022,2022-23,,,123655000.0,,,,,,,,,,0,1,0,unmatched,kevin hervey,kevin hervey
+1628988,Aaron Holiday,2018,2022,2022-23,Aaron Holiday,1968175.0,123655000.0,,0.015916663297076545,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,aaron holiday,aaron holiday
+1628989,Kevin Huerter,2018,2022,2022-23,Kevin Huerter,14508929.0,123655000.0,,0.11733394525089968,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kevin huerter,kevin huerter
+1628990,Chandler Hutchison,2018,2022,2022-23,,,123655000.0,,,,,,,,,,0,1,0,unmatched,chandler hutchison,chandler hutchison
+1628991,Jaren Jackson Jr.,2018,2022,2022-23,Jaren Jackson Jr,28946605.0,123655000.0,,0.23409166632970765,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jaren jackson,jaren jackson
+1628993,Alize Johnson,2018,2022,2022-23,Alize Johnson,192293.0,123655000.0,,0.0015550766244793984,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,alize johnson,alize johnson
+1628994,George King,2018,2022,2022-23,,,123655000.0,,,,,,,,,,0,1,0,unmatched,george king,george king
+1628995,Kevin Knox II,2018,2022,2022-23,Kevin Knox,3000000.0,123655000.0,,0.024261048886013506,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kevin knox,kevin knox
+1629001,De'Anthony Melton,2018,2022,2022-23,De'Anthony Melton,8250000.0,123655000.0,,0.06671788443653714,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,deanthony melton,deanthony melton
+1629002,Chimezie Metu,2018,2022,2022-23,Chimezie Metu,1910860.0,123655000.0,,0.015453155958109255,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,chimezie metu,chimezie metu
+1629003,Shake Milton,2018,2022,2022-23,Shake Milton,1997718.0,123655000.0,,0.01615557801948971,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,shake milton,shake milton
+1629004,Svi Mykhailiuk,2018,2022,2022-23,Sviatoslav Mykhailiuk,3846895.0,123655000.0,,0.03110990255145364,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,sviatoslav mykhailiuk,sviatoslav mykhailiuk
+1629006,Josh Okogie,2018,2022,2022-23,Josh Okogie,1968175.0,123655000.0,,0.015916663297076545,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,josh okogie,josh okogie
+1629008,Michael Porter Jr.,2018,2022,2022-23,Michael Porter,30913750.0,123655000.0,,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,michael porter,michael porter
+1629010,Jerome Robinson,2018,2022,2022-23,,,123655000.0,,,,,,,,,,0,1,0,unmatched,jerome robinson,jerome robinson
+1629011,Mitchell Robinson,2018,2022,2022-23,Mitchell Robinson,17045454.0,123655000.0,,0.1378468642594315,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,mitchell robinson,mitchell robinson
+1629012,Collin Sexton,2018,2022,2022-23,Collin Sexton,16700000.0,123655000.0,,0.13505317213214185,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,collin sexton,collin sexton
+1629013,Landry Shamet,2018,2022,2022-23,Landry Shamet,9500000.0,123655000.0,,0.07682665480570944,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,landry shamet,landry shamet
+1629014,Anfernee Simons,2018,2022,2022-23,Anfernee Simons,22321429.0,123655000.0,,0.18051376005822653,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,anfernee simons,anfernee simons
+1629015,Zhaire Smith,2018,2022,2022-23,Zhaire Smith,1068200.0,123655000.0,,0.008638550806679876,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,zhaire smith,zhaire smith
+1629016,Omari Spellman,2018,2022,2022-23,,,123655000.0,,,,,,,,,,0,1,0,unmatched,omari spellman,omari spellman
+1629017,Khyri Thomas,2018,2022,2022-23,,,123655000.0,,,,,,,,,,0,1,0,unmatched,khyri thomas,khyri thomas
+1629018,Gary Trent Jr.,2018,2022,2022-23,Gary Trent Jr,17280000.0,123655000.0,,0.1397436415834378,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,gary trent,gary trent
+1629020,Jarred Vanderbilt,2018,2022,2022-23,Jarred Vanderbilt,4374000.0,123655000.0,,0.03537260927580769,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jarred vanderbilt,jarred vanderbilt
+1629021,Moritz Wagner,2018,2022,2022-23,Moritz Wagner,1878720.0,123655000.0,,0.015193239254377098,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,moritz wagner,moritz wagner
+1629022,Lonnie Walker IV,2018,2022,2022-23,Lonnie Walker,6479000.0,123655000.0,,0.052395778577493834,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,lonnie walker,lonnie walker
+1629027,Trae Young,2018,2022,2022-23,Trae Young,37096500.0,123655000.0,,0.3,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,trae young,trae young
+1629028,Deandre Ayton,2018,2022,2022-23,Deandre Ayton,30913750.0,123655000.0,,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,deandre ayton,deandre ayton
+1629029,Luka Dončić,2018,2022,2022-23,Luka Doncic,37096500.0,123655000.0,,0.3,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,luka doncic,luka doncic
+1629034,Ray Spalding,2018,2022,2022-23,,,123655000.0,,,,,,,,,,0,1,0,unmatched,ray spalding,ray spalding
+1629053,Vincent Edwards,2018,2022,2022-23,,,123655000.0,,,,,,,,,,0,1,0,unmatched,vincent edwards,vincent edwards
+1629057,Robert Williams III,2018,2022,2022-23,Robert Williams,10714287.0,123655000.0,,0.08664661356192632,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,robert williams,robert williams
+1629058,Dzanan Musa,2018,2022,2022-23,,,123655000.0,,,,,,,,,,0,1,0,unmatched,dzanan musa,dzanan musa
+1629059,Elie Okobo,2018,2022,2022-23,,,123655000.0,,,,,,,,,,0,1,0,unmatched,elie okobo,elie okobo
+1629066,Rodions Kurucs,2018,2022,2022-23,,,123655000.0,,,,,,,,,,0,1,0,unmatched,rodions kurucs,rodions kurucs
+1629067,Isaac Bonga,2018,2022,2022-23,,,123655000.0,,,,,,,,,,0,1,0,unmatched,isaac bonga,isaac bonga
+1629083,Arnoldas Kulboka,2018,2022,2022-23,,,123655000.0,,,,,,,,,,0,1,0,unmatched,arnoldas kulboka,arnoldas kulboka
+1629118,Thomas Welsh,2018,2022,2022-23,,,123655000.0,,,,,,,,,,0,1,0,unmatched,thomas welsh,thomas welsh
+1628981,Bruno Fernando,2019,2023,2023-24,Bruno Fernando,2581522.0,136021000.0,,0.01897884885422104,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,bruno fernando,bruno fernando
+1628998,Cody Martin,2019,2023,2023-24,Cody Martin,7560000.0,136021000.0,,0.055579653141794284,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,cody martin,cody martin
+1629023,P.J. Washington,2019,2023,2023-24,PJ Washington,16847826.0,136021000.0,,0.12386194778747399,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,pj washington,pj washington
+1629035,Carsen Edwards,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,carsen edwards,carsen edwards
+1629048,Goga Bitadze,2019,2023,2023-24,Goga Bitadze,2066585.0,136021000.0,,0.015193131942861765,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,goga bitadze,goga bitadze
+1629060,Rui Hachimura,2019,2023,2023-24,Rui Hachimura,15740741.0,136021000.0,,0.115722873673918,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,rui hachimura,rui hachimura
+1629346,Alen Smailagic,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,alen smailagic,alen smailagic
+1629608,Dewan Hernandez,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,dewan hernandez,dewan hernandez
+1629611,Terance Mann,2019,2023,2023-24,Terance Mann,10576923.0,136021000.0,,0.07775948566765425,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,terance mann,terance mann
+1629621,Marial Shayok,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,marial shayok,marial shayok
+1629625,Justin Wright-Foreman,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,justin wright foreman,justin wright foreman
+1629626,Bol Bol,2019,2023,2023-24,Bol Bol,2165000.0,136021000.0,,0.015916659927511193,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,bol bol,bol bol
+1629627,Zion Williamson,2019,2023,2023-24,Zion Williamson,34005250.0,136021000.0,,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,zion williamson,zion williamson
+1629628,RJ Barrett,2019,2023,2023-24,RJ Barrett,23883929.0,136021000.0,,0.1755900118364076,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,rj barrett,rj barrett
+1629629,Cam Reddish,2019,2023,2023-24,Cam Reddish,2165000.0,136021000.0,,0.015916659927511193,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,cam reddish,cam reddish
+1629630,Ja Morant,2019,2023,2023-24,Ja Morant,34005250.0,136021000.0,,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ja morant,ja morant
+1629631,De'Andre Hunter,2019,2023,2023-24,De'Andre Hunter,20089286.0,136021000.0,,0.14769253277067512,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,deandre hunter,deandre hunter
+1629632,Coby White,2019,2023,2023-24,Coby White,11111111.0,136021000.0,,0.08168673219576389,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,coby white,coby white
+1629633,Jarrett Culver,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,jarrett culver,jarrett culver
+1629634,Brandon Clarke,2019,2023,2023-24,Brandon Clarke,12500000.0,136021000.0,,0.09189757463921013,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,brandon clarke,brandon clarke
+1629635,Sekou Doumbouya,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,sekou doumbouya,sekou doumbouya
+1629636,Darius Garland,2019,2023,2023-24,Darius Garland,34005250.0,136021000.0,,0.25,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,darius garland,darius garland
+1629637,Jaxson Hayes,2019,2023,2023-24,Jaxson Hayes,2165000.0,136021000.0,,0.015916659927511193,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jaxson hayes,jaxson hayes
+1629638,Nickeil Alexander-Walker,2019,2023,2023-24,Nickeil Alexander-Walker,4687500.0,136021000.0,,0.0344615904897038,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,nickeil alexander walker,nickeil alexander walker
+1629639,Tyler Herro,2019,2023,2023-24,Tyler Herro,27000000.0,136021000.0,,0.19849876122069388,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,tyler herro,tyler herro
+1629640,Keldon Johnson,2019,2023,2023-24,Keldon Johnson,20000000.0,136021000.0,,0.1470361194227362,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,keldon johnson,keldon johnson
+1629641,Romeo Langford,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,romeo langford,romeo langford
+1629642,Nassir Little,2019,2023,2023-24,Nassir Little,6250000.0,136021000.0,,0.04594878731960506,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,nassir little,nassir little
+1629643,Chuma Okeke,2019,2023,2023-24,Chuma Okeke,5266712.0,136021000.0,,0.03871984472985789,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,chuma okeke,chuma okeke
+1629644,KZ Okpala,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,kz okpala,kz okpala
+1629645,Kevin Porter Jr.,2019,2023,2023-24,Kevin Porter,15860000.0,136021000.0,,0.1165996427022298,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,kevin porter,kevin porter
+1629647,Darius Bazley,2019,2023,2023-24,Darius Bazley,624425.0,136021000.0,,0.0045906514435271025,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,darius bazley,darius bazley
+1629648,Jordan Bone,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,jordan bone,jordan bone
+1629649,Ignas Brazdeikis,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,ignas brazdeikis,ignas brazdeikis
+1629651,Nic Claxton,2019,2023,2023-24,Nicolas Claxton,9625000.0,136021000.0,,0.07076113247219179,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,nicolas claxton,nicolas claxton
+1629655,Daniel Gafford,2019,2023,2023-24,Daniel Gafford,12402000.0,136021000.0,,0.09117709765403871,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,daniel gafford,daniel gafford
+1629657,Kyle Guy,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,kyle guy,kyle guy
+1629659,Talen Horton-Tucker,2019,2023,2023-24,Talen Horton-Tucker,11020000.0,136021000.0,,0.08101690180192764,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,talen horton tucker,talen horton tucker
+1629660,Ty Jerome,2019,2023,2023-24,Ty Jerome,2439025.0,136021000.0,,0.017931238558751957,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,ty jerome,ty jerome
+1629661,Cameron Johnson,2019,2023,2023-24,Cameron Johnson,25679348.0,136021000.0,,0.1887895839613001,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,cameron johnson,cameron johnson
+1629662,Mfiondu Kabengele,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,mfiondu kabengele,mfiondu kabengele
+1629667,Jalen McDaniels,2019,2023,2023-24,Jalen McDaniels,4516000.0,136021000.0,,0.03320075576565383,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jalen mcdaniels,jalen mcdaniels
+1629669,Jaylen Nowell,2019,2023,2023-24,Jaylen Nowell,398160.0,136021000.0,,0.002927195065467832,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jaylen nowell,jaylen nowell
+1629671,Miye Oni,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,miye oni,miye oni
+1629672,Eric Paschall,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,eric paschall,eric paschall
+1629673,Jordan Poole,2019,2023,2023-24,Jordan Poole,27955357.0,136021000.0,,0.2055223605178612,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,jordan poole,jordan poole
+1629676,Isaiah Roby,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,isaiah roby,isaiah roby
+1629677,Luka Samanic,2019,2023,2023-24,Luka Samanic,2066585.0,136021000.0,,0.015193131942861765,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,luka samanic,luka samanic
+1629678,Admiral Schofield,2019,2023,2023-24,Admiral Schofield,559782.0,136021000.0,,0.004115408650134906,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1,1,1,exact_normalized_name,admiral schofield,admiral schofield
+1629680,Matisse Thybulle,2019,2023,2023-24,Matisse Thybulle,10500000.0,136021000.0,,0.0771939626969365,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,matisse thybulle,matisse thybulle
+1629682,Tremont Waters,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,tremont waters,tremont waters
+1629683,Quinndary Weatherspoon,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,quinndary weatherspoon,quinndary weatherspoon
+1629684,Grant Williams,2019,2023,2023-24,Grant Williams,12405000.0,136021000.0,,0.09119915307195213,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,grant williams,grant williams
+1629685,Dylan Windler,2019,2023,2023-24,Dylan Windler,1116288.0,136021000.0,,0.008206732783908367,3.0,3.0,0.0,0.0,0.0,1.0,0.0,1,1,1,exact_normalized_name,dylan windler,dylan windler
+1629686,Deividas Sirvydis,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,deividas sirvydis,deividas sirvydis
+1629712,Didi Louzada,2019,2023,2023-24,Didi Louzada,268032.0,136021000.0,,0.0019705192580557413,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1,1,1,exact_normalized_name,didi louzada,didi louzada
+1629713,Justin James,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,justin james,justin james
+1629714,Jarrell Brantley,2019,2023,2023-24,,,136021000.0,,,,,,,,,,0,1,0,unmatched,jarrell brantley,jarrell brantley

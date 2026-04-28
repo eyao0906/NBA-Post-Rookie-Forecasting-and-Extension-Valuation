@@ -1,0 +1,40 @@
+{
+  "script": "02_build_market_anchor_band.py",
+  "project_root": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3",
+  "inventory_csv_used": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/project_inventory.csv",
+  "holdout_csv_used": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_demo_player_holdout_manifest.csv",
+  "resolved_inputs": {
+    "macro_archetype_backbone": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/archetype_macro_player_table.csv",
+    "hybrid_archetype_table": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_hybrid_archetype_table.csv",
+    "identity_drift_table": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_identity_drift_table.csv",
+    "realistic_comp_engine": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/realistic_comps.csv",
+    "ceiling_comp_engine": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/ceiling_comps_hof.csv",
+    "final_player_profile": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/final_player_archetype_profile_table.csv",
+    "year5_salary_target": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/SalaryBlock/year5_salary_target_table.csv",
+    "year5_salary_merge_summary": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/SalaryBlock/year5_salary_merge_summary.csv",
+    "year5_salary_unmatched_diagnostic": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/SalaryBlock/year5_salary_unmatched_diagnostic.csv",
+    "comp_salary_detail": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/SalaryBlock/comp_salary_detail_table.csv",
+    "deliverable3_block2_context": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/SalaryBlock/deliverable3_block2_archetype_comp_market_context.csv",
+    "report_ready_dossier_table": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_dossier_demo/report_ready_player_dossier_table.csv",
+    "report_ready_dossier_selection": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_dossier_demo/report_ready_player_dossier_selection.csv",
+    "report_ready_dossier_manifest": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_dossier_demo/report_ready_player_dossier_manifest.csv",
+    "report_ready_dossiers_markdown": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Player Archetype Analysis/player_dossier_demo/report_ready_player_dossiers.md"
+  },
+  "demo_players_reserved_for_case_study": [
+    "Trae Young",
+    "Nikola Vucevic",
+    "Nikola Vučević",
+    "Andrew Bynum"
+  ],
+  "players_in_block2_context": 1058,
+  "supported_market_anchor_players": 941,
+  "supported_market_anchor_share": 0.889413988657845,
+  "outputs": {
+    "salary_market_anchor_band_table_csv": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_market_anchor_band_table.csv",
+    "salary_market_anchor_band_summary_csv": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_market_anchor_band_summary.csv",
+    "salary_market_anchor_band_summary_md": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_market_anchor_band_summary.md",
+    "salary_market_anchor_support_breakdown_csv": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_market_anchor_support_breakdown.csv",
+    "salary_market_anchor_fair_price_distribution_csv": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_market_anchor_fair_price_distribution.csv",
+    "salary_market_anchor_band_metadata_json": "/home/runner/work/STAT-946-Case-Study-3/STAT-946-Case-Study-3/Output/Salary Decision Support/salary_market_anchor_band_metadata.json"
+  }
+}
