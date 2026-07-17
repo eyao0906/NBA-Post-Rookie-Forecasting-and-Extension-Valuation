@@ -1,4 +1,4 @@
-# CaseStudy3 — NBA Post-Rookie Forecasting and Extension Valuation
+# NBA Post-Rookie Forecasting and Extension Valuation
 
 This project provides decisional support on an NBA rookie player's extension contract valuation using first-contract (Years 1–4) game-by-game sequences.
 
